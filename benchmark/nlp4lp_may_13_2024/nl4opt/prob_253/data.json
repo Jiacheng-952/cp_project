@@ -1,0 +1,7 @@
+{
+    "SmallBoxCapacity": 25,
+    "LargeBoxCapacity": 45,
+    "MinSmallToLargeRatio": 0.33,
+    "MinLargeBoxes": 5,
+    "MinMasksRequired": 750
+}

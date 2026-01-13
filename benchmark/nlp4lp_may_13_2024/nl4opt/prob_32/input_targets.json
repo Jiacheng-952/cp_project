@@ -1,0 +1,46 @@
+{
+    "background": "A car manufacturer makes two versions of the same car, a regular model and a premium model.",
+    "constraints": [
+        "x1 >= 0",
+        "x2 >= 0",
+        "x1 is an integer",
+        "x2 is an integer",
+        "x1 <= MaxDemandRegular",
+        "x2 <= MaxDemandPremium",
+        "x1 + x2 <= MaxTotal"
+    ],
+    "objective": "Maximize (ProfitRegular * x1 + ProfitPremium * x2)",
+    "description": "A car manufacturer makes two versions of the same car, a regular model and a premium model. They make x1 regular models per day and x2 premium models per day. The profit per regular model is \\var{ProfitRegular} and the profit per premium model is \\var{ProfitPremium} (x1 and x2 are unknown values both greater than or equal to 0). The daily demand for these cars is limited to at most \\var{MaxDemandRegular} regular models and \\var{MaxDemandPremium} premium models. In addition, the manufacturer can make a maximum of \\var{MaxTotal} cars of either type per day. How many cars of each model should the manufacturer make in order to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Profit per regular model",
+            "symbol": "ProfitRegular",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per premium model",
+            "symbol": "ProfitPremium",
+            "value": 8500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of regular models demanded per day",
+            "symbol": "MaxDemandRegular",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of premium models demanded per day",
+            "symbol": "MaxDemandPremium",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of total cars that can be made per day",
+            "symbol": "MaxTotal",
+            "value": 12,
+            "shape": []
+        }
+    ]
+}

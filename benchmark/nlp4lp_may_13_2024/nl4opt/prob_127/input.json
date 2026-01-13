@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Calories per serving of almonds",
+            "symbol": "CaloriesAlmonds",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Protein per serving of almonds",
+            "symbol": "ProteinAlmonds",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Calories per serving of cashews",
+            "symbol": "CaloriesCashews",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Protein per serving of cashews",
+            "symbol": "ProteinCashews",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Fat per serving of almonds",
+            "symbol": "FatAlmonds",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Fat per serving of cashews",
+            "symbol": "FatCashews",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total calories required",
+            "symbol": "MinCalories",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total protein required",
+            "symbol": "MinProtein",
+            "value": 800,
+            "shape": []
+        }
+    ],
+    "description": "A woman eats cashews and almonds to get her calorie and protein intake. A serving of almonds contains \\param{CaloriesAlmonds} calories and \\param{ProteinAlmonds} grams of protein. A serving of cashews contains \\param{CaloriesCashews} calories and \\param{ProteinCashews} grams of protein. The woman decides to eat at least twice as many servings of almonds as cashews. Furthermore, a serving of almonds contains \\param{FatAlmonds} grams of fat while a serving of cashews contains \\param{FatCashews} grams of fat. If the woman needs to consume at least \\param{MinCalories} calories and \\param{MinProtein} grams of protein this week, how many servings of each should she eat to minimize her fat intake?"
+}

@@ -1,0 +1,7 @@
+{
+    "CanVolume": 250,
+    "BottleVolume": 1000,
+    "MinTotalVolume": 1000000,
+    "CanBottleRatio": 3,
+    "MinBottles": 100
+}

@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of each plush toy for the store",
+            "symbol": "CostPlush",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Cost of each doll for the store",
+            "symbol": "CostDoll",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount the store owner can spend on inventory",
+            "symbol": "MaxInventory",
+            "value": 700,
+            "shape": []
+        },
+        {
+            "definition": "Profit made from selling each plush toy",
+            "symbol": "ProfitPlush",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Profit made from selling each doll",
+            "symbol": "ProfitDoll",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum estimated number of plush toys sold each month",
+            "symbol": "MinPlushSold",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Maximum estimated number of plush toys sold each month",
+            "symbol": "MaxPlushSold",
+            "value": 190,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of the number of dolls sold to plush toys sold",
+            "symbol": "MaxDollsToPlushRatio",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "A toy store sells plush toys and dolls. Each plush toy costs the store \\param{CostPlush} and each doll costs the store \\param{CostDoll}. The store owner can spend at most \\param{MaxInventory} on inventory. Each plush toy is then sold for a profit of \\param{ProfitPlush} while each doll is sold for a profit of \\param{ProfitDoll}. The owner estimates that at least \\param{MinPlushSold} plush toys but at most \\param{MaxPlushSold} plush toys are sold each month. He also estimates that the number of dolls sold is at most \\param{MaxDollsToPlushRatio} times the amount of plush toys sold. How many of each should be bought and sold to maximize profit?"
+}

@@ -1,0 +1,7 @@
+{
+    "VolumeGlass": 500,
+    "VolumePlastic": 750,
+    "RatioPlasticToGlass": 3.0,
+    "MinGlassBottles": 20,
+    "TotalWaterVolume": 250000
+}

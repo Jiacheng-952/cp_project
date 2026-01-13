@@ -1,0 +1,58 @@
+{
+    "parameters": [
+        {
+            "definition": "The number of machines available",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The number of types of parts to produce",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The time required to produce a batch on machine m for part p",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "The cost of operating machine m for a month",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "The time each machine m is available for production each month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "The price at which part p can be sold",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "The setup time required before producing a batch of part p",
+            "symbol": "SetupTime",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        }
+    ],
+    "description": "How many batches of each part should the manufacturer produce each month to maximize profit, taking into account the number of machines (\\param{M}), the number of types of parts (\\param{P}), the time required to produce a batch on machine \\param{m} for part \\param{p} (\\param{TimeRequired}), the cost of operating machine \\param{m} for a month (\\param{MachineCosts}), the time each machine \\param{m} is available for production each month (\\param{Availability}), the price at which part \\param{p} can be sold (\\param{Prices}), and the setup time required before producing a batch of part \\param{p} (\\param{SetupTime})?"
+}

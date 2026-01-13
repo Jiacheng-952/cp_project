@@ -1,0 +1,80 @@
+{
+    "background": "A science club has two tables for making slime, each using different quantities of powder and glue and producing different amounts of slime and mess. There is a limited supply of powder, glue, and a maximum mess tolerance.",
+    "constraints": [
+        "Number of Table 1 setups is non-negative",
+        "Number of Table 2 setups is non-negative",
+        "Total quantity of powder used by Table 1 and Table 2 does not exceed TotalPowder",
+        "Total quantity of glue used by Table 1 and Table 2 does not exceed TotalGlue",
+        "Total mess produced by Table 1 and Table 2 setups does not exceed MaxMess"
+    ],
+    "objective": "Maximize the total amount of slime produced by both tables",
+    "description": "In a science club, there are two tables that can be set up to make slime. At table 1, \\param{Powder1} units of powder and \\param{Glue1} units of glue are used to make \\param{Slime1} units of slime. At table 2, \\param{Powder2} units of powder and \\param{Glue2} units of glue are used to make \\param{Slime2} units of slime. However, table 1 produces \\param{Mess1} units of mess while table 2 produces \\param{Mess2} units of mess. The science club has available \\param{TotalPowder} units of powder and \\param{TotalGlue} units of glue. If at most \\param{MaxMess} units of mess can be made, how many of each table should be set up to maximize the amount of slime produced?",
+    "parameters": [
+        {
+            "definition": "Units of powder used at table 1",
+            "symbol": "Powder1",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue used at table 1",
+            "symbol": "Glue1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of slime produced at table 1",
+            "symbol": "Slime1",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of powder used at table 2",
+            "symbol": "Powder2",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue used at table 2",
+            "symbol": "Glue2",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of slime produced at table 2",
+            "symbol": "Slime2",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of mess produced at table 1",
+            "symbol": "Mess1",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of mess produced at table 2",
+            "symbol": "Mess2",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of powder",
+            "symbol": "TotalPowder",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of glue",
+            "symbol": "TotalGlue",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable units of mess",
+            "symbol": "MaxMess",
+            "value": 30,
+            "shape": []
+        }
+    ]
+}

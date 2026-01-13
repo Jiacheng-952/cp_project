@@ -1,0 +1,35 @@
+{
+    "background": "Assign consultants to projects in a way that minimizes the total cost, considering fixed costs per project, additional costs for assigning specific consultants to specific projects, and the maximum number of projects a consultant can handle.",
+    "constraints": [
+        "Each consultant can handle up to MaxProjectsPerConsultant projects",
+        "Each project must be assigned at least one consultant",
+        "Consultants must be assigned to projects in a way that their total number of projects does not exceed MaxProjectsPerConsultant"
+    ],
+    "objective": "Minimize the total cost of assigning consultants to projects",
+    "description": "Determine the assignment of consultants to projects that minimizes the total cost, given the fixed \\param{FixedCosts} for each project, \\param{AdditionalCosts} for assigning consultant i to project j, and the \\param{MaxProjectsPerConsultant} that can be handled by a single consultant.",
+    "parameters": [
+        {
+            "definition": "Fixed cost for project j",
+            "symbol": "FixedCosts",
+            "value": "",
+            "shape": [
+                "J"
+            ]
+        },
+        {
+            "definition": "Additional cost for assigning consultant i to project j",
+            "symbol": "AdditionalCosts",
+            "value": "",
+            "shape": [
+                "I",
+                "J"
+            ]
+        },
+        {
+            "definition": "Maximum number of projects that can be assigned to a consultant",
+            "symbol": "MaxProjectsPerConsultant",
+            "value": 0,
+            "shape": []
+        }
+    ]
+}

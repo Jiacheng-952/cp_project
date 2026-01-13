@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of eye cream produced by machine 1 per hour",
+            "symbol": "EyeMachine1",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of foot cream produced by machine 1 per hour",
+            "symbol": "FootMachine1",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Amount of eye cream produced by machine 2 per hour",
+            "symbol": "EyeMachine2",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Amount of foot cream produced by machine 2 per hour",
+            "symbol": "FootMachine2",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of distilled water required by machine 1 per hour",
+            "symbol": "WaterMachine1",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Amount of distilled water required by machine 2 per hour",
+            "symbol": "WaterMachine2",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of distilled water available",
+            "symbol": "TotalWater",
+            "value": 1200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required amount of eye cream to be produced",
+            "symbol": "MinEyeCream",
+            "value": 1300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required amount of foot cream to be produced",
+            "symbol": "MinFootCream",
+            "value": 1500,
+            "shape": []
+        }
+    ],
+    "description": "A pharmacy makes eye cream and foot cream using two different machines, machine 1 and machine 2. Machine 1 can make \\param{EyeMachine1} ml of eye cream and \\param{FootMachine1} ml of foot cream per hour. Machine 2 can make \\param{EyeMachine2} ml of eye cream and \\param{FootMachine2} ml of foot cream per hour. Furthermore, machine 1 requires \\param{WaterMachine1} ml of distilled water per hour while machine 2 requires \\param{WaterMachine2} ml of distilled water per hour. The pharmacy has available \\param{TotalWater} ml of distilled water. If the pharmacy needs to make at least \\param{MinEyeCream} ml of eye cream and \\param{MinFootCream} ml of foot cream, how many hours should each machine be used to minimize the total time needed?"
+}

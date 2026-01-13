@@ -1,0 +1,56 @@
+{
+    "background": "A dentist must optimize the number of molars and canines to fill with a limited supply of resin and a goal to minimize the use of pain killer, while adhering to specific requirements for molars and canines.",
+    "constraints": [
+        "Total resin used for all cavities is at most TotalResin",
+        "At least MinCaninePercentage of cavities filled must be canines",
+        "At least MinMolars molars must be filled",
+        "Number of molars to be filled is non-negative",
+        "Number of canines to be filled is non-negative"
+    ],
+    "objective": "Minimize the total amount of pain killer needed for filling cavities",
+    "description": "A dentist has \\param{TotalResin} units of resin to fill cavities in both molars and canines. Molars require \\param{ResinMolar} units of resin and \\param{PainKillerMolar} units of pain killer. Canines require \\param{ResinCanine} units of resin and \\param{PainKillerCanine} units of pain killer. Since this dentist sees more cavities in canines, at least \\param{MinCaninePercentage} of cavities filled must be in canines. In addition, the dentist must reserve materials to fill at least \\param{MinMolars} molars. How many of each type of teeth should the dentist schedule to fill to minimize the amount of pain killer needed?",
+    "parameters": [
+        {
+            "definition": "Total units of resin available",
+            "symbol": "TotalResin",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Units of resin required per molar",
+            "symbol": "ResinMolar",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of resin required per canine",
+            "symbol": "ResinCanine",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of pain killer required per molar",
+            "symbol": "PainKillerMolar",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of pain killer required per canine",
+            "symbol": "PainKillerCanine",
+            "value": 2.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of cavities to be filled in canines",
+            "symbol": "MinCaninePercentage",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of molars required to be filled",
+            "symbol": "MinMolars",
+            "value": 45,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of patients a helicopter can transport per trip",
+            "symbol": "HelicopterCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for one trip by helicopter",
+            "symbol": "HelicopterTripTime",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Number of patients a bus can transport per trip",
+            "symbol": "BusCapacity",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for one trip by bus",
+            "symbol": "BusTripTime",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of patients that need transportation",
+            "symbol": "MinPatients",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of trips that must be by helicopter",
+            "symbol": "MinHelicopterTripsPercentage",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of bus trips allowed",
+            "symbol": "MaxBusTrips",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "There has been a horrible accident and patients need to be taken to the hospital by either a helicopter or bus. A helicopter can transport \\param{HelicopterCapacity} patients per trip and takes \\param{HelicopterTripTime} hour. On the other hand, a bus can transport \\param{BusCapacity} patients per trip and takes \\param{BusTripTime} hours. At least \\param{MinPatients} patients need to be transported and at least \\param{MinHelicopterTripsPercentage} of the trips should be by helicopter. In addition, there can be at most \\param{MaxBusTrips} bus trips. How should the patients be taken to minimize the total time to transport the patients?"
+}

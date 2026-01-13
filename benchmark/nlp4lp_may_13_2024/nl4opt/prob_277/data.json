@@ -1,0 +1,10 @@
+{
+    "RatioMechanicalStandard": 5,
+    "PlasticPerMechanical": 5,
+    "SolderPerMechanical": 2,
+    "PlasticPerStandard": 2,
+    "SolderPerStandard": 1,
+    "MinStandard": 30,
+    "TotalPlastic": 1000,
+    "TotalSolder": 250
+}

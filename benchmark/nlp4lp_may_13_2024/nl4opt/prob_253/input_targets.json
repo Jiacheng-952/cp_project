@@ -1,0 +1,44 @@
+{
+    "background": "A mask making company needs to ship masks to retail stores and aims to determine the optimal number of small and large boxes to use, adhering to specific capacity and ratio constraints.",
+    "constraints": [
+        "Number of small boxes is non-negative",
+        "Number of large boxes is non-negative",
+        "Number of small boxes must be at least MinSmallToLargeRatio times the number of large boxes",
+        "At least MinLargeBoxes large boxes must be used",
+        "At least MinMasksRequired masks must be distributed"
+    ],
+    "objective": "Minimize the total number of boxes needed to ship the masks",
+    "description": "A mask making company ships masks to their retail stores using small boxes and large boxes. A small box holds \\param{SmallBoxCapacity} masks whereas a large box holds \\param{LargeBoxCapacity} masks. Since small boxes are easier to stack and will be used first to stock stores, there must be at least \\param{MinSmallToLargeRatio} times as many small boxes as large boxes. Additionally, at least \\param{MinLargeBoxes} large boxes must be used. If at least \\param{MinMasksRequired} masks are required to be distributed, how many of each size of box should be used to minimize the total number of boxes needed?",
+    "parameters": [
+        {
+            "definition": "Number of masks a small box can hold",
+            "symbol": "SmallBoxCapacity",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Number of masks a large box can hold",
+            "symbol": "LargeBoxCapacity",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of small boxes to large boxes",
+            "symbol": "MinSmallToLargeRatio",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large boxes required",
+            "symbol": "MinLargeBoxes",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of masks required to be distributed",
+            "symbol": "MinMasksRequired",
+            "value": 750,
+            "shape": []
+        }
+    ]
+}

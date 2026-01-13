@@ -1,0 +1,7 @@
+{
+    "TaxiCapacity": 2,
+    "CarCapacity": 3,
+    "MaxCarRideProportion": 0.6,
+    "MinCarRides": 30,
+    "MinEmployees": 500
+}

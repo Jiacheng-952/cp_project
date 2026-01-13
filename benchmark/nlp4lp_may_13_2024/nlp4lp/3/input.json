@@ -1,0 +1,51 @@
+{
+    "parameters": [
+        {
+            "definition": "The demand in period t",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "The maximum oil capacity in period t",
+            "symbol": "OilCap",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "The cost of coal per unit",
+            "symbol": "CoalCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "The cost of nuclear energy per unit",
+            "symbol": "NukeCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "The maximum nuclear capacity",
+            "symbol": "MaxNuke",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "The lifetime of a coal plant",
+            "symbol": "CoalLife",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "The lifetime of a nuclear plant",
+            "symbol": "NukeLife",
+            "value": 0,
+            "shape": []
+        }
+    ],
+    "description": "What is the capacity expansion plan that results in the minimum cost, given the \\param{Demand} in period \\param{T}, the maximum oil capacity \\param{OilCap} in period \\param{T}, the \\param{CoalCost} per unit, the \\param{NukeCost} per unit, the maximum nuclear capacity \\param{MaxNuke}, the lifetime of a coal plant \\param{CoalLife}, and the lifetime of a nuclear plant \\param{NukeLife}?"
+}

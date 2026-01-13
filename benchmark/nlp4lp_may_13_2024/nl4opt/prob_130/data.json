@@ -1,0 +1,10 @@
+{
+    "LegMedicinePainKiller1": 0.5,
+    "BackMedicinePainKiller1": 0.8,
+    "LegMedicinePainKiller2": 0.7,
+    "BackMedicinePainKiller2": 0.4,
+    "SleepMedicinePainKiller1": 0.3,
+    "SleepMedicinePainKiller2": 0.6,
+    "MaxSleepMedicine": 8,
+    "MinLegMedicine": 4
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a small suitcase",
+            "symbol": "SmallCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a large suitcase",
+            "symbol": "LargeCapacity",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of small suitcases to the number of large suitcases",
+            "symbol": "RatioSmallToLarge",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of small suitcases available",
+            "symbol": "MaxSmallSuitcases",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of large suitcases available",
+            "symbol": "MaxLargeSuitcases",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large suitcases that must be sent",
+            "symbol": "MinLargeSuitcases",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total number of suitcases that can be sent",
+            "symbol": "MaxTotalSuitcases",
+            "value": 70,
+            "shape": []
+        }
+    ],
+    "description": "A snack exporter sends snacks to his customer in small and large suitcases. A small suitcase can hold \\param{SmallCapacity} snacks while a large suitcase can hold \\param{LargeCapacity} snacks. Most customer prefer small suitcases, and so at least \\param{RatioSmallToLarge} times as many small suitcases must be used as large suitcases. The exporter has available at most \\param{MaxSmallSuitcases} small suitcases and \\param{MaxLargeSuitcases} large suitcases. If he must send at least \\param{MinLargeSuitcases} large suitcases and can send at most \\param{MaxTotalSuitcases} suitcases in total, how many of each should he send to maximize the total number of snacks that can be delivered?"
+}

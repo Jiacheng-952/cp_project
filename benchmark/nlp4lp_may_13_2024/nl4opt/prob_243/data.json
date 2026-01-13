@@ -1,0 +1,10 @@
+{
+    "WasteFoodOriginal": 20,
+    "WasteWrapOriginal": 45,
+    "TimeOriginal": 10,
+    "WasteFoodExperimental": 25,
+    "WasteWrapExperimental": 35,
+    "TimeExperimental": 15,
+    "MaxWrapWaste": 900,
+    "MaxFoodWaste": 800
+}

@@ -1,0 +1,63 @@
+{
+    "background": "You are designing an office space with two types of desks: long desks and short desks.",
+    "constraints": [
+        "Number of long desks is an integer",
+        "Number of short desks is an integer",
+        "Number of long desks is non-negative",
+        "Number of short desks is non-negative",
+        "Total cost for long desks and short desks does not exceed MaxBudget",
+        "Total area for long desks and short desks does not exceed MaxArea"
+    ],
+    "objective": "Maximize the total number of seats by buying long desks and short desks",
+    "description": "You are designing an office space with two types of desks: long desks and short desks. You can spend at most \\var{MaxBudget}. Long desks cost \\var{CostLongDesk}, take up \\var{AreaLongDesk} square feet of space, and seat \\var{SeatsLongDesk} employees. Short desks cost \\var{CostShortDesk}, take up \\var{AreaShortDesk} square feet of space, and seat \\var{SeatsShortDesk} employees. The office can have at most \\var{MaxArea} square feet of desks. How many of each desk should you buy in order to maximize the seating availability?",
+    "parameters": [
+        {
+            "definition": "Maximum budget for buying desks",
+            "symbol": "MaxBudget",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one long desk",
+            "symbol": "CostLongDesk",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Area occupied by one long desk",
+            "symbol": "AreaLongDesk",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees that can be seated at one long desk",
+            "symbol": "SeatsLongDesk",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one short desk",
+            "symbol": "CostShortDesk",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Area occupied by one short desk",
+            "symbol": "AreaShortDesk",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees that can be seated at one short desk",
+            "symbol": "SeatsShortDesk",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum area available for desks in the office",
+            "symbol": "MaxArea",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

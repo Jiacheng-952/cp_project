@@ -1,0 +1,10 @@
+{
+    "LowPowerCapacity": 12,
+    "LowPowerElectricity": 150,
+    "HighPowerCapacity": 17,
+    "HighPowerElectricity": 250,
+    "MaxLowPowerProportion": 0.3,
+    "MinHighPower": 7,
+    "MinHousingUnits": 250,
+    "TotalElectricity": 3400
+}

@@ -1,0 +1,12 @@
+{
+    "OrdersBike": 10,
+    "EnergyBike": 5,
+    "TipsBike": 50,
+    "OrdersScooter": 7,
+    "EnergyScooter": 6,
+    "TipsScooter": 43,
+    "TotalShifts": 40,
+    "TotalEnergy": 230,
+    "MinOrders": 320,
+    "MinScooterShifts": 5
+}

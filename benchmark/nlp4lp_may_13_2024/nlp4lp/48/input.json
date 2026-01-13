@@ -1,0 +1,69 @@
+{
+    "parameters": [
+        {
+            "definition": "Total goal for clicks by young individuals",
+            "symbol": "GoalYoung",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total goal for clicks by old individuals",
+            "symbol": "GoalOld",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total goal for unique clicks by young individuals",
+            "symbol": "GoalUniqueYoung",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total goal for unique clicks by old individuals",
+            "symbol": "GoalUniqueOld",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of clicks by young individuals for each ad type",
+            "symbol": "YoungClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of clicks by old individuals for each ad type",
+            "symbol": "OldClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Cost associated with each ad type",
+            "symbol": "Costs",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Maximum number of clicks possible for each ad type",
+            "symbol": "MaxClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of unique clicks for each ad type",
+            "symbol": "UniqueClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        }
+    ],
+    "description": "Custom Tees wants to optimize its ad clicks. Their plan is to meet certain goals for clicks from both young and old age groups. They have a set target of \\param{GoalYoung} clicks by young individuals, \\param{GoalOld} clicks by old individuals, \\param{GoalUniqueYoung} unique clicks by young, and \\param{GoalUniqueOld} unique clicks by old. They can gather clicks from a total of A different ad types. Each ad type provides a varying number of clicks by young individuals \\param{YoungClicks} and by old individuals \\param{OldClicks}. Each ad type also incurs different costs \\param{Costs}, has a maximum limit for the number of clicks \\param{MaxClicks}, and provides a number of unique clicks \\param{UniqueClicks}. Custom Tees wants to know how many clicks from each ad type should they purchase to minimize the overall cost while meeting their click goals."
+}

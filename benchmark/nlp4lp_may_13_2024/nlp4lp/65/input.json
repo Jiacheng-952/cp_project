@@ -1,0 +1,67 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of interventions",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Processing time for isolating at the central system for each intervention",
+            "symbol": "IsolateCentral",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for scanning at the central system for each intervention",
+            "symbol": "ScanCentral",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for isolating at the distributed system for each intervention",
+            "symbol": "IsolateDistributed",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for scanning at the distributed system for each intervention",
+            "symbol": "ScanDistributed",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Cost for central system intervention",
+            "symbol": "CentralCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost for distributed system intervention",
+            "symbol": "DistributedCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum hours of operation for the central system",
+            "symbol": "CentralMaxHours",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum hours of operation for the distributed system",
+            "symbol": "DistributedMaxHours",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "Determine the most cost-effective combination of interventions to halt the intruder's progress within the network. The MILP problem includes parameters: processing times at the central system (\\param{IsolateCentral}, \\param{ScanCentral}), processing times at the distributed system (\\param{IsolateDistributed}, \\param{ScanDistributed}), costs (\\param{CentralCost}, \\param{DistributedCost}), and maximum hours (\\param{CentralMaxHours}, \\param{DistributedMaxHours}) for a number of interventions \\param{N}."
+}

@@ -1,0 +1,64 @@
+{
+    "background": "A company sells custom scooters and bikes, with each requiring time with the design and engineering teams.",
+    "constraints": [
+        "Scooters and bikes must be non-negative integers",
+        "Design time for scooters per month is at most DesignScooter times the number of scooters",
+        "Design time for bikes per month is at most DesignBike times the number of bikes",
+        "Engineering time for scooters per month is at most EngScooter times the number of scooters",
+        "Engineering time for bikes per month is at most EngBike times the number of bikes",
+        "Total design time used by scooters and bikes per month cannot exceed TotalDesignHours",
+        "Total engineering time used by scooters and bikes per month cannot exceed TotalEngHours"
+    ],
+    "objective": "Maximize the company's profit from selling scooters and bikes",
+    "description": "A company sells custom scooters and bikes for customers. The profit per scooter is \\var{ProfitScooter} and the profit per bike is \\var{ProfitBike}. Each product requires time with the design team and engineering team. Each scooter needs \\var{DesignScooter} hours with the design team and \\var{EngScooter} hours with the engineering team. Each bike needs \\var{DesignBike} hours with the design team and \\var{EngBike} hours with the engineering team. Per month, there are \\var{TotalDesignHours} hours available on the design team and \\var{TotalEngHours} hours available on the engineering team. How many of each should the company make per month to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Profit per scooter",
+            "symbol": "ProfitScooter",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Profit per bike",
+            "symbol": "ProfitBike",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Design time required per scooter",
+            "symbol": "DesignScooter",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Engineering time required per scooter",
+            "symbol": "EngScooter",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Design time required per bike",
+            "symbol": "DesignBike",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Engineering time required per bike",
+            "symbol": "EngBike",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total available design team hours per month",
+            "symbol": "TotalDesignHours",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total available engineering team hours per month",
+            "symbol": "TotalEngHours",
+            "value": 6000,
+            "shape": []
+        }
+    ]
+}

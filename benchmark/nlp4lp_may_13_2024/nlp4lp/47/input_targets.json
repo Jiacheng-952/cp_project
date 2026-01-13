@@ -1,0 +1,65 @@
+{
+    "background": "A manufacturer needs to determine the optimal monthly production quantities for different types of parts, taking into account machine time constraints, machine costs, sales prices, and minimum production requirements.",
+    "constraints": [
+        "Number of batches for each part is non-negative",
+        "Total time used on each machine does not exceed its Availability",
+        "At least MinBatches of each part must be produced"
+    ],
+    "objective": "Maximize the profit, which is the total sales minus the costs of using the machines",
+    "description": "How many batches of each part should the manufacturer produce each month to maximize profit? The number of different parts is \\param{P}, the number of machines is \\param{M}. There is a \\param{TimeRequired} matrix detailing the time required to produce one batch of each part on each machine. Each machine has an associated cost given by \\param{MachineCosts} and a monthly availability given by \\param{Availability}. Each part can be sold for \\param{Prices} and there is a minimum production requirement for each part detailed by \\param{MinBatches}.",
+    "parameters": [
+        {
+            "definition": "Number of parts",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce one batch of part p on machine m",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost associated with using machine m",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Availability of machine m per month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Selling price of one batch of part p",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part p to be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        }
+    ]
+}

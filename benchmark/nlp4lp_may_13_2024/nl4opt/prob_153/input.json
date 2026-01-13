@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of an old van",
+            "symbol": "OldVanCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a new van",
+            "symbol": "NewVanCapacity",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by an old van",
+            "symbol": "OldVanPollution",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by a new van",
+            "symbol": "NewVanPollution",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum quantity of soda bottles to be sent",
+            "symbol": "MinBottles",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of new vans allowed",
+            "symbol": "MaxNewVans",
+            "value": 30,
+            "shape": []
+        }
+    ],
+    "description": "A soda company sends bottles of their soda to stores around the city in old and new vans. An old van can take \\param{OldVanCapacity} soda bottles while a new van can take \\param{NewVanCapacity} soda bottles. An old van produces \\param{OldVanPollution} units of pollution while a new van only produces \\param{NewVanPollution} units of pollution. The company needs to send at least \\param{MinBottles} bottles. In addition, at most \\param{MaxNewVans} new vans can be used. How many of each van should be used to minimize the total amount of pollution produced?"
+}

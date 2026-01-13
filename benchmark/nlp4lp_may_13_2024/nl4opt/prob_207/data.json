@@ -1,0 +1,10 @@
+{
+    "TimePrintingGraph": 3,
+    "TimeScanningGraph": 5.5,
+    "TimePrintingMusic": 1.5,
+    "TimeScanningMusic": 3,
+    "MaxTimePrinting": 350,
+    "MaxTimeScanning": 350,
+    "ProfitGraph": 4,
+    "ProfitMusic": 2.5
+}

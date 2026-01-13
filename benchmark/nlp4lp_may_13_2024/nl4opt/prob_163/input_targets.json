@@ -1,0 +1,49 @@
+{
+    "background": "A farmer is transporting cows to a nearby farm and must decide on the mix of helicopters and trucks to use based on the capacity of each transport type and their associated pollution levels to minimize the total pollution produced.",
+    "constraints": [
+        "Number of helicopter trips is non-negative",
+        "Number of truck trips is non-negative",
+        "Total number of cows transported is at least TotalCows",
+        "Total number of truck trips is at most MaxTruckTrips"
+    ],
+    "objective": "Minimize the total amount of pollution produced by the transportation of cows",
+    "description": "A farmer decides to move his cows to a nearby farm using helicopters and trucks. A helicopter can take \\param{CowsPerHelicopter} cows per trip and creates \\param{PollutionPerHelicopter} units of pollution. A truck can take \\param{CowsPerTruck} cows per trip and creates \\param{PollutionPerTruck} units of pollution. The farmer needs to transport \\param{TotalCows} cows and he only has enough money for at most \\param{MaxTruckTrips} truck trips. How many of each type of trip should be taken to minimize the total amount of pollution produced?",
+    "parameters": [
+        {
+            "definition": "Number of cows per helicopter trip",
+            "symbol": "CowsPerHelicopter",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units created by one helicopter trip",
+            "symbol": "PollutionPerHelicopter",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of cows per truck trip",
+            "symbol": "CowsPerTruck",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units created by one truck trip",
+            "symbol": "PollutionPerTruck",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Total number of cows to transport",
+            "symbol": "TotalCows",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of truck trips allowed",
+            "symbol": "MaxTruckTrips",
+            "value": 8,
+            "shape": []
+        }
+    ]
+}

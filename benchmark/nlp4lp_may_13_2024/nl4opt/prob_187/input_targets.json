@@ -1,0 +1,39 @@
+{
+    "background": "A farmer needs to transport boxes of corn to the mainland using two transportation methods: ferry and light rail. Each method has a different capacity and there is a requirement for the minimum ratio of rail trips to ferry trips.",
+    "constraints": [
+        "Number of ferry trips is non-negative",
+        "Number of light rail trips is non-negative",
+        "Number of boxes per ferry trip is bounded by FerryCapacity",
+        "Number of boxes per light rail trip is bounded by RailCapacity",
+        "Number of light rail trips must be at least MinRailToFerryRatio times the number of ferry trips",
+        "At least MinCornBoxes boxes of corn must be sent"
+    ],
+    "objective": "Minimize the total number of ferry and light rail trips",
+    "description": "A farmer on an island sends corn to the main land either by ferry or light rail. Each ferry trip can take \\param{FerryCapacity} boxes of corn while each light rail trip can take \\param{RailCapacity} boxes of corn. Since ferry trips are slow, the number of light rail trip has to be at least \\param{MinRailToFerryRatio} times the number of ferry trips. If the farmer wants to send at least \\param{MinCornBoxes} boxes of corn, minimize the total number of trips of either type needed.",
+    "parameters": [
+        {
+            "definition": "Maximum number of boxes of corn per ferry trip",
+            "symbol": "FerryCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of boxes of corn per light rail trip",
+            "symbol": "RailCapacity",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of light rail trips to ferry trips",
+            "symbol": "MinRailToFerryRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of boxes of corn to send",
+            "symbol": "MinCornBoxes",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

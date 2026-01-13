@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum capacity of a truck",
+            "symbol": "TruckCapacity",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Cost per truck trip",
+            "symbol": "TruckCost",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum capacity of a van",
+            "symbol": "VanCapacity",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Cost per van trip",
+            "symbol": "VanCost",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of patties to ship",
+            "symbol": "MinPatties",
+            "value": 50000,
+            "shape": []
+        },
+        {
+            "definition": "Budget for shipments",
+            "symbol": "Budget",
+            "value": 12500,
+            "shape": []
+        }
+    ],
+    "description": "A meat shop ships their burger patties using refrigerated trucks and vans. Each truck can take \\param{TruckCapacity} patties at a cost of \\param{TruckCost} per trip. Each van can take \\param{VanCapacity} patties at a cost of \\param{VanCost} per trip. Because the trucks have difficulty moving around in the city, the number of trucks must not exceed the number of vans. The meat shop has to ship at least \\param{MinPatties} patties and they have a budget of \\param{Budget}. How should they plan their shipment to minimize the total number of trips?"
+}

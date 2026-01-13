@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of protein in one smoothie",
+            "symbol": "ProteinSmoothie",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Calories in one smoothie",
+            "symbol": "CaloriesSmoothie",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Units of protein in one protein bar",
+            "symbol": "ProteinBar",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Calories in one protein bar",
+            "symbol": "CaloriesBar",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "The ratio of the quantity of protein bars to smoothies",
+            "symbol": "RatioBarsSmoothies",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum calorie intake",
+            "symbol": "MaxCalories",
+            "value": 2000,
+            "shape": []
+        }
+    ],
+    "description": "A woman on a diet needs to eat two types of meal preps, a smoothie and a protein bar. Each smoothie contains \\param{ProteinSmoothie} units of protein and \\param{CaloriesSmoothie} calories. Each protein bar contains \\param{ProteinBar} units of protein and \\param{CaloriesBar} calories. The woman must eat \\param{RatioBarsSmoothies} times more protein bars than smoothies. If the woman can consume at most \\param{MaxCalories} calories, how many of each should she eat or drink to maximize her protein intake?"
+}

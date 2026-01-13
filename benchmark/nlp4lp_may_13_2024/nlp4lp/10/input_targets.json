@@ -1,0 +1,39 @@
+{
+    "background": "The problem focuses on finding the optimal powers for a set of lamps such that the illumination provided by the lamps has the minimum absolute error compared to the desired illumination levels. The relationship between lamp powers and their resulting illumination at various points is quantified by given coefficients.",
+    "constraints": [
+        "Lamp powers are non-negative"
+    ],
+    "objective": "Minimize the absolute error between the actual illumination levels and the desired illumination levels",
+    "description": "Find the lamp powers \\param{power_j} that minimize the absolute error between the illuminations \\param{ill_i} and the desired illuminations \\param{DesiredIlluminations}. The relationship between the lamp powers and the illuminations is given by coefficients \\param{Coefficients}.",
+    "parameters": [
+        {
+            "definition": "Number of different illuminations",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of lamp powers",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Coefficients relating lamp powers to illumination",
+            "symbol": "Coefficients",
+            "value": "",
+            "shape": [
+                "N",
+                "M"
+            ]
+        },
+        {
+            "definition": "Desired level of illuminations",
+            "symbol": "DesiredIlluminations",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        }
+    ]
+}

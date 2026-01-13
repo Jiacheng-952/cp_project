@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of materials required to make one basketball",
+            "symbol": "MaterialBasketball",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Hours required to make one basketball",
+            "symbol": "HourBasketball",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Units of materials required to make one football",
+            "symbol": "MaterialFootball",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Hours required to make one football",
+            "symbol": "HourFootball",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of materials",
+            "symbol": "TotalMaterial",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Total available working hours",
+            "symbol": "TotalHours",
+            "value": 750,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of basketballs to footballs",
+            "symbol": "BasketballFootballRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of footballs to produce",
+            "symbol": "MinFootballs",
+            "value": 50,
+            "shape": []
+        }
+    ],
+    "description": "A handmade sports equipment manufacturing company makes basketballs and footballs. Basketballs require \\param{MaterialBasketball} units of materials and \\param{HourBasketball} hour to make whereas footballs require \\param{MaterialFootball} units of materials and \\param{HourFootball} hours to make. The manufacturing company has available \\param{TotalMaterial} units of materials and their workers working at max capacity can work for at most \\param{TotalHours} hours. Since basketballs sell better, there must be at least \\param{BasketballFootballRatio} times as many basketballs as footballs but the manufacturing company would like at least \\param{MinFootballs} footballs. How many of each should the manufacturing company make to maximize the total number of sports equipment produced?"
+}

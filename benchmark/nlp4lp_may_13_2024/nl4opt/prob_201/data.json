@@ -1,0 +1,10 @@
+{
+    "ProfitRefrigerator": 400,
+    "ProfitStove": 260,
+    "MoverTimeRefrigerator": 60,
+    "MoverTimeStove": 45,
+    "SetupTimeRefrigerator": 20,
+    "SetupTimeStove": 25,
+    "TotalMoverTime": 20000,
+    "TotalSetupTime": 13000
+}

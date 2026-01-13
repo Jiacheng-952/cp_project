@@ -1,0 +1,7 @@
+{
+    "ContainerCapacity": 30,
+    "TruckCapacity": 40,
+    "TruckContainerRatio": 0.5,
+    "MinimumUnits": 2000,
+    "MinimumContainers": 15
+}

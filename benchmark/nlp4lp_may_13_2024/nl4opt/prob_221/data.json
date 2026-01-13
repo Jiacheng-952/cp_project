@@ -1,0 +1,8 @@
+{
+    "PersonalLicenseCost": 550,
+    "CommercialLicenseCost": 2000,
+    "MaxLicenses": 300,
+    "PersonalLicenseProfit": 450,
+    "CommercialLicenseProfit": 1200,
+    "TotalCostLimit": 400000
+}

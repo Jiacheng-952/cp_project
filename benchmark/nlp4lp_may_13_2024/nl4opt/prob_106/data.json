@@ -1,0 +1,11 @@
+{
+    "AllergyPillsFactory1": 20,
+    "FeverPillsFactory1": 15,
+    "AllergyPillsFactory2": 10,
+    "FeverPillsFactory2": 30,
+    "CompoundFactory1": 20,
+    "CompoundFactory2": 30,
+    "TotalCompound": 1000,
+    "MinAllergyPills": 700,
+    "MinFeverPills": 600
+}

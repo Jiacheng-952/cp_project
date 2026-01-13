@@ -1,0 +1,68 @@
+{
+    "background": "A navy ship is preparing meals to ensure sufficient vitamin and fibre intake for their staff, using only salads and fruit bowls.",
+    "constraints": [
+        "Each staff must receive at least V units of vitamins",
+        "Each staff must receive at least F units of fibre",
+        "Each staff is limited to a maximum proportion of MaxFruitBowlProportion of their total meals as fruit bowls",
+        "Number of salads prepared for each staff is non-negative",
+        "Number of fruit bowls prepared for each staff is non-negative"
+    ],
+    "objective": "Maximize the potassium intake (KSalad units per salad and KFruitBowl units per fruit bowl) for each staff",
+    "description": "A navy ship is stocking food onto their submarine and their staff can eat either a salad or fruit bowl for their fibre and vitamin intake. The nutritionist in charge of this voyage needs to ensure that their staff gets at least \\param{V} units of vitamin and \\param{F} units of fibre each. Each salad contains \\param{VSalad} units of vitamins and \\param{FSalad} units of fibre. Each fruit bowl contains \\param{VFruitBowl} units of vitamin and \\param{FFruitBowl} units of fibre. In addition, since fruit bowls take longer to prepare, at most \\param{MaxFruitBowlProportion} of their meals should be fruit bowls. If each salad contains \\param{KSalad} units of potassium and each fruit bowl contains \\param{KFruitBowl} units of potassium, how many of each should they prepare for each staff to maximize their potassium intake?",
+    "parameters": [
+        {
+            "definition": "Minimum units of vitamin intake required per staff",
+            "symbol": "V",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of fibre intake required per staff",
+            "symbol": "F",
+            "value": 110,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamins in one salad",
+            "symbol": "VSalad",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of fibre in one salad",
+            "symbol": "FSalad",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamins in one fruit bowl",
+            "symbol": "VFruitBowl",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of fibre in one fruit bowl",
+            "symbol": "FFruitBowl",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of meals that can be fruit bowls",
+            "symbol": "MaxFruitBowlProportion",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Units of potassium in one salad",
+            "symbol": "KSalad",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of potassium in one fruit bowl",
+            "symbol": "KFruitBowl",
+            "value": 8,
+            "shape": []
+        }
+    ]
+}

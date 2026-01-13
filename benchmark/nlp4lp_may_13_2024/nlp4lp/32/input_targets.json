@@ -1,0 +1,29 @@
+{
+    "background": "The problem is to identify the parameters of a linear model that fits the observed x and y data points in such a way that the maximum deviation of the observed y values from the predicted y values is minimized.",
+    "constraints": [
+        "The deviation is the absolute difference between predicted y values and observed y values",
+        "Deviation should be minimized for all K observed values"
+    ],
+    "objective": "Minimize the maximum deviation of all K observed values from the predicted y values",
+    "description": "Fit the \u2018best\u2019 straight line y = bx + a where the objective is to minimize the maximum deviation of all the \\param{K} observed values of \\param{Y} from the value predicted by the linear relationship. The observed values of y are given by \\param{Y} and the observed values of x are given by \\param{X}.",
+    "parameters": [
+        {
+            "definition": "Number of observed data points",
+            "symbol": "NumObs",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Observed values of y",
+            "symbol": "Y",
+            "value": "",
+            "shape": ["NumObs"]
+        },
+        {
+            "definition": "Observed values of x",
+            "symbol": "X",
+            "value": "",
+            "shape": ["NumObs"]
+        }
+    ]
+}

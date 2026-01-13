@@ -1,0 +1,42 @@
+{
+    "background": "The goal is to maximize the total units of currency through transactions with starting quantities, transaction limits for each currency, and defined exchange rates.",
+    "constraints": [
+        "Number of transactions for each currency is non-negative",
+        "Number of transactions for each currency does not exceed the specified Limit"
+    ],
+    "objective": "Maximize the final total number of units of currency N",
+    "description": "The objective is to maximize the number of units of currency \\param{N} that we end up with at the end of the day, through a sequence of currency transactions. We start with a certain amount \\param{Start} for each currency, there is a limit \\param{Limit} to the number of transactions we can perform for each currency, and the exchange rates are given by \\param{Rate}.",
+    "parameters": [
+        {
+            "definition": "Number of different currencies",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Initial amount of currency i",
+            "symbol": "Start",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Limit for the number of transactions for currency i",
+            "symbol": "Limit",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Exchange rate from currency i to currency j",
+            "symbol": "Rate",
+            "value": "",
+            "shape": [
+                "N",
+                "N"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "The capacity of a van",
+            "symbol": "VanCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "The capacity of a truck",
+            "symbol": "TruckCapacity",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Cost per van trip",
+            "symbol": "VanCost",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Cost per truck trip",
+            "symbol": "TruckCost",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of boxes to transport",
+            "symbol": "MinBoxes",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Budget for transportation",
+            "symbol": "Budget",
+            "value": 1000,
+            "shape": []
+        }
+    ],
+    "description": "A chocolate company can transport their boxes of chocolate either using their own vans or by renting trucks. Their vans can transport \\param{VanCapacity} boxes per trip while a truck can transport \\param{TruckCapacity} boxes per trip. Since they own their vans, the cost per van trip is \\param{VanCost} while the cost per truck trip is \\param{TruckCost}. The company needs to transport at least \\param{MinBoxes} boxes of chocolate and they have a budget of \\param{Budget}. Since the vans also provide advertising, the number of trips by van must be larger than the number of trips by trucks. How many of trip by each should be done to minimize the total number of trips?"
+}

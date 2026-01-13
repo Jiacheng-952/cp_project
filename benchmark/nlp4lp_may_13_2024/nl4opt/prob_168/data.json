@@ -1,0 +1,6 @@
+{
+    "ScooterCapacity": 2,
+    "RickshawCapacity": 3,
+    "MaxRickshawProportion": 0.4,
+    "MinVisitors": 300
+}

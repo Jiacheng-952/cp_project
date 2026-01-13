@@ -1,0 +1,9 @@
+{
+    "GoatMeatPerGoatCurry": 3,
+    "CurryBasePerGoatCurry": 6,
+    "ChickenMeatPerChickenCurry": 5,
+    "CurryBasePerChickenCurry": 5,
+    "TotalGoatMeat": 1500,
+    "TotalChickenMeat": 2000,
+    "MinChickenCurryProportion": 0.25
+}

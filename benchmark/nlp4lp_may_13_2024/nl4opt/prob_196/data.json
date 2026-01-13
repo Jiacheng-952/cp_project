@@ -1,0 +1,5 @@
+{
+    "LargeShipCapacity": 500,
+    "SmallShipCapacity": 200,
+    "MinContainers": 3000
+}

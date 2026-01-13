@@ -1,0 +1,56 @@
+{
+    "background": "An amusement park operates two types of games, throwing and climbing games. The games differ in customer attraction rates and operating costs, and there is a requirement to have more throwing games than climbing games.",
+    "constraints": [
+        "Number of throwing games is at least R times the number of climbing games",
+        "At least MinClimbingGames are climbing games",
+        "Total cost in prizes per hour does not exceed MaxPrizeCost",
+        "Number of throwing games is non-negative",
+        "Number of climbing games is non-negative"
+    ],
+    "objective": "Maximize the total number of customers attracted every hour",
+    "description": "An amusement park has two types of games: throwing and climbing games. Throwing games attract \\param{Ct} customers every hour and climbing games attract \\param{Cc} customers every hour. Throwing games costs the amusement park \\param{Pt} in prizes per hour whereas climbing games cost \\param{Pc} in prizes per hour. Since throwing games yield the most profit, there must be at least \\param{R} times as many throwing games as climbing games. However, at least \\param{MinClimbingGames} games must be climbing. If the amusement park can have at most \\param{MaxPrizeCost} in prizes every hour, maximize the total number of customers attracted every hour.",
+    "parameters": [
+        {
+            "definition": "Number of customers per hour for throwing games",
+            "symbol": "Ct",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Number of customers per hour for climbing games",
+            "symbol": "Cc",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Cost of prizes per hour for throwing games",
+            "symbol": "Pt",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Cost of prizes per hour for climbing games",
+            "symbol": "Pc",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of throwing games to climbing games",
+            "symbol": "R",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of climbing games",
+            "symbol": "MinClimbingGames",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total cost of prizes per hour",
+            "symbol": "MaxPrizeCost",
+            "value": 100,
+            "shape": []
+        }
+    ]
+}

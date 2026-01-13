@@ -1,0 +1,67 @@
+{
+    "background": "Elm Furniture produces chairs and dressers, generating profit from each.",
+    "constraints": [
+        "Number of chairs is an integer",
+        "Number of dressers is an integer",
+        "Number of chairs is non-negative",
+        "Number of dressers is non-negative",
+        "Total stain used for chairs and dressers cannot exceed TotalStain gallons per week",
+        "Total oak wood used for chairs and dressers cannot exceed TotalOak lengths per week",
+        "Each chair requires StainPerChair gallons of stain",
+        "Each dresser requires StainPerDresser gallons of stain",
+        "Each chair requires OakPerChair lengths of oak wood",
+        "Each dresser requires OakPerDresser lengths of oak wood"
+    ],
+    "objective": "Maximize the total profit from chairs and dressers",
+    "description": "A chair produced by Elm Furniture yields a profit of \\var{ProfitChair}, while every dresser yields a \\var{ProfitDresser} profit. Each week, \\var{TotalStain} gallons of stain and \\var{TotalOak} lengths of oak wood are available. Each chair requires \\var{StainPerChair} gallons of stain and \\var{OakPerChair} lengths of oak wood, while each dresser requires \\var{StainPerDresser} gallons of stain and \\var{OakPerDresser} lengths of oak wood. Determine the maximum profit.",
+    "parameters": [
+        {
+            "definition": "Profit for each chair produced",
+            "symbol": "ProfitChair",
+            "value": 43,
+            "shape": []
+        },
+        {
+            "definition": "Profit for each dresser produced",
+            "symbol": "ProfitDresser",
+            "value": 52,
+            "shape": []
+        },
+        {
+            "definition": "Total gallons of stain available per week",
+            "symbol": "TotalStain",
+            "value": 17,
+            "shape": []
+        },
+        {
+            "definition": "Total lengths of oak wood available per week",
+            "symbol": "TotalOak",
+            "value": 11,
+            "shape": []
+        },
+        {
+            "definition": "Amount of stain required for one chair",
+            "symbol": "StainPerChair",
+            "value": 1.4,
+            "shape": []
+        },
+        {
+            "definition": "Amount of oak wood required for one chair",
+            "symbol": "OakPerChair",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Amount of stain required for one dresser",
+            "symbol": "StainPerDresser",
+            "value": 1.1,
+            "shape": []
+        },
+        {
+            "definition": "Amount of oak wood required for one dresser",
+            "symbol": "OakPerDresser",
+            "value": 3,
+            "shape": []
+        }
+    ]
+}

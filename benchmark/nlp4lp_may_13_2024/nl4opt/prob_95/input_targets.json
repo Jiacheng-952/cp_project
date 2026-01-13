@@ -1,0 +1,68 @@
+{
+    "background": "A mining company has a fixed amount of mining sites and must decide on the proportion of land to allocate to two different mining techniques, considering production capacity, waste generation, and machine availability.",
+    "constraints": [
+        "Total land used for heap leaching and vat leaching must not exceed A square miles",
+        "Number of machines used for heap leaching plus those used for vat leaching must not exceed MachinesAvailable",
+        "Total wastewater produced by both leaching techniques must not exceed WasteLimit tons daily",
+        "The area allocated to heap leaching is non-negative",
+        "The area allocated to vat leaching is non-negative"
+    ],
+    "objective": "Maximize the daily production of rare earth oxide",
+    "description": "A mining company has available a total of \\param{A} square miles of mining sites and considering the use of two mining techniques: heap leaching and vat leaching. For each square mile of land, heap leaching technique can have a daily production of \\param{HeapProduction} tons of rare earth oxide per square miles but it also creates \\param{HeapWaste} tons of polluted wastewater and requires \\param{HeapMachines} extraction machines. On the other hand, vat leaching technique produces \\param{VatProduction} tons of rare earth oxide per square miles per day while creating \\param{VatWaste} tons of polluted wastewater and requiring \\param{VatMachines} extraction machines. There are \\param{MachinesAvailable} machines available and due to environmental regulations, the amount of polluted wastewater must be at most \\param{WasteLimit} tons daily. Find the proportion of lands that use each mining technique in order to maximize the daily production of rare earth oxide.",
+    "parameters": [
+        {
+            "definition": "Total area of mining sites",
+            "symbol": "A",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Daily production of rare earth oxide per square mile using heap leaching technique",
+            "symbol": "HeapProduction",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Daily production of polluted wastewater per square mile using heap leaching technique",
+            "symbol": "HeapWaste",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Number of extraction machines required per square mile using heap leaching technique",
+            "symbol": "HeapMachines",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Daily production of rare earth oxide per square mile using vat leaching technique",
+            "symbol": "VatProduction",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Daily production of polluted wastewater per square mile using vat leaching technique",
+            "symbol": "VatWaste",
+            "value": 17,
+            "shape": []
+        },
+        {
+            "definition": "Number of extraction machines required per square mile using vat leaching technique",
+            "symbol": "VatMachines",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total number of extraction machines available",
+            "symbol": "MachinesAvailable",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum daily production of polluted wastewater allowed by environmental regulations",
+            "symbol": "WasteLimit",
+            "value": 90,
+            "shape": []
+        }
+    ]
+}

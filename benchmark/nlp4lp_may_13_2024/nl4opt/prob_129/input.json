@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time taken for one throat swab",
+            "symbol": "ThroatSwabTime",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for one nasal swab",
+            "symbol": "NasalSwabTime",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of nasal swabs to be administered",
+            "symbol": "MinNasalSwabs",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of throat swabs to nasal swabs",
+            "symbol": "ThroatNasalRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Total operational time in minutes",
+            "symbol": "TotalTime",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "A clinic is conducting throat or nasal swabs on each patient. A throat swab takes \\param{ThroatSwabTime} minutes while a nasal swab takes \\param{NasalSwabTime} minutes. The clinic must administer at least \\param{MinNasalSwabs} nasal swabs. Since the nasal swab is more uncomfortable, at least \\param{ThroatNasalRatio} times as many throat swabs must be done as nasal swabs. If the clinic is only operational for \\param{TotalTime} minutes, how many of each swab should be done to maximize the number of patients seen?"
+}

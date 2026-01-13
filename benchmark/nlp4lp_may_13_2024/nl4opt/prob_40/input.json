@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Total acres of land available for potatoes and cucumbers",
+            "symbol": "TotalAcres",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres required to grow potatoes",
+            "symbol": "MinPotatoes",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres required to grow cucumbers",
+            "symbol": "MinCucumbers",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of cucumbers to potatoes",
+            "symbol": "MaxRatioCucPot",
+            "value": 2.0,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of potatoes",
+            "symbol": "ProfitPotatoes",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of cucumbers",
+            "symbol": "ProfitCucumbers",
+            "value": 650,
+            "shape": []
+        }
+    ],
+    "description": "Mark has \\param{TotalAcres} acres of land available to grow potatoes and cucumbers that he sells at a farmers' market. He must grow at least \\param{MinPotatoes} acres of potatoes and \\param{MinCucumbers} acres of cucumbers to meet his contract. Mark prefers to grow more cucumbers than potatoes, but he only has enough resources to grow at most twice the amount of cucumbers as potatoes, which is \\param{MaxRatioCucPot} times the acres of potatoes. If the profit per acre of potatoes is \\$\\param{ProfitPotatoes} and the profit per acre of cucumbers is \\$\\param{ProfitCucumbers}, how many acres of each should he grow to maximize his profit? What is that profit?"
+}

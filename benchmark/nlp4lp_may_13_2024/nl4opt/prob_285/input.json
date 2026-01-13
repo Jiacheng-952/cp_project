@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Visitor capacity per day for the wide trail",
+            "symbol": "WideCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Visitor capacity per day for the narrow trail",
+            "symbol": "NarrowCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of garbage introduced by one wide trail",
+            "symbol": "WideGarbage",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of garbage introduced by one narrow trail",
+            "symbol": "NarrowGarbage",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of wide trails allowed",
+            "symbol": "MaxWideTrails",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total visitor capacity per day",
+            "symbol": "MaxCapacity",
+            "value": 225,
+            "shape": []
+        }
+    ],
+    "description": "A park is designing their trails and can either create a wide trail or a narrow trail. A wide trail can take \\param{WideCapacity} visitors every day while the narrow trail expects \\param{NarrowCapacity} visitors every day. The wide trail will introduce \\param{WideGarbage} units of garbage and the narrow trail will introduce \\param{NarrowGarbage} units of garbage. There can be at most \\param{MaxWideTrails} wide trails and the park hopes to have at most \\param{MaxCapacity} visitors every day. How many of each type of trail should the park construct to minimize the total amount of garbage produced."
+}

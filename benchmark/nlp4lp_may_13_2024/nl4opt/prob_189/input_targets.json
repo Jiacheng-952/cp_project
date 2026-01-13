@@ -1,0 +1,50 @@
+{
+    "background": "A chemical company needs to transport hydrogen using two methods: high pressure tube trailers and liquefied hydrogen tankers, with different capacities and costs, aiming to fulfill a minimum volume and a budget constraint while minimizing the total number of trips.",
+    "constraints": [
+        "Number of high pressure tube trailers used is non-negative",
+        "Number of liquefied hydrogen tankers used is non-negative",
+        "Total transported volume must be at least MinVolume cubic meters",
+        "Total cost cannot exceed Budget",
+        "Number of high pressure tube trailer trips is less than number of liquefied hydrogen tanker trips"
+    ],
+    "objective": "Minimize the total number of transportation trips",
+    "description": "A chemical company is transporting their hydrogen using two different methods, high pressure tube trailers and liquefied hydrogen tankers. The first method is a high-pressure tube trailer which can transport \\param{TubeCapacity} cubic meters each per trip at a cost of \\param{TubeCost}. The second method is using liquefied hydrogen tankers which can transport \\param{TankerCapacity} cubic meters each per trip at a cost of \\param{TankerCost}. The company needs to transport at least \\param{MinVolume} cubic meters of hydrogen and they have a budget of \\param{Budget} available. In addition, the number of transports done by the high pressure tube trailer method has to be less than the number of transports done by the liquefied hydrogen tanker method. How many of each transportation method should they use to minimize the total number of trips?",
+    "parameters": [
+        {
+            "definition": "Capacity of high-pressure tube trailer per trip",
+            "symbol": "TubeCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Cost of using the high-pressure tube trailer per trip",
+            "symbol": "TubeCost",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of liquefied hydrogen tanker per trip",
+            "symbol": "TankerCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Cost of using the liquefied hydrogen tanker per trip",
+            "symbol": "TankerCost",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total volume of hydrogen to be transported",
+            "symbol": "MinVolume",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Available budget for transportation",
+            "symbol": "Budget",
+            "value": 3750,
+            "shape": []
+        }
+    ]
+}

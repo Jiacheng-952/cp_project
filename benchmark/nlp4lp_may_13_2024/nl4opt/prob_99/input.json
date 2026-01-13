@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of peach flavoring required to produce one pack of peach flavored candy",
+            "symbol": "PeachRequirement",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of special syrup required to produce one pack of peach flavored candy",
+            "symbol": "PeachSyrup",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of cherry flavoring required to produce one pack of cherry flavored candy",
+            "symbol": "CherryRequirement",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of special syrup required to produce one pack of cherry flavored candy",
+            "symbol": "CherrySyrup",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of peach flavoring",
+            "symbol": "TotalPeach",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of cherry flavoring",
+            "symbol": "TotalCherry",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of the total packs that must be cherry flavored",
+            "symbol": "MinimumCherryPercentage",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A candy company is making peach flavored candy and cherry flavored candy. Each pack of peach flavored candy requires \\param{PeachRequirement} units of peach flavoring and \\param{PeachSyrup} units of special syrup. Each pack of cherry flavored candy requires \\param{CherryRequirement} units of cherry flavoring and \\param{CherrySyrup} units of special syrup. The company has available \\param{TotalPeach} units of peach flavoring and \\param{TotalCherry} units of cherry flavoring. Peach candy is much more popular and thus the number of peach candy packs must be larger than the number of cherry candy packs. In addition, at least \\param{MinimumCherryPercentage} of the pack must be cherry flavored. How many of each should be made to minimize the total amount of special syrup used?"
+}

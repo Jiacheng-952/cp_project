@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time for one unit of sulfate to be effective",
+            "symbol": "SulfateTime",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Time for one unit of ginger to be effective",
+            "symbol": "GingerTime",
+            "value": 0.75,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of sulfate",
+            "symbol": "MinSulfate",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total required units of ingredients",
+            "symbol": "TotalUnits",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of sulfate to ginger",
+            "symbol": "MaxSulfateGingerRatio",
+            "value": 2.0,
+            "shape": []
+        }
+    ],
+    "description": "Both sulfate and ginger need to be added to a shampoo. One unit of sulfate takes \\param{SulfateTime} minutes to be effective while one unit of ginger takes \\param{GingerTime} minutes to be effective. The shampoo must contain at least \\param{MinSulfate} units of sulfates and a total of \\param{TotalUnits} units of both ingredients. Since too much sulfate can damage the hair, there can be at most \\param{MaxSulfateGingerRatio} times the amount of sulfate as ginger in the shampoo. How many units of each should be added to the shampoo to minimize the total amount of time it takes for the mixture to be effective? (Note: one must be added before the other)"
+}

@@ -1,0 +1,27 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of shifts for which officers are needed",
+            "symbol": "S",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of officers needed for shift s",
+            "symbol": "OfficersNeeded",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        },
+        {
+            "definition": "Cost of assigning an officer to shift s",
+            "symbol": "ShiftCosts",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        }
+    ],
+    "description": "How many officers should the town assign to each shift in order to minimize the total cost, given that there are S shifts, defined by the number of officers needed for each shift \\param{OfficersNeeded}, and the respective costs of assigning an officer to each shift \\param{ShiftCosts}?"
+}

@@ -1,0 +1,9 @@
+{
+    "CarrierCapacity": 2,
+    "OwlCapacity": 5,
+    "MaxOwlPercentage": 0.4,
+    "TotalTreats": 1000,
+    "TreatsPerCarrier": 3,
+    "TreatsPerOwl": 5,
+    "MinCarrierPigeons": 20
+}

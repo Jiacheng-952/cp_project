@@ -1,0 +1,10 @@
+{
+    "MetalJ": 5,
+    "WaterJ": 8,
+    "PollutionJ": 3,
+    "MetalP": 9,
+    "WaterP": 6,
+    "PollutionP": 5,
+    "MaxWater": 1500,
+    "MaxPollution": 1350
+}

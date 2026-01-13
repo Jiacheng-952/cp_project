@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Total amount of money Mr. Roberts has for investment",
+            "symbol": "TotalInvestment",
+            "value": 100000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount that can be invested in telecom",
+            "symbol": "MaxTelecomInvestment",
+            "value": 70000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of investment in telecom compared to healthcare",
+            "symbol": "MinTelecomRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for the telecom investment",
+            "symbol": "ProfitTelecom",
+            "value": 0.03,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for the healthcare investment",
+            "symbol": "ProfitHealthcare",
+            "value": 0.01,
+            "shape": []
+        }
+    ],
+    "description": "Mr. Roberts wants to invest in the telecom and healthcare industries. He has \\param{TotalInvestment} to invest. He has decided that the amount invested in telecom be at least \\param{MinTelecomRatio} times as much as the amount invested in healthcare. But the money invested in telecom must be at most \\param{MaxTelecomInvestment}. If investments in telecom earn \\param{ProfitTelecom} and investments in healthcare earn \\param{ProfitHealthcare}, how much should Mr. Roberts invest in each to maximize profit?"
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of vitamin D in one box of orange juice",
+            "symbol": "VitaminDOrange",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin C in one box of orange juice",
+            "symbol": "VitaminCOrange",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin D in one box of apple juice",
+            "symbol": "VitaminDApple",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin C in one box of apple juice",
+            "symbol": "VitaminCApple",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of boxes of apple juice to orange juice",
+            "symbol": "MinRatioAppleToOrange",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of orange juice boxes the scientist must drink",
+            "symbol": "MinOrange",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of vitamin C the scientist can consume",
+            "symbol": "MaxVitaminC",
+            "value": 300,
+            "shape": []
+        }
+    ],
+    "description": "A scientist in the arctic needs to get enough vitamin D and vitamin C in his diet by drinking orange and apple juice. Each box of orange juice contains \\param{VitaminDOrange} units of vitamin D and \\param{VitaminCOrange} units of vitamin C. Each box of apple juice contains \\param{VitaminDApple} units of vitamin D and \\param{VitaminCApple} units of vitamin C. Since the scientist prefers apple juice, he must drink at least \\param{MinRatioAppleToOrange} times as many apple juice boxes as orange juice boxes. However, he must also drink at least \\param{MinOrange} orange juice boxes. To avoid a vitamin C overdose, the scientist can consume at most \\param{MaxVitaminC} units of vitamin C. How many of each juice box should he drink to maximize his total vitamin D intake?"
+}

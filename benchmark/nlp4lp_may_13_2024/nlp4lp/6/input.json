@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Initial position of the object",
+            "symbol": "InitialPosition",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Initial velocity of the object",
+            "symbol": "InitialVelocity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Final position of the object",
+            "symbol": "FinalPosition",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Final velocity of the object",
+            "symbol": "FinalVelocity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total time over which the object is moving",
+            "symbol": "TotalTime",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "The objective is to minimize the total fuel \\sum_{t=0}^{\\param{TotalTime}-1} |\\param{a_t}| spent subject to the initial position \\param{InitialPosition}, initial velocity \\param{InitialVelocity}, final position \\param{FinalPosition}, final velocity \\param{FinalVelocity}, and total time \\param{TotalTime}."
+}

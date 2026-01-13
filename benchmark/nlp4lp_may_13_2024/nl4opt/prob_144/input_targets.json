@@ -1,0 +1,43 @@
+{
+    "background": "A pool requires the addition of chlorine and water softener, which each take a certain amount of time to become effective. The proportion of chlorine to water softener is limited, and there is a minimum amount of chlorine required and a total amount of chemicals to be used.",
+    "constraints": [
+        "Both the number of chlorine and water softener units are non-negative",
+        "The amount of chlorine cannot exceed ChlorineSoftenerRatio times the amount of water softener",
+        "At least MinChlorine units of chlorine must be in the pool",
+        "The total chemical units added to the pool must be equal to TotalChemicals"
+    ],
+    "objective": "Minimize the total time for the pool to be ready with the required chemicals",
+    "description": "Both chlorine and water softener need to be added to a pool. One unit of chlorine takes \\param{ChlorineTime} minutes to be effective while one unit of water softener takes \\param{WaterSoftenerTime} minutes to be effective. Because too much chlorine can burn your eyes, there has to at most \\param{ChlorineSoftenerRatio} times as much chlorine as water softener in the pool. If there has to be at least \\param{MinChlorine} units of chlorine in the water and a total of \\param{TotalChemicals} units of chemicals in the water, how many units of each should be added to minimize the total time it takes for the pool to be ready? (Note: chlorine must be added before water softener or vice versa).",
+    "parameters": [
+        {
+            "definition": "Effectiveness time for one unit of chlorine",
+            "symbol": "ChlorineTime",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Effectiveness time for one unit of water softener",
+            "symbol": "WaterSoftenerTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum amount of chlorine required",
+            "symbol": "MinChlorine",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of chlorine to water softener",
+            "symbol": "ChlorineSoftenerRatio",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Total units of chemicals required in the pool",
+            "symbol": "TotalChemicals",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

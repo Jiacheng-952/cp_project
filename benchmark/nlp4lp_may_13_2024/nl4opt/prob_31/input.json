@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost to make one premium desktop",
+            "symbol": "CostPremium",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one premium desktop",
+            "symbol": "ProfitPremium",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Cost to make one regular desktop",
+            "symbol": "CostRegular",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one regular desktop",
+            "symbol": "ProfitRegular",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of desktops sold per month",
+            "symbol": "MaxDesktops",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum budget for making desktops per month",
+            "symbol": "MaxBudget",
+            "value": 300000,
+            "shape": []
+        }
+    ],
+    "description": "A electronics store sells premium desktops with more power as well as regular desktops for everyday use. Each premium desktop costs the store \\param{CostPremium} to make and yields a profit of \\param{ProfitPremium}. Each regular desktop costs the store \\param{CostRegular} to make and yields a profit of \\param{ProfitRegular}. The store sells at most \\param{MaxDesktops} desktops each month and wants to spend at most \\param{MaxBudget} on making the desktops. How many of each should be made and sold to maximize profit?"
+}

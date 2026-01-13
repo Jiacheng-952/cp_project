@@ -1,0 +1,10 @@
+{
+    "PainPillOne": 0.2,
+    "AnxietyPillOne": 0.3,
+    "DischargePillOne": 0.3,
+    "PainPillTwo": 0.6,
+    "AnxietyPillTwo": 0.2,
+    "DischargePillTwo": 0.1,
+    "MaxPainMedication": 6,
+    "MinAnxietyMedication": 3
+}

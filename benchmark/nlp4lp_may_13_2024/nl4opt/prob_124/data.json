@@ -1,0 +1,9 @@
+{
+    "MgGummy": 3,
+    "ZnGummy": 4,
+    "MgPill": 2,
+    "ZnPill": 5,
+    "MinPills": 10,
+    "GummyPillRatio": 3,
+    "MaxMg": 200
+}

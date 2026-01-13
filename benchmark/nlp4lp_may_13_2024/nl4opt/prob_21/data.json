@@ -1,0 +1,9 @@
+{
+    "MaxHours": 3000,
+    "BreadMixerHours": 1,
+    "BreadOvenHours": 3,
+    "CookieMixerHours": 0.5,
+    "CookieOvenHours": 1,
+    "ProfitBread": 5,
+    "ProfitCookies": 3
+}

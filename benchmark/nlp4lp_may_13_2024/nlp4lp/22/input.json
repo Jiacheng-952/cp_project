@@ -1,0 +1,63 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Profit for each product",
+            "symbol": "Profit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Time required to produce each product on each machine",
+            "symbol": "Time",
+            "value": "",
+            "shape": [
+                "K",
+                "M"
+            ]
+        },
+        {
+            "definition": "Downtime for each machine",
+            "symbol": "Downtime",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Limit for each product on constraints",
+            "symbol": "Limit",
+            "value": "",
+            "shape": [
+                "K",
+                "I"
+            ]
+        },
+        {
+            "definition": "Price for storing products",
+            "symbol": "StorePrice",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of products to keep in store",
+            "symbol": "KeepQuantity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of work hours available",
+            "symbol": "WorkHours",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "What maintaining, selling, storing, and manufacturing policy should the company pursue in order to maximize profit? The company has \\param{M} machines, each with a specific downtime \\param{Downtime}. There are \\param{K} products, each with an associated profit \\param{Profit} and a production time on each machine given by \\param{Time}. Products must adhere to limits given by \\param{Limit}. The price for storing products is \\param{StorePrice}, and they must keep a quantity of \\param{KeepQuantity} in the store. The company has \\param{WorkHours} work hours available for all machines combined."
+}

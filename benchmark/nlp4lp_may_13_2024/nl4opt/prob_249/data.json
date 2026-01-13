@@ -1,0 +1,8 @@
+{
+    "RetailCustomers": 200,
+    "OutletCustomers": 80,
+    "RetailEmployees": 6,
+    "OutletEmployees": 4,
+    "MinCustomers": 1200,
+    "TotalEmployees": 50
+}

@@ -1,0 +1,92 @@
+{
+    "background": "The company aims to minimize costs while managing different categories of requirements, each with varying strengths, costs associated with waste, and number of recruits.",
+    "constraints": [
+        "The company can have up to NumOverman over-managed categories, with each incurring a cost of CostOverman",
+        "The company can have up to NumShortwork short-work categories, with each incurring a cost of CostShort",
+        "Over-managed and short-work categories must be within their respective allowable limits"
+    ],
+    "objective": "Minimize the overall costs of operations under the given conditions",
+    "description": "The company\u2019s declared objective is to minimize costs. It has \\param{K} categories of requirements, with each category consisting of \\param{I} different requirements. The strength of each requirement category is denoted by \\param{Strength}, whereas the cost reductions per unit less waste in each category and the additional costs per unit more waste in each category are represented by \\param{LessOneWaste} and \\param{MoreOneWaste}, respectively. The number of recruits in each category is given by \\param{Recruit}, and the cost of redundancy per recruit in each category is \\param{CostRedundancy}. The company can allow \\param{NumOverman} over-managed categories, with each over-managed category incurring a cost of \\param{CostOverman}. Similarly, \\param{NumShortwork} short-work categories are permissible, each one resulting in a cost of \\param{CostShort}. How should they operate in order to minimize these costs?",
+    "parameters": [
+        {
+            "definition": "Number of requirements categories",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different requirements",
+            "symbol": "I",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Strength of each requirement category",
+            "symbol": "Strength",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Cost reduction per unit less waste in each category",
+            "symbol": "LessOneWaste",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Additional cost per unit more waste in each category",
+            "symbol": "MoreOneWaste",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of recruits in each category",
+            "symbol": "Recruit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Cost of redundancy per recruit in each category",
+            "symbol": "CostRedundancy",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of over-managed categories allowed",
+            "symbol": "NumOverman",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of over-managing in each category",
+            "symbol": "CostOverman",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of short-work categories allowed",
+            "symbol": "NumShortwork",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of short-work in each category",
+            "symbol": "CostShort",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of a commercial on Pi TV",
+            "symbol": "CostPiTV",
+            "value": 1200,
+            "shape": []
+        },
+        {
+            "definition": "Audience reach of a commercial on Pi TV",
+            "symbol": "ReachPiTV",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of commercials allowed on Beta Video",
+            "symbol": "MaxCommercialsBetaVideo",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Cost of a commercial on Beta Video",
+            "symbol": "CostBetaVideo",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Audience reach of a commercial on Beta Video",
+            "symbol": "ReachBetaVideo",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of a commercial on Gamma Live",
+            "symbol": "CostGammaLive",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Audience reach of a commercial on Gamma Live",
+            "symbol": "ReachGammaLive",
+            "value": 9000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of total commercials that can be on Gamma Live",
+            "symbol": "MaxPropGammaLive",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of total commercials that must be on Pi TV",
+            "symbol": "MinPropPiTV",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Weekly budget for commercials",
+            "symbol": "WeeklyBudget",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "A food company would like to run its commercials on three streaming platforms: Pi TV, Beta Video and Gamma Live. The cost for a commercial as well as the expected audience reach is given. On Pi TV, a commercial costs \\param{CostPiTV} and attracts \\param{ReachPiTV} viewers. On Beta Video, a commercial costs \\param{CostBetaVideo} and attracts \\param{ReachBetaVideo} viewers. On Gamma Live, a commercial costs \\param{CostGammaLive} and attracts \\param{ReachGammaLive} viewers. Beta Video limits the number of commercials from a single company to \\param{MaxCommercialsBetaVideo}. In order to attract a wide range of people, at most \\param{MaxPropGammaLive} of all commercials should occur on Gamma Live and a minimum of \\param{MinPropPiTV} should occur on Pi TV. If the weekly budget is \\param{WeeklyBudget}, how many commercials should be run in each of the three possible choices in order to maximize audience?"
+}

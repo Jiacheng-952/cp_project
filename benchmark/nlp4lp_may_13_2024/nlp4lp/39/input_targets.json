@@ -1,0 +1,44 @@
+{
+    "background": "The manufacturer is looking to determine the optimal combination of various alloys to produce a specified total quantity with certain target components at minimal cost.",
+    "constraints": [
+        "The total quantity of alloys produced is exactly AlloyQuantity",
+        "The quantity of each target component in the alloy must be met or exceeded",
+        "The quantity of component k in alloy m must adhere to the specified Ratio",
+        "Each alloy's quantity is non-negative"
+    ],
+    "objective": "Minimize the sum of the costs of the alloys used in the production",
+    "description": "The manufacturer wishes to find the amounts of the various alloys needed and to determine the cheapest combination given \\param{AlloyQuantity}, the total quantity of alloy to produce, \\param{Target}, the quantity of target components in the alloy, \\param{Ratio}, the ratio of each component k in alloy m, and \\param{Price}, the price of each alloy k.",
+    "parameters": [
+        {
+            "definition": "Quantity of alloy to produce",
+            "symbol": "AlloyQuantity",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of target components in the alloy",
+            "symbol": "Target",
+            "value": 0,
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Ratio of each component k in the alloy m",
+            "symbol": "Ratio",
+            "value": 0,
+            "shape": [
+                "K",
+                "M"
+            ]
+        },
+        {
+            "definition": "Price of each alloy k",
+            "symbol": "Price",
+            "value": 0,
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

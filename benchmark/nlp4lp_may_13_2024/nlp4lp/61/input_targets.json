@@ -1,0 +1,78 @@
+{
+    "background": "A logistics strategy is required to minimize the total costs associated with unloading, storage, and crane rentals while meeting demands and adhering to capacity constraints.",
+    "constraints": [
+        "Demands must be met for each time period",
+        "Unloading capacity per period cannot exceed the specified UnloadCapacity",
+        "Maximum container inventory must not exceed MaxContainer"
+    ],
+    "objective": "Minimize the total costs of UnloadCosts, HoldingCost, and CraneCost",
+    "description": "Determine a strategy to minimize costs from unloading (\\param{UnloadCosts}), storage (\\param{HoldingCost}), and crane rentals (\\param{CraneCost}) over the period. The demands over the time periods are given by \\param{Demands}, with a corresponding unloading capacity per period specified by \\param{UnloadCapacity}. The system starts with an initial inventory of containers given by \\param{InitContainer}, and the maximum container inventory is limited to \\param{MaxContainer}. The logistics also involve \\param{NumCranes} number of cranes with \\param{CraneCapacity} each to aid in the unloading process.",
+    "parameters": [
+        {
+            "definition": "The number of time periods",
+            "symbol": "T",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Demand at time t",
+            "symbol": "Demands",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Unloading cost at time t",
+            "symbol": "UnloadCosts",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Unloading capacity at time t",
+            "symbol": "UnloadCapacity",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Cost for holding containers",
+            "symbol": "HoldingCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of containers that can be held",
+            "symbol": "MaxContainer",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Initial number of containers at the start",
+            "symbol": "InitContainer",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Number of cranes available for unloading",
+            "symbol": "NumCranes",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of each crane",
+            "symbol": "CraneCapacity",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Cost for renting each crane",
+            "symbol": "CraneCost",
+            "value": 0,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "background": "A audio company makes two types of headphones: wired headphones and wireless headphones.",
+    "constraints": [
+        "Number of wired headphones is an integer",
+        "Number of wireless headphones is an integer",
+        "Number of wired headphones is non-negative",
+        "Number of wireless headphones is non-negative",
+        "The wired team can make at most MaxWired wired headphones per day",
+        "The wireless team can make at most MaxWireless wireless headphones per day",
+        "The audio testing machine can be used for at most MaxTesting headphones per day"
+    ],
+    "objective": "The company wants to maximize its profit, which is ProfitWired per wired headphone plus ProfitWireless per wireless headphone",
+    "description": "A audio company make two types of headphones: wired headphones and wireless headphones. Two different teams make each type of headphones. The wired team can make at most \\var{MaxWired} wired headphones per day and the wireless team can make at most \\var{MaxWireless} wireless headphones per day. Both teams require use of a shared audio testing machine, and this machine can be used to make a maximum of \\var{MaxTesting} headphones per day. The profit per wired headphone is \\var{ProfitWired} and the profit per wireless headphone \\var{ProfitWireless}. How many of each headphone should be made to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Maximum number of wired headphones that can be produced per day by the wired team",
+            "symbol": "MaxWired",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of wireless headphones that can be produced per day by the wireless team",
+            "symbol": "MaxWireless",
+            "value": 170,
+            "shape": []
+        },
+        {
+            "definition": "Maximum capacity of shared audio testing machine per day",
+            "symbol": "MaxTesting",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Profit per wired headphone",
+            "symbol": "ProfitWired",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Profit per wireless headphone",
+            "symbol": "ProfitWireless",
+            "value": 20,
+            "shape": []
+        }
+    ]
+}

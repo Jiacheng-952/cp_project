@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of water required by the small container",
+            "symbol": "WaterSmall",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of powdered pill required by the small container",
+            "symbol": "PillSmall",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of paste produced by the small container",
+            "symbol": "PasteSmall",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required by the large container",
+            "symbol": "WaterLarge",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of powdered pill required by the large container",
+            "symbol": "PillLarge",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of paste produced by the large container",
+            "symbol": "PasteLarge",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total units of water available",
+            "symbol": "TotalWater",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total units of powdered pill available",
+            "symbol": "TotalPill",
+            "value": 700,
+            "shape": []
+        }
+    ],
+    "description": "There are two specialized containers, a small and large one, that are used to make a pharmaceutical paste. The small container requires \\param{WaterSmall} units of water and \\param{PillSmall} units of the powdered pill to make \\param{PasteSmall} units of the paste. The large container requires \\param{WaterLarge} units of water and \\param{PillLarge} units of the powdered pill to make \\param{PasteLarge} units of the paste. The pharmacy has available \\param{TotalWater} units of water and \\param{TotalPill} units of the powdered pill. How many of each container should be used to maximize the amount of paste that can be made?"
+}

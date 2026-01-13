@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hours a nurse works per shift",
+            "symbol": "HoursNurse",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours a pharmacist works per shift",
+            "symbol": "HoursPharmacist",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a nurse per shift",
+            "symbol": "PayNurse",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a pharmacist per shift",
+            "symbol": "PayPharmacist",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total required hours of healthcare labor",
+            "symbol": "TotalHours",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for healthcare labor",
+            "symbol": "Budget",
+            "value": 9000,
+            "shape": []
+        }
+    ],
+    "description": "A clinic employs nurses and pharmacists to deliver shots to patients. A nurse works \\param{HoursNurse} hours per shift while a pharmacist works \\param{HoursPharmacist} hours per shift. Nurses are paid \\param{PayNurse} per shift while pharmacists are paid \\param{PayPharmacist} per shift. Currently, the clinic needs \\param{TotalHours} hours of healthcare labor to meet needs. If the firm has a budget of \\param{Budget}, how many of each healthcare worker should be scheduled to minimize the total number of workers?"
+}

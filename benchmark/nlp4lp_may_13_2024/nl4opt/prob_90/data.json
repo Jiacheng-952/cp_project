@@ -1,0 +1,8 @@
+{
+    "FullTimeShiftHours": 8,
+    "PartTimeShiftHours": 4,
+    "FullTimeShiftPay": 300,
+    "PartTimeShiftPay": 100,
+    "TotalLaborHours": 500,
+    "TotalBudget": 15000
+}

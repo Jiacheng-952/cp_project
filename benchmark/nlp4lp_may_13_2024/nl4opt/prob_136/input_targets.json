@@ -1,0 +1,68 @@
+{
+    "background": "A pharmaceutical company operates two labs to make heart and lung medication pills with limited labor hours and minimum production requirements for each type of pill.",
+    "constraints": [
+        "Number of hours at Lab 1 is non-negative",
+        "Number of hours at Lab 2 is non-negative",
+        "Total worker hours for both Lab 1 and Lab 2 is at most TotalWorkerHours",
+        "At least MinHeartPills heart medication pills must be produced",
+        "At least MinLungPills lung medication pills must be produced"
+    ],
+    "objective": "Minimize the total time (worker hours) needed to meet medication pill production requirements",
+    "description": "A pharmaceutical company has two labs, Lab 1 and Lab 2, where they make heart and lung medication pills. At Lab 1, they can produce \\param{HeartLab1} heart medication pills and \\param{LungLab1} lung medication pills per hour. At Lab 2, they can produce \\param{HeartLab2} heart medication pills and \\param{LungLab2} lung medication pills per hour. Each session at Lab 1 requires \\param{WorkerLab1} hours of worker labor, while each session at Lab 2 requires \\param{WorkerLab2} hours of worker labor. The company has \\param{TotalWorkerHours} worker hours available and must make at least \\param{MinHeartPills} heart medication pills and at least \\param{MinLungPills} lung medication pills. How many hours at each lab should be run to minimize the total time needed?",
+    "parameters": [
+        {
+            "definition": "Number of heart medication pills Lab 1 produces per hour",
+            "symbol": "HeartLab1",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Number of lung medication pills Lab 1 produces per hour",
+            "symbol": "LungLab1",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of heart medication pills Lab 2 produces per hour",
+            "symbol": "HeartLab2",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of lung medication pills Lab 2 produces per hour",
+            "symbol": "LungLab2",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Number of worker hours per session needed for Lab 1",
+            "symbol": "WorkerLab1",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of worker hours per session needed for Lab 2",
+            "symbol": "WorkerLab2",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total worker hours available",
+            "symbol": "TotalWorkerHours",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required heart medication pills",
+            "symbol": "MinHeartPills",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required lung medication pills",
+            "symbol": "MinLungPills",
+            "value": 30000,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "MintD1": 10,
+    "MintD2": 12,
+    "ActiveD1": 20,
+    "ActiveD2": 15,
+    "FoamD1": 25,
+    "FoamD2": 18,
+    "TarD1": 5,
+    "TarD2": 3,
+    "TotalMint": 120,
+    "TotalActive": 100,
+    "MaxTar": 50
+}

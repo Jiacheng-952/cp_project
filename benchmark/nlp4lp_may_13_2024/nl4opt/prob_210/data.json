@@ -1,0 +1,13 @@
+{
+    "RevenueLight": 550,
+    "RevenueNonSticky": 750,
+    "RevenueHeavy": 950,
+    "CompoundALight": 3,
+    "CompoundBLight": 3,
+    "CompoundANonSticky": 6,
+    "CompoundBNonSticky": 2,
+    "CompoundAHeavy": 9,
+    "CompoundBHeavy": 3,
+    "TotalCompoundA": 250,
+    "TotalCompoundB": 150
+}

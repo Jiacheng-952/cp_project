@@ -1,0 +1,10 @@
+{
+    "CaA": 30,
+    "MgA": 50,
+    "CaB": 60,
+    "MgB": 10,
+    "CostA": 14,
+    "CostB": 25,
+    "MinCa": 400,
+    "MinMg": 50
+}

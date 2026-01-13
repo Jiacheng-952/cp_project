@@ -1,0 +1,9 @@
+{
+    "MinLocals": 550,
+    "PeoplePerKayak": 4,
+    "PeoplePerMotorboat": 5,
+    "TimePerKayak": 5,
+    "TimePerMotorboat": 3,
+    "MaxMotorboatTrips": 25,
+    "MinPercentKayakTrips": 0.75
+}

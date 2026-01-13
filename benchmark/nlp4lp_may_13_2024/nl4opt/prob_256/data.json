@@ -1,0 +1,6 @@
+{
+    "TrainCapacity": 120,
+    "TramCapacity": 30,
+    "TramTrainRatio": 2,
+    "MinPeople": 600
+}

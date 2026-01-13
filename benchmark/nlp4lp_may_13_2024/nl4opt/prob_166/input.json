@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a large plane",
+            "symbol": "LargePlaneCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a small plane",
+            "symbol": "SmallPlaneCapacity",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of cars to be delivered",
+            "symbol": "MinimumCarsDelivered",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Pollution factor constraint for large planes",
+            "symbol": "PollutionRatio",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A car manufacturer ships their cars on large and small planes. A large plane can carry \\param{LargePlaneCapacity} cars while a small plane can carry \\param{SmallPlaneCapacity} cars. Since large planes cause more pollution, the number of large planes must be less than \\param{PollutionRatio} times the number of small planes. If the manufacturer wants to deliver at least \\param{MinimumCarsDelivered} cars, find the minimum number of planes that can be used."
+}

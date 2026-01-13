@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum daily usage time of the heating and cooling machines",
+            "symbol": "MaxTime",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one regular glass pane in the heating machine",
+            "symbol": "TimeRegHeat",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time to cool one regular glass pane in the cooling machine",
+            "symbol": "TimeRegCool",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one tempered glass pane in the heating machine",
+            "symbol": "TimeTempHeat",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to cool one tempered glass pane in the cooling machine",
+            "symbol": "TimeTempCool",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per regular glass pane",
+            "symbol": "ProfitReg",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per tempered glass pane",
+            "symbol": "ProfitTemp",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "A glass factory makes two types of glass panes: a regular glass pane and a tempered glass pane. Both require time on a heating and cooling machine. Both machines are available for a maximum of \\param{MaxTime} minutes per day. It takes \\param{TimeRegHeat} minutes in the heating machine and \\param{TimeRegCool} minutes in the cooling machine to make one regular glass pane. It takes \\param{TimeTempHeat} minutes in the heating machine and \\param{TimeTempCool} minutes in the cooling machine to make one tempered glass pane. The profit per pane of regular glass is \\param{ProfitReg} and the profit per pane of tempered glass is \\param{ProfitTemp}. How many panes of each glass type should the factory make to maximize profit? What is the maximum profit?"
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of cars processed per hour by an automatic electric jack",
+            "symbol": "CarsPerHourElectric",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Electrical units used per hour by an automatic electric jack",
+            "symbol": "ElectricityPerJack",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of cars processed per hour by a gas-powered jack",
+            "symbol": "CarsPerHourGas",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Gas units used per hour by a gas-powered jack",
+            "symbol": "GasPerJack",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of automatic electric jacks due to limited power outlets",
+            "symbol": "MaxElectricJacks",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of electricity available per hour",
+            "symbol": "MaxElectricity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of gas available per hour",
+            "symbol": "MaxGas",
+            "value": 80,
+            "shape": []
+        }
+    ],
+    "description": "An autobody shop needs to purchase two types of car jacks, an automatic electric one, or a gas-powered one. The automatic electric one can process \\param{CarsPerHourElectric} cars every hour and uses \\param{ElectricityPerJack} units of electricity whereas the gas-powered one can process \\param{CarsPerHourGas} cars each hour using \\param{GasPerJack} units of gas. Since there is a limit to how many automatic electric ones there can be due to the limited number of power outlets, the shop must use less than \\param{MaxElectricJacks} automatic electric ones. The shop can use at most \\param{MaxElectricity} units of electricity and \\param{MaxGas} units of gas. How many of each type of jack should the shop purchase to maximize the amount of cars processed every hour?"
+}

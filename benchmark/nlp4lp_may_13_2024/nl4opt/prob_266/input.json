@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of acai berries required to make one acai berry smoothie",
+            "symbol": "AcaiUnitsPerSmoothie",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required to make one acai berry smoothie",
+            "symbol": "WaterUnitsPerAcaiSmoothie",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of banana chocolate required to make one banana chocolate smoothie",
+            "symbol": "BananaUnitsPerSmoothie",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required to make one banana chocolate smoothie",
+            "symbol": "WaterUnitsPerBananaSmoothie",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total smoothies that must be acai berry smoothies",
+            "symbol": "MinAcaiPercentage",
+            "value": 0.35,
+            "shape": []
+        },
+        {
+            "definition": "Total units of acai berries available",
+            "symbol": "TotalAcaiUnits",
+            "value": 3500,
+            "shape": []
+        },
+        {
+            "definition": "Total units of banana chocolate available",
+            "symbol": "TotalBananaUnits",
+            "value": 3200,
+            "shape": []
+        }
+    ],
+    "description": "A smoothie shop has a promotion for their two smoothies; an acai berry smoothie and a banana chocolate smoothie. It takes \\param{AcaiUnitsPerSmoothie} units of acai berries and \\param{WaterUnitsPerAcaiSmoothie} units of water to make the acai berry smoothie. It takes \\param{BananaUnitsPerSmoothie} units of banana chocolate and \\param{WaterUnitsPerBananaSmoothie} units of water to make the banana chocolate smoothie. Banana chocolate smoothies are more popular and thus the number of banana chocolate smoothies made must be more than the number of acai berry smoothies made. However, the acai berry smoothies have a loyal customer base, and at least \\param{MinAcaiPercentage} of the smoothies made must be acai berry smoothies. If the smoothie shop has \\param{TotalAcaiUnits} units of acai berries and \\param{TotalBananaUnits} units of banana chocolate, to reduce the total amount of water, how many of each smoothie type should be made?"
+}

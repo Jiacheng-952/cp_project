@@ -1,0 +1,68 @@
+{
+    "background": "A taxi company is planning to purchase vehicles to rent to their drivers, with the option to purchase motorcycles or sedans. Each type has a specified capacity, pollution output, and potential earnings per shift.",
+    "constraints": [
+        "Number of motorcycles is non-negative",
+        "Number of sedans is non-negative",
+        "At most MaxMotorcycleProportion of the total number of vehicles can be motorcycles",
+        "The total pollution produced by all vehicles must be less than MaxPollution units",
+        "The company must be able to transport at least MinPeopleTransported people every shift"
+    ],
+    "objective": "Maximize the total earnings for the taxi company per shift",
+    "description": "A taxi company will purchase vehicles to rent to their drivers. They are interested in purchasing either motorcycles or sedans. A motorcycle can transport \\param{MotorcycleCapacity} people, produces \\param{MotorcyclePollution} units of pollution, and earns the taxi company \\param{MotorcycleEarnings} per shift. A sedan can transport \\param{SedanCapacity} people, produces \\param{SedanPollution} units of pollution, and earns the company \\param{SedanEarnings} per shift. Because not every customer is comfortable with a motorcycle, at most \\param{MaxMotorcycleProportion} of vehicles can be motorcycles. Additionally, the company has committed to producing less than \\param{MaxPollution} units of pollution. The company needs to transport at least \\param{MinPeopleTransported} people every shift. How many of each type of vehicle should be used to maximize the total earnings for the taxi company per shift?",
+    "parameters": [
+        {
+            "definition": "Number of people a motorcycle can transport per shift",
+            "symbol": "MotorcycleCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by one motorcycle per shift",
+            "symbol": "MotorcyclePollution",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Earnings from one motorcycle per shift",
+            "symbol": "MotorcycleEarnings",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Number of people a sedan can transport per shift",
+            "symbol": "SedanCapacity",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by one sedan per shift",
+            "symbol": "SedanPollution",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Earnings from one sedan per shift",
+            "symbol": "SedanEarnings",
+            "value": 225,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of motorcycles in the vehicle fleet",
+            "symbol": "MaxMotorcycleProportion",
+            "value": 0.25,
+            "shape": []
+        },
+        {
+            "definition": "Maximum pollution units the company can produce per shift",
+            "symbol": "MaxPollution",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of people the company needs to transport per shift",
+            "symbol": "MinPeopleTransported",
+            "value": 1200,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Total factory space in square feet",
+            "symbol": "S",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Labor hours required to produce one phone",
+            "symbol": "LPhone",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Labor hours required to produce one laptop",
+            "symbol": "LLaptop",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Cost per square foot of space for phone production",
+            "symbol": "CPhone",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Cost per square foot of space for laptop production",
+            "symbol": "CLaptop",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Net revenue per square foot from phone production",
+            "symbol": "RPhone",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Net revenue per square foot from laptop production",
+            "symbol": "RLaptop",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Maximum budget for production",
+            "symbol": "BudgetMax",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum labor hours available",
+            "symbol": "LaborMax",
+            "value": 2000,
+            "shape": []
+        }
+    ],
+    "description": "A suspicious factory has \\param{S} sq. feet of space. It makes bootleg phones and laptops. Phones require \\param{LPhone} hours of labor and cost \\param{CPhone} for each sq. foot of space allocated for phone production (cost of electricity and equipment). Laptops require \\param{LLaptop} hours of labor and cost \\param{CLaptop} for each sq. foot of space allocated for laptop production. Phones produce a net revenue of \\param{RPhone} per sq. foot while laptops produce a net revenue of \\param{RLaptop} per sq. foot. The factory wants to spend at most \\param{BudgetMax} and \\param{LaborMax} hours of labor. What is the optimal factory layout to maximize revenue?"
+}

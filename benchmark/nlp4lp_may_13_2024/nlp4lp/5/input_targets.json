@@ -1,0 +1,68 @@
+{
+    "background": "Paths must be established in a network of nodes where links have defined capacities and associated costs, ensuring data reach their intended destinations at specific rates.",
+    "constraints": [
+        "Data flow on a link cannot exceed its capacity",
+        "Each link's data flow must be non-negative",
+        "The sum of data rates on all links from each source node must be at least the required data rate for that source",
+        "The sum of data rates on all links to each destination node must be at least the required data rate for that destination",
+        "Flow conservation must be maintained at intermediate nodes (i.e., the amount of data entering a non-source, non-destination node on incoming links equals the data leaving on outgoing links)"
+    ],
+    "objective": "Minimize the total cost of data transmission across all links",
+    "description": "Find paths along which all data reach their intended destinations, while minimizing the total cost. The links between nodes are characterized by their capacities (\\param{Capacity}) and associated costs (\\param{Cost}), where each link i connects a start node (\\param{StartNode}_i) to an end node (\\param{EndNode}_i). There is a set number of data flow requirements (\\param{F}), each with a source node (\\param{Source}_j) and destination node (\\param{Destination}_j), and a specific data rate (\\param{DataRate}_j) that must be achieved.",
+    "parameters": [
+        {
+            "definition": "The number of links between nodes in the network.",
+            "symbol": "NumLinks",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The starting node for link ij",
+            "symbol": "StartNode",
+            "value": "",
+            "shape": ["NumLinks"]
+        },
+        {
+            "definition": "The ending node for link ij",
+            "symbol": "EndNode",
+            "value": "",
+            "shape": ["NumLinks"]
+        },
+        {
+            "definition": "The maximum capacity for link ij",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": ["NumLinks"]
+        },
+        {
+            "definition": "The cost for transporting data through link ij",
+            "symbol": "Cost",
+            "value": "",
+            "shape": ["NumLinks"]
+        },
+        {
+            "definition": "The number of data flow requirements.",
+            "symbol": "NumFlowReqs",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The source node for data flow kl",
+            "symbol": "Source",
+            "value": "",
+            "shape": ["NumFlowReqs"]
+        },
+        {
+            "definition": "The destination node for data flow kl",
+            "symbol": "Destination",
+            "value": "",
+            "shape": ["NumFlowReqs"]
+        },
+        {
+            "definition": "The rate of data flow for flow kl",
+            "symbol": "DataRate",
+            "value": "",
+            "shape": ["NumFlowReqs"]
+        }
+    ]
+}

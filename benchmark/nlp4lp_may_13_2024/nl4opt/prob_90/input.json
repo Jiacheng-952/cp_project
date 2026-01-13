@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hours per shift for full time workers",
+            "symbol": "FullTimeShiftHours",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours per shift for part time workers",
+            "symbol": "PartTimeShiftHours",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for full time workers",
+            "symbol": "FullTimeShiftPay",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for part time workers",
+            "symbol": "PartTimeShiftPay",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total required hours of labor for the project",
+            "symbol": "TotalLaborHours",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for labor on the project",
+            "symbol": "TotalBudget",
+            "value": 15000,
+            "shape": []
+        }
+    ],
+    "description": "An accounting firm employs part time workers and full time workers. Full time workers work \\param{FullTimeShiftHours} hours per shift while part time workers work \\param{PartTimeShiftHours} hours per shift. In addition, full time workers are paid \\param{FullTimeShiftPay} per shift while part time workers are paid \\param{PartTimeShiftPay} per shift. Currently, the accounting firm has a project requiring \\param{TotalLaborHours} hours of labor. If the firm has a budget of \\param{TotalBudget}, how many of each type of worker should be scheduled to minimize the total number of workers."
+}

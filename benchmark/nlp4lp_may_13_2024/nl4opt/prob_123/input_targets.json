@@ -1,0 +1,56 @@
+{
+    "background": "A pharmacy has a limited amount of morphine to produce painkillers and sleeping pills, both of which require morphine and digestive medicine. The objective is to minimize the total amount of digestive medicine used while adhering to pill production requirements.",
+    "constraints": [
+        "Total morphine used is less than or equal to TotalMorphine mg",
+        "At least MinPainkillers painkiller pills must be produced",
+        "At least MinProportionSleepingPills of the total pills produced should be sleeping pills",
+        "Number of painkiller pills is non-negative",
+        "Number of sleeping pills is non-negative"
+    ],
+    "objective": "Minimize the total amount of digestive medicine used in pill production",
+    "description": "A pharmacy has \\param{TotalMorphine} mg of morphine to make painkillers and sleeping pills. Each painkiller pill requires \\param{MorphinePainkiller} mg of morphine and \\param{DigestiveMedicinePainkiller} units of digestive medicine. Each sleeping pill requires \\param{MorphineSleepingPill} mg of morphine and \\param{DigestiveMedicineSleepingPill} units of digestive medicine. The pharmacy needs to make at least \\param{MinPainkillers} painkiller pills. Since sleeping pills are more popular, at least \\param{MinProportionSleepingPills} of the pills should be sleeping pills. How many of each should the pharmacy make to minimize the total amount of digestive medicine needed?",
+    "parameters": [
+        {
+            "definition": "Total amount of morphine available",
+            "symbol": "TotalMorphine",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of morphine required to make one painkiller pill",
+            "symbol": "MorphinePainkiller",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of morphine required to make one sleeping pill",
+            "symbol": "MorphineSleepingPill",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of digestive medicine required to make one painkiller pill",
+            "symbol": "DigestiveMedicinePainkiller",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of digestive medicine required to make one sleeping pill",
+            "symbol": "DigestiveMedicineSleepingPill",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of painkiller pills required",
+            "symbol": "MinPainkillers",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of the total pills that must be sleeping pills",
+            "symbol": "MinProportionSleepingPills",
+            "value": 0.7,
+            "shape": []
+        }
+    ]
+}

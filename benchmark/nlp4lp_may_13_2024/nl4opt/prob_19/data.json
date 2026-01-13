@@ -1,0 +1,10 @@
+{
+    "ThinShapingTime": 50,
+    "ThinBakingTime": 90,
+    "StubbyShapingTime": 30,
+    "StubbyBakingTime": 150,
+    "TotalShapingTime": 3000,
+    "TotalBakingTime": 4000,
+    "ProfitThin": 5,
+    "ProfitStubby": 9
+}

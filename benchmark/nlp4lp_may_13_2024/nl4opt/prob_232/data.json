@@ -1,0 +1,13 @@
+{
+    "PosterBoardsCircular": 4,
+    "ParticipantsCircular": 5,
+    "GuestsCircular": 8,
+    "PosterBoardsRectangular": 4,
+    "ParticipantsRectangular": 4,
+    "GuestsRectangular": 12,
+    "SpaceCircular": 15,
+    "SpaceRectangular": 20,
+    "MinParticipants": 500,
+    "MinPosterBoards": 300,
+    "TotalSpace": 1900
+}

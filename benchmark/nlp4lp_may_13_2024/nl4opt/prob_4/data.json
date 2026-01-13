@@ -1,0 +1,9 @@
+{
+    "MinDesk": 30,
+    "MinNight": 50,
+    "MaxDesk": 150,
+    "MaxNight": 180,
+    "MinTotal": 100,
+    "ProfitDesk": 5,
+    "ProfitNight": 8
+}

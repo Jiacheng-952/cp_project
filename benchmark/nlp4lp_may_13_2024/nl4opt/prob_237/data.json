@@ -1,0 +1,9 @@
+{
+    "PopAudience": 100,
+    "PopPracticeDays": 2,
+    "RbAudience": 240,
+    "RbPracticeDays": 4,
+    "MinAudience": 10000,
+    "AvailablePracticeDays": 180,
+    "MaxRbConcertsProportion": 0.4
+}

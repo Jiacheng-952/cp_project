@@ -1,0 +1,11 @@
+{
+    "MotorcycleCapacity": 30,
+    "MotorcyclePollution": 4,
+    "MotorcycleEarnings": 100,
+    "SedanCapacity": 70,
+    "SedanPollution": 15,
+    "SedanEarnings": 225,
+    "MaxMotorcycleProportion": 0.25,
+    "MaxPollution": 200,
+    "MinPeopleTransported": 1200
+}

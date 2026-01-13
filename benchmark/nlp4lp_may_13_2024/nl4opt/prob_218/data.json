@@ -1,0 +1,7 @@
+{
+    "ProfitRegular": 2.5,
+    "ProfitDeluxe": 3.55,
+    "DemandRegularMax": 50,
+    "DemandDeluxeMax": 40,
+    "SupplyTotalMax": 70
+}

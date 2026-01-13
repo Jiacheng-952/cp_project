@@ -1,0 +1,6 @@
+{
+    "FerryCapacity": 20,
+    "RailCapacity": 15,
+    "MinRailToFerryRatio": 4,
+    "MinCornBoxes": 500
+}

@@ -1,0 +1,7 @@
+{
+    "TimeFertilizer": 0.5,
+    "TimeSeeds": 1.5,
+    "MaxUnits": 300,
+    "MinFertilizer": 50,
+    "MaxFertilizerSeedRatio": 2
+}

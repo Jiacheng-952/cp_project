@@ -1,0 +1,55 @@
+{
+    "background": "A bank can build small and large branches to serve their customers.",
+    "constraints": [
+        "Number of small branches is an integer",
+        "Number of large branches is an integer",
+        "Number of small branches is non-negative",
+        "Number of large branches is non-negative",
+        "Small branches serve ServeSmall customers each",
+        "Large branches serve ServeLarge customers each",
+        "The bank requires TellersSmall tellers per small branch",
+        "The bank requires TellersLarge tellers per large branch",
+        "The bank has available TellersTotal tellers in total",
+        "The bank needs to serve at least MinCustomers customers per day"
+    ],
+    "objective": "The bank wants to minimize the total number of branches needed",
+    "description": "A bank can build small and large branches to serve their customers. A small branch can serve \\param{ServeSmall} customers per day and requires \\param{TellersSmall} bank tellers. A large branch can serve \\param{ServeLarge} customers per day and requires \\param{TellersLarge} bank tellers. The bank has available \\param{TellersTotal} bank tellers and needs to be able to serve at least \\param{MinCustomers} customers per day. How many of each branch size should they build to minimize the total number of branches needed?",
+    "parameters": [
+        {
+            "definition": "Number of customers a small branch can serve per day",
+            "symbol": "ServeSmall",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of bank tellers required for a small branch",
+            "symbol": "TellersSmall",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of customers a large branch can serve per day",
+            "symbol": "ServeLarge",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Number of bank tellers required for a large branch",
+            "symbol": "TellersLarge",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Total number of bank tellers available",
+            "symbol": "TellersTotal",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of customers to be served per day",
+            "symbol": "MinCustomers",
+            "value": 1200,
+            "shape": []
+        }
+    ]
+}

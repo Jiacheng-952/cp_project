@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of ice cream produced by the counter-top sized machine per day",
+            "symbol": "ProdCountertop",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Amount of ice cream produced by the fridge sized machine per day",
+            "symbol": "ProdFridge",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Heat output by the counter-top sized machine",
+            "symbol": "HeatCountertop",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Heat output by the fridge sized machine",
+            "symbol": "HeatFridge",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable heat output per day",
+            "symbol": "MaxHeat",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required ice cream production per day",
+            "symbol": "MinProd",
+            "value": 1000,
+            "shape": []
+        }
+    ],
+    "description": "An ice cream store can buy two machines, a counter-top sized one and a fridge sized one, to make ice cream. The counter-top sized one can produce \\param{ProdCountertop} cones worth of ice cream every day while the fridge sized one can produce \\param{ProdFridge} cones worth of ice cream every day. The counter-top sized machine outputs \\param{HeatCountertop} units of heat while the fridge sized one outputs \\param{HeatFridge} units of heat. The ice cream store can output at most \\param{MaxHeat} units of heat per day and must produce at least \\param{MinProd} cones worth of ice cream. How many of each machine should they buy to minimize the total number of machines needed?"
+}

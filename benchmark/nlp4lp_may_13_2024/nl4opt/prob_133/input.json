@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Total units of painkiller medicine available",
+            "symbol": "TotalPainkillerUnits",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Units of painkiller medicine per daytime pill",
+            "symbol": "DaytimePainkillerUnits",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleep medicine per daytime pill",
+            "symbol": "DaytimeSleepUnits",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of painkiller medicine per nighttime pill",
+            "symbol": "NighttimePainkillerUnits",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleep medicine per nighttime pill",
+            "symbol": "NighttimeSleepUnits",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of pills that must be daytime pills",
+            "symbol": "MinimumDaytimePercentage",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of nighttime pills required",
+            "symbol": "MinimumNighttimePills",
+            "value": 200,
+            "shape": []
+        }
+    ],
+    "description": "A pharmaceutical company has \\param{TotalPainkillerUnits} units of painkiller medicine and makes daytime and nighttime painkiller pills. A daytime pill has \\param{DaytimePainkillerUnits} units of painkiller medicine and \\param{DaytimeSleepUnits} units of sleep medicine. A nighttime pill has \\param{NighttimePainkillerUnits} units of painkiller medicine and \\param{NighttimeSleepUnits} units of sleep medicine. Since some people don\u2019t want the sleeping effect, at least \\param{MinimumDaytimePercentage} of the pills must be daytime pills. However, at least \\param{MinimumNighttimePills} nighttime pills must be made. How many of each pill should be made to minimize the total amount of sleep medicine required?"
+}

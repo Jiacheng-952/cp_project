@@ -1,0 +1,52 @@
+{
+    "background": "A burger chain is buying both gas and electric grills to make burger patties, considering cooking times and oil usage, with a preference for gas grills.",
+    "constraints": [
+        "Number of gas grills is an integer",
+        "Number of electric grills is an integer",
+        "Number of gas grills is non-negative",
+        "Number of electric grills is non-negative",
+        "The number of electric grills must be less than the number of gas grills",
+        "The burger chain must make at least MinPatties patties per minute",
+        "The burger chain must use at most MaxOil units of cooking oil per minute"
+    ],
+    "objective": "Minimize the total number of grills",
+    "description": "A burger chain is buying both gas and electric grills to make burger patties. A gas grill can cook \\param{PattiesGas} patties per minute while an electric grill can cook \\param{PattiesElectric} patties per minute. The gas grill requires \\param{OilGas} units of cooking oil per minute while the electric grill requires \\param{OilElectric} units of cooking oil per minute. Since the gas grill patties taste better, the number of electric grills must be less than the number of gas grills. Further, the burger chain wants to be able to make at least \\param{MinPatties} patties per minute and use at most \\param{MaxOil} units of cooking oil per minute. How many of each grill should be bought to minimize the total number of grills in the store?",
+    "parameters": [
+        {
+            "definition": "Patties per minute cooked by a gas grill",
+            "symbol": "PattiesGas",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Patties per minute cooked by an electric grill",
+            "symbol": "PattiesElectric",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of cooking oil per minute used by a gas grill",
+            "symbol": "OilGas",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of cooking oil per minute used by an electric grill",
+            "symbol": "OilElectric",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Minimum patties per minute requirement",
+            "symbol": "MinPatties",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of cooking oil per minute limitation",
+            "symbol": "MaxOil",
+            "value": 140,
+            "shape": []
+        }
+    ]
+}

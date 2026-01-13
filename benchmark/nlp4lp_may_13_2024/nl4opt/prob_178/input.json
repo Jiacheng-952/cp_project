@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Seating capacity of a bike",
+            "symbol": "BikeCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Seating capacity of a car",
+            "symbol": "CarCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of transport vehicles that can be cars",
+            "symbol": "MaxCarProportion",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of people that need transport",
+            "symbol": "MinPeople",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A village hosts a banquet and provides bike and car transportation for everyone. A bike can take \\param{BikeCapacity} people while a car can take \\param{CarCapacity} people. Since cars are more expensive, at most \\param{MaxCarProportion} of the vehicles can be cars. If the village needs to transport at least \\param{MinPeople} people, how many of each vehicle should be used to minimize the total number of bikes needed?"
+}

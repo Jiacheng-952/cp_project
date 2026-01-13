@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Pain medication per Pill 1",
+            "symbol": "PainPillOne",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Anxiety medication per Pill 1",
+            "symbol": "AnxietyPillOne",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Discharge caused by Pill 1",
+            "symbol": "DischargePillOne",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Pain medication per Pill 2",
+            "symbol": "PainPillTwo",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Anxiety medication per Pill 2",
+            "symbol": "AnxietyPillTwo",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Discharge caused by Pill 2",
+            "symbol": "DischargePillTwo",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of pain medication allowed",
+            "symbol": "MaxPainMedication",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of anxiety medication required",
+            "symbol": "MinAnxietyMedication",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A patient in the hospital can take two pills, Pill 1 and Pill 2. Per pill, Pill 1 provides \\param{PainPillOne} units of pain medication and \\param{AnxietyPillOne} units of anxiety medication. Per pill, Pill 2 provides \\param{PainPillTwo} units of pain medication and \\param{AnxietyPillTwo} units of anxiety medication. In addition, Pill 1 causes \\param{DischargePillOne} units of discharge while Pill 2 causes \\param{DischargePillTwo} units of discharge. At most \\param{MaxPainMedication} units of pain medication can be provided and at least \\param{MinAnxietyMedication} units of anxiety medication must be provided. How many pills of each should the patient be given to minimize the total amount of discharge?"
+}

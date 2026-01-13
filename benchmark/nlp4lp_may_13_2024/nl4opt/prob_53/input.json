@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Gold requirement for process A",
+            "symbol": "GoldA",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Wire requirement for process A",
+            "symbol": "WireA",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of coins plated by process A",
+            "symbol": "CoinsA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Gold requirement for process B",
+            "symbol": "GoldB",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Wire requirement for process B",
+            "symbol": "WireB",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of coins plated by process B",
+            "symbol": "CoinsB",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Total units of gold available",
+            "symbol": "TotalGold",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total number of wires available",
+            "symbol": "TotalWires",
+            "value": 300,
+            "shape": []
+        }
+    ],
+    "description": "There are two processes, process A and process B, to plate a coin with gold. Process A requires \\param{GoldA} units of gold, \\param{WireA} wires, and can plate \\param{CoinsA} coins. Process B requires \\param{GoldB} units of gold, \\param{WireB} wires, and can plate \\param{CoinsB} coins. There are \\param{TotalGold} units of gold and \\param{TotalWires} wires available. How many processes of each type should be run to maximize the total number of coins that can be plated?"
+}

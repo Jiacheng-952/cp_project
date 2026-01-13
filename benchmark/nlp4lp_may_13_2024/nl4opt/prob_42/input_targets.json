@@ -1,0 +1,86 @@
+{
+    "background": "A berry farmer needs to fulfil a contract for supplying raspberries, blueberries, and strawberries to a local store. He has an old and a new farm with different daily operating costs and production capacities for each type of berry.",
+    "constraints": [
+        "Raspberries produced must meet or exceed RaspberriesRequired",
+        "Blueberries produced must meet or exceed BlueberriesRequired",
+        "Strawberries produced must meet or exceed StrawberriesRequired",
+        "Raspberries produced by the old farm per day is at most OldFarmRaspberries",
+        "Blueberries produced by the old farm per day is at most OldFarmBlueberries",
+        "Strawberries produced by the old farm per day is at most OldFarmStrawberries",
+        "Raspberries produced by the new farm per day is at most NewFarmRaspberries",
+        "Blueberries produced by the new farm per day is at most NewFarmBlueberries",
+        "Strawberries produced by the new farm per day is at most NewFarmStrawberries",
+        "Number of operational days for the old farm is non-negative",
+        "Number of operational days for the new farm is non-negative"
+    ],
+    "objective": "Minimize the total cost of meeting the local store's requirements for raspberries, blueberries, and strawberries",
+    "description": "A berry farmer has two farms, an old and new farm, where he grows raspberries, blueberries, and strawberries. He has a contract to provide a local store with \\param{RaspberriesRequired} kg of raspberries, \\param{BlueberriesRequired} kg of blueberries, and \\param{StrawberriesRequired} kg of strawberries. At his old farm, it cost \\param{OldFarmCost} to operate per day and he can harvest and deliver \\param{OldFarmRaspberries} kg of raspberries, \\param{OldFarmBlueberries} kg of blueberries, and \\param{OldFarmStrawberries} kg of strawberries in a day. At his new farm, it costs \\param{NewFarmCost} to operate per day and he can harvest and deliver \\param{NewFarmRaspberries} kg of raspberries, \\param{NewFarmBlueberries} kg of blueberries, and \\param{NewFarmStrawberries} kg of strawberries in a day. Formulate a LP to meet his contract while minimizing his cost.",
+    "parameters": [
+        {
+            "definition": "Amount of raspberries the local store requires",
+            "symbol": "RaspberriesRequired",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of blueberries the local store requires",
+            "symbol": "BlueberriesRequired",
+            "value": 9,
+            "shape": []
+        },
+        {
+            "definition": "Amount of strawberries the local store requires",
+            "symbol": "StrawberriesRequired",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Cost to operate the old farm per day",
+            "symbol": "OldFarmCost",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Raspberries harvested and delivered from the old farm per day",
+            "symbol": "OldFarmRaspberries",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Blueberries harvested and delivered from the old farm per day",
+            "symbol": "OldFarmBlueberries",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Strawberries harvested and delivered from the old farm per day",
+            "symbol": "OldFarmStrawberries",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Cost to operate the new farm per day",
+            "symbol": "NewFarmCost",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Raspberries harvested and delivered from the new farm per day",
+            "symbol": "NewFarmRaspberries",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Blueberries harvested and delivered from the new farm per day",
+            "symbol": "NewFarmBlueberries",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Strawberries harvested and delivered from the new farm per day",
+            "symbol": "NewFarmStrawberries",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

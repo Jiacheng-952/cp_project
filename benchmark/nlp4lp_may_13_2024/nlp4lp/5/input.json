@@ -1,0 +1,73 @@
+{
+    "parameters": [
+        {
+            "definition": "The number of links between nodes in the network.",
+            "symbol": "L",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The starting node for link ij",
+            "symbol": "StartNode",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        },
+        {
+            "definition": "The ending node for link ij",
+            "symbol": "EndNode",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        },
+        {
+            "definition": "The maximum capacity for link ij",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        },
+        {
+            "definition": "The cost for transporting data through link ij",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        },
+        {
+            "definition": "The number of data flow requirements.",
+            "symbol": "F",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The source node for data flow kl",
+            "symbol": "SourceNode",
+            "value": "",
+            "shape": [
+                "F"
+            ]
+        },
+        {
+            "definition": "The destination node for data flow kl",
+            "symbol": "DestinationNode",
+            "value": "",
+            "shape": [
+                "F"
+            ]
+        },
+        {
+            "definition": "The rate of data flow for flow kl",
+            "symbol": "DataRate",
+            "value": "",
+            "shape": [
+                "F"
+            ]
+        }
+    ],
+    "description": "Find paths along which all data reach their intended destinations, while minimizing the total cost. The links between nodes are characterized by their capacities (\\param{Capacity}) and associated costs (\\param{Cost}), where each link \\param{ij} connects a start node (\\param{StartNode}) to an end node (\\param{EndNode}). There is a set number of data flow requirements (\\param{F}), each with a source node (\\param{SourceNode}) and destination node (\\param{DestinationNode}), and a specific data rate (\\param{DataRate}) that must be achieved."
+}

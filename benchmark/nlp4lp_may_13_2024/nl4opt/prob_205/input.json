@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost per serving of noodles",
+            "symbol": "CostNoodles",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Calories per serving of noodles",
+            "symbol": "CaloriesNoodles",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Protein per serving of noodles in grams",
+            "symbol": "ProteinNoodles",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Cost per serving of protein bars",
+            "symbol": "CostBars",
+            "value": 2.5,
+            "shape": []
+        },
+        {
+            "definition": "Calories per serving of protein bars",
+            "symbol": "CaloriesBars",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Protein per serving of protein bars in grams",
+            "symbol": "ProteinBars",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum calorie intake per day",
+            "symbol": "MinCalories",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum protein intake per day in grams",
+            "symbol": "MinProtein",
+            "value": 16,
+            "shape": []
+        }
+    ],
+    "description": "Bob wants to design a diet consisting of protein bars and noodles. Assume that each serving of noodles costs \\param{CostNoodles} and contains \\param{CaloriesNoodles} calories and \\param{ProteinNoodles} grams of protein. Assume that each serving of protein bars costs \\param{CostBars} and contains \\param{CaloriesBars} calories and \\param{ProteinBars} grams of protein. He's interested in spending as little money as possible but he wants to ensure that his meals have at least \\param{MinCalories} calories and at least \\param{MinProtein} grams of protein per day. Formulate a linear programming problem that will help minimize the cost of the diet."
+}

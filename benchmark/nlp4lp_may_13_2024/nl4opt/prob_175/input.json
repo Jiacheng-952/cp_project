@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Points for service per seasonal volunteer",
+            "symbol": "SeasonalPoints",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Points for service per full-time volunteer",
+            "symbol": "FullTimePoints",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total points to allocate",
+            "symbol": "MaxPoints",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Gifts delivered by a seasonal volunteer",
+            "symbol": "GiftsPerSeasonal",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Gifts delivered by a full-time volunteer",
+            "symbol": "GiftsPerFullTime",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of volunteers that can be seasonal",
+            "symbol": "MaxSeasonalPercent",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of full-time volunteers",
+            "symbol": "MinFullTimeVolunteers",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "A toy store hires seasonal and full-time volunteers to deliver gifts and gives them points for service. A seasonal volunteer can deliver \\param{GiftsPerSeasonal} gifts and gets \\param{SeasonalPoints} points. A full-time volunteer can deliver \\param{GiftsPerFullTime} gifts and gets \\param{FullTimePoints} points. The store can only give out \\param{MaxPoints} points. In addition, a maximum of \\param{MaxSeasonalPercent} of the volunteers can be seasonal and at least \\param{MinFullTimeVolunteers} must be full-time. How many of each volunteer is needed to maximize the total number of gifts that can be delivered?"
+}

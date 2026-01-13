@@ -1,0 +1,61 @@
+{
+    "background": "A young boy aims to meet his daily nutritional goals by consuming a mix of milk and vegetables, each providing different amounts of calcium and iron at associated costs.",
+    "constraints": [
+        "Calcium from milk and vegetables must be at least C units",
+        "Iron from milk and vegetables must be at least I units",
+        "Number of glasses of milk is non-negative",
+        "Number of plates of vegetables is non-negative"
+    ],
+    "objective": "Minimize the total cost of milk and vegetables consumed",
+    "description": "A young boy is trying to grow taller by drinking milk and eating vegetables. He wants to get a minimum of \\param{C} units of calcium and \\param{I} units of iron per day. A glass of milk costs \\param{CostMilk} and contains \\param{CalciumMilk} units of calcium and \\param{IronMilk} units of iron. A plate of vegetables costs \\param{CostVeg} and contains \\param{CalciumVeg} units of calcium and \\param{IronVeg} units of iron. How many of each should he consume to minimize his cost?",
+    "parameters": [
+        {
+            "definition": "Minimum units of calcium required per day",
+            "symbol": "C",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of iron required per day",
+            "symbol": "I",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one glass of milk",
+            "symbol": "CostMilk",
+            "value": 1.0,
+            "shape": []
+        },
+        {
+            "definition": "Units of calcium in one glass of milk",
+            "symbol": "CalciumMilk",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Units of iron in one glass of milk",
+            "symbol": "IronMilk",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one plate of vegetables",
+            "symbol": "CostVeg",
+            "value": 2.0,
+            "shape": []
+        },
+        {
+            "definition": "Units of calcium in one plate of vegetables",
+            "symbol": "CalciumVeg",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of iron in one plate of vegetables",
+            "symbol": "IronVeg",
+            "value": 30,
+            "shape": []
+        }
+    ]
+}

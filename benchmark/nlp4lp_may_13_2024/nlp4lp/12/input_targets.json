@@ -1,0 +1,39 @@
+{
+    "background": "A production and inventory schedule over a set number of periods requires minimization of the total cost, which is a combination of production costs, storage costs for inventory, and switching costs for changing production.",
+    "constraints": [
+        "The production amount in each period is non-negative",
+        "The inventory level in each period is non-negative",
+        "The production schedule must meet the delivery requirement Deliver in each period",
+        "The switch cost is incurred when changing production between periods"
+    ],
+    "objective": "Minimize the total cost of production and inventory over T periods",
+    "description": "Minimize the total cost of the production and inventory schedule over \\param{T} periods, given \\param{Deliver} for each period, a \\param{StorageCost} for holding inventory, and a \\param{SwitchCost} for changing production between periods.",
+    "parameters": [
+        {
+            "definition": "Demand for the product in each period i",
+            "symbol": "Deliver",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Cost to hold one unit of product in storage for one period",
+            "symbol": "StorageCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Cost to switch the production from one period to another",
+            "symbol": "SwitchCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Total number of periods",
+            "symbol": "T",
+            "value": 0,
+            "shape": []
+        }
+    ]
+}

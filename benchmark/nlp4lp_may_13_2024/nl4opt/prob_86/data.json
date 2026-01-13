@@ -1,0 +1,11 @@
+{
+    "CoffeePowderPerMocha": 3,
+    "MilkPerMocha": 6,
+    "CoffeePowderPerRegular": 6,
+    "MilkPerRegular": 2,
+    "TotalCoffeePowder": 400,
+    "TotalMilk": 500,
+    "TimePerMocha": 5,
+    "TimePerRegular": 3,
+    "MochaToRegularRatio": 0.33
+}

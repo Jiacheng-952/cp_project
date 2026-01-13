@@ -1,0 +1,39 @@
+{
+    "background": "A village is hosting a banquet where bike and car transportations are provided, and the objective is to minimize the number of bikes while meeting the transportation needs.",
+    "constraints": [
+        "Number of bikes is non-negative",
+        "Number of cars is non-negative",
+        "Each bike can transport at most BikeCapacity people",
+        "Each car can transport at most CarCapacity people",
+        "At most MaxCarProportion of the total number of vehicles can be cars",
+        "At least MinPeople must be transported"
+    ],
+    "objective": "Minimize the total number of bikes needed for transportation",
+    "description": "A village hosts a banquet and provides bike and car transportation for everyone. A bike can take \\param{BikeCapacity} people while a car can take \\param{CarCapacity} people. Since cars are more expensive, at most \\param{MaxCarProportion} of the vehicles can be cars. If the village needs to transport at least \\param{MinPeople} people, how many of each vehicle should be used to minimize the total number of bikes needed?",
+    "parameters": [
+        {
+            "definition": "Seating capacity of a bike",
+            "symbol": "BikeCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Seating capacity of a car",
+            "symbol": "CarCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of transport vehicles that can be cars",
+            "symbol": "MaxCarProportion",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of people that need transport",
+            "symbol": "MinPeople",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

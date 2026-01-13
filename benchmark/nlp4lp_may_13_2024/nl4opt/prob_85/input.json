@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Total size of the lake in acres",
+            "symbol": "LakeSize",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Number of fish caught per acre using a net",
+            "symbol": "FishNet",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Number of fish caught per acre using a fishing line",
+            "symbol": "FishLine",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of bait required per acre using a net",
+            "symbol": "BaitNet",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Amount of bait required per acre using a fishing line",
+            "symbol": "BaitLine",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of pain caused to the fisherman per acre using a net",
+            "symbol": "PainNet",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Amount of pain caused to the fisherman per acre using a fishing line",
+            "symbol": "PainLine",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Total units of bait available",
+            "symbol": "TotalBait",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of pain the fisherman can tolerate",
+            "symbol": "MaxPain",
+            "value": 350,
+            "shape": []
+        }
+    ],
+    "description": "A man fishes in a \\param{LakeSize} acre lake and can catch fish either using a net or fishing line. For each acre of the lake, using a net will catch \\param{FishNet} fish and requires \\param{BaitNet} units of bait but also causes \\param{PainNet} units of pain for the fisherman. For each acre of the lake, using a fishing line will catch \\param{FishLine} fish and requires \\param{BaitLine} units of bait but also causes \\param{PainLine} unit of pain for the fisherman. The fisherman has available \\param{TotalBait} units of bait and can tolerate at most \\param{MaxPain} units of pain. For how many acres each should he use each fishing method to maximize the amount of fish he can catch?"
+}

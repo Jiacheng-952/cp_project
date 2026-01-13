@@ -1,0 +1,9 @@
+{
+    "EscalatorRate": 20,
+    "ElevatorRate": 8,
+    "EscalatorSpace": 5,
+    "ElevatorSpace": 2,
+    "CapacityMinimum": 400,
+    "EscalatorElevatorRatio": 3,
+    "ElevatorMinNumber": 2
+}

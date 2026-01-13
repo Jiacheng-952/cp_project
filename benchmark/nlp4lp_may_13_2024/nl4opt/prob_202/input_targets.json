@@ -1,0 +1,61 @@
+{
+    "background": "An office company manufactures desks and drawers, each requiring different amounts of assembly and sanding time. The company has limited time for these processes.",
+    "constraints": [
+        "Number of desks is non-negative",
+        "Number of drawers is non-negative",
+        "Total assembly time for desks and drawers cannot exceed TotalAssembly minutes",
+        "Total sanding time for desks and drawers cannot exceed TotalSanding minutes"
+    ],
+    "objective": "Maximize the company's profit from manufacturing desks and drawers",
+    "description": "An office company makes desks and drawers. Each desk requires \\param{AssemblyDesk} minutes of assembly and \\param{SandingDesk} minutes of sanding. Each drawer requires \\param{AssemblyDrawer} minutes of assembly and \\param{SandingDrawer} minutes of sanding. The company has \\param{TotalAssembly} minutes for assembly and \\param{TotalSanding} minutes for sanding. If the profit per desk is $\\param{ProfitDesk} and the profit per drawer is $\\param{ProfitDrawer}, how many of each should the company make to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Minutes of assembly required for each desk",
+            "symbol": "AssemblyDesk",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Minutes of sanding required for each desk",
+            "symbol": "SandingDesk",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minutes of assembly required for each drawer",
+            "symbol": "AssemblyDrawer",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minutes of sanding required for each drawer",
+            "symbol": "SandingDrawer",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Total minutes available for assembly",
+            "symbol": "TotalAssembly",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Total minutes available for sanding",
+            "symbol": "TotalSanding",
+            "value": 3500,
+            "shape": []
+        },
+        {
+            "definition": "Profit per desk",
+            "symbol": "ProfitDesk",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Profit per drawer",
+            "symbol": "ProfitDrawer",
+            "value": 90,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of iron in supplement A",
+            "symbol": "IronA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of calcium in supplement A",
+            "symbol": "CalciumA",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of iron in supplement B",
+            "symbol": "IronB",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of calcium in supplement B",
+            "symbol": "CalciumB",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum daily requirement of iron",
+            "symbol": "IronReq",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Minimum daily requirement of calcium",
+            "symbol": "CalciumReq",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill of supplement A",
+            "symbol": "CostA",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill of supplement B",
+            "symbol": "CostB",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A man takes two supplements to get his daily iron and calcium requirements. A pill of supplement A has \\param{IronA} units of iron and \\param{CalciumA} units of calcium. A pill of supplement B contains \\param{IronB} units of iron and \\param{CalciumB} units of calcium. The man needs a minimum of \\param{IronReq} units of iron and \\param{CalciumReq} units of calcium per day. If the cost per pill of supplement A is $\\param{CostA} and the cost per pill of supplement B is $\\param{CostB}, how many of each should he buy to minimize costs?"
+}

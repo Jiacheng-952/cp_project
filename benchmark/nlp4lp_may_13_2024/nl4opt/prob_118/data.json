@@ -1,0 +1,11 @@
+{
+    "VitaminCShot": 30,
+    "VitaminDShot": 40,
+    "VitaminCPill": 50,
+    "VitaminDPill": 30,
+    "MaxShotBatches": 10,
+    "TotalVitaminC": 1200,
+    "TotalVitaminD": 1500,
+    "PeoplePerShot": 10,
+    "PeoplePerPill": 7
+}

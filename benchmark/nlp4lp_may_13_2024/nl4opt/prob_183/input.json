@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of one hot air balloon ride",
+            "symbol": "BalloonCapacity",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of one gondola lift",
+            "symbol": "GondolaCapacity",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by one hot air balloon ride",
+            "symbol": "BalloonPollution",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by one gondola lift",
+            "symbol": "GondolaPollution",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of hot air balloon rides",
+            "symbol": "MaxBalloons",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of visitors to be transported",
+            "symbol": "MinVisitors",
+            "value": 70,
+            "shape": []
+        }
+    ],
+    "description": "A tourist spot in the mountains allows visitors to travel to the top either by hot-air balloon or gondola lift. A hot air balloon can carry \\param{BalloonCapacity} visitors while a gondola lift can carry \\param{GondolaCapacity} visitors. Each hot air balloon produces \\param{BalloonPollution} units of pollution while each gondola lift produces \\param{GondolaPollution} units of pollution. There can be at most \\param{MaxBalloons} hot-air balloon rides and at least \\param{MinVisitors} visitors need to be transported. How many of each type of transport method should be taken to minimize the total pollution produced?"
+}

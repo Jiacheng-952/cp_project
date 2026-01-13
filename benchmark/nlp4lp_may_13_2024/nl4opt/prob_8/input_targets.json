@@ -1,0 +1,44 @@
+{
+    "background": "Jacob is investing in two companies: a clothing company and a tech company.",
+    "constraints": [
+        "Clothing investment must be at least InvestmentRatio times the tech investment",
+        "Tech investment must be non-negative",
+        "Clothing investment must be non-negative",
+        "Jacob can invest at most MaxTechInvestment in the tech company",
+        "Total investment (clothing + tech) must be equal to TotalInvestment"
+    ],
+    "objective": "Maximize Jacob's total profit from both investments",
+    "description": "Jacob has \\var{TotalInvestment} to invest. He has decided to invest in his favorite clothing company and his favorite tech company. He has decided that the money invested in his favorite clothing company must be at least \\var{InvestmentRatio} times as much as the amount invested in his favorite tech company. He has also limited himself to invest at most \\var{MaxTechInvestment} in his favorite tech company. If the money invested in his favorite clothing company earns \\var{ReturnRateClothing} and the money invested in his favorite tech company earns \\var{ReturnRateTech}, how much should he invest in each to maximize his profit?",
+    "parameters": [
+        {
+            "definition": "Total amount of money available for investment",
+            "symbol": "TotalInvestment",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum investment ratio in the favorite clothing company over the tech company",
+            "symbol": "InvestmentRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Maximum investment in the favorite tech company",
+            "symbol": "MaxTechInvestment",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Annual return rate of the favorite clothing company",
+            "symbol": "ReturnRateClothing",
+            "value": 0.07,
+            "shape": []
+        },
+        {
+            "definition": "Annual return rate of the favorite tech company",
+            "symbol": "ReturnRateTech",
+            "value": 0.1,
+            "shape": []
+        }
+    ]
+}

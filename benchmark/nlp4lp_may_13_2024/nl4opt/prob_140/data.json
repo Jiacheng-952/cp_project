@@ -1,0 +1,10 @@
+{
+    "DosePancreas1": 0.3,
+    "DoseSkin1": 0.2,
+    "DosePancreas2": 0.2,
+    "DoseSkin2": 0.1,
+    "DoseTumor1": 0.6,
+    "DoseTumor2": 0.4,
+    "MaxSkinDose": 4,
+    "MinTumorDose": 3
+}

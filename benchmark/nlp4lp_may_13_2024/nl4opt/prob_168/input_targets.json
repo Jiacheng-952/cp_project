@@ -1,0 +1,37 @@
+{
+    "background": "A theme park requires transportation for its visitors using scooters and rickshaws, with each mode having a specific capacity and a limit on the proportion of rickshaws to reduce pollution.",
+    "constraints": [
+        "Number of scooters is non-negative",
+        "Number of rickshaws is non-negative",
+        "At most MaxRickshawProportion of the vehicles used can be rickshaws",
+        "At least MinVisitors visitors need to be transported"
+    ],
+    "objective": "Minimize the total number of scooters used",
+    "description": "A theme park transports its visitors around the park either by scooter or rickshaw. A scooter can carry \\param{ScooterCapacity} people while a rickshaw can carry \\param{RickshawCapacity} people. To avoid excessive pollution, at most \\param{MaxRickshawProportion} of the vehicles used can be rickshaws. If the park needs to transport at least \\param{MinVisitors} visitors, minimize the total number of scooters used.",
+    "parameters": [
+        {
+            "definition": "Carrying capacity of a scooter",
+            "symbol": "ScooterCapacity",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Carrying capacity of a rickshaw",
+            "symbol": "RickshawCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of vehicles that can be rickshaws",
+            "symbol": "MaxRickshawProportion",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of visitors to be transported",
+            "symbol": "MinVisitors",
+            "value": 300,
+            "shape": []
+        }
+    ]
+}

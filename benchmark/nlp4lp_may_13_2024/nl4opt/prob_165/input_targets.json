@@ -1,0 +1,58 @@
+{
+    "background": "A meal service company plans deliveries using electric bikes and scooters. Each type of vehicle has a capacity for meals and requires a certain amount of charge.",
+    "constraints": [
+        "Number of bikes is non-negative",
+        "Number of scooters is non-negative",
+        "Number of meals per bike is non-negative and up to BikeCapacity",
+        "Number of meals per scooter is non-negative and up to ScooterCapacity",
+        "The total charge used by bikes and scooters cannot exceed TotalCharge",
+        "At most MaxBikeRatio of the electric vehicles can be bikes",
+        "At least MinScooters must be used"
+    ],
+    "objective": "Maximize the number of meals delivered by the company",
+    "description": "A meal service company delivers meals to customers either on electric bikes or scooters. A bike can hold \\param{BikeCapacity} meals and requires \\param{BikeCharge} units of charge. A scooter can hold \\param{ScooterCapacity} meals and requires \\param{ScooterCharge} units of charge. Since the city is more friendly towards scooters, at most \\param{MaxBikeRatio} of the electric vehicles can be bikes and at least \\param{MinScooters} scooters must be used. If the company only has \\param{TotalCharge} units of charge available, how many of each vehicle should be used to maximize the number of meals that can be delivered?",
+    "parameters": [
+        {
+            "definition": "Capacity of a bike in number of meals",
+            "symbol": "BikeCapacity",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of charge required by a bike",
+            "symbol": "BikeCharge",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a scooter in number of meals",
+            "symbol": "ScooterCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of charge required by a scooter",
+            "symbol": "ScooterCharge",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of electric vehicles that can be bikes",
+            "symbol": "MaxBikeRatio",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of scooters that must be used",
+            "symbol": "MinScooters",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total units of charge available",
+            "symbol": "TotalCharge",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

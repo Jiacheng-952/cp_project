@@ -1,0 +1,51 @@
+{
+    "background": "The problem involves the distribution of electricity from multiple power plants to multiple cities, with the goal of minimizing the transmission costs while respecting the supply and demand constraints of the power plants and cities respectively.",
+    "constraints": [
+        "Each power plant has a limited supply capacity of Supply",
+        "Each city has a specific electricity demand of Demand",
+        "The total electricity supplied to each city must meet its demand",
+        "A power plant cannot send more electricity than its supply capacity",
+        "Electricity sent from any power plant to any city is non-negative"
+    ],
+    "objective": "Minimize the total transmission cost from power plants to cities",
+    "description": "How much electricity should each power plant send to each city to minimize the total transmission cost, given there are \\param{P} power plants with a supply capacity of \\param{Supply}, \\param{C} cities with a demand of \\param{Demand}, and the transmission costs between power plants and cities are \\param{TransmissionCosts}?",
+    "parameters": [
+        {
+            "definition": "Number of power plants",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of cities",
+            "symbol": "C",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Electricity supply capacity of power plant p",
+            "symbol": "Supply",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Electricity demand of city c",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "C"
+            ]
+        },
+        {
+            "definition": "Transmission cost from power plant p to city c",
+            "symbol": "TransmissionCosts",
+            "value": "",
+            "shape": [
+                "P",
+                "C"
+            ]
+        }
+    ]
+}

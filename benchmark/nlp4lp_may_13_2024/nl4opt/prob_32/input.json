@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit per regular model",
+            "symbol": "ProfitRegular",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per premium model",
+            "symbol": "ProfitPremium",
+            "value": 8500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of regular models demanded per day",
+            "symbol": "MaxDemandRegular",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of premium models demanded per day",
+            "symbol": "MaxDemandPremium",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of total cars that can be made per day",
+            "symbol": "MaxTotal",
+            "value": 12,
+            "shape": []
+        }
+    ],
+    "description": "A car manufacturer makes two versions of the same car, a regular model and a premium model. They make x1 regular models per day and x2 premium models per day. The profit per regular model is \\param{ProfitRegular} and the profit per premium model is \\param{ProfitPremium} (x1 and x2 are unknown values both greater than or equal to 0). The daily demand for these cars is limited to at most \\param{MaxDemandRegular} regular models and \\param{MaxDemandPremium} premium models. In addition, the manufacturer can make a maximum of \\param{MaxTotal} cars of either type per day. How many cars of each model should the manufacturer make in order to maximize profit?"
+}

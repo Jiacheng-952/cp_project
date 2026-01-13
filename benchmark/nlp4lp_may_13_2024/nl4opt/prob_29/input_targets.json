@@ -1,0 +1,62 @@
+{
+    "background": "A candy store mixes regular candy and sour candy to prepare two products: regular mix and sour surprise mix.",
+    "constraints": [
+        "The amount of regular mix and sour surprise mix should be non-negative",
+        "The sum of regular candy used in both mixes cannot exceed TotalRegCandy kg",
+        "The sum of sour candy used in both mixes cannot exceed TotalSourCandy kg",
+        "Each kilogram of the regular mix contains RegCandyRegMix kg of regular candy and SourCandyRegMix kg of sour candy",
+        "Each kilogram of the sour surprise mix contains RegCandySourMix kg of regular candy and SourCandySourMix kg of sour candy"
+    ],
+    "objective": "Maximize the total profit from the sale of regular mix and sour surprise mix",
+    "description": "A candy store mixes regular candy and sour candy to prepare two products, regular mix and sour surprise mix. Each kilogram of the regular mix contains \\var{RegCandyRegMix} kg of regular candy and \\var{SourCandyRegMix} kg of sour candy. The profit per kilogram of the regular mix is $\\var{ProfitRegMix}. Each kilogram of the sour surprise mix contains \\var{RegCandySourMix} kg of regular candy and \\var{SourCandySourMix} kg of sour candy. The profit per kilogram of the sour surprise mix is $\\var{ProfitSourMix}. The candy store has \\var{TotalRegCandy} kg of regular candy and \\var{TotalSourCandy} kg of sour candy available. How many kilograms of each type of candy mix should be created to maximize profits?",
+    "parameters": [
+        {
+            "definition": "Amount of regular candy in each kilogram of the regular mix",
+            "symbol": "RegCandyRegMix",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sour candy in each kilogram of the regular mix",
+            "symbol": "SourCandyRegMix",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kilogram of the regular mix",
+            "symbol": "ProfitRegMix",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of regular candy in each kilogram of the sour surprise mix",
+            "symbol": "RegCandySourMix",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sour candy in each kilogram of the sour surprise mix",
+            "symbol": "SourCandySourMix",
+            "value": 0.9,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kilogram of the sour surprise mix",
+            "symbol": "ProfitSourMix",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of regular candy available",
+            "symbol": "TotalRegCandy",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of sour candy available",
+            "symbol": "TotalSourCandy",
+            "value": 60,
+            "shape": []
+        }
+    ]
+}

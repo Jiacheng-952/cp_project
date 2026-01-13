@@ -1,0 +1,10 @@
+{
+    "MetalAlpha": 3,
+    "AcidAlpha": 5,
+    "ElectricityAlpha": 8,
+    "MetalBeta": 5,
+    "AcidBeta": 4,
+    "ElectricityBeta": 10,
+    "TotalMetal": 800,
+    "TotalAcid": 750
+}

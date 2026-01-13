@@ -1,0 +1,10 @@
+{
+    "IronA": 5,
+    "CalciumA": 10,
+    "IronB": 4,
+    "CalciumB": 15,
+    "IronReq": 40,
+    "CalciumReq": 50,
+    "CostA": 2,
+    "CostB": 3
+}

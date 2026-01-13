@@ -1,0 +1,9 @@
+{
+    "ELed": 5,
+    "NLed": 3,
+    "EFluorescence": 8,
+    "NFluorescence": 4,
+    "PFluorescence": 0.3,
+    "MinLights": 300,
+    "MaxElectricity": 2000
+}

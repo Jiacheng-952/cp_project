@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit per strawberry cookie",
+            "symbol": "StrawberryProfit",
+            "value": 5.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per sugar cookie",
+            "symbol": "SugarProfit",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Maximum demand for strawberry cookies",
+            "symbol": "MaxStrawberryDemand",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum demand for sugar cookies",
+            "symbol": "MaxSugarDemand",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Maximum production capacity of the bakery",
+            "symbol": "MaxProductionCapacity",
+            "value": 100,
+            "shape": []
+        }
+    ],
+    "description": "Zeta Bakery sells two types of cookies. They sell a strawberry cookie and a sugar cookie. Let's say they make x1 strawberry cookies, at a profit of \\param{StrawberryProfit} each, and x2 sugar cookies, at a profit of \\param{SugarProfit} each (x1 and x2 are unknowns both greater than or equal to 0). The daily demand for these cookies is at most \\param{MaxStrawberryDemand} strawberry cookies and at most \\param{MaxSugarDemand} sugar cookies. The bakery is short staffed and can make a maximum of \\param{MaxProductionCapacity} cookies of either type per day. How much of each cookie should the bakery make in order to maximize profit?"
+}

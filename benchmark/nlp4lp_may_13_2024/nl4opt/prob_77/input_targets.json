@@ -1,0 +1,56 @@
+{
+    "background": "A post office is looking to purchase stamping machines with options for dual or single model stamping machines with different capacities and requirements.",
+    "constraints": [
+        "Number of dual model machines is an integer",
+        "Number of single model machines is an integer",
+        "Number of dual model machines is non-negative",
+        "Number of single model machines is non-negative",
+        "Total stamping capacity must be at least MinLetters letters per minute",
+        "Total glue usage must be at most MaxGlue units per minute",
+        "Number of dual model machines stamped DualCap letters per minute each",
+        "Number of single model machines stamped SingleCap letters per minute each",
+        "Number of dual model machines used DualGlue units of glue per minute each",
+        "Number of single model machines used SingleGlue units of glue per minute each",
+        "The number of single model stamping machines must be more than the number of dual model stamping machines"
+    ],
+    "objective": "Minimize the total number of stamping machines purchased",
+    "description": "A post office is buying stamping machines and they can buy a dual or single model stamping machine. A dual model stamping machine can stamp \\param{DualCap} letters per minute while a single model stamping machine can stamp \\param{SingleCap} letters per minute. The dual model stamping machine requires \\param{DualGlue} units of glue per minute while the single model stamping machine requires \\param{SingleGlue} units of glue per minute. Since the single model stamping machine is quieter, the number of single model stamping machines must be more than the number of dual model stamping machines. Further, the post office wants to make sure they can stamp at least \\param{MinLetters} letters per minute and use at most \\param{MaxGlue} units of glue per minute. How many of each stamping machine should they purchase to minimize the total number of stamping machines?",
+    "parameters": [
+        {
+            "definition": "Stamping capacity per minute of dual model stamping machine",
+            "symbol": "DualCap",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Stamping capacity per minute of single model stamping machine",
+            "symbol": "SingleCap",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Glue consumption per minute of dual model stamping machine",
+            "symbol": "DualGlue",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Glue consumption per minute of single model stamping machine",
+            "symbol": "SingleGlue",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total letters stamped per minute",
+            "symbol": "MinLetters",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum glue consumption per minute",
+            "symbol": "MaxGlue",
+            "value": 135,
+            "shape": []
+        }
+    ]
+}

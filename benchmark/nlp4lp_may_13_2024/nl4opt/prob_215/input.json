@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Minutes for inspection of a washing machine",
+            "symbol": "InspectionTimeWashingMachine",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minutes for fixing a washing machine",
+            "symbol": "FixingTimeWashingMachine",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Minutes for inspection of a freezer",
+            "symbol": "InspectionTimeFreezer",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minutes for fixing a freezer",
+            "symbol": "FixingTimeFreezer",
+            "value": 125,
+            "shape": []
+        },
+        {
+            "definition": "Total minutes available for inspection",
+            "symbol": "TotalInspectionTime",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total minutes available for fixing",
+            "symbol": "TotalFixingTime",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Earnings from repairing a washing machine",
+            "symbol": "EarningsWashingMachine",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Earnings from repairing a freezer",
+            "symbol": "EarningsFreezer",
+            "value": 375,
+            "shape": []
+        }
+    ],
+    "description": "A repairman fixes washing machines and freezers. Each washing machine takes \\param{InspectionTimeWashingMachine} minutes of inspection and \\param{FixingTimeWashingMachine} minutes of fixing time. Each freezer takes \\param{InspectionTimeFreezer} minutes of inspection and \\param{FixingTimeFreezer} minutes of fixing time. The repairman has \\param{TotalInspectionTime} minutes available for inspection and \\param{TotalFixingTime} minutes available in his schedule. If each washing machine repaired earns him \\param{EarningsWashingMachine} and each freezer repaired earns him \\param{EarningsFreezer}, how many of each appliance should he fix to maximize his earnings?"
+}

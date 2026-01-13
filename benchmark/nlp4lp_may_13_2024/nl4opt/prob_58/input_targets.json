@@ -1,0 +1,48 @@
+{
+    "background": "A honey farmer sells his honey in glass and plastic jars, with different volumes and a requirement for minimum ratios and minimum number of glass jars filled.",
+    "constraints": [
+        "Number of glass jars is an integer",
+        "Number of plastic jars is an integer",
+        "Number of glass jars is non-negative",
+        "Number of plastic jars is non-negative",
+        "Volume of honey in glass jars per jar is VolGlass",
+        "Volume of honey in plastic jars per jar is VolPlastic",
+        "At least MinRatio times as many plastic jars must be filled as glass jars",
+        "At least MinGlass glass jars should be filled",
+        "Total volume of honey filled cannot exceed TotalHoney"
+    ],
+    "objective": "Maximize the total number of bottles filled",
+    "description": "A honey farmer sells his honey in glass and plastic jars. A glass jar can hold \\var{VolGlass} ml of honey while a plastic jar can hold \\var{VolPlastic} ml of honey. Since glass jars are more expensive, at least \\var{MinRatio} times as many plastic jars must be filled as glass jars. However, at least \\var{MinGlass} glass jars should be filled. If the farmer has \\var{TotalHoney} ml of honey, how many jars of each should be filled to maximize the total number of bottles filled?",
+    "parameters": [
+        {
+            "definition": "Volume of honey a glass jar can hold",
+            "symbol": "VolGlass",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Volume of honey a plastic jar can hold",
+            "symbol": "VolPlastic",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of plastic jars to glass jars to be filled",
+            "symbol": "MinRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of glass jars to be filled",
+            "symbol": "MinGlass",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of honey available",
+            "symbol": "TotalHoney",
+            "value": 20000,
+            "shape": []
+        }
+    ]
+}

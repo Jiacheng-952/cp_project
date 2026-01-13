@@ -1,0 +1,10 @@
+{
+    "HighVolumeCapacity": 10000,
+    "HighVolumeTechs": 12,
+    "LowVolumeCapacity": 5000,
+    "LowVolumeTechs": 5,
+    "Demand": 150000,
+    "TotalTechs": 160,
+    "MaxHighVolumePercent": 0.35,
+    "MinLowVolumePipes": 8
+}

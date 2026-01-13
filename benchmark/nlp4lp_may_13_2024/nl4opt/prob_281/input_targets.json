@@ -1,0 +1,44 @@
+{
+    "background": "A body wash requires a mixture of coconut oil and lavender, each taking a certain time to become efficient, with restrictions on the minimum amount of coconut oil, the maximum combined units of both ingredients, and the coconut oil to lavender ratio.",
+    "constraints": [
+        "Coconut oil units are non-negative",
+        "Lavender units are non-negative",
+        "At least MinCoconutOilUnits units of coconut oil must be added",
+        "At most MaxCombinedUnits of coconut oil and lavender can be added in total",
+        "The ratio of coconut oil to lavender units cannot exceed MaxOilLavenderRatio"
+    ],
+    "objective": "Minimize the total effective time for the body wash mixture",
+    "description": "Both coconut oil and lavender need to be added to a body wash. One unit of coconut oil takes \\param{CoconutOilTime} minutes to be effective while one unit of lavender takes \\param{LavenderTime} minutes to be effective. The body wash must contain at least \\param{MinCoconutOilUnits} units of coconut oil and at most \\param{MaxCombinedUnits} units of both ingredients. Since too much coconut oil can make the body wash too oily, there can be at most \\param{MaxOilLavenderRatio} times the amount of coconut oil as lavenders in the body wash. How many units of each should be added to the body wash to minimize the total amount of time it takes for the mixture to be effective? (Note: one must be added before the other)",
+    "parameters": [
+        {
+            "definition": "Time in minutes for one unit of coconut oil to be effective",
+            "symbol": "CoconutOilTime",
+            "value": 0.7,
+            "shape": []
+        },
+        {
+            "definition": "Time in minutes for one unit of lavender to be effective",
+            "symbol": "LavenderTime",
+            "value": 0.9,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of coconut oil",
+            "symbol": "MinCoconutOilUnits",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed units of both ingredients combined",
+            "symbol": "MaxCombinedUnits",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed ratio of units of coconut oil to units of lavender",
+            "symbol": "MaxOilLavenderRatio",
+            "value": 3,
+            "shape": []
+        }
+    ]
+}

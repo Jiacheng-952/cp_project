@@ -1,0 +1,80 @@
+{
+    "background": "A car manufacturing company needs to provide a minimum-cost diet consisting of hamburgers and chicken wraps that meets the workers' nutritional requirements for calories, protein, and carbs.",
+    "constraints": [
+        "Total calories must be at least C",
+        "Total grams of protein must be at least P",
+        "Total grams of carbs must be at least Cr",
+        "Number of hamburgers is non-negative",
+        "Number of chicken wraps is non-negative"
+    ],
+    "objective": "Minimize the total cost of providing hamburgers and chicken wraps to meet the dietary requirements",
+    "description": "A car manufacturing company makes hamburgers and chicken wraps for workers. They need to ensure workers get at least \\param{C} calories, \\param{P} grams of protein, and \\param{Cr} grams of carbs. One hamburger costs \\param{HamburgerCost} and contains \\param{HamburgerCalories} calories, \\param{HamburgerProtein} grams of protein, and \\param{HamburgerCarbs} grams of carbs. One chicken wrap costs \\param{WrapCost} and contains \\param{WrapCalories} calories, \\param{WrapProtein} grams of protein, and \\param{WrapCarbs} grams of carbs. What is the minimum cost diet that the company can provide for its workers?",
+    "parameters": [
+        {
+            "definition": "Minimum required calories per worker",
+            "symbol": "C",
+            "value": 2200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required protein in grams per worker",
+            "symbol": "P",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required carbohydrates in grams per worker",
+            "symbol": "Cr",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one hamburger",
+            "symbol": "HamburgerCost",
+            "value": 6.5,
+            "shape": []
+        },
+        {
+            "definition": "Calories provided by one hamburger",
+            "symbol": "HamburgerCalories",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Protein provided by one hamburger in grams",
+            "symbol": "HamburgerProtein",
+            "value": 19,
+            "shape": []
+        },
+        {
+            "definition": "Carbohydrates provided by one hamburger in grams",
+            "symbol": "HamburgerCarbs",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one chicken wrap",
+            "symbol": "WrapCost",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Calories provided by one chicken wrap",
+            "symbol": "WrapCalories",
+            "value": 450,
+            "shape": []
+        },
+        {
+            "definition": "Protein provided by one chicken wrap in grams",
+            "symbol": "WrapProtein",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Carbohydrates provided by one chicken wrap in grams",
+            "symbol": "WrapCarbs",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

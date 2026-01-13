@@ -1,0 +1,8 @@
+{
+    "WageSenior": 500,
+    "WageYoung": 750,
+    "MaxWageBill": 30000,
+    "MinWorkers": 50,
+    "MinYoung": 10,
+    "YoungToSeniorRatio": 0.33
+}

@@ -1,0 +1,8 @@
+{
+    "PremiumSpeed": 30,
+    "RegularSpeed": 20,
+    "PremiumInkUse": 4,
+    "RegularInkUse": 3,
+    "MinPages": 200,
+    "MaxInk": 35
+}

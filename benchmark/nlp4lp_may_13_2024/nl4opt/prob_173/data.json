@@ -1,0 +1,8 @@
+{
+    "VanCapacity": 6,
+    "VanPollution": 7,
+    "MinibusCapacity": 10,
+    "MinibusPollution": 10,
+    "MinKids": 150,
+    "MaxMinibuses": 10
+}

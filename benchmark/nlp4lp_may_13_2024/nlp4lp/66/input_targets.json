@@ -1,0 +1,30 @@
+{
+    "background": "Identifying the shortest route for a traveler to visit a certain number of towns and return to the original starting town.",
+    "constraints": [
+        "The traveler must visit each town exactly once",
+        "The traveler must return to StartCity after visiting all other towns",
+        "The distance between any two towns is non-negative"
+    ],
+    "objective": "Minimize the total travel distance for the route",
+    "description": "Determine the shortest route that the traveler can take to visit all \\param{N} towns and return to \\param{StartCity}.",
+    "parameters": [
+        {
+            "definition": "Number of towns to visit",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Index of the start city",
+            "symbol": "StartCity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Distance from city i to city j",
+            "symbol": "Distances",
+            "value": "",
+            "shape": ["N", "N"]
+        }
+    ]
+}

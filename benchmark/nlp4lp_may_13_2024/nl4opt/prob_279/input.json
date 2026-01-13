@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of flavouring required for one order of matcha ice cream",
+            "symbol": "FlavouringMatcha",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of ice cream required for one order of matcha ice cream",
+            "symbol": "IceCreamMatcha",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of flavouring required for one order of orange sorbet",
+            "symbol": "FlavouringOrange",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required for one order of orange sorbet",
+            "symbol": "WaterOrange",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of desserts that must be matcha ice cream",
+            "symbol": "MinProportionMatcha",
+            "value": 0.15,
+            "shape": []
+        },
+        {
+            "definition": "Total units of ice cream available",
+            "symbol": "TotalIceCream",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Total units of water available",
+            "symbol": "TotalWater",
+            "value": 550,
+            "shape": []
+        }
+    ],
+    "description": "A dessert shop is popular for their only two desserts - matcha ice cream and orange sorbet. \\param{FlavouringMatcha} units of flavouring and \\param{IceCreamMatcha} units of ice cream is required to make one order of matcha ice cream. \\param{FlavouringOrange} units of flavouring and \\param{WaterOrange} units of water is required to make an order of orange sorbet. The dessert shop has recently been getting more orders online for orange sorbet and therefore, there should be more orange sorbet made than matcha ice cream. However, at least \\param{MinProportionMatcha} of desserts made must be matcha ice cream. The dessert shop has available \\param{TotalIceCream} units of ice cream and \\param{TotalWater} units of water. How many of each dessert should the shop make to minimize the total amount of flavouring needed?"
+}

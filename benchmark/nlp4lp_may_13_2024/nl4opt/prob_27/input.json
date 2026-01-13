@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of wood required to make a model train",
+            "symbol": "WoodTrain",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a model train",
+            "symbol": "PaintTrain",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of wood required to make a model plane",
+            "symbol": "WoodPlane",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a model plane",
+            "symbol": "PaintPlane",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of wood",
+            "symbol": "TotalWood",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of paint",
+            "symbol": "TotalPaint",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Profit per model train",
+            "symbol": "ProfitTrain",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per model plane",
+            "symbol": "ProfitPlane",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "A hobbyist makes model trains and planes using wood and paint. A model train requires \\param{WoodTrain} units of wood and \\param{PaintTrain} units of paint. A model plane requires \\param{WoodPlane} units of wood and \\param{PaintPlane} units of paint. The hobbyist has available \\param{TotalWood} units of wood and \\param{TotalPaint} units of paint. If the profit per model train is $\\param{ProfitTrain} and the profit per model plane is $\\param{ProfitPlane}, how many of each should be made to maximize his profit?"
+}

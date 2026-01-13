@@ -1,0 +1,11 @@
+{
+    "ProteinTurkeyDinner": 20,
+    "CarbsTurkeyDinner": 30,
+    "FatTurkeyDinner": 12,
+    "ProteinTunaSalad": 18,
+    "CarbsTunaSalad": 25,
+    "FatTunaSalad": 8,
+    "MinProtein": 150,
+    "MinCarbs": 200,
+    "MaxTurkeyDinnerProportion": 0.4
+}

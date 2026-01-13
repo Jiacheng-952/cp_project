@@ -1,0 +1,7 @@
+{
+    "ProbesSalinity": 3,
+    "ProbesPH": 2,
+    "MinPHTests": 250,
+    "MinTotalTests": 400,
+    "MaxPHSalinityRatio": 1.5
+}

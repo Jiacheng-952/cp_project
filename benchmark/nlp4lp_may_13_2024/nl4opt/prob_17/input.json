@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit for each chair produced",
+            "symbol": "ProfitChair",
+            "value": 43,
+            "shape": []
+        },
+        {
+            "definition": "Profit for each dresser produced",
+            "symbol": "ProfitDresser",
+            "value": 52,
+            "shape": []
+        },
+        {
+            "definition": "Total gallons of stain available per week",
+            "symbol": "TotalStain",
+            "value": 17,
+            "shape": []
+        },
+        {
+            "definition": "Total lengths of oak wood available per week",
+            "symbol": "TotalOak",
+            "value": 11,
+            "shape": []
+        },
+        {
+            "definition": "Amount of stain required for one chair",
+            "symbol": "StainPerChair",
+            "value": 1.4,
+            "shape": []
+        },
+        {
+            "definition": "Amount of oak wood required for one chair",
+            "symbol": "OakPerChair",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Amount of stain required for one dresser",
+            "symbol": "StainPerDresser",
+            "value": 1.1,
+            "shape": []
+        },
+        {
+            "definition": "Amount of oak wood required for one dresser",
+            "symbol": "OakPerDresser",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A chair produced by Elm Furniture yields a profit of \\param{ProfitChair}, while every dresser yields a \\param{ProfitDresser} profit. Each week, \\param{TotalStain} gallons of stain and \\param{TotalOak} lengths of oak wood are available. Each chair requires \\param{StainPerChair} gallons of stain and \\param{OakPerChair} lengths of oak wood, while each dresser requires \\param{StainPerDresser} gallons of stain and \\param{OakPerDresser} lengths of oak wood. Determine the maximum profit."
+}

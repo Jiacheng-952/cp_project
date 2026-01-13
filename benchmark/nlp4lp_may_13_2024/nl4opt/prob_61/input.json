@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of apartments a new model furnace can heat",
+            "symbol": "HeatNew",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Daily energy consumption of a new model furnace",
+            "symbol": "EnergyNew",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Number of apartments an old model furnace can heat",
+            "symbol": "HeatOld",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Daily energy consumption of an old model furnace",
+            "symbol": "EnergyOld",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of old model furnaces",
+            "symbol": "MaxOldProp",
+            "value": 0.35,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of new model furnaces to be used",
+            "symbol": "MinNew",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of apartments to be heated",
+            "symbol": "MinApartments",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum daily electricity limit",
+            "symbol": "MaxEnergy",
+            "value": 3500,
+            "shape": []
+        }
+    ],
+    "description": "A high rise building is buying two types of furnaces, a new model and an old model. A new model furnace can heat \\param{HeatNew} apartments and consumes \\param{EnergyNew} kWh per day. An old model can heat \\param{HeatOld} apartments and consumes \\param{EnergyOld} kWh per day. Since the old model is harder to find, at most \\param{MaxOldProp} of the furnaces can be the old model and at least \\param{MinNew} new model furnaces should be used. If the high rise needs to heat at least \\param{MinApartments} apartments and has \\param{MaxEnergy} kWh of electricity available, how many of each furnace should be purchased to minimize the total number of furnaces?"
+}

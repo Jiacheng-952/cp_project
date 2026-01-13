@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Phone production per day by a rural factory",
+            "symbol": "ProdRural",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Managers required per rural factory",
+            "symbol": "MgrsRural",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Phone production per day by an urban factory",
+            "symbol": "ProdUrban",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Managers required per urban factory",
+            "symbol": "MgrsUrban",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total available managers",
+            "symbol": "TotalMgrs",
+            "value": 260,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required phone production per day",
+            "symbol": "MinPhones",
+            "value": 3000,
+            "shape": []
+        }
+    ],
+    "description": "A cell phone company is building rural and urban factories. A rural factory can make \\param{ProdRural} phones per day and requires \\param{MgrsRural} managers. An urban factory can make \\param{ProdUrban} phones per day and requires \\param{MgrsUrban} managers. The company has available \\param{TotalMgrs} managers and must make at least \\param{MinPhones} phones per day. How many of each factory type should be built to minimize the total number of factories?"
+}

@@ -1,0 +1,61 @@
+{
+    "background": "A scientist has two experiments, alpha and beta, that produce electricity by consuming metal and acid resources. The scientist aims to maximize electricity production within the available amounts of metal and acid.",
+    "constraints": [
+        "Number of alpha experiments is non-negative",
+        "Number of beta experiments is non-negative",
+        "Metal consumed by alpha and beta experiments is less than or equal to TotalMetal",
+        "Acid consumed by alpha and beta experiments is less than or equal to TotalAcid"
+    ],
+    "objective": "Maximize the total amount of electricity produced by conducting alpha and beta experiments",
+    "description": "A scientist is conducting two experiments to produce electricity, experiment alpha and experiment beta. In experiment alpha, \\param{MetalAlpha} units of metal and \\param{AcidAlpha} units of acid are required to produce \\param{ElectricityAlpha} units of electricity. In experiment beta, \\param{MetalBeta} units of metal and \\param{AcidBeta} units of acid are required to produced \\param{ElectricityBeta} units of electricity. The lab has \\param{TotalMetal} units of metal and \\param{TotalAcid} units of acid available. How many of each experiment should the scientist conduct to maximize the total amount of electricity produced?",
+    "parameters": [
+        {
+            "definition": "Metal required for experiment alpha",
+            "symbol": "MetalAlpha",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Acid required for experiment alpha",
+            "symbol": "AcidAlpha",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Electricity produced by experiment alpha",
+            "symbol": "ElectricityAlpha",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Metal required for experiment beta",
+            "symbol": "MetalBeta",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Acid required for experiment beta",
+            "symbol": "AcidBeta",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Electricity produced by experiment beta",
+            "symbol": "ElectricityBeta",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of metal available",
+            "symbol": "TotalMetal",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of acid available",
+            "symbol": "TotalAcid",
+            "value": 750,
+            "shape": []
+        }
+    ]
+}

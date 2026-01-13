@@ -1,0 +1,50 @@
+{
+    "background": "A butcher shop is considering the purchase of manual and automatic meat slicers, each with different slicing capacities and maintenance requirements, and aims to find the optimal mix.",
+    "constraints": [
+        "Number of manual slicers is non-negative",
+        "Number of automatic slicers is non-negative",
+        "Number of manual slicers must be less than the number of automatic slicers",
+        "Total slicing capacity must be at least MinTotalSlices slices per minute",
+        "Total grease usage must be at most MaxTotalGrease units per minute"
+    ],
+    "objective": "Minimize the total number of slicers in the shop",
+    "description": "A butcher shop is buying meat slicers for their shop, a manual and automatic slicer. The manual slicer can cut \\param{SlicesPerMinuteManual} slices per minute while the automatic slicer can cut \\param{SlicesPerMinuteAutomatic} slices per minute. In addition, to make sure all the parts operate smoothly, the manual slicer requires \\param{GreasePerMinuteManual} units of grease per minute while the automatic slicer requires \\param{GreasePerMinuteAutomatic} units of grease per minute. Since the automatic slicer does not need someone to operate it, the number of manual slicers must be less than the number of automatic slicers. In addition, the butcher shop needs to be able to cut at least \\param{MinTotalSlices} slices per minute but can use at most \\param{MaxTotalGrease} units of grease per minute. How many of each slicer should the butcher shop buy to minimize the total number of slicers in the shop?",
+    "parameters": [
+        {
+            "definition": "Number of slices per minute a manual slicer can cut",
+            "symbol": "SlicesPerMinuteManual",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of slices per minute an automatic slicer can cut",
+            "symbol": "SlicesPerMinuteAutomatic",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of grease required per minute by a manual slicer",
+            "symbol": "GreasePerMinuteManual",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of grease required per minute by an automatic slicer",
+            "symbol": "GreasePerMinuteAutomatic",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of slices required per minute",
+            "symbol": "MinTotalSlices",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total units of grease that can be used per minute",
+            "symbol": "MaxTotalGrease",
+            "value": 35,
+            "shape": []
+        }
+    ]
+}

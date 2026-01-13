@@ -1,0 +1,49 @@
+{
+    "background": "A fire department requires fire fighter time to deal with regional wildfires and needs to decide how many regular and emergency fire fighters to hire within a given budget.",
+    "constraints": [
+        "Minimum required fire fighter hours is MinHours",
+        "The budget for hiring fire fighters is Budget",
+        "Number of regular fire fighters is non-negative",
+        "Number of emergency fire fighters is non-negative"
+    ],
+    "objective": "Minimize the total number of fire fighters hired",
+    "description": "A fire department employs regular and emergency fire fighters. A regular fire fighter works \\param{HoursRegular} hours per shift and earns \\param{EarningsRegular}. An emergency fire fighter works \\param{HoursEmergency} hours per shift and earns \\param{EarningsEmergency}. Due to wildfires in the region, the fire department needs at least \\param{MinHours} hours of fire fighter time. If the fire department has a budget of \\param{Budget}, how many of each should the fire department hire to minimize the total number of fire fighters?",
+    "parameters": [
+        {
+            "definition": "Hours per shift for a regular fire fighter",
+            "symbol": "HoursRegular",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Earnings per shift for a regular fire fighter",
+            "symbol": "EarningsRegular",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Hours per shift for an emergency fire fighter",
+            "symbol": "HoursEmergency",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Earnings per shift for an emergency fire fighter",
+            "symbol": "EarningsEmergency",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required fire fighter hours due to wildfires",
+            "symbol": "MinHours",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Available budget for hiring fire fighters",
+            "symbol": "Budget",
+            "value": 7000,
+            "shape": []
+        }
+    ]
+}

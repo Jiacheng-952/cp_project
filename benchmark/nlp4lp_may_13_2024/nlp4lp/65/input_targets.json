@@ -1,0 +1,78 @@
+{
+    "background": "The problem involves finding an optimal combination of interventions to prevent an intruder's progress in a network, considering processing times and costs of interventions at both central and distributed systems, within given maximum hours of operation.",
+    "constraints": [
+        "Processing time for isolation in the central system multiplied by the number of such interventions is less than or equal to CentralMaxHours",
+        "Processing time for scanning in the central system multiplied by the number of such interventions is less than or equal to CentralMaxHours",
+        "Processing time for isolation in the distributed system multiplied by the number of such interventions is less than or equal to DistributedMaxHours",
+        "Processing time for scanning in the distributed system multiplied by the number of such interventions is less than or equal to DistributedMaxHours",
+        "The total number of interventions for both systems is equal to N",
+        "Number of central system interventions is non-negative and integer-valued",
+        "Number of distributed system interventions is non-negative and integer-valued"
+    ],
+    "objective": "Minimize the total cost of interventions at the central and distributed systems",
+    "description": "Determine the most cost-effective combination of interventions to halt the intruder's progress within the network. The MILP problem includes parameters: processing times at the central system (\\param{IsolateCentral}, \\param{ScanCentral}), processing times at the distributed system (\\param{IsolateDistributed}, \\param{ScanDistributed}), costs (\\param{CentralCost}, \\param{DistributedCost}), and maximum hours (\\param{CentralMaxHours}, \\param{DistributedMaxHours}) for a number of interventions \\param{N}.",
+    "parameters": [
+        {
+            "definition": "Number of interventions",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Processing time for isolating at the central system for each intervention",
+            "symbol": "IsolateCentral",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for scanning at the central system for each intervention",
+            "symbol": "ScanCentral",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for isolating at the distributed system for each intervention",
+            "symbol": "IsolateDistributed",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Processing time for scanning at the distributed system for each intervention",
+            "symbol": "ScanDistributed",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Cost for central system intervention",
+            "symbol": "CentralCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost for distributed system intervention",
+            "symbol": "DistributedCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum hours of operation for the central system",
+            "symbol": "CentralMaxHours",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum hours of operation for the distributed system",
+            "symbol": "DistributedMaxHours",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

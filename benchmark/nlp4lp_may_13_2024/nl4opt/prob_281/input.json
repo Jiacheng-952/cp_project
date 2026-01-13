@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time in minutes for one unit of coconut oil to be effective",
+            "symbol": "CoconutOilTime",
+            "value": 0.7,
+            "shape": []
+        },
+        {
+            "definition": "Time in minutes for one unit of lavender to be effective",
+            "symbol": "LavenderTime",
+            "value": 0.9,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of coconut oil",
+            "symbol": "MinCoconutOilUnits",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed units of both ingredients combined",
+            "symbol": "MaxCombinedUnits",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed ratio of units of coconut oil to units of lavender",
+            "symbol": "MaxOilLavenderRatio",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "Both coconut oil and lavender need to be added to a body wash. One unit of coconut oil takes \\param{CoconutOilTime} minutes to be effective while one unit of lavender takes \\param{LavenderTime} minutes to be effective. The body wash must contain at least \\param{MinCoconutOilUnits} units of coconut oil and at most \\param{MaxCombinedUnits} units of both ingredients. Since too much coconut oil can make the body wash too oily, there can be at most \\param{MaxOilLavenderRatio} times the amount of coconut oil as lavenders in the body wash. How many units of each should be added to the body wash to minimize the total amount of time it takes for the mixture to be effective? (Note: one must be added before the other)"
+}

@@ -1,0 +1,37 @@
+{
+    "background": "A car manufacturer needs to ship cars using a mix of large and small planes, considering capacity and pollution constraints.",
+    "constraints": [
+        "The number of large planes used must be less than PollutionRatio times the number of small planes",
+        "At least MinimumCarsDelivered cars must be delivered",
+        "The number of large planes used is non-negative",
+        "The number of small planes used is non-negative"
+    ],
+    "objective": "Minimize the total number of planes used to deliver the cars",
+    "description": "A car manufacturer ships their cars on large and small planes. A large plane can carry \\param{LargePlaneCapacity} cars while a small plane can carry \\param{SmallPlaneCapacity} cars. Since large planes cause more pollution, the number of large planes must be less than \\param{PollutionRatio} times the number of small planes. If the manufacturer wants to deliver at least \\param{MinimumCarsDelivered} cars, find the minimum number of planes that can be used.",
+    "parameters": [
+        {
+            "definition": "Capacity of a large plane",
+            "symbol": "LargePlaneCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a small plane",
+            "symbol": "SmallPlaneCapacity",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of cars to be delivered",
+            "symbol": "MinimumCarsDelivered",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Pollution factor constraint for large planes",
+            "symbol": "PollutionRatio",
+            "value": 0.33,
+            "shape": []
+        }
+    ]
+}

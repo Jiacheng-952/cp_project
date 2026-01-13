@@ -1,0 +1,61 @@
+{
+    "background": "My grandma is required to take two medicines Z1 and D3 everyday. There are two types of pills available: Zodiac and Sunny, containing different quantities of Z1 and D3.",
+    "constraints": [
+        "Grandma needs to take at least MinZ1 grams of Z1 everyday",
+        "Grandma needs to take at least MinD3 grams of D3 everyday",
+        "Number of Zodiac pills is non-negative",
+        "Number of Sunny pills is non-negative"
+    ],
+    "objective": "Minimize the total cost of the pills while fulfilling the medicine requirements",
+    "description": "My grandma is required to take two medicines Z1 and D3 everyday. She needs to take at least \\var{MinZ1} grams of Z1 and \\var{MinD3} grams of D3 everyday. These medicines are available in two pills named Zodiac and Sunny. One pill of Zodiac contains \\var{Z1perZodiac} grams of Z1 while one pill of Sunny contains \\var{Z1perSunny} grams of Z1. On the other hand, one pill of Zodiac contains \\var{D3perZodiac} grams of D3 and one pill of Sunny contains \\var{D3perSunny} grams of D3. The cost per pill of Zodiac is $\\var{CostZodiac} and the cost per pill of Sunny is $\\var{CostSunny}. Formulate a LP such that the medicine requirement can be fulfilled at the lowest cost.",
+    "parameters": [
+        {
+            "definition": "Minimum required grams of medicine Z1 per day",
+            "symbol": "MinZ1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required grams of medicine D3 per day",
+            "symbol": "MinD3",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Grams of Z1 in one pill of Zodiac",
+            "symbol": "Z1perZodiac",
+            "value": 1.3,
+            "shape": []
+        },
+        {
+            "definition": "Grams of Z1 in one pill of Sunny",
+            "symbol": "Z1perSunny",
+            "value": 1.2,
+            "shape": []
+        },
+        {
+            "definition": "Grams of D3 in one pill of Zodiac",
+            "symbol": "D3perZodiac",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Grams of D3 in one pill of Sunny",
+            "symbol": "D3perSunny",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill of Zodiac",
+            "symbol": "CostZodiac",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill of Sunny",
+            "symbol": "CostSunny",
+            "value": 3,
+            "shape": []
+        }
+    ]
+}

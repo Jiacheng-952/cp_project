@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Freight transport capacity per trip",
+            "symbol": "FreightCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Air transport capacity per trip",
+            "symbol": "AirCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Cost for each freight trip",
+            "symbol": "FreightCost",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Cost for each air trip",
+            "symbol": "AirCost",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total tons of candles to be transported",
+            "symbol": "MinimumTons",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Budget for transporting candles",
+            "symbol": "Budget",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Fraction of total tons required to be transported by air",
+            "symbol": "AirFraction",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of trips by freight",
+            "symbol": "MinimumFreightTrips",
+            "value": 5,
+            "shape": []
+        }
+    ],
+    "description": "A candle-making company can move their inventory of candles using freight and air. Freight can transport \\param{FreightCapacity} tons per trip while using air can transport \\param{AirCapacity} tons per trip. Since freight take longer, the cost for each freight trip is \\param{FreightCost} while the cost over air for each trip is \\param{AirCost}. The company needs to transport at least \\param{MinimumTons} tons of candles and they have a budget of \\param{Budget}. Additionally, due to some urgent orders, at least \\param{AirFraction} of tons of candles must be transported through air. There must also be at least \\param{MinimumFreightTrips} trips through freight. How many of trip by each should be scheduled to minimize the total number of trips?"
+}

@@ -1,0 +1,10 @@
+{
+    "NumProducts": 2,
+    "NumMachines": 2,
+    "ProduceTime": [
+        [1, 3],
+        [2, 1]
+    ],
+    "AvailableTime": [200, 100],
+    "Profit": [20, 10]
+}

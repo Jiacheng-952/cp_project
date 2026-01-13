@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit per scooter",
+            "symbol": "ProfitScooter",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Profit per bike",
+            "symbol": "ProfitBike",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Design time required per scooter",
+            "symbol": "DesignScooter",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Engineering time required per scooter",
+            "symbol": "EngScooter",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Design time required per bike",
+            "symbol": "DesignBike",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Engineering time required per bike",
+            "symbol": "EngBike",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total available design team hours per month",
+            "symbol": "TotalDesignHours",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total available engineering team hours per month",
+            "symbol": "TotalEngHours",
+            "value": 6000,
+            "shape": []
+        }
+    ],
+    "description": "A company sells custom scooters and bikes for customers. The profit per scooter is \\param{ProfitScooter} and the profit per bike is \\param{ProfitBike}. Each product requires time with the design team and engineering team. Each scooter needs \\param{DesignScooter} hours with the design team and \\param{EngScooter} hours with the engineering team. Each bike needs \\param{DesignBike} hours with the design team and \\param{EngBike} hours with the engineering team. Per month, there are \\param{TotalDesignHours} hours available on the design team and \\param{TotalEngHours} hours available on the engineering team. How many of each should the company make per month to maximize profit?"
+}

@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "definition": "The time taken to make one unit of spare part k on machine s",
+            "symbol": "Time",
+            "value": "",
+            "shape": [
+                "K",
+                "S"
+            ]
+        },
+        {
+            "definition": "Profit from producing one unit of spare part k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Capacity of machine s for the month",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        }
+    ],
+    "description": "Formulate the problem of determining the quantities of each spare part to be made during the month so as to maximize \\param{Profit}. Each spare part k requires \\param{Time} on machine s, and each machine s has a maximum monthly capacity of \\param{Capacity}."
+}

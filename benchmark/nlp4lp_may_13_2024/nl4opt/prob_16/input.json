@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of an advertisement on z-tube",
+            "symbol": "CostZtube",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Number of viewers attracted by an advertisement on z-tube",
+            "symbol": "ViewersZtube",
+            "value": 400000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of an advertisement on soorchle",
+            "symbol": "CostSoorchle",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Number of viewers attracted by an advertisement on soorchle",
+            "symbol": "ViewersSoorchle",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of an advertisement on wassa",
+            "symbol": "CostWassa",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Number of viewers attracted by an advertisement on wassa",
+            "symbol": "ViewersWassa",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of advertisements allowed on soorchle",
+            "symbol": "MaxAdsSoorchle",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of the total number of advertisements that should occur on wassa",
+            "symbol": "MaxPropWassa",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of the total number of advertisements that should occur on z-tube",
+            "symbol": "MinPropZtube",
+            "value": 0.05,
+            "shape": []
+        },
+        {
+            "definition": "Weekly advertising budget",
+            "symbol": "Budget",
+            "value": 10000,
+            "shape": []
+        }
+    ],
+    "description": "A company is deciding where to promote their product. Some options include z-tube, soorchle engine, and wassa advertisements. The cost for each option and the number of viewers they each attract is given. On z-tube, each ad costs \\$\\param{CostZtube} and attracts \\param{ViewersZtube} viewers. On soorchle, each ad costs \\$\\param{CostSoorchle} and attracts \\param{ViewersSoorchle} viewers. On wassa, each ad costs \\$\\param{CostWassa} and attracts \\param{ViewersWassa} viewers. Soorchle limits the number of advertisements from a single company to \\param{MaxAdsSoorchle}. Moreover, in order to balance the advertising among the three types of media, at most \\param{MaxPropWassa} of the total number of advertisements should occur on wassa. And at least \\param{MinPropZtube} should occur on z-tube. The weekly advertising budget is \\$\\param{Budget}. How many advertisements should be run in each of the three types of media to maximize the total audience?"
+}

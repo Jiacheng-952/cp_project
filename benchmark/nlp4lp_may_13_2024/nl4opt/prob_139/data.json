@@ -1,0 +1,7 @@
+{
+    "SpitTestTime": 10,
+    "SwabTestTime": 15,
+    "SpitSwabRatio": 2.0,
+    "MinSwabs": 20,
+    "TotalTime": 8000
+}

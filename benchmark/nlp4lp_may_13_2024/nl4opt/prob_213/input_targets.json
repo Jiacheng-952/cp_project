@@ -1,0 +1,49 @@
+{
+    "background": "A fashion company sells regular and premium handbags, each yielding different profits while having different manufacturing costs within a budget and a maximum sales capacity.",
+    "constraints": [
+        "Number of regular handbags sold is non-negative",
+        "Number of premium handbags sold is non-negative",
+        "Total cost of manufacturing regular handbags plus premium handbags cannot exceed Budget",
+        "Total number of handbags sold cannot exceed MaxHandbags per month"
+    ],
+    "objective": "Maximize the company's monthly profit from selling regular and premium handbags",
+    "description": "A fashion company sells regular handbags and premium handbags made of higher quality material. They can sell regular handbags at a profit of \\param{ProfitRegular} each and premium handbags at a profit of \\param{ProfitPremium} each. The total monthly cost of manufacturing is \\param{CostRegular} per regular handbag and \\param{CostPremium} per premium handbag. The company has a total budget of \\param{Budget} and can sell at most \\param{MaxHandbags} handbags of either type per month. How many of each handbag should they sell to maximize its monthly profit?",
+    "parameters": [
+        {
+            "definition": "Profit per regular handbag sold",
+            "symbol": "ProfitRegular",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Profit per premium handbag sold",
+            "symbol": "ProfitPremium",
+            "value": 180,
+            "shape": []
+        },
+        {
+            "definition": "Cost of manufacturing a regular handbag",
+            "symbol": "CostRegular",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Cost of manufacturing a premium handbag",
+            "symbol": "CostPremium",
+            "value": 447,
+            "shape": []
+        },
+        {
+            "definition": "Total monthly budget for manufacturing",
+            "symbol": "Budget",
+            "value": 250000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of handbags that can be sold per month",
+            "symbol": "MaxHandbags",
+            "value": 475,
+            "shape": []
+        }
+    ]
+}

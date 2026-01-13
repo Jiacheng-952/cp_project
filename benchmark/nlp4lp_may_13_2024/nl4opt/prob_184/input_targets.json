@@ -1,0 +1,63 @@
+{
+    "background": "A factory uses horse-drawn carts of medium and large sizes to transport rice. Different sizes of carts have varying requirements for horses and capacities for carrying rice.",
+    "constraints": [
+        "Number of medium sized carts is non-negative",
+        "Number of large sized carts is non-negative",
+        "Total horses used by all carts cannot exceed TotalHorses",
+        "Number of medium sized carts must be CartRatio times the number of large sized carts",
+        "At least MinimumMediumCarts medium sized carts must be used",
+        "At least MinimumLargeCarts large sized carts must be used"
+    ],
+    "objective": "Maximize the total amount of rice transported to the city",
+    "description": "A factory transports rice to the city in horse-drawn carts that are either medium or large size. A medium sized cart requires \\param{HorsesPerMediumCart} horses and can carry \\param{CapacityMediumCart} kg of rice. A large sized cart requires \\param{HorsesPerLargeCart} horses and can carry \\param{CapacityLargeCart} kg of rice. The factory has \\param{TotalHorses} horses available. Because the horses don't get along well, the number of medium sized carts must be \\param{CartRatio} times the number of large sized carts. In addition, there must be at least \\param{MinimumMediumCarts} medium sized carts and at least \\param{MinimumLargeCarts} large sized carts. How many of each cart size should be used to maximize the amount of rice that can be transported?",
+    "parameters": [
+        {
+            "definition": "Number of horses required for a medium sized cart",
+            "symbol": "HorsesPerMediumCart",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Rice capacity of a medium sized cart",
+            "symbol": "CapacityMediumCart",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of horses required for a large sized cart",
+            "symbol": "HorsesPerLargeCart",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Rice capacity of a large sized cart",
+            "symbol": "CapacityLargeCart",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Total number of horses available",
+            "symbol": "TotalHorses",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of medium sized carts required",
+            "symbol": "MinimumMediumCarts",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large sized carts required",
+            "symbol": "MinimumLargeCarts",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of medium sized carts to the number of large sized carts",
+            "symbol": "CartRatio",
+            "value": 3.0,
+            "shape": []
+        }
+    ]
+}

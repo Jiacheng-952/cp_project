@@ -1,0 +1,56 @@
+{
+    "background": "A tropical city needs to transport mail to islands using submarines and boats with different capacities and fuel consumption, under trip quantity constraints.",
+    "constraints": [
+        "Number of submarine trips is non-negative",
+        "Number of boat trips is non-negative",
+        "There can be at most MaxSubmarineTrips submarine trips",
+        "At least MinBoatTripProportion of the trips must be by boat",
+        "At least MinMail pieces of mail need to be transported"
+    ],
+    "objective": "Minimize the total amount of gas used for transporting mail",
+    "description": "A tropical city full of islands sends mail either by submarine or by boat. A submarine can carry \\param{SubmarineCapacity} pieces of mail per trip and uses \\param{SubmarineFuel} liters of gas. A boat can carry \\param{BoatCapacity} pieces of mail per trip and uses \\param{BoatFuel} liters of gas. There can be at most \\param{MaxSubmarineTrips} submarine trips and a minimum of \\param{MinBoatTripProportion} of the trips must be by boat. If the city needs to transport at least \\param{MinMail} pieces of mail, how many of each transportation should they use to minimize the total amount of gas used?",
+    "parameters": [
+        {
+            "definition": "Mail carrying capacity of a submarine per trip",
+            "symbol": "SubmarineCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Fuel consumption of a submarine per trip",
+            "symbol": "SubmarineFuel",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Mail carrying capacity of a boat per trip",
+            "symbol": "BoatCapacity",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Fuel consumption of a boat per trip",
+            "symbol": "BoatFuel",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of submarine trips allowed",
+            "symbol": "MaxSubmarineTrips",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of total trips that must be by boat",
+            "symbol": "MinBoatTripProportion",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of pieces of mail to be transported",
+            "symbol": "MinMail",
+            "value": 1000,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "background": "A flooring company produces laminate planks and carpets, facing expected minimum demand and a cap on weekly production due to raw material shortages, while seeking to maximize profit.",
+    "constraints": [
+        "Produce at least Dlaminate square feet of laminate planks per week",
+        "Produce at least Dcarpet square feet of carpets per week",
+        "Produce a total of at least Dtotal square feet of products each week",
+        "Produce no more than Claminate square feet of laminate planks per week",
+        "Produce no more than Ccarpet square feet of carpets per week",
+        "Number of square feet of laminate planks produced is non-negative",
+        "Number of square feet of carpets produced is non-negative"
+    ],
+    "objective": "Maximize the company's weekly profit from producing laminate planks and carpets",
+    "description": "A flooring company produces engineered laminate planks and carpets. The chief marketer reports an expected demand of at least \\param{Dlaminate} square feet of laminate planks and \\param{Dcarpet} square feet of carpets each week. The shipping contract requires a total of at least \\param{Dtotal} square feet of products each week. However, due to a shortage of raw materials, no more than \\param{Claminate} square feet of laminate planks and \\param{Ccarpet} square feet of carpets can be produced weekly. If a square foot of laminate planks produces a \\param{Plaminate} profit and a square foot of carpets yields a \\param{Pcarpet} profit, how many of each type of product should be made weekly to maximize the company's profit?",
+    "parameters": [
+        {
+            "definition": "Minimum expected demand for laminate planks per week",
+            "symbol": "Dlaminate",
+            "value": 15000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum expected demand for carpets per week",
+            "symbol": "Dcarpet",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total amount of products to be shipped per week",
+            "symbol": "Dtotal",
+            "value": 50000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum production capacity for laminate planks per week",
+            "symbol": "Claminate",
+            "value": 40000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum production capacity for carpets per week",
+            "symbol": "Ccarpet",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot for laminate planks",
+            "symbol": "Plaminate",
+            "value": 2.1,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot for carpets",
+            "symbol": "Pcarpet",
+            "value": 3.3,
+            "shape": []
+        }
+    ]
+}

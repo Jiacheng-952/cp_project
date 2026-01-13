@@ -1,0 +1,40 @@
+{
+    "background": "A company is looking to minimize the total transportation cost of transporting goods from its depots to ports.",
+    "constraints": [
+        "The number of depots I is non-negative",
+        "The number of ports J is non-negative",
+        "Cost per unit distance Price is non-negative",
+        "Distance between each depot i and port j is non-negative"
+    ],
+    "objective": "Minimize the total transportation cost from depots to ports",
+    "description": "Minimize the total transportation cost. This cost is calculated based on the number of depots \\param{I}, the number of ports \\param{J}, the cost \\param{Price} per unit distance for transporting goods, and the distance \\param{Distance} between depot i and port j.",
+    "parameters": [
+        {
+            "definition": "Number of depots",
+            "symbol": "I",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of ports",
+            "symbol": "J",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost per unit distance for transporting goods",
+            "symbol": "Price",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Distance between depot i and port j",
+            "symbol": "Distance",
+            "value": "",
+            "shape": [
+                "I",
+                "J"
+            ]
+        }
+    ]
+}

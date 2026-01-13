@@ -1,0 +1,7 @@
+{
+    "ThroatSwabTime": 5,
+    "NasalSwabTime": 3,
+    "MinNasalSwabs": 30,
+    "ThroatNasalRatio": 4,
+    "TotalTime": 20000
+}

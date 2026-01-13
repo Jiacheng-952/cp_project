@@ -1,0 +1,9 @@
+{
+    "RegularCapacity": 20,
+    "RegularFuel": 10,
+    "SpeedCapacity": 30,
+    "SpeedFuel": 20,
+    "MaxRegularTrips": 20,
+    "MinSpeedPercentage": 0.5,
+    "TotalMail": 1000
+}

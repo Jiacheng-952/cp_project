@@ -1,0 +1,9 @@
+{
+    "InteractionsCart": 70,
+    "RefillsCart": 5,
+    "InteractionsHand": 85,
+    "RefillsHand": 20,
+    "MinCartShiftsPercentage": 0.7,
+    "MinServersHand": 3,
+    "TargetInteractions": 4000
+}

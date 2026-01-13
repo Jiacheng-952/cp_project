@@ -1,0 +1,55 @@
+{
+    "background": "A music company produces two types of digital keyboards, full-weighted and semi-weighted, which require oscillator chips and production time from a daily limited resource pool.",
+    "constraints": [
+        "Number of full-weighted keyboards is non-negative",
+        "Number of semi-weighted keyboards is non-negative",
+        "Total number of chips used cannot exceed TotalChips",
+        "Total production time cannot exceed TotalTime hours per day"
+    ],
+    "objective": "Maximize the total revenue from manufacturing full-weighted and semi-weighted keyboards",
+    "description": "A music company produces two types of digital keyboards, one is full-weighted and another is semi-weighted. Both keyboards are sold for \\param{FullWeightedPrice} and \\param{SemiWeightedPrice} respectively. There are about \\param{TotalChips} oscillator chips available every day from which the full-weighted version requires \\param{ChipsFullWeighted} chips while the semi-weighted version requires \\param{ChipsSemiWeighted} chips. The company has a total of \\param{TotalTime} working hours a day. Both of these keyboards require a production time of \\param{ProductionTimePerKeyboard} hours. What should be the manufacturing quantity for each of the keyboards to maximize the total revenue?",
+    "parameters": [
+        {
+            "definition": "Sale price of the full-weighted keyboard",
+            "symbol": "FullWeightedPrice",
+            "value": 2800,
+            "shape": []
+        },
+        {
+            "definition": "Sale price of the semi-weighted keyboard",
+            "symbol": "SemiWeightedPrice",
+            "value": 2400,
+            "shape": []
+        },
+        {
+            "definition": "Total number of oscillator chips available per day",
+            "symbol": "TotalChips",
+            "value": 3500,
+            "shape": []
+        },
+        {
+            "definition": "Number of oscillator chips required to produce one full-weighted keyboard",
+            "symbol": "ChipsFullWeighted",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Number of oscillator chips required to produce one semi-weighted keyboard",
+            "symbol": "ChipsSemiWeighted",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Total available production time per day in hours",
+            "symbol": "TotalTime",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Production time required to produce one keyboard (regardless of type) in hours",
+            "symbol": "ProductionTimePerKeyboard",
+            "value": 1.2,
+            "shape": []
+        }
+    ]
+}

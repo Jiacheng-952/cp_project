@@ -1,0 +1,30 @@
+{
+    "background": "A shoe company needs to supply shoes to stores using vans and trucks. There are capacity limits for each type of vehicle and a minimum delivery requirement. Furthermore, the number of trucks must not exceed the number of vans used.",
+    "constraints": [
+        "At least MinPairs pairs of shoes must be supplied",
+        "Number of trucks used is less than or equal to the number of vans used",
+        "Number of vans is non-negative"
+    ],
+    "objective": "Minimize the number of vans used to meet the shoe supply demands",
+    "description": "A shoe company supplies shoes to stores via vans and trucks. A van can transport \\param{VanCapacity} pairs of shoes while a truck can transport \\param{TruckCapacity} pairs of shoes. The company must supply a minimum of \\param{MinPairs} pairs of shoes around the city. Since most stores are small, the number of trucks used cannot exceed the number of vans used.  Find the minimum number of vans that can be used?",
+    "parameters": [
+        {
+            "definition": "Capacity of a van",
+            "symbol": "VanCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a truck",
+            "symbol": "TruckCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total pairs of shoes to be supplied",
+            "symbol": "MinPairs",
+            "value": 2000,
+            "shape": []
+        }
+    ]
+}

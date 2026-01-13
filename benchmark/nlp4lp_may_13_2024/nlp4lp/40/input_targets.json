@@ -1,0 +1,49 @@
+{
+    "background": "The problem is to determine the optimal quantities of K different spare parts to produce in a month to maximize profit using S machines, keeping in mind the time constraints and capacities of each machine.",
+    "constraints": [
+        "Quantities of each spare part must be non-negative",
+        "Time to produce each spare part must not exceed the available machine time",
+        "Total time used on each machine s must not exceed its capacity Capacity"
+    ],
+    "objective": "Maximize the total profit from producing the spare parts",
+    "description": "Formulate the problem of determining the quantities of each spare part to be made during the month so as to maximize profit. The number of different spare parts is \\param{K}. The number of machines capable of making the spare parts is \\param{S}. The time taken to make spare part \\param{k} on machine \\param{s} is given by \\param{Time}. The profit obtained from making spare part \\param{k} is \\param{Profit}. Each machine \\param{s} has a capacity of \\param{Capacity} for the spare parts.",
+    "parameters": [
+        {
+            "definition": "Number of different spare parts",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of machines capable of making the spare parts",
+            "symbol": "S",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time taken to make spare part k on machine s",
+            "symbol": "Time",
+            "value": "",
+            "shape": [
+                "K",
+                "S"
+            ]
+        },
+        {
+            "definition": "Profit obtained from making spare part k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Capacity of machine s for the spare parts",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        }
+    ]
+}

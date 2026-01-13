@@ -1,0 +1,9 @@
+{
+    "DucksPerBoat": 10,
+    "DucksPerCanoe": 8,
+    "TimePerBoat": 20.0,
+    "TimePerCanoe": 40.0,
+    "MaxBoatTrips": 12,
+    "MinCanoeTripsPercentage": 0.6,
+    "MinDucks": 300
+}

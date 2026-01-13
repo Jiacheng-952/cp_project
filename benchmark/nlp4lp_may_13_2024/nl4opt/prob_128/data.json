@@ -1,0 +1,11 @@
+{
+    "WaterL": 40,
+    "AlcoholL": 50,
+    "WaterF": 60,
+    "AlcoholF": 40,
+    "WaterTotal": 2000,
+    "AlcoholTotal": 2100,
+    "MaxLiquid": 30,
+    "CleanHandsL": 30,
+    "CleanHandsF": 20
+}

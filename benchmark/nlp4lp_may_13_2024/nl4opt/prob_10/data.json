@@ -1,0 +1,13 @@
+{
+    "NitrogenA": 13,
+    "PhosphoricA": 5,
+    "VitaminAA": 6,
+    "VitaminDA": 5,
+    "NitrogenB": 8,
+    "PhosphoricB": 14,
+    "VitaminAB": 6,
+    "VitaminDB": 9,
+    "MinNitrogen": 220,
+    "MinPhosphoric": 160,
+    "MaxVitaminA": 350
+}

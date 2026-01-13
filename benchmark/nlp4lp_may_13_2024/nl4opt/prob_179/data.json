@@ -1,0 +1,8 @@
+{
+    "TiresPlane": 10,
+    "CostPlane": 1000,
+    "TiresTruck": 6,
+    "CostTruck": 700,
+    "MinTires": 200,
+    "Budget": 22000
+}

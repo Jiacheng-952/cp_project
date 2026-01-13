@@ -1,0 +1,6 @@
+{
+    "CanoeCapacity": 10,
+    "DieselBoatCapacity": 15,
+    "CanoesPerDieselBoat": 3,
+    "MinimumFishToTransport": 1000
+}

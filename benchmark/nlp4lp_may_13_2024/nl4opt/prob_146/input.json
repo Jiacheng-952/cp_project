@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of anti-oxidants in a pack of blueberries",
+            "symbol": "BlueberryAntioxidants",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of minerals in a pack of blueberries",
+            "symbol": "BlueberryMinerals",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of anti-oxidants in a pack of strawberries",
+            "symbol": "StrawberryAntioxidants",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Units of minerals in a pack of strawberries",
+            "symbol": "StrawberryMinerals",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of anti-oxidants",
+            "symbol": "MinAntioxidants",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of minerals",
+            "symbol": "MinMinerals",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of packs of strawberries to blueberries",
+            "symbol": "StrawberryBlueberryRatio",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in a pack of blueberries",
+            "symbol": "BlueberrySugar",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in a pack of strawberries",
+            "symbol": "StrawberrySugar",
+            "value": 7,
+            "shape": []
+        }
+    ],
+    "description": "A dietician recommends her client eat blueberries and strawberries to meet her anti-oxidant and mineral requirement. A pack of blueberries contains \\param{BlueberryAntioxidants} units of anti-oxidants and \\param{BlueberryMinerals} units of minerals. A pack of strawberries contains \\param{StrawberryAntioxidants} unit of anti-oxidants and \\param{StrawberryMinerals} units of minerals. The client must get at least \\param{MinAntioxidants} units of anti-oxidants and \\param{MinMinerals} units of minerals. In addition, because blueberries are not in season, the dietician recommends she eats at least 3 times as many packs of strawberries as blueberries. This is expressed as a strawberry to blueberry ratio of \\param{StrawberryBlueberryRatio}. If a pack of blueberries contains \\param{BlueberrySugar} grams of sugar and a pack of strawberries contains \\param{StrawberrySugar} grams of sugar, how many of packs of each should she consume to minimize her sugar intake?"
+}

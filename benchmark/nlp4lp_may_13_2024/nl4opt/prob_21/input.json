@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum operational hours per year for the stand-mixer and the oven",
+            "symbol": "MaxHours",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Hours taken in the stand mixer to make a loaf of bread",
+            "symbol": "BreadMixerHours",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Hours taken in the oven to bake a loaf of bread",
+            "symbol": "BreadOvenHours",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Hours taken in the stand mixer to make a batch of cookies",
+            "symbol": "CookieMixerHours",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Hours taken in the oven to bake a batch of cookies",
+            "symbol": "CookieOvenHours",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Profit per loaf of bread",
+            "symbol": "ProfitBread",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of cookies",
+            "symbol": "ProfitCookies",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A bakery uses a stand-mixer and a slow bake oven to make bread and cookies. Each machine can run for at most \\param{MaxHours} hours per year. To bake a loaf of bread takes \\param{BreadMixerHours} hour in the stand mixer and \\param{BreadOvenHours} hours in the oven. A batch of cookies requires \\param{CookieMixerHours} hours in the mixer and \\param{CookieOvenHours} hour in the oven. The profit per loaf of bread is \\param{ProfitBread} and the profit per batch of cookies is \\param{ProfitCookies}. How should the bakery operate to maximize total profit?"
+}

@@ -1,0 +1,7 @@
+{
+    "TAnxiety": 3,
+    "TAntiDepressant": 5,
+    "MinUnits": 100,
+    "MinAnxiety": 30,
+    "MaxAnxietyAntiDepressantRatio": 2
+}

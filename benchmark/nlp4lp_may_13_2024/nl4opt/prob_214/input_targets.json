@@ -1,0 +1,65 @@
+{
+    "background": "A woman has a budget for gambling on three different sports events and seeks to maximize her average payout while limiting her average chance of losing to a certain threshold.",
+    "constraints": [
+        "Total money spent on all bets is at most B",
+        "Money spent on basketball bet is non-negative",
+        "Money spent on horse race bet is non-negative",
+        "Money spent on soccer game bet is non-negative",
+        "Average chance of losing money should not exceed Pmax"
+    ],
+    "objective": "Maximize the woman's average payout from betting on the basketball tournament, horse race, and soccer game",
+    "ambiguities": [
+        "The description specifies two sports bets but lists three events (a basketball tournament, a horse race, and a soccer game). It should be clarified whether there are two or three bets to consider."
+    ],
+    "description": "A woman has \\param{B} to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game. Based on simple analysis, the woman determines her chance of losing her money would be \\param{Pbasketball} for basketball tournament, \\param{Phorse} for horse race, and \\param{Psoccer} for the soccer game. The payout for each dollar put on each bet will be \\param{Rbasketball} for basketball tournament, \\param{Rhorse} for horse race, and \\param{Rsoccer} for the soccer game. Knowing herself, she limits her average chance of losing her money should be at most \\param{Pmax}. Could you help her determine how much to money to put on each sport bet to maximize her average payout?",
+    "parameters": [
+        {
+            "definition": "Total budget available to gamble",
+            "symbol": "B",
+            "value": 100000,
+            "shape": []
+        },
+        {
+            "definition": "Probability of losing money on the basketball bet",
+            "symbol": "Pbasketball",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Probability of losing money on the horse race bet",
+            "symbol": "Phorse",
+            "value": 0.25,
+            "shape": []
+        },
+        {
+            "definition": "Probability of losing money on the soccer bet",
+            "symbol": "Psoccer",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Payout for each dollar bet on the basketball tournament",
+            "symbol": "Rbasketball",
+            "value": 1.2,
+            "shape": []
+        },
+        {
+            "definition": "Payout for each dollar bet on the horse race",
+            "symbol": "Rhorse",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Payout for each dollar bet on the soccer game",
+            "symbol": "Rsoccer",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Maximum average probability of losing money",
+            "symbol": "Pmax",
+            "value": 0.3,
+            "shape": []
+        }
+    ]
+}

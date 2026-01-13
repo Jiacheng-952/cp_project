@@ -1,0 +1,67 @@
+{
+    "background": "A high rise building is buying two types of furnaces, a new model and an old model to heat its apartments.",
+    "constraints": [
+        "Number of new model furnaces is an integer",
+        "Number of old model furnaces is an integer",
+        "Number of new model furnaces is non-negative",
+        "Number of old model furnaces is non-negative",
+        "At most MaxOldProp% of the furnaces can be the old model",
+        "At least MinNew new model furnaces should be used",
+        "Need to heat at least MinApartments apartments",
+        "Have at most MaxEnergy kWh of electricity available",
+        "Energy consumed by new model furnaces plus energy consumed by old model furnaces must not exceed MaxEnergy",
+        "Heat from new model furnaces plus heat from old model furnaces must be at least MinApartments"
+    ],
+    "objective": "Minimize the total number of furnaces purchased",
+    "description": "A high rise building is buying two types of furnaces, a new model and an old model. A new model furnace can heat \\var{HeatNew} apartments and consumes \\var{EnergyNew} kWh per day. An old model can heat \\var{HeatOld} apartments and consumes \\var{EnergyOld} kWh per day. Since the old model is harder to find, at most \\var{MaxOldProp} of the furnaces can be the old model and at least \\var{MinNew} new model furnaces should be used. If the high rise needs to heat at least \\var{MinApartments} apartments and has \\var{MaxEnergy} kWh of electricity available, how many of each furnace should be purchased to minimize the total number of furnaces?",
+    "parameters": [
+        {
+            "definition": "Number of apartments a new model furnace can heat",
+            "symbol": "HeatNew",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Daily energy consumption of a new model furnace",
+            "symbol": "EnergyNew",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Number of apartments an old model furnace can heat",
+            "symbol": "HeatOld",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Daily energy consumption of an old model furnace",
+            "symbol": "EnergyOld",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of old model furnaces",
+            "symbol": "MaxOldProp",
+            "value": 0.35,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of new model furnaces to be used",
+            "symbol": "MinNew",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of apartments to be heated",
+            "symbol": "MinApartments",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum daily electricity limit",
+            "symbol": "MaxEnergy",
+            "value": 3500,
+            "shape": []
+        }
+    ]
+}

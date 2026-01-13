@@ -1,0 +1,11 @@
+{
+    "PopsicleBeam": 30,
+    "GlueBeam": 5,
+    "PopsicleTruss": 50,
+    "GlueTruss": 8,
+    "TotalPopsicles": 600,
+    "TotalGlue": 100,
+    "MaxTruss": 5,
+    "MassBeam": 40,
+    "MassTruss": 60
+}

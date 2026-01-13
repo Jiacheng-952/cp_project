@@ -1,0 +1,68 @@
+{
+    "background": "A doctor advises a patient to consume oranges and grapefruits to meet certain vitamin C and vitamin A requirements, while minimizing sugar intake.",
+    "constraints": [
+        "Number of oranges is non-negative",
+        "Number of grapefruits is non-negative",
+        "Total vitamin C from oranges and grapefruits must be at least MinVitaminC",
+        "Total vitamin A from oranges and grapefruits must be at least MinVitaminA",
+        "Must eat at least OrangeGrapefruitRatio times as many oranges as grapefruits"
+    ],
+    "objective": "Minimize the total sugar intake from consuming oranges and grapefruits",
+    "description": "A doctor suggests that his patient eat oranges and grapefruit to meet his vitamin \\param{MinVitaminC} and \\param{MinVitaminA} requirements. One orange contains \\param{VitaminCOrange} units of vitamin C, \\param{VitaminAOrange} units of vitamin A, and \\param{SugarOrange} grams of sugar. One grapefruit contains \\param{VitaminCGrapefruit} units of vitamin C, \\param{VitaminAGrapefruit} units of vitamin A, and \\param{SugarGrapefruit} grams of sugar. The patient must get at least \\param{MinVitaminC} units of vitamin C and \\param{MinVitaminA} units of vitamin A. Since the patient prefers oranges, he must eat at least \\param{OrangeGrapefruitRatio} times as many oranges as grapefruits. How many of each should he eat to minimize his sugar intake?",
+    "parameters": [
+        {
+            "definition": "Units of vitamin C in one orange",
+            "symbol": "VitaminCOrange",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A in one orange",
+            "symbol": "VitaminAOrange",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in one orange",
+            "symbol": "SugarOrange",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin C in one grapefruit",
+            "symbol": "VitaminCGrapefruit",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A in one grapefruit",
+            "symbol": "VitaminAGrapefruit",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in one grapefruit",
+            "symbol": "SugarGrapefruit",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of vitamin C",
+            "symbol": "MinVitaminC",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of vitamin A",
+            "symbol": "MinVitaminA",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of oranges to grapefruits",
+            "symbol": "OrangeGrapefruitRatio",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

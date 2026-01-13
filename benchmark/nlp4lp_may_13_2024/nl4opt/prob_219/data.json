@@ -1,0 +1,9 @@
+{
+    "MinMath": 40,
+    "MinEnglish": 60,
+    "MaxMath": 140,
+    "MaxEnglish": 170,
+    "MinTotalWorkbooks": 200,
+    "ProfitMath": 15,
+    "ProfitEnglish": 17
+}

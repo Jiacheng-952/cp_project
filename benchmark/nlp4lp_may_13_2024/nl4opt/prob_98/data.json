@@ -1,0 +1,7 @@
+{
+    "VintageVolume": 500,
+    "RegularVolume": 750,
+    "TotalVolume": 100000,
+    "MinRegularVintageRatio": 4,
+    "MinVintageBottles": 10
+}

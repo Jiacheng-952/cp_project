@@ -1,0 +1,74 @@
+{
+    "background": "A grilled cheese shop sells two types of sandwiches: light and heavy grilled cheese sandwiches.",
+    "constraints": [
+        "Number of light grilled cheese sandwiches is an integer",
+        "Number of heavy grilled cheese sandwiches is an integer",
+        "Number of light grilled cheese sandwiches is non-negative",
+        "Number of heavy grilled cheese sandwiches is non-negative",
+        "Heavy grilled cheese sandwiches must be at least HeavyToLightRatio times the number of light grilled cheese sandwiches",
+        "Total slices of bread used cannot exceed TotalBread",
+        "Total slices of cheese used cannot exceed TotalCheese",
+        "Bread used for light grilled cheese sandwiches is BreadPerLight times the number of light grilled cheese sandwiches",
+        "Cheese used for light grilled cheese sandwiches is CheesePerLight times the number of light grilled cheese sandwiches",
+        "Bread used for heavy grilled cheese sandwiches is BreadPerHeavy times the number of heavy grilled cheese sandwiches",
+        "Cheese used for heavy grilled cheese sandwiches is CheesePerHeavy times the number of heavy grilled cheese sandwiches"
+    ],
+    "objective": "Minimize the total production time for both types of grilled cheese sandwiches",
+    "description": "A grilled cheese shop sells a light and heavy grilled cheese sandwich. A light grilled cheese sandwich requires \\param{BreadPerLight} slices of bread and \\param{CheesePerLight} slices of cheese. A heavy grilled cheese sandwich requires \\param{BreadPerHeavy} slices of bread and \\param{CheesePerHeavy} slices of cheese. Since most people who come to the store love grilled cheese, the store must make at least \\param{HeavyToLightRatio} times as many heavy grilled cheese sandwiches as light grilled cheese sandwiches. The store has available \\param{TotalBread} slices of bread and \\param{TotalCheese} slices of cheese. If a light grilled cheese sandwich takes \\param{TimeLight} minutes to make and a heavy grilled cheese sandwich takes \\param{TimeHeavy} minutes to make, how many of each should they make to minimize the total production time?",
+    "parameters": [
+        {
+            "definition": "Number of bread slices required for a light grilled cheese sandwich",
+            "symbol": "BreadPerLight",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of cheese slices required for a light grilled cheese sandwich",
+            "symbol": "CheesePerLight",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of bread slices required for a heavy grilled cheese sandwich",
+            "symbol": "BreadPerHeavy",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of cheese slices required for a heavy grilled cheese sandwich",
+            "symbol": "CheesePerHeavy",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of heavy to light grilled cheese sandwiches required",
+            "symbol": "HeavyToLightRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total available slices of bread",
+            "symbol": "TotalBread",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total available slices of cheese",
+            "symbol": "TotalCheese",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Time to make a light grilled cheese sandwich",
+            "symbol": "TimeLight",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time to make a heavy grilled cheese sandwich",
+            "symbol": "TimeHeavy",
+            "value": 15,
+            "shape": []
+        }
+    ]
+}

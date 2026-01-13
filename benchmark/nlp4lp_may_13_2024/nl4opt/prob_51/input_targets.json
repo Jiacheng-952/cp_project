@@ -1,0 +1,67 @@
+{
+    "background": "A gem factory uses two types of drills, high intensity and low intensity, to process gems. Each type of drill has a capacity of how many gems it can process per day and requires a certain amount of water to operate efficiently.",
+    "constraints": [
+        "Number of high intensity drills is an integer",
+        "Number of low intensity drills is an integer",
+        "Number of high intensity drills is non-negative",
+        "Number of low intensity drills is non-negative",
+        "The high intensity drill can process at most CapHigh gems per day",
+        "The low intensity drill can process at most CapLow gems per day",
+        "Total number of gems processed by high and low intensity drills must be at least TotalGems",
+        "Total water used by high and low intensity drills must not exceed TotalWater",
+        "At most MaxPercentHigh percent of the drills can be high intensity ones",
+        "At least MinLowDrills must be low intensity drills"
+    ],
+    "objective": "Minimize the total number of drills needed",
+    "description": "A gem factory has two drills, a high intensity one and a low intensity one. Each day, the high intensity drill can process \\var{CapHigh} gems and requires \\var{WaterHigh} units of water to dissipate heat. Each day, the low intensity drill can process \\var{CapLow} gems and requires \\var{WaterLow} units of water to dissipate heat. Each day the factory must process \\var{TotalGems} gems and they have available \\var{TotalWater} units of water. Since the high intensity drill produces a lot of noise pollution, at most \\var{MaxPercentHigh} of the drills can be high intensity ones. Further, at least \\var{MinLowDrills} should be low intensity drills. How many of each drill should be used to minimize the total number of drills needed?",
+    "parameters": [
+        {
+            "definition": "Processing capacity of the high intensity drill per day",
+            "symbol": "CapHigh",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Water usage of the high intensity drill per day",
+            "symbol": "WaterHigh",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Processing capacity of the low intensity drill per day",
+            "symbol": "CapLow",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Water usage of the low intensity drill per day",
+            "symbol": "WaterLow",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total number of gems that must be processed each day",
+            "symbol": "TotalGems",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of water available each day",
+            "symbol": "TotalWater",
+            "value": 700,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of high intensity drills",
+            "symbol": "MaxPercentHigh",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of low intensity drills required",
+            "symbol": "MinLowDrills",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

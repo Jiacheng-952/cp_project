@@ -1,0 +1,67 @@
+{
+    "background": "A bakery bakes bagels and croissants using oven time and pastry chef time.",
+    "constraints": [
+        "Number of bagel batches is an integer",
+        "Number of croissant batches is an integer",
+        "Number of bagel batches is non-negative",
+        "Number of croissant batches is non-negative",
+        "Total oven time for bagels and croissants is at most TotalOvenHours",
+        "Total chef time for bagels and croissants is at most TotalChefHours",
+        "Oven time for a batch of bagels is BagelOvenTime",
+        "Chef time for a batch of bagels is BagelChefTime",
+        "Oven time for a batch of croissants is CroissantOvenTime",
+        "Chef time for a batch of croissants is CroissantChefTime"
+    ],
+    "objective": "Maximize the bakery's profit from selling batches of bagels and croissants",
+    "description": "A bakery bakes bagels and croissants. A batch of bagels can be made using \\var{BagelOvenTime} hours of oven time and \\var{BagelChefTime} hours of pastry chef time. A batch of croissants is more complicated, so while they take \\var{CroissantOvenTime} hours of oven time, they take \\var{CroissantChefTime} hours of pastry chef time. In a day, the bakery has at most \\var{TotalOvenHours} hours available for the oven and \\var{TotalChefHours} pastry chef hours available. Using all the available capacity, what is the maximum profit the bakery can generate assuming the profit per batch is \\var{ProfitBagel} and \\var{ProfitCroissant} respectively for a batch of bagels and a batch of croissants.",
+    "parameters": [
+        {
+            "definition": "Hours of oven time required for a batch of bagels",
+            "symbol": "BagelOvenTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Hours of pastry chef time required for a batch of bagels",
+            "symbol": "BagelChefTime",
+            "value": 0.25,
+            "shape": []
+        },
+        {
+            "definition": "Hours of oven time required for a batch of croissants",
+            "symbol": "CroissantOvenTime",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Hours of pastry chef time required for a batch of croissants",
+            "symbol": "CroissantChefTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total daily available oven hours",
+            "symbol": "TotalOvenHours",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Total daily available pastry chef hours",
+            "symbol": "TotalChefHours",
+            "value": 32,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of bagels",
+            "symbol": "ProfitBagel",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of croissants",
+            "symbol": "ProfitCroissant",
+            "value": 40,
+            "shape": []
+        }
+    ]
+}

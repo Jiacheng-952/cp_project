@@ -1,0 +1,82 @@
+{
+    "background": "Determine the amount of regular and overtime labor to be used weekly for assembling baskets to maximize seasonal profit, considering labor costs, assembly time, material costs, selling price, holding costs, and salvage value.",
+    "constraints": [
+        "Regular labor used in any week is at most RegularLabor",
+        "Overtime labor used in any week is at most OvertimeLabor",
+        "Total assembly time in a week is limited by the sum of regular and overtime labor available",
+        "Total number of baskets assembled must match weekly demand",
+        "Number of baskets assembled must be non-negative",
+        "Regular labor used must be non-negative",
+        "Overtime labor used must be non-negative"
+    ],
+    "objective": "Maximize profit from assembly and sale of baskets over the season",
+    "description": "How much regular and overtime labor should be utilized each week to assemble the baskets to maximize the profit over the season? The costs for regular and overtime labor are \\param{RegularCost} and \\param{OvertimeCost}, respectively. Each basket requires \\param{AssemblyTime} to assemble, and the material cost per basket is \\param{MaterialCost}. Baskets are sold at \\param{SellingPrice}, with a holding cost of \\param{HoldingCost} and a salvage value of \\param{SalvageValue} at the end of the season. For each week w, the demand for baskets is \\param{Demand}, with available regular and overtime labor given by \\param{RegularLabor} and \\param{OvertimeLabor} respectively.",
+    "parameters": [
+        {
+            "definition": "Cost of regular labor per unit of time",
+            "symbol": "RegularCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Cost of overtime labor per unit of time",
+            "symbol": "OvertimeCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Time required to assemble a single basket",
+            "symbol": "AssemblyTime",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Cost of materials per basket",
+            "symbol": "MaterialCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Selling price per basket",
+            "symbol": "SellingPrice",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Holding cost per basket per unit of time",
+            "symbol": "HoldingCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Salvage value per unsold basket at the end of the season",
+            "symbol": "SalvageValue",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Demand for baskets in week w",
+            "symbol": "Demand",
+            "value": 0.0,
+            "shape": [
+                "W"
+            ]
+        },
+        {
+            "definition": "Number of regular labor units available in week w",
+            "symbol": "RegularLabor",
+            "value": 0.0,
+            "shape": [
+                "W"
+            ]
+        },
+        {
+            "definition": "Number of overtime labor units available in week w",
+            "symbol": "OvertimeLabor",
+            "value": 0.0,
+            "shape": [
+                "W"
+            ]
+        }
+    ]
+}

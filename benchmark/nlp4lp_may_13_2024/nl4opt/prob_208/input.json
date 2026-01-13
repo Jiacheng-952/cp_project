@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of Calcium in one serving of health supplement A",
+            "symbol": "CaA",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of Magnesium in one serving of health supplement A",
+            "symbol": "MgA",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Amount of Calcium in one serving of health supplement B",
+            "symbol": "CaB",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Amount of Magnesium in one serving of health supplement B",
+            "symbol": "MgB",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Cost per serving of health supplement A",
+            "symbol": "CostA",
+            "value": 14,
+            "shape": []
+        },
+        {
+            "definition": "Cost per serving of health supplement B",
+            "symbol": "CostB",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required amount of Calcium per day",
+            "symbol": "MinCa",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required amount of Magnesium per day",
+            "symbol": "MinMg",
+            "value": 50,
+            "shape": []
+        }
+    ],
+    "description": "Calcium and Magnesium are found in two health supplements, health supplement A and health supplement B. One serving of health supplement A contains \\param{CaA} grams of Calcium and \\param{MgA} grams of Magnesium. One serving of health supplement B contains \\param{CaB} grams of Calcium and \\param{MgB} grams of Magnesium. The cost per health supplement for health supplement A is \\$\\param{CostA} and the cost per health supplement for health supplement B is \\$\\param{CostB}. A patient must consume these two health supplements every day to get at least \\param{MinCa} grams of Calcium and \\param{MinMg} grams of Magnesium. Determine how much servings of each supplement the patient needs to minimize her daily cost."
+}

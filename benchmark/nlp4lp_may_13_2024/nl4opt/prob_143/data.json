@@ -1,0 +1,9 @@
+{
+    "TotalMedicinalUnits": 1000,
+    "LargePillMedicinalUnits": 3,
+    "LargePillFillerUnits": 2,
+    "SmallPillMedicinalUnits": 2,
+    "SmallPillFillerUnits": 1,
+    "MinimumLargePills": 100,
+    "MinimumSmallPillsPercentage": 0.6
+}

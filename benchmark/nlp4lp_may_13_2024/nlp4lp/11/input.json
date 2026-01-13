@@ -1,0 +1,50 @@
+{
+    "parameters": [
+        {
+            "definition": "Total number of schools",
+            "symbol": "S",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total number of student groups",
+            "symbol": "G",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total number of neighborhoods",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Capacity of school s for student group g",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "S",
+                "G"
+            ]
+        },
+        {
+            "definition": "Population of student group g in neighborhood n",
+            "symbol": "Population",
+            "value": "",
+            "shape": [
+                "N",
+                "G"
+            ]
+        },
+        {
+            "definition": "Distance between neighborhood n and school s",
+            "symbol": "Distance",
+            "value": "",
+            "shape": [
+                "N",
+                "S"
+            ]
+        }
+    ],
+    "description": "We want to assign all students to schools, while minimizing the total distance traveled by all students. We have a total number of \\param{S} schools, \\param{G} student groups, and \\param{N} neighborhoods. Each school s has a capacity for student group g represented by \\param{Capacity}. The population of student group g in neighborhood n is given by \\param{Population}. The distance between neighborhood n and school s is denoted as \\param{Distance}. We may ignore the fact that numbers of students must be integers."
+}

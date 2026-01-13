@@ -1,0 +1,49 @@
+{
+    "background": "Platinum Database sells two types of subscription software packages, personal and commercial licenses, with associated costs and profits, and aims to maximize profits under certain constraints.",
+    "constraints": [
+        "Number of personal licenses produced is non-negative",
+        "Number of commercial licenses produced is non-negative",
+        "Combined number of personal and commercial licenses produced cannot exceed MaxLicenses",
+        "Total cost to produce personal and commercial licenses cannot exceed TotalCostLimit"
+    ],
+    "objective": "Maximize the profit from the sale of personal and commercial software licenses",
+    "description": "Platinum Database sells two types of subscription software packages: a personal license and a commercial license which will cost \\param{PersonalLicenseCost} and \\param{CommercialLicenseCost} to generate respectively. The marketing department estimates that they can sell at most \\param{MaxLicenses} licenses for both versions combined a month. The profit per personal license is \\param{PersonalLicenseProfit} and the profit per commercial version is \\param{CommercialLicenseProfit}. If the company does not want to spend more than \\param{TotalCostLimit}, how many of each software package should they produce to maximize the profits.",
+    "parameters": [
+        {
+            "definition": "Cost to generate a personal license",
+            "symbol": "PersonalLicenseCost",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Cost to generate a commercial license",
+            "symbol": "CommercialLicenseCost",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of licenses sold per month",
+            "symbol": "MaxLicenses",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Profit per personal license",
+            "symbol": "PersonalLicenseProfit",
+            "value": 450,
+            "shape": []
+        },
+        {
+            "definition": "Profit per commercial license",
+            "symbol": "CommercialLicenseProfit",
+            "value": 1200,
+            "shape": []
+        },
+        {
+            "definition": "Total cost limit",
+            "symbol": "TotalCostLimit",
+            "value": 400000,
+            "shape": []
+        }
+    ]
+}

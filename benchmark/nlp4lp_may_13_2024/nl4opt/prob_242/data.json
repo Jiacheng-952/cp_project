@@ -1,0 +1,11 @@
+{
+    "CaloriesSalmon": 300,
+    "ProteinSalmon": 15,
+    "SodiumSalmon": 80,
+    "CaloriesEggs": 200,
+    "ProteinEggs": 8,
+    "SodiumEggs": 20,
+    "MaxEggProportion": 0.4,
+    "MinTotalCalories": 2000,
+    "MinTotalProtein": 90
+}

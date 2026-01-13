@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of rare inert gas required for chemical reaction A",
+            "symbol": "InertGasA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of treated water required for chemical reaction A",
+            "symbol": "WaterA",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Amount of the rare compound produced by chemical reaction A",
+            "symbol": "CompoundA",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of rare inert gas required for chemical reaction B",
+            "symbol": "InertGasB",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Amount of treated water required for chemical reaction B",
+            "symbol": "WaterB",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of the rare compound produced by chemical reaction B",
+            "symbol": "CompoundB",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of rare inert gas available",
+            "symbol": "TotalInertGas",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of treated water available",
+            "symbol": "TotalWater",
+            "value": 800,
+            "shape": []
+        }
+    ],
+    "description": "There are two chemical reactions, chemical reaction A and chemical reaction B. Chemical reaction A requires \\param{InertGasA} units of rare inert gas and \\param{WaterA} units of treated water to produce \\param{CompoundA} units of a rare compound. Chemical reaction B requires \\param{InertGasB} units of rare inert gas and \\param{WaterB} units of treater water to produce \\param{CompoundB} units of a rare compound. There are \\param{TotalInertGas} units of the rare inert gas and \\param{TotalWater} units of treated water available in the lab. How many reactions of each type should be done to maximize the amount of rare compound produced?"
+}

@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Dose of medicine delivered by Beam 1 per minute to the benign area of the pancreas",
+            "symbol": "DosePancreas1",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Dose of medicine delivered by Beam 1 per minute to the benign area of the skin",
+            "symbol": "DoseSkin1",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Dose of medicine delivered by Beam 2 per minute to the benign area of the pancreas",
+            "symbol": "DosePancreas2",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Dose of medicine delivered by Beam 2 per minute to the benign area of the skin",
+            "symbol": "DoseSkin2",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Dose of medicine delivered by Beam 1 per minute to the tumor",
+            "symbol": "DoseTumor1",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Dose of medicine delivered by Beam 2 per minute to the tumor",
+            "symbol": "DoseTumor2",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of medicine the skin should receive",
+            "symbol": "MaxSkinDose",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of medicine the tumor should receive",
+            "symbol": "MinTumorDose",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A patient is undergoing radiation treatment involving two beams, Beam 1 and Beam 2. Beam 1 delivers a dose of \\param{DosePancreas1} units of medicine per minute to the benign area of the pancreas and \\param{DoseSkin1} units of medicine per minute to the benign area of the skin. Beam 2 delivers \\param{DosePancreas2} units of medicine per minute to the benign area of the pancreas and \\param{DoseSkin2} units of medicine per minute to the benign area of the skin. In addition, beam 1 delivers \\param{DoseTumor1} units of medicine per minute to the tumor and beam 2 delivers \\param{DoseTumor2} units of medicine per minute to the tumor. At most \\param{MaxSkinDose} units of medicine should be received by the skin and at least \\param{MinTumorDose} units of medicine should be delivered to the tumor. How many minutes of each beam should be used to minimize the total radiation received by the pancreas?"
+}

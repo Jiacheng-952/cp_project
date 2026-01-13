@@ -1,0 +1,11 @@
+{
+    "A": 100,
+    "HeapProduction": 3,
+    "HeapWaste": 8,
+    "HeapMachines": 10,
+    "VatProduction": 5,
+    "VatWaste": 17,
+    "VatMachines": 20,
+    "MachinesAvailable": 100,
+    "WasteLimit": 90
+}

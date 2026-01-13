@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of transportation for route from i to j",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "I",
+                "J"
+            ]
+        },
+        {
+            "definition": "Demand at destination l",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        },
+        {
+            "definition": "Supply at terminal k",
+            "symbol": "Supply",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "PROBLEM TYPE: LP\n\nINPUT FORMAT:\n\n{\n    \"routes\": [\n       {\n        \"start\": i,\n        \"end\": j,\n        \"C\": \\param{Cost}_{i,j},\n       }\n    ],\n    \"demand\": [\n        {\n            \"destination\": l,\n            \"D\": \\param{Demand}_{l}\n        }\n    ],\n    \"supply\": [\n        {\n            \"terminal\": k,\n            \"S\": \\param{Supply}_{k}\n        }\n    ]\n}\n\nOBJECTIVE: What quantity of soybeans should they transport from source to destination to minimize transportation costs?"
+}

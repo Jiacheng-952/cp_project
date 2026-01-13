@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of one limousine",
+            "symbol": "LimousineCapacity",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of one bus",
+            "symbol": "BusCapacity",
+            "value": 18,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of people to transport",
+            "symbol": "MinimumPeople",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of vehicles that must be limousines",
+            "symbol": "MinimumLimousinePercentage",
+            "value": 0.7,
+            "shape": []
+        }
+    ],
+    "description": "A party organizer needs to transport party goers either by limousine or bus. Limousines can carry \\param{LimousineCapacity} people and buses can carry \\param{BusCapacity} people. They need to transport at least \\param{MinimumPeople} people. Because limousines are more attractive, at least \\param{MinimumLimousinePercentage} of the vehicles must be limousines. How many of each type of vehicle should be used to minimize the total number of limousines and buses used?"
+}

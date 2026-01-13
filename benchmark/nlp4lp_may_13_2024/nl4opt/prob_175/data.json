@@ -1,0 +1,9 @@
+{
+    "SeasonalPoints": 2,
+    "FullTimePoints": 5,
+    "MaxPoints": 200,
+    "GiftsPerSeasonal": 5,
+    "GiftsPerFullTime": 8,
+    "MaxSeasonalPercent": 0.3,
+    "MinFullTimeVolunteers": 10
+}

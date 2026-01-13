@@ -1,0 +1,10 @@
+{
+    "CostNoodles": 5,
+    "CaloriesNoodles": 600,
+    "ProteinNoodles": 1.5,
+    "CostBars": 2.5,
+    "CaloriesBars": 250,
+    "ProteinBars": 5,
+    "MinCalories": 2000,
+    "MinProtein": 16
+}

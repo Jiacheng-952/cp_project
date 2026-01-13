@@ -1,0 +1,19 @@
+{
+    "parameters": [
+        {
+            "definition": "Total capacity of a floppy disk",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Size of each file j",
+            "symbol": "Size",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        }
+    ],
+    "description": "How to distribute these files on the floppy disks in order to minimize the number of floppy disks used, given that each floppy disk has a \\param{Capacity} and there are N different files with sizes represented by \\param{Size}."
+}

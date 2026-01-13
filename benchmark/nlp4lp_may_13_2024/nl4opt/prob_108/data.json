@@ -1,0 +1,11 @@
+{
+    "MedicinalIngredientsRegular": 50,
+    "RehydrationProductRegular": 40,
+    "MedicinalIngredientsPremium": 40,
+    "RehydrationProductPremium": 60,
+    "TotalMedicinalIngredients": 3000,
+    "TotalRehydrationProduct": 3500,
+    "MinRegularBatches": 10,
+    "PeopleTreatedRegular": 50,
+    "PeopleTreatedPremium": 30
+}

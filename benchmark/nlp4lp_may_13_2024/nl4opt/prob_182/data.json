@@ -1,0 +1,9 @@
+{
+    "FishPerHelicopter": 30,
+    "TimeHelicopter": 40,
+    "FishPerCar": 20,
+    "TimeCar": 30,
+    "MaxHelicopterTrips": 5,
+    "CarTripPercentage": 0.6,
+    "MinFishNeeded": 300
+}

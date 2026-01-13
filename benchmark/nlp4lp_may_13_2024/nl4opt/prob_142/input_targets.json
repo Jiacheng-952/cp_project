@@ -1,0 +1,80 @@
+{
+    "background": "A chemistry teacher is planning to conduct experiments that produce green gas using red and blue liquids. Each experiment also produces a certain amount of smelly gas. The lab has limited quantities of red and blue liquids, and there is a maximum limit on the amount of smelly gas that can be produced.",
+    "constraints": [
+        "Number of experiment 1 is non-negative",
+        "Number of experiment 2 is non-negative",
+        "Total units of red liquid used in both experiments cannot exceed TotalRed",
+        "Total units of blue liquid used in both experiments cannot exceed TotalBlue",
+        "Total units of smelly gas produced from both experiments cannot exceed MaxSmelly"
+    ],
+    "objective": "Maximize the total amount of green gas produced from both experiments",
+    "description": "A chemistry teacher teaches her students two experiments, experiment 1 and experiment 2. In experiment 1, \\param{Red1} units of the red liquid and \\param{Blue1} units of the blue liquid mix to create \\param{Green1} units of green gas. In experiment 2, \\param{Red2} units of the red liquid and \\param{Blue2} units of the blue liquid mix to create \\param{Green2} units of green gas. In addition, experiment 1 produces \\param{Smelly1} units of smelly gas while experiment 2 produces \\param{Smelly2} units of smelly gas. The lab has available \\param{TotalRed} units of red liquid and \\param{TotalBlue} units of blue liquid. If at most \\param{MaxSmelly} units of smelly gas can be produced, how many experiments of each should be done to maximize the total amount of green gas produced?",
+    "parameters": [
+        {
+            "definition": "Units of the red liquid mixed in experiment 1",
+            "symbol": "Red1",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of the blue liquid mixed in experiment 1",
+            "symbol": "Blue1",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of green gas produced in experiment 1",
+            "symbol": "Green1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of smelly gas produced in experiment 1",
+            "symbol": "Smelly1",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Units of the red liquid mixed in experiment 2",
+            "symbol": "Red2",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of the blue liquid mixed in experiment 2",
+            "symbol": "Blue2",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of green gas produced in experiment 2",
+            "symbol": "Green2",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of smelly gas produced in experiment 2",
+            "symbol": "Smelly2",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total units of red liquid available",
+            "symbol": "TotalRed",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Total units of blue liquid available",
+            "symbol": "TotalBlue",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of smelly gas allowed",
+            "symbol": "MaxSmelly",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

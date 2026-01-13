@@ -1,0 +1,31 @@
+{
+    "background": "A hospital is trying to determine the minimal number of nurses to hire over a planning period to meet the daily demand for nursing staff.",
+    "constraints": [
+        "Number of nurses is non-negative",
+        "The number of nurses hired must meet or exceed the demand for each day of the period"
+    ],
+    "objective": "Minimize the number of nurses that the hospital needs to hire for the planning period",
+    "description": "The goal is to find the minimal number of nurses the hospital needs to hire for a planning period of \\param{Period}. The hospital has a known demand for nurses across a week, specified by the array \\param{Demand}, where each element corresponds to the demand for a particular day in the period.",
+    "parameters": [
+        {
+            "definition": "Number of days",
+            "symbol": "T",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The planning period for nurse staffing",
+            "symbol": "Period",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Array of demands for nurses for days",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        }
+    ]
+}

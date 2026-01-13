@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost per kilogram for Feed A",
+            "symbol": "CostA",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Cost per kilogram for Feed B",
+            "symbol": "CostB",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Protein content per kilogram of Feed A",
+            "symbol": "ProteinA",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Protein content per kilogram of Feed B",
+            "symbol": "ProteinB",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Fat content per kilogram of Feed A",
+            "symbol": "FatA",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Fat content per kilogram of Feed B",
+            "symbol": "FatB",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of protein in the feed mixture",
+            "symbol": "MinProtein",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of fat in the feed mixture",
+            "symbol": "MinFat",
+            "value": 50,
+            "shape": []
+        }
+    ],
+    "description": "A farmer wants to mix his animal feeds, Feed A and Feed B, in such a way that the mixture will contain at least \\param{MinProtein} units of protein and \\param{MinFat} units of fat. Feed A costs \\param{CostA} per kilogram and contains \\param{ProteinA} units of protein and \\param{FatA} units of fat. Feed B costs \\param{CostB} per kilogram and contains \\param{ProteinB} units of protein and \\param{FatB} units of fat. Determine the minimum cost of the mixture."
+}

@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Calories in one banana",
+            "symbol": "BananaCalories",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Grams of potassium in one banana",
+            "symbol": "BananaPotassium",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in one banana",
+            "symbol": "BananaSugar",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Calories in one mango",
+            "symbol": "MangoCalories",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Grams of potassium in one mango",
+            "symbol": "MangoPotassium",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar in one mango",
+            "symbol": "MangoSugar",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total calories the gorilla must consume",
+            "symbol": "MinCalories",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total grams of potassium the gorilla must consume",
+            "symbol": "MinPotassium",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of mangoes in the gorilla's diet",
+            "symbol": "MaxMangoPercentage",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A zookeeper feeds a gorilla with bananas and mangoes. Each banana contains \\param{BananaCalories} calories, \\param{BananaPotassium} grams of potassium, and \\param{BananaSugar} grams of sugar. Each mango contains \\param{MangoCalories} calories, \\param{MangoPotassium} grams of potassium, and \\param{MangoSugar} grams of sugar. The gorilla must consume at least \\param{MinCalories} calories and \\param{MinPotassium} grams of potassium. Since the gorilla prefers bananas, at most \\param{MaxMangoPercentage} of the fruits he eats can be mangoes. If excess sugar makes the gorilla aggressive, how many of each fruit should he consume to minimize his sugar intake?"
+}

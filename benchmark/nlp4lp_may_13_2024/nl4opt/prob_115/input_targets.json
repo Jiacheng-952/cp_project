@@ -1,0 +1,44 @@
+{
+    "background": "Fertilizer and seeds need to be applied to a lawn. Each has a different time to become effective. There is a maximum combined limit of fertilizer and seeds that can be applied, a minimum required amount of fertilizer, and a maximum allowed ratio of fertilizer to seeds.",
+    "constraints": [
+        "Total units of fertilizer and seeds combined cannot exceed MaxUnits",
+        "At least MinFertilizer units of fertilizer must be added",
+        "The amount of fertilizer cannot exceed MaxFertilizerSeedRatio times the amount of seeds",
+        "Number of units of fertilizer is non-negative",
+        "Number of units of seeds is non-negative"
+    ],
+    "objective": "Minimize the total effective time for the lawn to be ready after applying fertilizer and seeds",
+    "description": "Both fertilizer and seeds need to be added to a lawn. One unit of fertilizer takes \\param{TimeFertilizer} minutes to be effective while one unit of seeds takes \\param{TimeSeeds} minutes to be effective. There can be at most \\param{MaxUnits} units of fertilizer and seeds combined added to the lawn. In addition at least \\param{MinFertilizer} units of fertilizer need to be added. Since the lawn is really patchy, there can be at most \\param{MaxFertilizerSeedRatio} times the amount of fertilizer as seeds. How many units of each should be added to minimize the total time it takes for the lawn to be ready?",
+    "parameters": [
+        {
+            "definition": "Time for fertilizer to be effective per unit",
+            "symbol": "TimeFertilizer",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Time for seeds to be effective per unit",
+            "symbol": "TimeSeeds",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum combined units of fertilizer and seeds",
+            "symbol": "MaxUnits",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of fertilizer to be added",
+            "symbol": "MinFertilizer",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of the amount of fertilizer to seeds",
+            "symbol": "MaxFertilizerSeedRatio",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

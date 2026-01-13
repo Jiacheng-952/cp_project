@@ -1,0 +1,61 @@
+{
+    "parameters": [
+        {
+            "definition": "The production inputs from resource type one to product k in year j",
+            "symbol": "InputOne",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "The manpower allocated to resource type one for product k",
+            "symbol": "ManpowerOne",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "The production inputs from resource type two to product k in year j",
+            "symbol": "InputTwo",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "The manpower allocated to resource type two for product k",
+            "symbol": "ManpowerTwo",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Stock levels of product k at the start of the planning horizon",
+            "symbol": "Stock",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Production capacity for product k",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "The upper limit of manpower",
+            "symbol": "ManpowerLimit",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "Maximize total production in the last two years using the given constraints on production inputs from two resource types (\\param{InputOne} and \\param{InputTwo}), manpower allocations (\\param{ManpowerOne} and \\param{ManpowerTwo}), stock levels (\\param{Stock}), capacities (\\param{Capacity}), and the upper limit of manpower (\\param{ManpowerLimit})."
+}

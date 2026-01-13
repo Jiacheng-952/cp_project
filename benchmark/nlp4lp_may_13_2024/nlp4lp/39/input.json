@@ -1,0 +1,36 @@
+{
+    "parameters": [
+        {
+            "definition": "Quantity of alloy to produce",
+            "symbol": "AlloyQuantity",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of target components in the alloy",
+            "symbol": "Target",
+            "value": 0,
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Ratio of each component k in the alloy m",
+            "symbol": "Ratio",
+            "value": 0,
+            "shape": [
+                "K",
+                "M"
+            ]
+        },
+        {
+            "definition": "Price of each alloy k",
+            "symbol": "Price",
+            "value": 0,
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "The manufacturer wishes to find the amounts of the various alloys needed and to determine the cheapest combination given \\param{AlloyQuantity}, the total quantity of alloy to produce, \\param{Target}, the quantity of target components in the alloy, \\param{Ratio}, the ratio of each component k in alloy m, and \\param{Price}, the price of each alloy k."
+}

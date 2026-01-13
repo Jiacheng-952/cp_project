@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Hours of oven time required for a batch of bagels",
+            "symbol": "BagelOvenTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Hours of pastry chef time required for a batch of bagels",
+            "symbol": "BagelChefTime",
+            "value": 0.25,
+            "shape": []
+        },
+        {
+            "definition": "Hours of oven time required for a batch of croissants",
+            "symbol": "CroissantOvenTime",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Hours of pastry chef time required for a batch of croissants",
+            "symbol": "CroissantChefTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total daily available oven hours",
+            "symbol": "TotalOvenHours",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Total daily available pastry chef hours",
+            "symbol": "TotalChefHours",
+            "value": 32,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of bagels",
+            "symbol": "ProfitBagel",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of croissants",
+            "symbol": "ProfitCroissant",
+            "value": 40,
+            "shape": []
+        }
+    ],
+    "description": "A bakery bakes bagels and croissants. A batch of bagels can be made using \\param{BagelOvenTime} hours of oven time and \\param{BagelChefTime} hours of pastry chef time. A batch of croissants is more complicated, so while they take \\param{CroissantOvenTime} hours of oven time, they take \\param{CroissantChefTime} hours of pastry chef time. In a day, the bakery has at most \\param{TotalOvenHours} hours available for the oven and \\param{TotalChefHours} pastry chef hours available. Using all the available capacity, what is the maximum profit the bakery can generate assuming the profit per batch is \\param{ProfitBagel} and \\param{ProfitCroissant} respectively for a batch of bagels and a batch of croissants."
+}

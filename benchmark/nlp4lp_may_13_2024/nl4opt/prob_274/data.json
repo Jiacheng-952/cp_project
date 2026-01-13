@@ -1,0 +1,8 @@
+{
+    "AntibioticsAvailable": 35000,
+    "AntibioticsFirstDose": 30,
+    "AntibioticsSecondDose": 65,
+    "GelatineFirstDose": 20,
+    "GelatineSecondDose": 60,
+    "MinimumSecondDose": 40
+}

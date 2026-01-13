@@ -1,0 +1,11 @@
+{
+    "TimeMedicationPatches": 3,
+    "MaterialsMedicationPatches": 5,
+    "TimeAntiBioticCreams": 5,
+    "MaterialsAntiBioticCreams": 6,
+    "MaxTotalBatches": 100,
+    "TotalStaffTime": 400,
+    "TotalMaterials": 530,
+    "PeopleTreatedMedicationPatches": 3,
+    "PeopleTreatedAntiBioticCreams": 2
+}

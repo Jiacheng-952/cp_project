@@ -1,0 +1,62 @@
+{
+    "background": "A senior home is scheduling the intake of spinach and soybeans for elderly to meet certain nutritional fibre and iron requirements while maximizing caloric intake.",
+    "constraints": [
+        "Number of cups of spinach is non-negative",
+        "Number of cups of soybeans is non-negative",
+        "Number of cups of spinach must exceed the number of cups of soybeans",
+        "Total intake of fibre must be at least TotalFibre units",
+        "Total intake of iron must be at least TotalIron mg"
+    ],
+    "objective": "Maximize the seniors' total caloric intake from cups of spinach and soybeans",
+    "description": "A senior home has snacks of spinach and soybeans to increase their intake of iron. A cup of spinach contains \\param{FibreSpinach} units of fibre and \\param{IronSpinach} mg of iron. A cup of soybeans contains \\param{FibreSoybeans} units of fibre and \\param{IronSoybeans} mg of iron. Due to other nutritional requirements, the nurses decided that the number of cups of spinach must exceed the number of cups of soybeans. Furthermore, a cup of spinach contains \\param{CaloriesSpinach} calories while a cup of soybeans contains \\param{CaloriesSoybeans} calories. If they schedule that the elderly need in total at least \\param{TotalFibre} units of fibre and \\param{TotalIron} mg of iron, how many cups of each should the nurses schedule to maximize the seniors\u2019 total caloric intake?",
+    "parameters": [
+        {
+            "definition": "Units of fibre in a cup of spinach",
+            "symbol": "FibreSpinach",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Milligrams of iron in a cup of spinach",
+            "symbol": "IronSpinach",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Calories in a cup of spinach",
+            "symbol": "CaloriesSpinach",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of fibre in a cup of soybeans",
+            "symbol": "FibreSoybeans",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Milligrams of iron in a cup of soybeans",
+            "symbol": "IronSoybeans",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Calories in a cup of soybeans",
+            "symbol": "CaloriesSoybeans",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total minimum required units of fibre",
+            "symbol": "TotalFibre",
+            "value": 12000,
+            "shape": []
+        },
+        {
+            "definition": "Total minimum required milligrams of iron",
+            "symbol": "TotalIron",
+            "value": 300,
+            "shape": []
+        }
+    ]
+}

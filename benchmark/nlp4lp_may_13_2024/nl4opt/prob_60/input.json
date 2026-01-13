@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hours a seasonal snow remover works per shift",
+            "symbol": "HoursSeasonal",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a seasonal snow remover per shift",
+            "symbol": "PaySeasonal",
+            "value": 120.0,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours a permanent snow remover works per shift",
+            "symbol": "HoursPermanent",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a permanent snow remover per shift",
+            "symbol": "PayPermanent",
+            "value": 250.0,
+            "shape": []
+        },
+        {
+            "definition": "Total required labor hours for snow removal",
+            "symbol": "TotalHoursRequired",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for snow removal",
+            "symbol": "TotalBudget",
+            "value": 6500.0,
+            "shape": []
+        }
+    ],
+    "description": "A city employs seasonal and permanent snow removers. A seasonal snow remover works \\param{HoursSeasonal} hours per shift and gets paid \\param{PaySeasonal}. A permanent snow remover works \\param{HoursPermanent} hours per shift and gets paid \\param{PayPermanent}. Currently the city needs \\param{TotalHoursRequired} hours of snow remover labor after a heavy snowfall. If the city has a budget of \\param{TotalBudget}, how many of each type of worker should be hired to minimize the total number of snow removers?"
+}

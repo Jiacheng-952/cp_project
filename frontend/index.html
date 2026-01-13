@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP-Agent - 约束规划专用智能体</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 700px;
+        }
+
+        .workflow-section {
+            grid-column: 1 / -1;
+            padding: 30px;
+            background: #f5f7fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .input-section {
+            padding: 30px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .output-section {
+            padding: 30px;
+            background: white;
+        }
+
+        /* 工作流可视化样式 */
+        .workflow-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .workflow-nodes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .workflow-node {
+            width: 120px;
+            height: 60px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9em;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+            border: 2px solid #e9ecef;
+            background: #f8f9fa;
+            color: #6c757d;
+        }
+
+        .workflow-node.active {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border-color: #3498db;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+            transform: scale(1.05);
+        }
+
+        .workflow-node.completed {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border-color: #27ae60;
+        }
+
+        .workflow-node.error {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            border-color: #e74c3c;
+        }
+
+        .workflow-connector {
+            flex: 1;
+            height: 3px;
+            background: #e9ecef;
+            position: relative;
+            z-index: 1;
+        }
+
+        .workflow-connector.active {
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            height: 4px;
+        }
+
+        .workflow-connector.completed {
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+        }
+
+        .workflow-status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .workflow-log {
+            margin-top: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .log-entry {
+            padding: 5px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+
+        .log-time {
+            color: #6c757d;
+            font-size: 0.8em;
+        }
+
+        .log-message {
+            color: #2c3e50;
+            margin-left: 10px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .problem-input {
+            width: 100%;
+            height: 250px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            font-size: 1em;
+            font-family: 'Courier New', monospace;
+            resize: vertical;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+            line-height: 1.5;
+        }
+
+        .problem-input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-right: 10px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-clear {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .btn-clear:hover {
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn-analyze {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+        }
+
+        .btn-analyze:hover {
+            box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+        }
+
+        .analysis-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        }
+
+        .analysis-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .analysis-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .analysis-label {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95em;
+        }
+
+        .analysis-value {
+            color: #2c3e50;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 5px;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .problem-type {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .problem-type.cp {
+            background: #e8f6f3;
+            color: #16a085;
+            border: 1px solid #1abc9c;
+        }
+
+        .problem-type.mp {
+            background: #e8f4fd;
+            color: #2980b9;
+            border: 1px solid #3498db;
+        }
+
+        .problem-type.unknown {
+            background: #fdf2e9;
+            color: #d35400;
+            border: 1px solid #e67e22;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-badge.pending {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #dee2e6;
+        }
+
+        .status-badge.high {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status-badge.medium {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .status-badge.low {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 8px 0;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .strategy-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .strategy-tag {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            border: 1px solid #bbdefb;
+        }
+
+        .output-tabs {
+            display: flex;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab.active {
+            border-bottom-color: #3498db;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .output-area {
+            background: #f8f9fa;
+            color: #2c3e50;
+            padding: 25px;
+            border-radius: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 450px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-size: 0.95em;
+            line-height: 1.6;
+            border: 1px solid #e9ecef;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .solution-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 12px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .metric-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metric-label {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .solution-highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .constraint-item {
+            background: #e8f5e8;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border-left: 3px solid #27ae60;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .variable-item {
+            background: #e3f2fd;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border-left: 3px solid #2196f3;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .log-entry {
+            padding: 8px 12px;
+            margin: 4px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }
+
+        .log-info {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .log-success {
+            background: #e8f5e8;
+            color: #2e7d32;
+        }
+
+        .log-warning {
+            background: #fff3e0;
+            color: #ef6c00;
+        }
+
+        .log-error {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .solution-panel {
+            background: #e8f6f3;
+            border: 2px solid #1abc9c;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .solution-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .solution-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #16a085;
+        }
+
+        .solution-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .metric {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .metric-value {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .status-bar {
+            background: #34495e;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #2ecc71;
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.offline {
+            background: #e74c3c;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .examples {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .example-btn {
+            background: #ecf0f1;
+            color: #2c3e50;
+            border: 1px solid #bdc3c7;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.85em;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .example-btn:hover {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            color: #5a6c7d;
+            margin: 25px 0;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .spinner {
+            border: 4px solid rgba(52, 152, 219, 0.2);
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.5s linear infinite;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9, #9b59b6);
+            width: 0%;
+            transition: width 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .error-message {
+            background: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #e53935;
+            margin: 15px 0;
+            display: none;
+        }
+
+        .success-message {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 15px 0;
+            display: none;
+        }
+
+        .analysis-animation {
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .input-section, .analysis-section {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 CP-Agent - 约束规划专用智能体</h1>
+            <p>专为约束规划问题设计的智能求解系统，使用OR-Tools CP-SAT求解器</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status">
+                <div class="status-indicator" id="statusIndicator"></div>
+                <span id="statusText">检查服务器状态...</span>
+            </div>
+            <div id="serverInfo">服务器: localhost:8000 | 版本: 1.0.0 (CP专用版)</div>
+        </div>
+
+        <div class="main-content">
+            <!-- 工作流可视化区域 -->
+            <div class="workflow-section">
+                <h2 class="section-title">🔄 CP专用工作流</h2>
+                <div class="workflow-container">
+                    <div class="workflow-nodes">
+                        <div class="workflow-node" id="node-classifier">分类器</div>
+                        <div class="workflow-connector" id="connector-classifier-modeler"></div>
+                        <div class="workflow-node" id="node-modeler">建模器</div>
+                        <div class="workflow-connector" id="connector-modeler-verifier"></div>
+                        <div class="workflow-node" id="node-verifier">验证器</div>
+                        <div class="workflow-connector" id="connector-verifier-corrector"></div>
+                        <div class="workflow-node" id="node-corrector">修正器</div>
+                        <div class="workflow-connector" id="connector-corrector-visualizer"></div>
+                        <div class="workflow-node" id="node-visualizer">可视化器</div>
+                        <div class="workflow-connector" id="connector-visualizer-reporter"></div>
+                        <div class="workflow-node" id="node-reporter">报告器</div>
+                    </div>
+                    <div class="workflow-status">
+                        <div><strong>当前状态：</strong> <span id="workflowStatus">等待开始</span></div>
+                        <div><strong>执行步骤：</strong> <span id="workflowStep">0</span></div>
+                        <div><strong>修正次数：</strong> <span id="correctionCount">0</span></div>
+                    </div>
+                    <div class="workflow-log" id="workflowLog">
+                        <div class="log-entry">
+                            <span class="log-time">[系统]</span>
+                            <span class="log-message">CP专用工作流已初始化，等待问题输入...</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 节点执行结果面板 -->
+                    <div class="node-results-panel" id="nodeResultsPanel" style="display: none;">
+                        <h3 style="margin-bottom: 15px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px;">📊 节点执行详情</h3>
+                        <div id="nodeResultsContent">
+                            <!-- 节点结果将动态添加到这里 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 输入区域 -->
+            <div class="input-section">
+                <h2 class="section-title">📝 问题输入</h2>
+                <textarea 
+                    id="problemInput" 
+                    class="problem-input" 
+                    placeholder="请输入您的约束规划问题描述...
+
+例如：
+员工排班问题：
+公司有20名员工需要分配到6个不同的班次，每个班次有不同的需求人数...
+
+或者：
+车辆路径问题：
+需要为配送车队规划最优路线，满足时间窗和容量约束...
+
+系统将直接使用CP-SAT求解器进行求解！">
+                </textarea>
+                
+                <div class="examples">
+                    <strong>📋 示例问题：</strong><br>
+                    <button class="example-btn" onclick="loadExample('scheduling')">📅 员工排班</button>
+                    <button class="example-btn" onclick="loadExample('vrp')">🚚 车辆路径</button>
+                    <button class="example-btn" onclick="loadExample('assignment')">📋 任务分配</button>
+                    <button class="example-btn" onclick="loadExample('packing')">📦 装箱问题</button>
+                    <button class="example-btn" onclick="loadExample('scheduling_easy')">⚙️ 调度问题-简单</button>
+                    <button class="example-btn" onclick="loadExample('scheduling_medium')">⚙️ 调度问题-中等</button>
+                    <button class="example-btn" onclick="loadExample('scheduling_hard')">⚙️ 调度问题-困难</button>
+                    <button class="example-btn" onclick="loadExample('scheduling_super')">⚙️ 调度问题-超级难</button>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button id="solveBtn" class="btn" onclick="solveProblem()">
+                        🚀 求解CP问题
+                    </button>
+                    <button class="btn btn-clear" onclick="clearAll()">
+                        🗑️ 清空所有
+                    </button>
+                </div>
+
+                <div id="errorMessage" class="error-message">
+                    <strong>❌ 错误信息</strong>
+                    <p id="errorText"></p>
+                </div>
+
+                <div id="successMessage" class="success-message">
+                    <strong>✅ 操作成功</strong>
+                    <p id="successText"></p>
+                </div>
+
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p id="loadingText">正在求解CP问题，请稍候...</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 输出区域 -->
+            <div class="output-section">
+                <h2 class="section-title">📈 求解结果</h2>
+                
+                <!-- 解决方案指标面板 -->
+                <div id="solutionMetrics" class="solution-metrics" style="display: none;">
+                    <div class="metric-item">
+                        <span class="metric-label">最优值</span>
+                        <span id="optimalValue" class="metric-value">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">求解时间</span>
+                        <span id="solutionTime" class="metric-value">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">约束数量</span>
+                        <span id="constraints" class="metric-value">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">变量数量</span>
+                        <span id="variables" class="metric-value">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">可行解</span>
+                        <span id="feasibleSolution" class="metric-value">-</span>
+                    </div>
+                </div>
+                
+                <div class="output-tabs">
+                    <button class="tab active" onclick="switchTab('solution')">💡 解决方案</button>
+                    <button class="tab" onclick="switchTab('model')">📐 数学模型</button>
+                    <button class="tab" onclick="switchTab('code')">💻 代码实现</button>
+                    <button class="tab" onclick="switchTab('logs')">📋 求解日志</button>
+                </div>
+
+                <div id="solutionTab" class="tab-content active">
+                    <div id="solutionOutput" class="output-area">
+欢迎使用CP-Agent约束规划专用系统！
+
+请在上方输入您的约束规划问题，系统将：
+1. 🔍 直接使用CP-SAT求解器
+2. 🚀 生成完整解决方案
+3. 📊 提供详细的结果分析
+                    </div>
+                </div>
+
+                <div id="modelTab" class="tab-content">
+                    <div id="modelOutput" class="output-area">
+约束规划数学模型将在此显示...
+                    </div>
+                </div>
+
+                <div id="codeTab" class="tab-content">
+                    <div id="codeOutput" class="output-area">
+CP-SAT Python代码实现将在此显示...
+                    </div>
+                </div>
+
+                <div id="logsTab" class="tab-content">
+                    <div id="logsOutput" class="output-area">
+CP求解过程日志将在此显示...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8000';
+        
+        // 检查服务器状态
+        async function checkServerStatus() {
+            const indicator = document.getElementById('statusIndicator');
+            const statusText = document.getElementById('statusText');
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/`, { 
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    indicator.className = 'status-indicator';
+                    statusText.textContent = `服务器运行正常 - ${data.message}`;
+                    return true;
+                }
+            } catch (error) {
+                console.error('服务器连接失败:', error);
+            }
+            
+            indicator.className = 'status-indicator offline';
+            statusText.textContent = '服务器连接失败';
+            return false;
+        }
+
+        // 工作流可视化相关函数
+        function resetWorkflowVisualization() {
+            // 重置所有节点状态
+            document.querySelectorAll('.workflow-node').forEach(node => {
+                node.classList.remove('active', 'completed', 'error');
+            });
+            
+            // 重置所有连接线状态
+            document.querySelectorAll('.workflow-connector').forEach(connector => {
+                connector.classList.remove('active', 'completed');
+            });
+            
+            // 重置状态信息
+            document.getElementById('workflowStatus').textContent = '等待开始';
+            document.getElementById('workflowStep').textContent = '0';
+            document.getElementById('correctionCount').textContent = '0';
+            
+            // 清空日志
+            document.getElementById('workflowLog').innerHTML = `
+                <div class="log-entry">
+                    <span class="log-time">[系统]</span>
+                    <span class="log-message">CP专用工作流已初始化，等待问题输入...</span>
+                </div>
+            `;
+        }
+        
+        function updateWorkflowNode(nodeName, status, message = '') {
+            // 处理特殊节点名称，特别是"unknown"
+            let elementId = `node-${nodeName}`;
+            
+            // 如果是"unknown"节点，我们不更新特定节点，而是显示通用状态
+            if (nodeName === 'unknown') {
+                document.getElementById('workflowStatus').textContent = '正在执行中...';
+                // 添加日志但不更新特定节点的视觉状态
+                if (message) {
+                    addWorkflowLog(message, status === 'error' ? 'error' : 'info');
+                }
+                return;
+            }
+            
+            const nodeElement = document.getElementById(elementId);
+            if (!nodeElement) {
+                console.warn(`未找到节点元素: ${elementId}`);
+                // 即使找不到特定节点，也要更新状态文本和添加日志
+                const statusText = {
+                    'active': '正在执行',
+                    'completed': '已完成',
+                    'error': '执行失败'
+                };
+                document.getElementById('workflowStatus').textContent = statusText[status] || '未知状态';
+                
+                if (message) {
+                    addWorkflowLog(message, status === 'error' ? 'error' : 'info');
+                }
+                return;
+            }
+            
+            // 更新节点状态
+            nodeElement.classList.remove('active', 'completed', 'error');
+            nodeElement.classList.add(status);
+            
+            // 更新状态文本
+            const statusText = {
+                'active': '正在执行',
+                'completed': '已完成',
+                'error': '执行失败'
+            };
+            document.getElementById('workflowStatus').textContent = statusText[status] || '未知状态';
+            
+            // 添加日志
+            if (message) {
+                addWorkflowLog(message, status === 'error' ? 'error' : 'info');
+            }
+        }
+        
+        function updateWorkflowConnector(fromNode, toNode, status) {
+            const connectorElement = document.getElementById(`connector-${fromNode}-${toNode}`);
+            if (!connectorElement) return;
+            
+            connectorElement.classList.remove('active', 'completed');
+            connectorElement.classList.add(status);
+        }
+        
+        function addWorkflowLog(message, type = 'info') {
+            const logContainer = document.getElementById('workflowLog');
+            const timestamp = new Date().toLocaleTimeString();
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            
+            const logTime = document.createElement('span');
+            logTime.className = 'log-time';
+            logTime.textContent = `[${timestamp}]`;
+            
+            const logMessage = document.createElement('span');
+            logMessage.className = 'log-message';
+            logMessage.textContent = message;
+            
+            logEntry.appendChild(logTime);
+            logEntry.appendChild(logMessage);
+            
+            logContainer.appendChild(logEntry);
+            
+            // 自动滚动到底部
+            logContainer.scrollTop = logContainer.scrollHeight;
+        }
+        
+        function updateWorkflowStep(step) {
+            document.getElementById('workflowStep').textContent = step;
+        }
+        
+        function updateCorrectionCount(count) {
+            document.getElementById('correctionCount').textContent = count;
+        }
+
+        // 求解CP问题
+        async function solveProblem() {
+            const problemText = document.getElementById('problemInput').value.trim();
+            if (!problemText) {
+                showError('请输入问题描述！');
+                return;
+            }
+
+            hideMessages();
+            resetWorkflowVisualization();
+            showLoading('正在求解CP问题...');
+            updateProgress(5);
+            
+            // 清空节点结果面板
+            clearNodeResults();
+
+            try {
+                // 立即调用后端API求解，不进行任何前置模拟
+                addWorkflowLog('正在调用后端API求解CP问题...');
+                
+                const response = await fetch('http://localhost:8000/api/chat/stream', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        messages: [
+                            {
+                                role: "user",
+                                content: problemText
+                            }
+                        ],
+                        thread_id: "__default__",
+                        resources: [],
+                        max_plan_iterations: 5,
+                        max_step_num: 10,
+                        max_search_results: 5,
+                        auto_accepted_plan: false
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // 处理流式响应
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let fullResponse = '';
+                let currentNode = '';
+                let lastNode = '';
+                let stepCount = 0;
+                let correctionCount = 0;
+                let nodeStartTime = Date.now();
+                
+                let processing = true;
+                let currentEventType = '';
+                while (processing) {
+                    const { done, value } = await reader.read();
+                    if (done) {
+                        processing = false;
+                        break;
+                    }
+                    
+                    const chunk = decoder.decode(value, { stream: true });
+                    const lines = chunk.split('\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('event: ')) {
+                            // 保存当前事件类型
+                            currentEventType = line.slice(7).trim();
+                            continue;
+                        }
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+                            if (data === '[DONE]') {
+                                processing = false;
+                                break;
+                            }
+                            try {
+                                const json = JSON.parse(data);
+                                
+                                // 只处理工作流进度事件
+                                if (currentEventType === 'workflow_progress') {
+                                    const newNode = json.workflow_node || 'unknown';
+                                    stepCount = json.step_count || 0;
+                                    correctionCount = json.correction_count || 0;
+                                    
+                                    // 如果节点发生变化，记录上一个节点的执行时间并显示结果
+                                    if (newNode !== currentNode && currentNode !== '') {
+                                        const nodeEndTime = Date.now();
+                                        const executionTime = nodeEndTime - nodeStartTime;
+                                        
+                                        // 显示上一个节点的结果
+                                        addNodeResult(
+                                            getNodeDisplayName(lastNode),
+                                            json.node_result || '无返回结果',
+                                            executionTime,
+                                            lastNode
+                                        );
+                                        
+                                        // 更新节点状态
+                                        updateWorkflowNode(lastNode, 'completed');
+                                        // 更新连接器状态
+                                        updateWorkflowConnector(lastNode, newNode, 'completed');
+                                        
+                                        // 重置计时器
+                                        nodeStartTime = Date.now();
+                                    }
+                                    
+                                    currentNode = newNode;
+                                    
+                                    // 更新工作流步骤
+                                    updateWorkflowStep(stepCount);
+                                    
+                                    // 更新修正次数
+                                    if (correctionCount > 0) {
+                                        updateCorrectionCount(correctionCount);
+                                    }
+                                    
+                                    // 更新当前节点状态
+                                    updateWorkflowNode(currentNode, 'active', json.content || '');
+                                    
+                                    // 添加日志
+                                    if (json.content && json.content !== '') {
+                                        addWorkflowLog(json.content);
+                                    }
+                                    
+                                    // 保存最终响应内容
+                                    if (json.content) {
+                                        fullResponse += json.content + '\n';
+                                    }
+                                    
+                                    lastNode = currentNode;
+                                }
+                            } catch (e) {
+                                console.error('Error parsing JSON:', e);
+                            }
+                        }
+                    }
+                }
+                
+                // 标记最后一个节点为完成
+                if (lastNode !== '') {
+                    const finalExecutionTime = Date.now() - nodeStartTime;
+                    addNodeResult(
+                        getNodeDisplayName(lastNode),
+                        '节点执行完成',
+                        finalExecutionTime,
+                        lastNode
+                    );
+                    updateWorkflowNode(lastNode, 'completed');
+                }
+                
+                // 解析最终结果
+                const solution = parseBackendResponse(fullResponse);
+                
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                updateWorkflowNode('reporter', 'completed');
+                addWorkflowLog('最终报告生成完成');
+                
+                // 更新结果展示
+                updateSolutionDisplay(solution);
+                
+                updateProgress(100);
+                setTimeout(() => {
+                    hideLoading();
+                    showSuccess('CP问题求解完成！');
+                }, 500);
+                
+            } catch (error) {
+                console.error('求解失败:', error);
+                hideLoading();
+                showError('问题求解失败：' + error.message);
+            }
+        }
+        
+        // 获取节点显示名称
+        function getNodeDisplayName(nodeId) {
+            const nodeNames = {
+                'classifier': '问题分类器',
+                'modeler': 'CP建模器',
+                'solver': '求解器',
+                'verifier': '验证器',
+                'corrector': '校正器',
+                'visualizer': '可视化器',
+                'reporter': '报告器'
+            };
+            return nodeNames[nodeId] || nodeId;
+        }
+
+        // 添加节点结果到显示面板
+        function addNodeResult(nodeName, result, executionTime, nodeType) {
+            const panel = document.getElementById('nodeResultsPanel');
+            const content = document.getElementById('nodeResultsContent');
+            
+            // 显示面板
+            panel.style.display = 'block';
+            
+            // 创建结果元素
+            const resultElement = document.createElement('div');
+            resultElement.className = 'node-result-item';
+            resultElement.style.marginBottom = '15px';
+            resultElement.style.padding = '15px';
+            resultElement.style.borderRadius = '8px';
+            resultElement.style.backgroundColor = '#f8f9fa';
+            resultElement.style.borderLeft = '4px solid #3498db';
+            resultElement.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            
+            // 根据节点类型设置不同的颜色
+            let nodeColor = '#3498db';
+            let nodeIcon = '⚙️';
+            
+            switch(nodeType) {
+                case 'classifier':
+                    nodeColor = '#e74c3c';
+                    nodeIcon = '📊';
+                    break;
+                case 'modeler':
+                    nodeColor = '#2ecc71';
+                    nodeIcon = '🧮';
+                    break;
+                case 'solver':
+                    nodeColor = '#9b59b6';
+                    nodeIcon = '🔍';
+                    break;
+                case 'verifier':
+                    nodeColor = '#f39c12';
+                    nodeIcon = '✅';
+                    break;
+                case 'corrector':
+                    nodeColor = '#e67e22';
+                    nodeIcon = '🔧';
+                    break;
+                case 'visualizer':
+                    nodeColor = '#1abc9c';
+                    nodeIcon = '📈';
+                    break;
+                case 'reporter':
+                    nodeColor = '#34495e';
+                    nodeIcon = '📋';
+                    break;
+            }
+            
+            resultElement.style.borderLeftColor = nodeColor;
+            
+            // 格式化结果数据
+            let formattedResult = result;
+            if (typeof result === 'object') {
+                try {
+                    formattedResult = JSON.stringify(result, null, 2);
+                } catch (e) {
+                    formattedResult = String(result);
+                }
+            }
+            
+            // 添加内容
+            resultElement.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <h4 style="margin: 0; color: #2c3e50; font-size: 1.1em;">${nodeIcon} ${nodeName}</h4>
+                    <span style="background-color: ${nodeColor}; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em;">${nodeType}</span>
+                </div>
+                <div style="margin-bottom: 8px;"><strong>执行时间:</strong> <span style="color: #e74c3c; font-weight: bold;">${executionTime}ms</span></div>
+                <div style="margin-bottom: 8px;"><strong>返回结果:</strong></div>
+                <div style="margin-top: 5px; padding: 10px; background-color: white; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.85em; line-height: 1.4; max-height: 200px; overflow-y: auto; border: 1px solid #ddd;">
+                    <pre style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">${formattedResult}</pre>
+                </div>
+            `;
+            
+            content.appendChild(resultElement);
+            
+            // 滚动到最新结果
+            resultElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        // 清空节点结果面板
+        function clearNodeResults() {
+            const content = document.getElementById('nodeResultsContent');
+            content.innerHTML = '';
+            const panel = document.getElementById('nodeResultsPanel');
+            panel.style.display = 'none';
+        }
+
+        // 解析后端API响应
+        function parseBackendResponse(response) {
+            // 这里需要根据后端实际返回的格式进行解析
+            // 暂时使用一个简单的解析逻辑，后续需要根据后端API的实际响应格式调整
+            
+            // 尝试从响应中提取关键信息
+            let optimalValue = '未知';
+            let solutionTime = '未知';
+            let constraintsCount = '未知';
+            let variablesCount = '未知';
+            let hasFeasibleSolution = false;
+            
+            // 如果响应是JSON格式，尝试解析
+            try {
+                const jsonData = JSON.parse(response);
+                if (jsonData.optimal_value) optimalValue = jsonData.optimal_value;
+                if (jsonData.solution_time) solutionTime = jsonData.solution_time;
+                if (jsonData.constraints_count) constraintsCount = jsonData.constraints_count;
+                if (jsonData.variables_count) variablesCount = jsonData.variables_count;
+                if (jsonData.has_feasible_solution !== undefined) hasFeasibleSolution = jsonData.has_feasible_solution;
+            } catch (e) {
+                // 如果不是JSON格式，尝试从文本中提取
+                const lines = response.split('\n');
+                for (const line of lines) {
+                    if (line.includes('最优值') || line.includes('目标值')) {
+                        optimalValue = line.split(':')[1]?.trim() || '找到';
+                    }
+                    if (line.includes('求解时间')) {
+                        solutionTime = line.split(':')[1]?.trim() || '未知';
+                    }
+                    if (line.includes('约束数量')) {
+                        constraintsCount = line.split(':')[1]?.trim() || '未知';
+                    }
+                    if (line.includes('变量数量')) {
+                        variablesCount = line.split(':')[1]?.trim() || '未知';
+                    }
+                    // 检查是否有可行解的信息
+                    if (line.includes('可行解状态') || line.includes('Feasible Solution') || line.includes('存在可行解')) {
+                        hasFeasibleSolution = true;
+                    }
+                }
+            }
+            
+            return {
+                optimal_value: optimalValue,
+                solution_time: solutionTime,
+                constraints_count: constraintsCount,
+                variables_count: variablesCount,
+                has_feasible_solution: hasFeasibleSolution,
+                solution_text: response,
+                model_text: response,
+                code_text: response,
+                logs_text: response
+            };
+        }
+
+        // 更新解决方案显示
+        function updateSolutionDisplay(solution) {
+            // 更新指标
+            document.getElementById('optimalValue').textContent = solution.optimal_value;
+            document.getElementById('solutionTime').textContent = solution.solution_time;
+            document.getElementById('constraints').textContent = solution.constraints_count;
+            document.getElementById('variables').textContent = solution.variables_count;
+            
+            // 更新可行解状态
+            const feasibleSolutionElement = document.getElementById('feasibleSolution');
+            if (solution.has_feasible_solution !== undefined) {
+                feasibleSolutionElement.textContent = solution.has_feasible_solution ? '是' : '否';
+                feasibleSolutionElement.style.color = solution.has_feasible_solution ? '#27ae60' : '#e74c3c';
+            } else {
+                feasibleSolutionElement.textContent = '未知';
+                feasibleSolutionElement.style.color = '#7f8c8d';
+            }
+            
+            // 显示指标面板
+            document.getElementById('solutionMetrics').style.display = 'grid';
+            
+            // 更新解决方案文本，添加可行解信息
+            let solutionText = solution.solution_text;
+            if (solution.has_feasible_solution !== undefined) {
+                // 如果是CSP问题且找到了可行解，更新显示
+                if (solution.has_feasible_solution && solution.optimal_value === '未知') {
+                    solutionText = `🎉 约束满足问题求解完成！
+
+<div class="solution-highlight">
+<strong>📊 可行性验证结果</strong>
+• 可行解状态: ✅ 存在可行解
+• 求解时间: ${solution.solution_time}
+• 约束数量: ${solution.constraints_count}个
+• 变量数量: ${solution.variables_count}个
+</div>
+
+✅ 所有约束条件得到满足
+🔍 问题类型: 约束满足问题(CSP)
+⚙️ 求解器: CP-SAT
+
+<strong>📋 关键结果：</strong>
+• 问题存在可行解
+• 所有约束条件均被满足
+• 解决方案验证通过
+
+详细结果请查看各标签页...`;
+                }
+                // 如果没有可行解，也更新显示
+                else if (!solution.has_feasible_solution) {
+                    solutionText = `❌ 约束满足问题无解！
+
+<div class="solution-highlight">
+<strong>📊 可行性验证结果</strong>
+• 可行解状态: ❌ 不存在可行解
+• 求解时间: ${solution.solution_time}
+• 约束数量: ${solution.constraints_count}个
+• 变量数量: ${solution.variables_count}个
+</div>
+
+⚠️ 问题约束条件无法同时满足
+🔍 问题类型: 约束满足问题(CSP)
+⚙️ 求解器: CP-SAT
+
+<strong>📋 分析结果：</strong>
+• 问题不存在可行解
+• 约束条件之间存在冲突
+• 需要调整问题约束条件
+
+详细结果请查看各标签页...`;
+                }
+            }
+            
+            // 更新各标签页内容（使用innerHTML以支持HTML格式）
+            document.getElementById('solutionOutput').innerHTML = solutionText;
+            document.getElementById('modelOutput').innerHTML = solution.model_text;
+            document.getElementById('codeOutput').innerHTML = solution.code_text;
+            document.getElementById('logsOutput').innerHTML = solution.logs_text;
+        }
+
+        // 标签页切换
+        function switchTab(tabName) {
+            // 隐藏所有标签页内容
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 移除所有标签的激活状态
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // 显示选中的标签页
+            document.getElementById(tabName + 'Tab').classList.add('active');
+            
+            // 激活选中的标签
+            event.target.classList.add('active');
+        }
+
+        // 加载示例问题
+        function loadExample(type) {
+            const examples = {
+                scheduling: `员工排班问题：
+
+某公司有20名员工需要分配到6个不同的班次。每个班次有不同的需求人数：
+- 班次1：需要4人
+- 班次2：需要6人
+- 班次3：需要8人
+- 班次4：需要7人
+- 班次5：需要5人
+- 班次6：需要3人
+
+约束条件：
+1. 每位员工只能被分配到一个班次
+2. 每个班次的需求人数必须得到满足
+3. 每位员工最多只能连续工作两个班次
+
+请为这20名员工安排合适的班次分配方案。`,
+                
+                vrp: `车辆路径问题：
+
+某配送中心需要为5个客户配送货物，每个客户有不同的货物需求和时间窗：
+客户1：需求量3单位，时间窗[9:00-11:00]
+客户2：需求量5单位，时间窗[10:00-12:00]
+客户3：需求量2单位，时间窗[11:00-13:00]
+客户4：需求量4单位，时间窗[13:00-15:00]
+客户5：需求量6单位，时间窗[14:00-16:00]
+
+车辆信息：
+- 车辆容量：15单位
+- 车辆速度：每小时行驶距离单位
+- 配送中心位置：坐标(0,0)
+- 客户位置：分别为(2,3), (5,1), (8,4), (6,7), (3,9)
+
+请规划最优配送路线，使得：
+1. 满足所有客户需求
+2. 不超过车辆容量限制
+3. 在规定时间窗内完成配送
+4. 总行驶距离最短`,
+                
+                assignment: `任务分配问题：
+
+有8个项目需要分配给5个团队完成。每个项目的难度和预计完成时间不同：
+项目1：难度3，预计时间10天
+项目2：难度2，预计时间8天
+项目3：难度4，预计时间15天
+项目4：难度1，预计时间5天
+项目5：难度5，预计时间20天
+项目6：难度3，预计时间12天
+项目7：难度2，预计时间7天
+项目8：难度4，预计时间18天
+
+团队能力：
+团队A：擅长难度1-3的项目
+团队B：擅长难度2-4的项目
+团队C：擅长难度3-5的项目
+团队D：擅长难度1-4的项目
+团队E：擅长难度2-5的项目
+
+约束条件：
+1. 每个项目只能分配给一个团队
+2. 团队只能承接自己能力范围内的项目
+3. 每个团队最多承接3个项目
+4. 总完成时间尽可能短
+
+请合理分配项目给各个团队。`,
+                
+                packing: `装箱问题：
+
+有15个不同尺寸的物品需要装入3个相同大小的箱子中。每个物品的尺寸如下：
+物品1-5：尺寸为2×2×2
+物品6-10：尺寸为3×3×1
+物品11-15：尺寸为1×1×4
+
+箱子尺寸：5×5×5
+
+约束条件：
+1. 每个物品必须放入某个箱子
+2. 物品不能重叠
+3. 物品不能超出箱子边界
+4. 每个箱子最多容纳10个物品
+
+请确定如何将这些物品装入箱子，使得空间利用率最高。`,
+                
+                scheduling_easy: `作业车间调度问题 - 简单难度：
+
+3个工件在3台机器上加工，每个工件有3道工序，每道工序可以在多台可选机器上加工。
+
+工件1：
+- 工序1：机器[1,2]，加工时间[3,4]
+- 工序2：机器[2,3]，加工时间[2,3]  
+- 工序3：机器[1,3]，加工时间[4,5]
+
+工件2：
+- 工序1：机器[1,3]，加工时间[2,3]
+- 工序2：机器[2,3]，加工时间[3,4]
+- 工序3：机器[1,2]，加工时间[2,3]
+
+工件3：
+- 工序1：机器[2,3]，加工时间[4,5]
+- 工序2：机器[1,2]，加工时间[3,4]
+- 工序3：机器[1,3]，加工时间[2,3]
+
+约束条件：
+1. 每道工序必须在一台机器上完成
+2. 同一台机器上不能同时加工多个工序
+3. 同一工件的工序必须按顺序加工
+4. 最小化最大完工时间（makespan）
+
+请同时决定机器分配和工序排序。`,
+                
+                scheduling_medium: `作业车间调度问题 - 中等难度：
+
+5个工件在4台机器上加工，每个工件有4-5道工序，每道工序可以在多台可选机器上加工。
+
+工件1（4道工序）：
+- 工序1：机器[1,2,3]，加工时间[5,6,4]
+- 工序2：机器[2,3,4]，加工时间[4,5,3]
+- 工序3：机器[1,4]，加工时间[6,5]
+- 工序4：机器[3,4]，加工时间[4,3]
+
+工件2（5道工序）：
+- 工序1：机器[1,3]，加工时间[3,4]
+- 工序2：机器[2,4]，加工时间[5,4]
+- 工序3：机器[1,2,3]，加工时间[4,3,5]
+- 工序4：机器[3,4]，加工时间[3,4]
+- 工序5：机器[1,4]，加工时间[5,4]
+
+工件3（4道工序）：
+- 工序1：机器[2,3,4]，加工时间[6,5,4]
+- 工序2：机器[1,3]，加工时间[4,5]
+- 工序3：机器[2,4]，加工时间[3,4]
+- 工序4：机器[1,3,4]，加工时间[5,4,3]
+
+工件4（5道工序）：
+- 工序1：机器[1,2,4]，加工时间[4,5,3]
+- 工序2：机器[2,3]，加工时间[3,4]
+- 工序3：机器[1,4]，加工时间[5,4]
+- 工序4：机器[3,4]，加工时间[4,3]
+- 工序5：机器[1,2]，加工时间[3,4]
+
+工件5（4道工序）：
+- 工序1：机器[1,3,4]，加工时间[5,4,3]
+- 工序2：机器[2,4]，加工时间[4,3]
+- 工序3：机器[1,2,3]，加工时间[3,4,5]
+- 工序4：机器[2,3,4]，加工时间[4,3,5]
+
+约束条件：
+1. 每道工序必须在一台机器上完成
+2. 同一台机器上不能同时加工多个工序
+3. 同一工件的工序必须按顺序加工
+4. 最小化最大完工时间（makespan）
+
+请同时决定机器分配和工序排序。`,
+                
+                scheduling_hard: `作业车间调度问题 - 困难难度：
+
+8个工件在6台机器上加工，每个工件有5-6道工序，每道工序可以在多台可选机器上加工。
+
+工件1（6道工序）：
+- 工序1：机器[1,2,3,4]，加工时间[7,8,6,9]
+- 工序2：机器[2,3,5,6]，加工时间[6,7,8,5]
+- 工序3：机器[1,4,6]，加工时间[8,7,9]
+- 工序4：机器[3,5,6]，加工时间[7,6,8]
+- 工序5：机器[2,4,5]，加工时间[6,8,7]
+- 工序6：机器[1,3,6]，加工时间[9,7,8]
+
+工件2（5道工序）：
+- 工序1：机器[1,3,5]，加工时间[8,7,9]
+- 工序2：机器[2,4,6]，加工时间[7,8,6]
+- 工序3：机器[1,2,5,6]，加工时间[6,7,8,9]
+- 工序4：机器[3,4,5]，加工时间[8,7,6]
+- 工序5：机器[2,3,6]，加工时间[7,8,9]
+
+工件3（6道工序）：
+- 工序1：机器[2,3,4,5]，加工时间[9,8,7,6]
+- 工序2：机器[1,4,6]，加工时间[7,8,9]
+- 工序3：机器[2,5,6]，加工时间[8,7,9]
+- 工序4：机器[1,3,4]，加工时间[6,7,8]
+- 工序5：机器[3,5,6]，加工时间[9,8,7]
+- 工序6：机器[2,4,5]，加工时间[7,6,8]
+
+工件4（5道工序）：
+- 工序1：机器[1,2,3,6]，加工时间[8,7,9,6]
+- 工序2：机器[3,4,5]，加工时间[7,8,9]
+- 工序3：机器[2,4,6]，加工时间[9,7,8]
+- 工序4：机器[1,5,6]，加工时间[6,8,7]
+- 工序5：机器[3,4,5]，加工时间[8,7,9]
+
+工件5（6道工序）：
+- 工序1：机器[1,3,4,5]，加工时间[7,8,9,6]
+- 工序2：机器[2,4,6]，加工时间[8,7,9]
+- 工序3：机器[1,3,5]，加工时间[9,8,7]
+- 工序4：机器[2,4,6]，加工时间[7,9,8]
+- 工序5：机器[1,3,5,6]，加工时间[6,7,8,9]
+- 工序6：机器[2,4,5]，加工时间[8,7,9]
+
+工件6（5道工序）：
+- 工序1：机器[2,3,4,6]，加工时间[9,8,7,6]
+- 工序2：机器[1,5,6]，加工时间[7,8,9]
+- 工序3：机器[3,4,5]，加工时间[8,7,9]
+- 工序4：机器[1,2,6]，加工时间[6,7,8]
+- 工序5：机器[3,4,5]，加工时间[9,8,7]
+
+工件7（6道工序）：
+- 工序1：机器[1,2,4,5]，加工时间[8,9,7,6]
+- 工序2：机器[3,5,6]，加工时间[7,8,9]
+- 工序3：机器[1,4,6]，加工时间[9,7,8]
+- 工序4：机器[2,3,5]，加工时间[6,7,8]
+- 工序5：机器[1,3,4,6]，加工时间[8,9,7,6]
+- 工序6：机器[2,5,6]，加工时间[7,8,9]
+
+工件8（5道工序）：
+- 工序1：机器[1,3,4,6]，加工时间[9,8,7,6]
+- 工序2：机器[2,5,6]，加工时间[7,8,9]
+- 工序3：机器[1,4,5]，加工时间[8,7,9]
+- 工序4：机器[2,3,6]，加工时间[6,7,8]
+- 工序5：机器[1,3,4,5]，加工时间[9,8,7,6]
+
+约束条件：
+1. 每道工序必须在一台机器上完成
+2. 同一台机器上不能同时加工多个工序
+3. 同一工件的工序必须按顺序加工
+4. 最小化最大完工时间（makespan）
+
+请同时决定机器分配和工序排序。`,
+                
+                scheduling_super: `作业车间调度问题 - 超级难度：
+
+12个工件在8台机器上加工，每个工件有6-8道工序，每道工序可以在多台可选机器上加工。
+
+工件1（8道工序）：
+- 工序1：机器[1,2,3,4,5]，加工时间[12,11,13,10,14]
+- 工序2：机器[2,3,4,6,7]，加工时间[11,12,10,13,9]
+- 工序3：机器[1,3,5,7,8]，加工时间[13,11,12,10,14]
+- 工序4：机器[2,4,6,7,8]，加工时间[10,12,11,13,9]
+- 工序5：机器[1,3,5,6,8]，加工时间[12,13,11,10,14]
+- 工序6：机器[2,4,5,7,8]，加工时间[11,10,12,13,9]
+- 工序7：机器[1,2,3,6,7]，加工时间[13,12,11,10,14]
+- 工序8：机器[4,5,6,7,8]，加工时间[10,11,12,13,9]
+
+工件2（7道工序）：
+- 工序1：机器[1,3,4,5,7]，加工时间[14,12,11,13,10]
+- 工序2：机器[2,4,6,7,8]，加工时间[11,13,12,10,14]
+- 工序3：机器[1,2,5,6,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[3,4,5,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[1,2,3,6,7]，加工时间[11,12,13,10,14]
+- 工序6：机器[4,5,6,7,8]，加工时间[12,11,10,13,9]
+- 工序7：机器[1,3,4,5,8]，加工时间[13,12,11,10,14]
+
+工件3（8道工序）：
+- 工序1：机器[2,3,4,5,6]，加工时间[12,13,11,10,14]
+- 工序2：机器[1,4,6,7,8]，加工时间[11,12,13,10,9]
+- 工序3：机器[2,3,5,7,8]，加工时间[13,12,11,10,14]
+- 工序4：机器[1,4,6,7,8]，加工时间[10,11,12,13,9]
+- 工序5：机器[2,3,5,6,8]，加工时间[12,13,11,10,14]
+- 工序6：机器[1,4,5,7,8]，加工时间[11,10,12,13,9]
+- 工序7：机器[2,3,4,6,7]，加工时间[13,12,11,10,14]
+- 工序8：机器[1,5,6,7,8]，加工时间[10,11,12,13,9]
+
+工件4（6道工序）：
+- 工序1：机器[1,2,3,4,8]，加工时间[14,12,11,13,10]
+- 工序2：机器[2,3,5,6,7]，加工时间[11,13,12,10,14]
+- 工序3：机器[1,4,6,7,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[3,4,5,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[1,2,3,6,7]，加工时间[11,12,13,10,14]
+- 工序6：机器[4,5,6,7,8]，加工时间[12,11,10,13,9]
+
+工件5（7道工序）：
+- 工序1：机器[1,3,4,5,6]，加工时间[13,12,11,10,14]
+- 工序2：机器[2,4,6,7,8]，加工时间[11,12,13,10,9]
+- 工序3：机器[1,3,5,7,8]，加工时间[12,13,11,10,14]
+- 工序4：机器[2,4,6,7,8]，加工时间[10,11,12,13,9]
+- 工序5：机器[1,3,5,6,8]，加工时间[13,12,11,10,14]
+- 工序6：机器[2,4,5,7,8]，加工时间[11,10,12,13,9]
+- 工序7：机器[1,2,3,6,7]，加工时间[12,13,11,10,14]
+
+工件6（8道工序）：
+- 工序1：机器[2,3,4,5,7]，加工时间[14,12,11,13,10]
+- 工序2：机器[1,4,6,7,8]，加工时间[11,13,12,10,14]
+- 工序3：机器[2,3,5,6,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[1,4,5,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[2,3,4,6,7]，加工时间[11,12,13,10,14]
+- 工序6：机器[1,5,6,7,8]，加工时间[12,11,10,13,9]
+- 工序7：机器[2,3,4,5,8]，加工时间[13,12,11,10,14]
+- 工序8：机器[1,6,7,8]，加工时间[10,11,12,13]
+
+工件7（7道工序）：
+- 工序1：机器[1,2,3,4,5]，加工时间[12,13,11,10,14]
+- 工序2：机器[2,3,4,6,7]，加工时间[11,12,13,10,9]
+- 工序3：机器[1,3,5,7,8]，加工时间[13,12,11,10,14]
+- 工序4：机器[2,4,6,7,8]，加工时间[10,11,12,13,9]
+- 工序5：机器[1,3,5,6,8]，加工时间[12,13,11,10,14]
+- 工序6：机器[2,4,5,7,8]，加工时间[11,10,12,13,9]
+- 工序7：机器[1,2,3,6,7]，加工时间[13,12,11,10,14]
+
+工件8（6道工序）：
+- 工序1：机器[1,2,3,4,8]，加工时间[14,12,11,13,10]
+- 工序2：机器[2,3,5,6,7]，加工时间[11,13,12,10,14]
+- 工序3：机器[1,4,6,7,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[3,4,5,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[1,2,3,6,7]，加工时间[11,12,13,10,14]
+- 工序6：机器[4,5,6,7,8]，加工时间[12,11,10,13,9]
+
+工件9（8道工序）：
+- 工序1：机器[2,3,4,5,6]，加工时间[13,12,11,10,14]
+- 工序2：机器[1,4,6,7,8]，加工时间[11,12,13,10,9]
+- 工序3：机器[2,3,5,7,8]，加工时间[12,13,11,10,14]
+- 工序4：机器[1,4,6,7,8]，加工时间[10,11,12,13,9]
+- 工序5：机器[2,3,5,6,8]，加工时间[13,12,11,10,14]
+- 工序6：机器[1,4,5,7,8]，加工时间[11,10,12,13,9]
+- 工序7：机器[2,3,4,6,7]，加工时间[12,13,11,10,14]
+- 工序8：机器[1,5,6,7,8]，加工时间[10,11,12,13,9]
+
+工件10（7道工序）：
+- 工序1：机器[1,3,4,5,7]，加工时间[14,12,11,13,10]
+- 工序2：机器[2,4,6,7,8]，加工时间[11,13,12,10,14]
+- 工序3：机器[1,2,5,6,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[3,4,5,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[1,2,3,6,7]，加工时间[11,12,13,10,14]
+- 工序6：机器[4,5,6,7,8]，加工时间[12,11,10,13,9]
+- 工序7：机器[1,3,4,5,8]，加工时间[13,12,11,10,14]
+
+工件11（6道工序）：
+- 工序1：机器[2,3,4,5,6]，加工时间[12,13,11,10,14]
+- 工序2：机器[1,4,6,7,8]，加工时间[11,12,13,10,9]
+- 工序3：机器[2,3,5,7,8]，加工时间[13,12,11,10,14]
+- 工序4：机器[1,4,6,7,8]，加工时间[10,11,12,13,9]
+- 工序5：机器[2,3,5,6,8]，加工时间[12,13,11,10,14]
+- 工序6：机器[1,4,5,7,8]，加工时间[11,10,12,13,9]
+
+工件12（8道工序）：
+- 工序1：机器[1,2,3,4,5]，加工时间[14,12,11,13,10]
+- 工序2：机器[2,3,4,6,7]，加工时间[11,13,12,10,14]
+- 工序3：机器[1,3,5,7,8]，加工时间[12,11,13,10,14]
+- 工序4：机器[2,4,6,7,8]，加工时间[13,12,11,10,9]
+- 工序5：机器[1,3,5,6,8]，加工时间[11,12,13,10,14]
+- 工序6：机器[2,4,5,7,8]，加工时间[12,11,10,13,9]
+- 工序7：机器[1,2,3,6,7]，加工时间[13,12,11,10,14]
+- 工序8：机器[4,5,6,7,8]，加工时间[10,11,12,13,9]
+
+约束条件：
+1. 每道工序必须在一台机器上完成
+2. 同一台机器上不能同时加工多个工序
+3. 同一工件的工序必须按顺序加工
+4. 最小化最大完工时间（makespan）
+
+请同时决定机器分配和工序排序。`
+            };
+            
+            document.getElementById('problemInput').value = examples[type] || '';
+        }
+
+        // 清空所有内容
+        function clearAll() {
+            document.getElementById('problemInput').value = '';
+            
+            // 重置工作流可视化
+            resetWorkflowVisualization();
+            
+            // 重置输出区域
+            document.getElementById('solutionOutput').textContent = '欢迎使用CP-Agent约束规划专用系统！\n\n请在上方输入您的约束规划问题...';
+            document.getElementById('modelOutput').textContent = '约束规划数学模型将在此显示...';
+            document.getElementById('codeOutput').textContent = 'CP-SAT Python代码实现将在此显示...';
+            document.getElementById('logsOutput').textContent = 'CP求解过程日志将在此显示...';
+            
+            switchTab('solution');
+        }
+
+        // 显示加载状态
+        function showLoading(text) {
+            document.getElementById('loadingText').textContent = text;
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        // 显示错误消息
+        function showError(message) {
+            const errorElem = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            errorText.textContent = message;
+            errorElem.style.display = 'block';
+            
+            // 自动隐藏错误消息
+            setTimeout(() => {
+                errorElem.style.display = 'none';
+            }, 5000);
+        }
+
+        // 显示成功消息
+        function showSuccess(message) {
+            const successElem = document.getElementById('successMessage');
+            const successText = document.getElementById('successText');
+            successText.textContent = message;
+            successElem.style.display = 'block';
+            
+            // 自动隐藏成功消息
+            setTimeout(() => {
+                successElem.style.display = 'none';
+            }, 3000);
+        }
+
+        // 隐藏所有消息
+        function hideMessages() {
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+
+        // 显示加载状态
+        function showLoading(text) {
+            document.getElementById('loadingText').textContent = text;
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        // 隐藏加载状态
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+            updateProgress(0);
+        }
+
+        // 更新进度条
+        function updateProgress(percent) {
+            document.getElementById('progressBar').style.width = percent + '%';
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            checkServerStatus();
+            // 每30秒检查一次服务器状态
+            setInterval(checkServerStatus, 30000);
+        });
+    </script>
+</body>
+</html>

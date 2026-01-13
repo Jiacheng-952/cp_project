@@ -1,0 +1,61 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of mines",
+            "symbol": "K",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of mines that can be operated in a year",
+            "symbol": "MaxWork",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Royalty cost for operating mine k",
+            "symbol": "Royalty",
+            "value": 0,
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Production limit for mine k",
+            "symbol": "Limit",
+            "value": 0,
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Quality of the material from mine k",
+            "symbol": "Quality",
+            "value": 0,
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Required quality of the material for client i",
+            "symbol": "RequiredQuality",
+            "value": 0,
+            "shape": [
+                "I"
+            ]
+        },
+        {
+            "definition": "Price per unit of material sold",
+            "symbol": "Price",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Discount on the royalty cost per unit of material sold",
+            "symbol": "Discount",
+            "value": 0,
+            "shape": []
+        }
+    ],
+    "description": "To maximize profit, which mines should be operated each year and how much should they produce? The company has \\param{K} mines and can operate at most \\param{MaxWork} in any given year. For each mine k, there is a royalty cost of \\param{Royalty}, a production limit of \\param{Limit}, and the material extracted has a quality of \\param{Quality}. Each client i requires a material with at least \\param{RequiredQuality}. The price per unit of material sold is \\param{Price}, with a discount \\param{Discount} applied to the royalty cost for each unit sold."
+}

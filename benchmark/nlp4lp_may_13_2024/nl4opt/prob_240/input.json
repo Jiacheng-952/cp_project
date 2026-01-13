@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost to make one prevention pill",
+            "symbol": "PreventionPillCost",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Cost to make one treatment pill",
+            "symbol": "TreatmentPillCost",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of prevention pills to treatment pills",
+            "symbol": "PreventionTreatmentRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of treatment pills the hospital must purchase",
+            "symbol": "MinTreatmentPills",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Budget of the hospital for purchasing pills",
+            "symbol": "Budget",
+            "value": 10000,
+            "shape": []
+        }
+    ],
+    "description": "A hospital purchases two pills available for the patients to take one at a time. One pill is taken as a prevention and another is taken for treatment. The prevention pill takes \\param{PreventionPillCost} dollars to make while the treatment pill takes \\param{TreatmentPillCost} dollars to make. Since the prevention pill is in higher demand, the hospital must purchase at least \\param{PreventionTreatmentRatio} times as many prevention pills as treatment pills. In addition, the hospital must purchase at least \\param{MinTreatmentPills} treatment pills. If the clinic only has a budget of \\param{Budget} dollars, maximize the number of patients that can be treated."
+}

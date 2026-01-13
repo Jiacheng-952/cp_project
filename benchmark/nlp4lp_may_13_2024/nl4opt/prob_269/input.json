@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of bags of mail a runner can carry",
+            "symbol": "BagsPerRunner",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for a runner to deliver mail",
+            "symbol": "TimePerRunner",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of bags of mail a canoer can carry",
+            "symbol": "BagsPerCanoer",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for a canoer to deliver mail",
+            "symbol": "TimePerCanoer",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of deliveries that can be done by canoe",
+            "symbol": "MaxCanoeProportion",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Total available hours for delivery",
+            "symbol": "TotalHours",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of runners to be used",
+            "symbol": "MinRunners",
+            "value": 4,
+            "shape": []
+        }
+    ],
+    "description": "A village delivers mail to nearby villages either by runners or canoers. Runners can carry \\param{BagsPerRunner} bags of mail each time and takes \\param{TimePerRunner} hours. Canoers can carry \\param{BagsPerCanoer} bags of mail each time and takes \\param{TimePerCanoer} hours. At most \\param{MaxCanoeProportion} of deliveries can be by canoe. Additionally, the village can spare at most \\param{TotalHours} total hours and at least \\param{MinRunners} runners must be used. How many of each way to deliver must be used to maximize the total amount of mail that can be delivered?"
+}

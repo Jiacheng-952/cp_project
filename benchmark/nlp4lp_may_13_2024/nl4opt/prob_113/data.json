@@ -1,0 +1,9 @@
+{
+    "TotalMRna": 20000,
+    "MRnaPerChildVaccine": 50,
+    "MRnaPerAdultVaccine": 75,
+    "FeverSuppressantPerChildVaccine": 50,
+    "FeverSuppressantPerAdultVaccine": 75,
+    "MinAdultVaccineProp": 0.7,
+    "MinChildVaccines": 50
+}

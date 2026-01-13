@@ -1,0 +1,101 @@
+{
+    "background": "The company deals with various items categorized into vegetables and non-vegetables, which are bought, refined, stored, and sold over a planning horizon of months. Refining capacity for both types of items is limited, and there are storage limitations with associated costs. The company must manage the hardness of the items and start with an initial amount of items in storage.",
+    "constraints": [
+        "All items bought, stored, and sold are non-negative",
+        "Hardness of refined items must be at least MinHardness",
+        "Hardness of refined items must not exceed MaxHardness",
+        "At most MaxVegetableRefiningPerMonth vegetables can be refined per month",
+        "At most MaxNonVegetableRefiningPerMonth non-vegetables can be refined per month",
+        "Total storage used must not exceed StorageSize",
+        "StorageSize must accommodate the InitialAmount of items"
+    ],
+    "objective": "Maximize the company's profit by determining the optimal buying, storing, and manufacturing policy",
+    "description": "A company is dealing with \\param{I} different items over a planning horizon of \\param{M} months. The buy price of item \\param{i} in month \\param{m} is given by \\param{BuyPrice}. All items can be sold after refining for the same \\param{SellPrice}. Each item is either a vegetable or not, which is indicated by \\param{IsVegetable}. There is a limited refining capability where at most \\param{MaxVegetableRefiningPerMonth} of vegetables and \\param{MaxNonVegetableRefiningPerMonth} of non-vegetables can be refined in any given month. The company has a storage size of \\param{StorageSize} and incurs a \\param{StorageCost} for storing items per month. The refined products must fall within a hardness range of \\param{MinHardness} to \\param{MaxHardness}, where the hardness of item \\param{i} is \\param{Hardness}. Initially, the storage contains an amount of \\param{InitialAmount} of items. What buying, storing, and manufacturing policy should the company pursue in order to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Number of months",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different items",
+            "symbol": "I",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Month m buy price of item i",
+            "symbol": "BuyPrice",
+            "value": "",
+            "shape": [
+                "M",
+                "I"
+            ]
+        },
+        {
+            "definition": "Sell price of the products after refining",
+            "symbol": "SellPrice",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Indicator whether item i is a vegetable",
+            "symbol": "IsVegetable",
+            "value": "",
+            "shape": [
+                "I"
+            ]
+        },
+        {
+            "definition": "Maximum refining capability for vegetables per month",
+            "symbol": "MaxVegetableRefiningPerMonth",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum refining capability for non-vegetables per month",
+            "symbol": "MaxNonVegetableRefiningPerMonth",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Size of the storage",
+            "symbol": "StorageSize",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost for storing items per month",
+            "symbol": "StorageCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The maximum hardness allowed for the products after refining",
+            "symbol": "MaxHardness",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The minimum hardness required for the products after refining",
+            "symbol": "MinHardness",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Hardness of item i",
+            "symbol": "Hardness",
+            "value": "",
+            "shape": [
+                "I"
+            ]
+        },
+        {
+            "definition": "Initial amount of items in storage at the beginning of the planning horizon",
+            "symbol": "InitialAmount",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

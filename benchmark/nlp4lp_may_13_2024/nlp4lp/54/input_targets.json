@@ -1,0 +1,92 @@
+{
+    "background": "Custom Tees needs to allocate a budget for purchasing clicks from different advertisement types to maximize the number of unique clicks.",
+    "constraints": [
+        "Total cost of clicks from all advertisement types must not exceed Budget",
+        "Number of clicks from each advertisement type must not exceed its corresponding MaxClicks",
+        "Number of young audience clicks from all advertisement types must reach at least GoalYoung",
+        "Number of old audience clicks from all advertisement types must reach at least GoalOld",
+        "Number of unique young audience clicks from all advertisement types must reach at least GoalUniqueYoung",
+        "Number of unique old audience clicks from all advertisement types must reach at least GoalUniqueOld",
+        "Number of clicks from each advertisement type is non-negative"
+    ],
+    "objective": "Maximize the number of unique clicks from all advertisement types within the given Budget",
+    "description": "How many clicks from each ad type should Custom Tees purchase to maximize the number of unique clicks within the \\param{Budget}? Consider the following parameters: the total number of advertisement types (\\param{A}), costs of purchasing a click from each advertisement type (\\param{Costs}), the maximum number of clicks that can be purchased from each advertisement type (\\param{MaxClicks}), the number of young audience clicks from each advertisement type (\\param{YoungClicks}), the number of old audience clicks from each advertisement type (\\param{OldClicks}), and the number of unique clicks from each advertisement type (\\param{UniqueClicks}). Additionally, consider the goals for the number of clicks from the young (\\param{GoalYoung}) and old (\\param{GoalOld}) audience, as well as the goals for the number of unique clicks from the young (\\param{GoalUniqueYoung}) and old (\\param{GoalUniqueOld}) audience.",
+    "parameters": [
+        {
+            "definition": "Number of advertisement types",
+            "symbol": "A",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total budget for purchasing clicks",
+            "symbol": "Budget",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of purchasing a click from advertisement type a",
+            "symbol": "Costs",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of maximum clicks that can be purchased from advertisement type a",
+            "symbol": "MaxClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of young audience clicks from advertisement type a",
+            "symbol": "YoungClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of old audience clicks from advertisement type a",
+            "symbol": "OldClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Number of unique clicks from advertisement type a",
+            "symbol": "UniqueClicks",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Goal for number of clicks from young audience",
+            "symbol": "GoalYoung",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Goal for number of clicks from old audience",
+            "symbol": "GoalOld",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Goal for number of unique clicks from young audience",
+            "symbol": "GoalUniqueYoung",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Goal for number of unique clicks from old audience",
+            "symbol": "GoalUniqueOld",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

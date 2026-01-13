@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Initial position of the object",
+            "symbol": "X0",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Initial velocity of the object",
+            "symbol": "V0",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Final position of the object",
+            "symbol": "XT",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Final velocity of the object",
+            "symbol": "VT",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Time duration for the journey",
+            "symbol": "T",
+            "value": 0,
+            "shape": []
+        }
+    ],
+    "description": "The objective is to minimize the maximum thrust required, which is max_t |a_t| over the duration T, with initial conditions set by X0, V0, and final conditions set by XT and VT."
+}

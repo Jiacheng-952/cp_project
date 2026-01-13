@@ -1,0 +1,80 @@
+{
+    "background": "A nutritionist is making a special vitamin mix using two drinks: drink A and drink B.",
+    "constraints": [
+        "Number of cups of drink A is non-negative",
+        "Number of cups of drink B is non-negative",
+        "The vitamin mix must contain at least MinVitA units of Vitamin A",
+        "The vitamin mix must contain at least MinVitD units of Vitamin D",
+        "The vitamin mix must contain at most MaxVitE units of Vitamin E"
+    ],
+    "objective": "Minimize the amount of Vitamin K in the vitamin mix",
+    "description": "A nutritionist is making a special vitamin mix using two drinks: drink A and drink B. The vitamin mix must contain at least \\var{MinVitA} units of Vitamin A, at least \\var{MinVitD} units of Vitamin D, and at most \\var{MaxVitE} units of Vitamin E. A cup of drink A contains \\var{VitAA} units of Vitamin A, \\var{VitDA} units of Vitamin D, \\var{VitEA} units of Vitamin E, and \\var{VitKA} units of Vitamin K. A cup of drink B contains \\var{VitAB} units of Vitamin A, \\var{VitDB} units of Vitamin D, \\var{VitEB} units of Vitamin E, and \\var{VitKB} units of Vitamin K. How many cups of each drink should be used to make the vitamin mix in order to minimize the amount of Vitamin K?",
+    "parameters": [
+        {
+            "definition": "Minimum required units of Vitamin A",
+            "symbol": "MinVitA",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of Vitamin D",
+            "symbol": "MinVitD",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed units of Vitamin E",
+            "symbol": "MaxVitE",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin A per cup of drink A",
+            "symbol": "VitAA",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin D per cup of drink A",
+            "symbol": "VitDA",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin E per cup of drink A",
+            "symbol": "VitEA",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin K per cup of drink A",
+            "symbol": "VitKA",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin A per cup of drink B",
+            "symbol": "VitAB",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin D per cup of drink B",
+            "symbol": "VitDB",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin E per cup of drink B",
+            "symbol": "VitEB",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of Vitamin K per cup of drink B",
+            "symbol": "VitKB",
+            "value": 12,
+            "shape": []
+        }
+    ]
+}

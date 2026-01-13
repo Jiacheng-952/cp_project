@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hot dogs produced per day by a small shop",
+            "symbol": "HotDogsSmall",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers required for a small shop",
+            "symbol": "WorkersSmall",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of hot dogs produced per day by a large shop",
+            "symbol": "HotDogsLarge",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers required for a large shop",
+            "symbol": "WorkersLarge",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of hot dogs that must be produced per day",
+            "symbol": "MinHotDogs",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total number of workers available",
+            "symbol": "TotalWorkers",
+            "value": 30,
+            "shape": []
+        }
+    ],
+    "description": "A hot dog company can build two types of butcher shops, a small shop and a large shop. A small shop can make \\param{HotDogsSmall} hot dogs per day and requires \\param{WorkersSmall} workers. A large shop can make \\param{HotDogsLarge} hot dogs per day and requires \\param{WorkersLarge} workers. The company must make at least \\param{MinHotDogs} hot dogs per day but they only have available \\param{TotalWorkers} workers. How many of each butcher shop should the company build to minimize the total number of butcher shops?"
+}

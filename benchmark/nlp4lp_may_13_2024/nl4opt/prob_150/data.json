@@ -1,0 +1,9 @@
+{
+    "SmallBottleCapacity": 5,
+    "LargeBottleCapacity": 20,
+    "MaxSmallBottles": 300,
+    "MaxLargeBottles": 100,
+    "MaxBottlesTransported": 200,
+    "MinRatioSmallToLarge": 0.33,
+    "MinLargeBottles": 50
+}

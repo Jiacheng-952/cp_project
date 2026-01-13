@@ -1,0 +1,7 @@
+{
+    "VolumeSmallPackets": 1000,
+    "VolumeJug": 1250,
+    "JugPacketRatio": 0.33,
+    "MinSmallPackets": 35,
+    "TotalJam": 65000
+}

@@ -1,0 +1,75 @@
+{
+    "parameters": [
+        {
+            "definition": "Total number of years in the planning horizon",
+            "symbol": "K",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Input one coefficients matrix",
+            "symbol": "InputOne",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "Manpower coefficients for input one",
+            "symbol": "ManpowerOne",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Input two coefficients matrix",
+            "symbol": "InputTwo",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "Manpower coefficients for input two",
+            "symbol": "Manpowertwo",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Initial stock level for each of the productive units",
+            "symbol": "Stock",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Productive capacity for each productive unit",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Company-wide manpower limit",
+            "symbol": "ManpowerLimit",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Demand for each of the productive units at the end of the planning horizon",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "Maximize total productive capacity at the end of the five years. The problem parameters are a matrix of coefficients \\param{InputOne}, a vector of manpower coefficients for input one \\param{ManpowerOne}, a matrix of coefficients \\param{InputTwo}, a vector of manpower coefficients for input two \\param{Manpowertwo}, initial stock levels \\param{Stock}, productive capacities \\param{Capacity}, a company-wide manpower limit \\param{ManpowerLimit}, and demand for each productive unit \\param{Demand}."
+}

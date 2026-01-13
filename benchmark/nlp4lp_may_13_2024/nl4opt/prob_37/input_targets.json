@@ -1,0 +1,65 @@
+{
+    "background": "A food truck owner is in the business of selling mangos and guavas to maximize profit, considering the budget, costs, and sales estimates.",
+    "constraints": [
+        "Number of mangos is an integer",
+        "Number of guavas is an integer",
+        "Number of mangos is greater than or equal to MinMangos",
+        "Number of mangos is less than or equal to MaxMangos",
+        "Number of mangos is non-negative",
+        "Number of guavas is non-negative",
+        "The cost of mangos and guavas cannot exceed MaxBudget",
+        "Number of guavas sold is at most RatioGuavas times the number of mangos sold"
+    ],
+    "objective": "Maximize the profit from selling mangos and guavas",
+    "description": "A food truck owner can spend at most \\var{MaxBudget} on mangos and guavas. A mango costs the food truck owner \\var{CostMango} and a guava costs him \\var{CostGuava}. Spices are added and each mango is sold for a profit of \\var{ProfitMango} while each guava is sold for a profit of \\var{ProfitGuava}. The owner estimates that at least \\var{MinMangos} mangos but at the most \\var{MaxMangos} are sold each month. He also estimates that the number of guavas sold is at most a third of the mangos sold (expressed as \\var{RatioGuavas} times the number of mangos). How many mangos and guavas should be sold in order to maximize the profit?",
+    "parameters": [
+        {
+            "definition": "Maximum budget for mangos and guavas",
+            "symbol": "MaxBudget",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one mango",
+            "symbol": "CostMango",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one guava",
+            "symbol": "CostGuava",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one mango",
+            "symbol": "ProfitMango",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one guava",
+            "symbol": "ProfitGuava",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum mangos sold per month",
+            "symbol": "MinMangos",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum mangos sold per month",
+            "symbol": "MaxMangos",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Maximum guavas sold per month as a ratio of mangos sold",
+            "symbol": "RatioGuavas",
+            "value": 0.33,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "background": "A cell phone company is building rural and urban factories to produce phones.",
+    "constraints": [
+        "The number of rural factories is an integer",
+        "The number of urban factories is an integer",
+        "The number of rural factories is non-negative",
+        "The number of urban factories is non-negative",
+        "Total managers used by rural and urban factories cannot exceed TotalMgrs",
+        "Total phones produced by rural and urban factories must be at least MinPhones per day"
+    ],
+    "objective": "Minimize the total number of factories",
+    "description": "A cell phone company is building rural and urban factories. A rural factory can make \\var{ProdRural} phones per day and requires \\var{MgrsRural} managers. An urban factory can make \\var{ProdUrban} phones per day and requires \\var{MgrsUrban} managers. The company has available \\var{TotalMgrs} managers and must make at least \\var{MinPhones} phones per day. How many of each factory type should be built to minimize the total number of factories?",
+    "parameters": [
+        {
+            "definition": "Phone production per day by a rural factory",
+            "symbol": "ProdRural",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Managers required per rural factory",
+            "symbol": "MgrsRural",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Phone production per day by an urban factory",
+            "symbol": "ProdUrban",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Managers required per urban factory",
+            "symbol": "MgrsUrban",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total available managers",
+            "symbol": "TotalMgrs",
+            "value": 260,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required phone production per day",
+            "symbol": "MinPhones",
+            "value": 3000,
+            "shape": []
+        }
+    ]
+}

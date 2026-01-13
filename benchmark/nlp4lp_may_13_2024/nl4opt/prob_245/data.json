@@ -1,0 +1,9 @@
+{
+    "LargeShipCapacity": 2000,
+    "LargeShipPollution": 20,
+    "SmallShipCapacity": 800,
+    "SmallShipPollution": 15,
+    "MaxLargeShipTrips": 7,
+    "MinSmallShipTripPercent": 0.4,
+    "MinCustomers": 20000
+}

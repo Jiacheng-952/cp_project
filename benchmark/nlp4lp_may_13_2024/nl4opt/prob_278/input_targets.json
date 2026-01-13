@@ -1,0 +1,49 @@
+{
+    "background": "A tourism company needs to manage its fleet of sedans and buses to serve a minimum number of customers while adhering to local pollution limits.",
+    "constraints": [
+        "Number of sedans is non-negative",
+        "Number of buses is non-negative",
+        "Total pollution from sedans and buses cannot exceed MaxPollution",
+        "Total capacity of sedans and buses must be at least MinCustomers"
+    ],
+    "objective": "Minimize the total number of vehicles needed to meet customer and pollution constraints",
+    "description": "A tourism company can buy sedans or buses to add to their fleet of vehicles to increase their capacity for more tourists. A sedan can seat \\param{SedanCapacity} tourists per day but results in \\param{SedanPollution} units of pollution. A bus can seat \\param{BusCapacity} tourists per day but results in \\param{BusPollution} units of pollution. The city has limited this tourism company to producing at most \\param{MaxPollution} units of pollutants per day. To make a profit, this tourism company must take care of at least \\param{MinCustomers} customers per day. Planning to make a profit, how many sedans and how many buses should this tourism company purchase to decrease the total number of vehicles needed?",
+    "parameters": [
+        {
+            "definition": "Seating capacity per sedan per day",
+            "symbol": "SedanCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units per sedan",
+            "symbol": "SedanPollution",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Seating capacity per bus per day",
+            "symbol": "BusCapacity",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units per bus",
+            "symbol": "BusPollution",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed pollution units per day",
+            "symbol": "MaxPollution",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of customers to be served per day for profit",
+            "symbol": "MinCustomers",
+            "value": 4600,
+            "shape": []
+        }
+    ]
+}

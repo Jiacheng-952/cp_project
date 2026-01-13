@@ -1,0 +1,61 @@
+{
+    "background": "A farmer wants to mix two types of animal feeds, Feed A and Feed B, to meet the minimum requirements of protein and fat at the minimum cost.",
+    "constraints": [
+        "Amount of Feed A is non-negative",
+        "Amount of Feed B is non-negative",
+        "The mixture must contain at least MinProtein units of protein",
+        "The mixture must contain at least MinFat units of fat"
+    ],
+    "objective": "Minimize the total cost of the mixture",
+    "description": "A farmer wants to mix his animal feeds, Feed A and Feed B, in such a way that the mixture will contain at least \\var{MinProtein} units of protein and \\var{MinFat} units of fat. Feed A costs \\var{CostA} per kilogram and contains \\var{ProteinA} units of protein and \\var{FatA} units of fat. Feed B costs \\var{CostB} per kilogram and contains \\var{ProteinB} units of protein and \\var{FatB} units of fat. Determine the minimum cost of the mixture.",
+    "parameters": [
+        {
+            "definition": "Cost per kilogram for Feed A",
+            "symbol": "CostA",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Cost per kilogram for Feed B",
+            "symbol": "CostB",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Protein content per kilogram of Feed A",
+            "symbol": "ProteinA",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Protein content per kilogram of Feed B",
+            "symbol": "ProteinB",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Fat content per kilogram of Feed A",
+            "symbol": "FatA",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Fat content per kilogram of Feed B",
+            "symbol": "FatB",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of protein in the feed mixture",
+            "symbol": "MinProtein",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of fat in the feed mixture",
+            "symbol": "MinFat",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

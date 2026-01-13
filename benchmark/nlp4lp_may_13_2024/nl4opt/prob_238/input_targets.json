@@ -1,0 +1,69 @@
+{
+    "background": "A neighbourhood pizza restaurant sells large and medium pizzas, each requiring different amounts of dough, toppings, and baking time.",
+    "constraints": [
+        "Number of large pizzas is non-negative",
+        "Number of medium pizzas is non-negative",
+        "At least MinDough units of dough must be used",
+        "At least MinToppings units of toppings must be used",
+        "At least MinMedium medium pizzas must be made",
+        "The number of large pizzas made must be at least twice the number of medium pizzas"
+    ],
+    "objective": "Minimize the total baking time for all pizzas",
+    "description": "A neighbourhood pizza restaurant has opened and sells pizzas in two sizes; large pizza and medium pizza. Large pizzas require \\param{DoughLarge} units of dough, and \\param{ToppingsLarge} units of toppings. Medium pizzas require \\param{DoughMedium} units of dough, and \\param{ToppingsMedium} units of toppings. While large pizzas take \\param{TimeLarge} minutes to bake, medium pizzas require \\param{TimeMedium} minutes to bake. The neighbourhood pizza restaurant must use at least \\param{MinDough} units of dough and \\param{MinToppings} units of toppings. Medium pizzas are popular due to a promotion, therefore, at least \\param{MinMedium} medium pizzas must be made. There are regulars that prefer large pizzas and at least two times as many large pizzas should be made than medium pizzas. How many of each size of pizzas should the neighbourhood pizza restaurant make to reduce time spent baking?",
+    "parameters": [
+        {
+            "definition": "Units of dough required for a large pizza",
+            "symbol": "DoughLarge",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of toppings required for a large pizza",
+            "symbol": "ToppingsLarge",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Baking time for a large pizza",
+            "symbol": "TimeLarge",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of dough required for a medium pizza",
+            "symbol": "DoughMedium",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of toppings required for a medium pizza",
+            "symbol": "ToppingsMedium",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Baking time for a medium pizza",
+            "symbol": "TimeMedium",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of dough the restaurant must use",
+            "symbol": "MinDough",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of toppings the restaurant must use",
+            "symbol": "MinToppings",
+            "value": 4400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of medium pizzas that must be made",
+            "symbol": "MinMedium",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "SmallTeamEmployees": 3,
+    "SmallTeamArea": 50,
+    "LargeTeamEmployees": 5,
+    "LargeTeamArea": 80,
+    "TotalEmployees": 150,
+    "MinRatioSmallToLarge": 0.33,
+    "MinLargeTeams": 6,
+    "MinSmallTeams": 10
+}

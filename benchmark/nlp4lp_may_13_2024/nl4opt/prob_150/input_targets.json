@@ -1,0 +1,58 @@
+{
+    "background": "A bee farmer is deciding how many small and large bottles to use for transporting honey. Small and large bottles have different capacities and limitations.",
+    "constraints": [
+        "Number of small bottles used is non-negative and integer",
+        "Number of large bottles used is non-negative and integer",
+        "Small bottles used are at most MaxSmallBottles",
+        "Large bottles used are at most MaxLargeBottles",
+        "At least MinRatioSmallToLarge times as many small bottles must be used as large bottles",
+        "At most MaxBottlesTransported bottles can be transported in total",
+        "At least MinLargeBottles must be large bottles"
+    ],
+    "objective": "Maximize the total amount of honey that can be transported",
+    "description": "A bee farmer transports his honey in small and large bottles. A small bottle can take \\param{SmallBottleCapacity} units of honey while a large bottle can take \\param{LargeBottleCapacity} units of honey. The farmer has available at most \\param{MaxSmallBottles} small bottles and at most \\param{MaxLargeBottles} large bottles. In addition, since small bottles are easier to sell, at least \\param{MinRatioSmallToLarge} times as many small bottles must be used than large bottles. Finally, he can transport at most \\param{MaxBottlesTransported} bottles total, and at least \\param{MinLargeBottles} must be large bottles. How many of each bottle should he use to maximize the total amount of honey he can transport?",
+    "parameters": [
+        {
+            "definition": "Capacity of a small bottle",
+            "symbol": "SmallBottleCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a large bottle",
+            "symbol": "LargeBottleCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of small bottles available",
+            "symbol": "MaxSmallBottles",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of large bottles available",
+            "symbol": "MaxLargeBottles",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of bottles that can be transported",
+            "symbol": "MaxBottlesTransported",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of small bottles to large bottles",
+            "symbol": "MinRatioSmallToLarge",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large bottles to be used",
+            "symbol": "MinLargeBottles",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

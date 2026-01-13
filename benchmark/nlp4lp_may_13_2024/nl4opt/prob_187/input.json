@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum number of boxes of corn per ferry trip",
+            "symbol": "FerryCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of boxes of corn per light rail trip",
+            "symbol": "RailCapacity",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of light rail trips to ferry trips",
+            "symbol": "MinRailToFerryRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of boxes of corn to send",
+            "symbol": "MinCornBoxes",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A farmer on an island sends corn to the main land either by ferry or light rail. Each ferry trip can take \\param{FerryCapacity} boxes of corn while each light rail trip can take \\param{RailCapacity} boxes of corn. Since ferry trips are slow, the number of light rail trip has to be at least \\param{MinRailToFerryRatio} times the number of ferry trips. If the farmer wants to send at least \\param{MinCornBoxes} boxes of corn, minimize the total number of trips of either type needed."
+}

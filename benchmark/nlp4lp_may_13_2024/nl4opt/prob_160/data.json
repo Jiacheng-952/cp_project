@@ -1,0 +1,9 @@
+{
+    "SmallBouquetSize": 5,
+    "LargeBouquetSize": 10,
+    "MaxSmallBouquets": 80,
+    "MaxLargeBouquets": 50,
+    "MaxTotalBouquets": 70,
+    "MinLargeBouquets": 20,
+    "MinSmallLargeRatio": 2
+}

@@ -1,0 +1,12 @@
+{
+    "ApplesStock": 10,
+    "BananasStock": 20,
+    "GrapesStock": 80,
+    "ApplesBHPack": 6,
+    "GrapesBHPack": 30,
+    "ProfitBHPack": 6,
+    "ApplesCombo": 5,
+    "BananasCombo": 6,
+    "GrapesCombo": 20,
+    "ProfitCombo": 7
+}

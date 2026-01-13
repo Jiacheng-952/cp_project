@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of leg medicine per dose of pain killer 1",
+            "symbol": "LegMedicinePainKiller1",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of back medicine per dose of pain killer 1",
+            "symbol": "BackMedicinePainKiller1",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Amount of leg medicine per dose of pain killer 2",
+            "symbol": "LegMedicinePainKiller2",
+            "value": 0.7,
+            "shape": []
+        },
+        {
+            "definition": "Amount of back medicine per dose of pain killer 2",
+            "symbol": "BackMedicinePainKiller2",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sleep medicine per dose of pain killer 1",
+            "symbol": "SleepMedicinePainKiller1",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sleep medicine per dose of pain killer 2",
+            "symbol": "SleepMedicinePainKiller2",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of sleep medicine allowed",
+            "symbol": "MaxSleepMedicine",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of leg medicine required",
+            "symbol": "MinLegMedicine",
+            "value": 4,
+            "shape": []
+        }
+    ],
+    "description": "A patient in the hospital can take two different pain killers, pain killer 1 and pain killer 2. Per dose, pain killer 1 delivers \\param{LegMedicinePainKiller1} units of medicine to the legs and \\param{BackMedicinePainKiller1} units of medicine to the back. Per dose, pain killer 2 delivers \\param{LegMedicinePainKiller2} units of medicine to the legs and \\param{BackMedicinePainKiller2} units of medicine to the back. In addition, pain killer 1 delivers \\param{SleepMedicinePainKiller1} units of sleeping medicine and pain killer 2 delivers \\param{SleepMedicinePainKiller2} units of sleeping medicine. At most \\param{MaxSleepMedicine} units of sleep medicine should be delivered and at least \\param{MinLegMedicine} units of medicine should be delivered to the legs. How many doses of each should be taken to maximize the amount of medicine delivered to the back?"
+}

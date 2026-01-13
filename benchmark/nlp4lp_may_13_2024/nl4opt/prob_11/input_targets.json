@@ -1,0 +1,44 @@
+{
+    "background": "Mrs. Watson is looking to invest her budget in the real-estate market focusing on two types of properties: condos and detached houses, with specific profits and minimum investment requirements for each.",
+    "constraints": [
+        "The total investment in both condos and detached houses must be at most TotalBudget",
+        "The investment in condos must be at least MinPercentCondo of the total investment",
+        "The investment in detached houses must be at least MinInvestHouse",
+        "The investment in condos must be non-negative",
+        "The investment in detached houses must be non-negative"
+    ],
+    "objective": "Maximize the total profit earned from investments in condos and detached houses",
+    "description": "Mrs. Watson wants to invest in the real-estate market and has a total budget of at most \\var{TotalBudget}. She has two choices which include condos and detached houses. Each dollar invested in condos yields a \\var{ProfitCondo} profit and each dollar invested in detached houses yields a \\var{ProfitHouse} profit. A minimum of \\var{MinPercentCondo} of all money invested must be in condos, and at least \\var{MinInvestHouse} must be in detached houses. Formulate an LP that can be used to maximize total profit earned from Mrs. Watson's investment.",
+    "parameters": [
+        {
+            "definition": "Total budget for investments",
+            "symbol": "TotalBudget",
+            "value": 760000,
+            "shape": []
+        },
+        {
+            "definition": "Profit yield per dollar invested in condos",
+            "symbol": "ProfitCondo",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit yield per dollar invested in detached houses",
+            "symbol": "ProfitHouse",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total investment that must be in condos",
+            "symbol": "MinPercentCondo",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum investment in detached houses",
+            "symbol": "MinInvestHouse",
+            "value": 20000,
+            "shape": []
+        }
+    ]
+}

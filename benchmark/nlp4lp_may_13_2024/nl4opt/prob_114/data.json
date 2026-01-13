@@ -1,0 +1,9 @@
+{
+    "FatApple": 2,
+    "FolateApple": 5,
+    "FatCarrot": 4,
+    "FolateCarrot": 3,
+    "MinServingsCarrot": 2,
+    "AppleCarrotRatio": 3,
+    "MaxFolate": 100
+}

@@ -1,0 +1,44 @@
+{
+    "background": "A garden bed requires hydration for both subsoil and topsoil. Water for hydration and the truck's capacity for transporting soil bags are limited resources.",
+    "constraints": [
+        "Number of subsoil bags is non-negative",
+        "Number of topsoil bags is non-negative",
+        "Combined bags of subsoil and topsoil cannot exceed TotalBags",
+        "At least MinTopsoil bags of topsoil must be used",
+        "Topsoil bags cannot exceed MaxTopsoilProportion times the total bags of soil"
+    ],
+    "objective": "Minimize the total amount of water required to hydrate both subsoil and topsoil",
+    "description": "Both subsoil and topsoil need to be added to a garden bed. One bag of subsoil requires \\param{SubsoilWater} units of water to hydrate while one bag of topsoil requires \\param{TopsoilWater} units of water to hydrate every day. The truck used to transport the dirt has limited capacity and therefore, the farmer has available \\param{TotalBags} bags of topsoil and subsoil combined. In addition, at least \\param{MinTopsoil} bags of topsoil must be used. Since the topsoil is more expensive, at most \\param{MaxTopsoilProportion} of all bags of soil can be topsoil. How many bags of each should be bought to minimize the total amount of water required to hydrate the garden bed?",
+    "parameters": [
+        {
+            "definition": "Units of water required to hydrate one bag of subsoil",
+            "symbol": "SubsoilWater",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required to hydrate one bag of topsoil",
+            "symbol": "TopsoilWater",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Total number of bags of subsoil and topsoil combined available",
+            "symbol": "TotalBags",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of bags of topsoil required",
+            "symbol": "MinTopsoil",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of topsoil bags",
+            "symbol": "MaxTopsoilProportion",
+            "value": 0.33,
+            "shape": []
+        }
+    ]
+}

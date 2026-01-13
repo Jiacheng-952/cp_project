@@ -1,0 +1,8 @@
+{
+    "TotalAcres": 50,
+    "MinApples": 5,
+    "MinPears": 10,
+    "ProfitApple": 2,
+    "ProfitPear": 4,
+    "MaxPearsToApplesRatio": 2
+}

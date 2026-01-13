@@ -1,0 +1,9 @@
+{
+    "GiftsNew": 50,
+    "GiftsOld": 70,
+    "DieselNew": 30,
+    "DieselOld": 40,
+    "MinGifts": 1000,
+    "MaxTripsNew": 15,
+    "MinPercentOld": 0.4
+}

@@ -1,0 +1,80 @@
+{
+    "background": "A science show has two different demonstrations that use mint and active ingredients to produce minty foam and black tar. There are limited resources of mint, active ingredients, and a maximum amount of black tar that can be tolerated.",
+    "constraints": [
+        "Number of Demonstration 1 is non-negative",
+        "Number of Demonstration 2 is non-negative",
+        "Total used units of mint for Demonstration 1 and Demonstration 2 cannot exceed TotalMint",
+        "Total used units of the active ingredient for Demonstration 1 and Demonstration 2 cannot exceed TotalActive",
+        "Total produced units of black tar from Demonstration 1 and Demonstration 2 cannot exceed MaxTar"
+    ],
+    "objective": "Maximize the total amount of minty foam produced from both demonstrations",
+    "description": "A science show performs two different demonstrations, demonstration 1 and demonstration 2. In demonstration 1, \\param{MintD1} units of mint and \\param{ActiveD1} units of the active ingredient is used to make \\param{FoamD1} units of minty foam. In demonstration 2, \\param{MintD2} units of mint and \\param{ActiveD2} units of the active ingredient is used to make \\param{FoamD2} units of minty foam. In addition, demonstration 1 creates \\param{TarD1} units of black tar while demonstration 2 creates \\param{TarD2} units of black tar. The show has available \\param{TotalMint} units of mint and \\param{TotalActive} units of active ingredients. If at most \\param{MaxTar} units of black tar can be produced, how many of each demonstration should be done to maximize the amount of minty foam produced?",
+    "parameters": [
+        {
+            "definition": "Units of mint used in demonstration 1",
+            "symbol": "MintD1",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of mint used in demonstration 2",
+            "symbol": "MintD2",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of active ingredient used in demonstration 1",
+            "symbol": "ActiveD1",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of active ingredient used in demonstration 2",
+            "symbol": "ActiveD2",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of minty foam produced in demonstration 1",
+            "symbol": "FoamD1",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Units of minty foam produced in demonstration 2",
+            "symbol": "FoamD2",
+            "value": 18,
+            "shape": []
+        },
+        {
+            "definition": "Units of black tar produced in demonstration 1",
+            "symbol": "TarD1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of black tar produced in demonstration 2",
+            "symbol": "TarD2",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of mint",
+            "symbol": "TotalMint",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of active ingredient",
+            "symbol": "TotalActive",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable units of black tar to be produced",
+            "symbol": "MaxTar",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

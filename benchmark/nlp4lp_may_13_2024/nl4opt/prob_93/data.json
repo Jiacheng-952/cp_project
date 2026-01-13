@@ -1,0 +1,8 @@
+{
+    "HydrogenA": 40,
+    "PollutantsA": 300,
+    "HydrogenB": 30,
+    "PollutantsB": 200,
+    "MinHydrogen": 1000,
+    "MaxPollutants": 3000
+}

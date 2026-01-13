@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of probes required for each salinity test",
+            "symbol": "ProbesSalinity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of probes required for each pH test",
+            "symbol": "ProbesPH",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of pH tests to be performed",
+            "symbol": "MinPHTests",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Total minimum number of tests (pH and salinity) to be performed",
+            "symbol": "MinTotalTests",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of pH tests to salinity tests",
+            "symbol": "MaxPHSalinityRatio",
+            "value": 1.5,
+            "shape": []
+        }
+    ],
+    "description": "A chemical company uses two tests, a salinity test and a pH test. Each unit of the salinity test requires \\param{ProbesSalinity} probes. Whereas each unit of the pH test requires \\param{ProbesPH} probes. The chemical company must perform at least \\param{MinPHTests} pH tests. In total, at least \\param{MinTotalTests} tests must be performed. Further, because of the importance of the salinity test, there must be at most \\param{MaxPHSalinityRatio} times more pH tests than salinity tests. How many times should each test be performed to minimize the total number of probes used?"
+}

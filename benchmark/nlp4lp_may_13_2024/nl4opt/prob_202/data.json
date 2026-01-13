@@ -1,0 +1,10 @@
+{
+    "AssemblyDesk": 40,
+    "SandingDesk": 20,
+    "AssemblyDrawer": 30,
+    "SandingDrawer": 10,
+    "TotalAssembly": 4000,
+    "TotalSanding": 3500,
+    "ProfitDesk": 100,
+    "ProfitDrawer": 90
+}

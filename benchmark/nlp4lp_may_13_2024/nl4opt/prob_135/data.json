@@ -1,0 +1,7 @@
+{
+    "SulfateTime": 0.5,
+    "GingerTime": 0.75,
+    "MinSulfate": 100,
+    "TotalUnits": 400,
+    "MaxSulfateGingerRatio": 2.0
+}

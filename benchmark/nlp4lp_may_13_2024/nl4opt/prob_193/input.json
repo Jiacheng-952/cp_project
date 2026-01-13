@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of employees per car",
+            "symbol": "C",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by one car",
+            "symbol": "Pc",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees per bus",
+            "symbol": "B",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by one bus",
+            "symbol": "Pb",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of employees to be transported",
+            "symbol": "MinE",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of buses to be used",
+            "symbol": "MaxBuses",
+            "value": 4,
+            "shape": []
+        }
+    ],
+    "description": "Employees have the option of car-pooling to work or taking the company bus. A car can take \\param{C} employees and produces \\param{Pc} units of pollution, while a bus can take \\param{B} employees and produces \\param{Pb} units of pollution. At least \\param{MinE} employees need to be transported and at most \\param{MaxBuses} buses can be used. How many of each type of transport should be taken to minimize the total pollution produced."
+}

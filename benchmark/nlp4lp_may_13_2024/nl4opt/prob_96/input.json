@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of cocoa required for one milk chocolate bar",
+            "symbol": "CocoaMilk",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of milk required for one milk chocolate bar",
+            "symbol": "MilkMilk",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of cocoa required for one dark chocolate bar",
+            "symbol": "CocoaDark",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of milk required for one dark chocolate bar",
+            "symbol": "MilkDark",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total units of cocoa available",
+            "symbol": "TotalCocoa",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Total units of milk available",
+            "symbol": "TotalMilk",
+            "value": 1750,
+            "shape": []
+        },
+        {
+            "definition": "Proportion of the number of milk chocolate bars to dark chocolate bars",
+            "symbol": "MilkDarkRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Production time for one milk chocolate bar",
+            "symbol": "TimeMilk",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Production time for one dark chocolate bar",
+            "symbol": "TimeDark",
+            "value": 12,
+            "shape": []
+        }
+    ],
+    "description": "A small chocolate shop makes milk chocolate and dark chocolate bars. Milk chocolate bars require \\param{CocoaMilk} units of cocoa and \\param{MilkMilk} units of milk. Dark chocolate bars require \\param{CocoaDark} units of cocoa and \\param{MilkDark} units of milk. The shop has \\param{TotalCocoa} units of cocoa and \\param{TotalMilk} units of milk available. In addition, since milk chocolate sells better, at least \\param{MilkDarkRatio} times as many milk chocolate bars need to be made as dark chocolate bars. If making a milk chocolate bar takes \\param{TimeMilk} minutes and making a dark chocolate bar takes \\param{TimeDark} minutes, how many of each should they make to minimize total production time?"
+}

@@ -1,0 +1,49 @@
+{
+    "background": "A chemical plant is considering purchasing two types of generators, A and B, which produce hydrogen using different processes along with producing pollutants. The plant has a minimum hydrogen production requirement as well as a cap on the maximum pollutants allowed.",
+    "constraints": [
+        "Number of generator A is non-negative",
+        "Number of generator B is non-negative",
+        "Total hydrogen production must be at least MinHydrogen",
+        "Total pollutants produced must be at most MaxPollutants"
+    ],
+    "objective": "Minimize the total number of generators A and B needed",
+    "description": "A chemical plant can buy two types of generators, generator A and generator B, which use two different processes to generate hydrogen. Generator A uses an electrolysis process and produces \\param{HydrogenA} cubic meters of hydrogen as well as \\param{PollutantsA} units of pollutants every day. Generator B uses a fermentation process to produce \\param{HydrogenB} cubic meters of hydrogen per day while outputting \\param{PollutantsB} units of pollutants. The chemical plant must make a minimum of \\param{MinHydrogen} cubic meters of hydrogen per day but due to environmental restrictions they can produce at most \\param{MaxPollutants} units of pollutant. How many of each type of generator should they buy to minimize the number of generators needed?",
+    "parameters": [
+        {
+            "definition": "Hydrogen production of generator A",
+            "symbol": "HydrogenA",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Pollutants production of generator A",
+            "symbol": "PollutantsA",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Hydrogen production of generator B",
+            "symbol": "HydrogenB",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Pollutants production of generator B",
+            "symbol": "PollutantsB",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum daily hydrogen production required",
+            "symbol": "MinHydrogen",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed daily pollutant production",
+            "symbol": "MaxPollutants",
+            "value": 3000,
+            "shape": []
+        }
+    ]
+}

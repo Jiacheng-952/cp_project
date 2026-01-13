@@ -1,0 +1,71 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of poster boards that fit around a circular table",
+            "symbol": "PosterBoardsCircular",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of participants that fit around a circular table",
+            "symbol": "ParticipantsCircular",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of guests catered to by a circular table",
+            "symbol": "GuestsCircular",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Number of poster boards that fit around a rectangular table",
+            "symbol": "PosterBoardsRectangular",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of participants that fit around a rectangular table",
+            "symbol": "ParticipantsRectangular",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of guests catered to by a rectangular table",
+            "symbol": "GuestsRectangular",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Space taken up by a circular table",
+            "symbol": "SpaceCircular",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Space taken up by a rectangular table",
+            "symbol": "SpaceRectangular",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of participants to accommodate",
+            "symbol": "MinParticipants",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of poster boards to accommodate",
+            "symbol": "MinPosterBoards",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total available space for the science fair",
+            "symbol": "TotalSpace",
+            "value": 1900,
+            "shape": []
+        }
+    ],
+    "description": "In a science fair, there are two types of tables that can be used to display the children\u2019s science experiments. At the circular tables, \\param{PosterBoardsCircular} poster boards and \\param{ParticipantsCircular} participants can fit around the table to cater to \\param{GuestsCircular} guests. At the rectangular tables, \\param{PosterBoardsRectangular} poster boards and \\param{ParticipantsRectangular} participants can fit around the table to cater to \\param{GuestsRectangular} guests. However, each circular table takes up \\param{SpaceCircular} units of space while each rectangular table takes up \\param{SpaceRectangular} units of space. The science fair has must be able to fit at least \\param{MinParticipants} participants and \\param{MinPosterBoards} poster boards. If the science fair has available \\param{TotalSpace} units of space, how many of each type of table should be set up to maximize the number of catered guests?"
+}

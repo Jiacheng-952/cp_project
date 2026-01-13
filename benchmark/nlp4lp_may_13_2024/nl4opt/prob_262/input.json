@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Minimum number of locals to be moved",
+            "symbol": "MinLocals",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Number of people per kayak trip",
+            "symbol": "PeoplePerKayak",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of people per motorboat trip",
+            "symbol": "PeoplePerMotorboat",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time per kayak trip in minutes",
+            "symbol": "TimePerKayak",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time per motorboat trip in minutes",
+            "symbol": "TimePerMotorboat",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum possible motorboat trips",
+            "symbol": "MaxMotorboatTrips",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of trips that should be by kayak",
+            "symbol": "MinPercentKayakTrips",
+            "value": 0.75,
+            "shape": []
+        }
+    ],
+    "description": "Due to an accident, at least \\param{MinLocals} locals must be moved across a lake. They can either be transported over the lake by a kayak or a motorboat. Kayaks can transport \\param{PeoplePerKayak} people every trip and motorboats can transport \\param{PeoplePerMotorboat} people every trip. Kayaks take \\param{TimePerKayak} minutes per trip whereas motorboats take \\param{TimePerMotorboat} minutes per trip. Due to the limited number of motorboats available to the locals, there can be at most \\param{MaxMotorboatTrips} motorboat trips and at least \\param{MinPercentKayakTrips}% of the trips should be by kayak. How many of each transportation method should be used to minimize the total amount of time needed to transport all the locals?"
+}

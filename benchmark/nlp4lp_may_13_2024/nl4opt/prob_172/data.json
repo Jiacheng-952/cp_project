@@ -1,0 +1,9 @@
+{
+    "BusCapacity": 100,
+    "BusTripTime": 2,
+    "MaxBusTrips": 10,
+    "MinimumCarTripPercentage": 0.6,
+    "CarCapacity": 40,
+    "CarTripTime": 1.5,
+    "TotalChicken": 1200
+}

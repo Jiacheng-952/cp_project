@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of translators",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of translator i",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Set of languages that translator i can translate",
+            "symbol": "Languages",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Number of required languages",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "List of required languages",
+            "symbol": "RequiredLanguages",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ],
+    "description": "Select the combination of translators that ensures all required languages can be translated into, at the minimum possible cost. There are \\param{N} translators, each with an associated cost of \\param{Cost}. Each translator i is capable of translating a set of languages \\param{Languages}. The objective is to meet the translation needs for \\param{M} required languages, listed in \\param{RequiredLanguages}."
+}

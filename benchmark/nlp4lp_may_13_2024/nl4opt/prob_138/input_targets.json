@@ -1,0 +1,69 @@
+{
+    "background": "A university research lab can make two types of diabetes medicine using limited imported material and mRNA, with different per-dose requirements for each medicine.",
+    "constraints": [
+        "Number of doses of medicine A is non-negative",
+        "Number of doses of medicine B is non-negative",
+        "The lab has at most TotalMaterial units of imported material available",
+        "The lab has at most TotalMrna units of mRNA available",
+        "The lab can make at most MaxDosesA doses of medicine A",
+        "The number of doses of medicine B must be greater than the number of doses of medicine A"
+    ],
+    "objective": "Maximize the total number of people treated with doses of medicine A and B",
+    "description": "A university research lab can make two types of diabetes medicine, medicine A and medicine B. Per dose, medicine A takes \\param{MaterialA} units of imported material and \\param{MrnaA} units of mRNA to make. Per dose, medicine B takes \\param{MaterialB} units of imported material and \\param{MrnaB} units of mRNA to take. The lab has available at most \\param{TotalMaterial} units of imported material and \\param{TotalMrna} units of mRNA. The lab can make at most \\param{MaxDosesA} doses of medicine A and the number of doses of medicine B must be larger than the number of doses of medicine A. If one dose of medicine A can treat \\param{PeopleA} people and one dose of medicine B can treat \\param{PeopleB} people, how many doses of each should be made to maximize the number of people that can be treated?",
+    "parameters": [
+        {
+            "definition": "Units of imported material to make one dose of medicine A",
+            "symbol": "MaterialA",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of mRNA to make one dose of medicine A",
+            "symbol": "MrnaA",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Units of imported material to make one dose of medicine B",
+            "symbol": "MaterialB",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Units of mRNA to make one dose of medicine B",
+            "symbol": "MrnaB",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total units of imported material available",
+            "symbol": "TotalMaterial",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total units of mRNA available",
+            "symbol": "TotalMrna",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Maximum doses of medicine A that can be made",
+            "symbol": "MaxDosesA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of people treated by one dose of medicine A",
+            "symbol": "PeopleA",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Number of people treated by one dose of medicine B",
+            "symbol": "PeopleB",
+            "value": 8,
+            "shape": []
+        }
+    ]
+}

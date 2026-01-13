@@ -1,0 +1,49 @@
+{
+    "background": "A toy company needs to determine the number of medium-sized and small factories to build in order to meet daily toy production minimums with a limited number of operators.",
+    "constraints": [
+        "Number of medium-sized factories is non-negative",
+        "Number of small factories is non-negative",
+        "Company must produce at least ToysMin toys per day",
+        "Company has only OperatorsTotal operators available"
+    ],
+    "objective": "Minimize the total number of factories built",
+    "description": "A toy company can build two factory types, a medium-sized factory and a small factory. A medium-sized factory can make \\param{ToysMedium} toys per day and requires \\param{OperatorsMedium} operators. A small factory can make \\param{ToysSmall} toys per day and requires \\param{OperatorsSmall} operators. The company must make at least \\param{ToysMin} toys per day but they only have \\param{OperatorsTotal} operators available. How many of each factory should the company build to minimize the total number of factories?",
+    "parameters": [
+        {
+            "definition": "Number of toys produced per day by a medium-sized factory",
+            "symbol": "ToysMedium",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of operators required for a medium-sized factory",
+            "symbol": "OperatorsMedium",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of toys produced per day by a small factory",
+            "symbol": "ToysSmall",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Number of operators required for a small factory",
+            "symbol": "OperatorsSmall",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of toys to be produced per day",
+            "symbol": "ToysMin",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Total number of operators available",
+            "symbol": "OperatorsTotal",
+            "value": 16,
+            "shape": []
+        }
+    ]
+}

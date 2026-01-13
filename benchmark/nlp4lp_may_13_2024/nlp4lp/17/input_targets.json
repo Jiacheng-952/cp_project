@@ -1,0 +1,73 @@
+{
+    "background": "The goal is to determine the optimal execution frequency of each process to maximize the revenue for the coming month, involving various processes, options, and price points, each with associated resources, prices, inputs, outputs, and costs.",
+    "constraints": [
+        "Each process execution number is non-negative",
+        "Total resource allocation for all processes does not exceed Allocated resources",
+        "Inputs required for executing processes for all options do not exceed available Input for each option",
+        "Outputs produced from executing processes for all price points do not exceed the demand represented by Output at each price point"
+    ],
+    "objective": "Maximize the total revenue, which is calculated based on the Price at each price point, the number of times each process is executed, and the Cost for each process",
+    "description": "We want to know how many times should we execute each process to maximize the revenue for the next month (you can assume that the number of times that each process is executed is a floating point number). The problem involves \\param{O} options, \\param{P} price points, and \\param{L} processes with \\param{Allocated} resources, \\param{Price} at each price point, \\param{Input} required for each option in each process, \\param{Output} produced for each price point in each process, and \\param{Cost} for each process.",
+    "parameters": [
+        {
+            "definition": "Number of options",
+            "symbol": "O",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of price points",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of processes",
+            "symbol": "L",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Allocated resources for each option",
+            "symbol": "Allocated",
+            "value": "",
+            "shape": [
+                "O"
+            ]
+        },
+        {
+            "definition": "Price at each price point",
+            "symbol": "Price",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Input resources required for each option in each process",
+            "symbol": "Input",
+            "value": "",
+            "shape": [
+                "L",
+                "O"
+            ]
+        },
+        {
+            "definition": "Output produced for each price point in each process",
+            "symbol": "Output",
+            "value": "",
+            "shape": [
+                "L",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost for each process",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "L"
+            ]
+        }
+    ]
+}

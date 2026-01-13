@@ -1,0 +1,92 @@
+{
+    "background": "The company is looking to minimize redundancy across various resources with specific strength requirements and differing costs associated with wastage, redundancy, overmanning, and short working.",
+    "constraints": [
+        "Recruit, NumOverman, and NumShortwork must be non-negative for each type of resource",
+        "Amount of each resource used must be at least equal to I - LessOneWaste if there is less wastage",
+        "Amount of each resource used must not exceed I + MoreOneWaste if there is more wastage"
+    ],
+    "objective": "Minimize the total cost of redundancy, overmanning, and short working for the company",
+    "description": "The company\u2019s declared objective is to minimize redundancy. Requirement are given as \\param{K} different resources each having \\param{I} specific requirements, where \\param{Strength} is the strength of each type of resource, \\param{LessOneWaste} is the value when wastage of resources is less than optimal, \\param{MoreOneWaste} is the value when wastage of resources is more than optimal. \\param{Recruit} is the number of recruited resources of each type, \\param{CostRedundancy} is the cost of redundancy for each type of resource, \\param{NumOverman} signifies the number of overmanned positions, \\param{CostOverman} is the cost of overmanning for each type of resource, and \\param{NumShortwork} represents the number of shortworked positions with \\param{CostShort} as the cost of short working for each type of resource. How should they operate in order to do this?",
+    "parameters": [
+        {
+            "definition": "Total number of different types of resources",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different requirements for each type of resource",
+            "symbol": "I",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Strength of each type of resource",
+            "symbol": "Strength",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Value when wastage of resources is less than optimal",
+            "symbol": "LessOneWaste",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Value when wastage of resources is more than optimal",
+            "symbol": "MoreOneWaste",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of recruited resources of each type",
+            "symbol": "Recruit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Cost of redundancy for each type of resource",
+            "symbol": "CostRedundancy",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of overmanned positions",
+            "symbol": "NumOverman",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of overmanning for each type of resource",
+            "symbol": "CostOverman",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of shortworked positions",
+            "symbol": "NumShortwork",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of short working for each type of resource",
+            "symbol": "CostShort",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

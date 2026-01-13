@@ -1,0 +1,48 @@
+{
+    "background": "A banana company sells bananas in small and large crates with different capacities. There's a preference for large crates, but also a requirement for a minimum number of small crates.",
+    "constraints": [
+        "Number of small crates is an integer",
+        "Number of large crates is an integer",
+        "Number of small crates is non-negative",
+        "Number of large crates is non-negative",
+        "Number of large crates must be at least MinLargeToSmallRatio times the number of small crates",
+        "At least MinSmallCrates small crates should be used",
+        "Total number of bananas in small crates and large crates can't exceed TotalBananas",
+        "A small crate can hold BananasPerSmallCrate bananas",
+        "A large crate can hold BananasPerLargeCrate bananas"
+    ],
+    "objective": "Maximize the total number of crates produced",
+    "description": "A banana company sells their bananas in small and large crates. A small crate can hold \\param{BananasPerSmallCrate} bananas while a large crate can hold \\param{BananasPerLargeCrate} bananas. Since large crates are more manageable, the number of large crates must be at least \\param{MinLargeToSmallRatio} times the number of small crates. However, at least \\param{MinSmallCrates} small crates should be used. If the company has available \\param{TotalBananas} bananas, how many of each crate should the company use to maximize the total number of crates produced?",
+    "parameters": [
+        {
+            "definition": "Number of bananas a small crate can hold",
+            "symbol": "BananasPerSmallCrate",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Number of bananas a large crate can hold",
+            "symbol": "BananasPerLargeCrate",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of large crates to small crates",
+            "symbol": "MinLargeToSmallRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small crates",
+            "symbol": "MinSmallCrates",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total number of bananas available",
+            "symbol": "TotalBananas",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "VanCapacity": 6,
+    "CarCapacity": 3,
+    "MinimumVoters": 200,
+    "MaxVansRatio": 0.33
+}

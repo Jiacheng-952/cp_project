@@ -1,0 +1,56 @@
+{
+    "background": "An international goods exporter requires transportation of goods using ships and planes, each with distinct capacities and fuel consumptions.",
+    "constraints": [
+        "Number of ship trips is non-negative",
+        "Number of plane trips is non-negative",
+        "At least MinContainers containers must be transported",
+        "At most MaxPlaneTrips plane trips can be made",
+        "At least MinShipTripPercentage% of all trips must be by ship"
+    ],
+    "objective": "Minimize the total amount of fuel used for transporting the containers",
+    "description": "An international goods exporter uses ships and planes to transport goods. A ship can take \\param{ShipCapacity} containers worth of goods and uses \\param{ShipFuel} liters of fuel per trip. A plane can take \\param{PlaneCapacity} containers worth of goods and uses \\param{PlaneFuel} liters of fuel per trip. The company needs to transport at least \\param{MinContainers} containers worth of goods. In addition, there can be at most \\param{MaxPlaneTrips} plane trips made and a minimum of \\param{MinShipTripPercentage} of the trips made must be by ship. How many of each trip should be made to minimize the total amount of fuel consumed?",
+    "parameters": [
+        {
+            "definition": "Containers a ship can take",
+            "symbol": "ShipCapacity",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Fuel used by a ship per trip",
+            "symbol": "ShipFuel",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Containers a plane can take",
+            "symbol": "PlaneCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Fuel used by a plane per trip",
+            "symbol": "PlaneFuel",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total containers that need to be transported",
+            "symbol": "MinContainers",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of plane trips",
+            "symbol": "MaxPlaneTrips",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of trips that must be made by ship",
+            "symbol": "MinShipTripPercentage",
+            "value": 0.5,
+            "shape": []
+        }
+    ]
+}

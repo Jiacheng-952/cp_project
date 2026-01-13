@@ -1,0 +1,9 @@
+{
+    "CartRate": 5,
+    "CartWorkers": 2,
+    "TrolleyRate": 7,
+    "TrolleyWorkers": 4,
+    "MinTrolleys": 12,
+    "MaxTrolleyPercentage": 0.4,
+    "DeliveryRate": 100
+}

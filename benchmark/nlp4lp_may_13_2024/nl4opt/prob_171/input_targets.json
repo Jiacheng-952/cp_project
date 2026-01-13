@@ -1,0 +1,56 @@
+{
+    "background": "A mail delivery service must deliver mail using regular and speed boats, each having different capacities and fuel usage, with a constraint on the number of regular boat trips and a minimum proportion of trips that must be speed boats.",
+    "constraints": [
+        "Number of regular boat trips is non-negative",
+        "Number of speed boat trips is non-negative",
+        "Number of regular boat trips is at most MaxRegularTrips",
+        "At least MinSpeedPercentage of the total number of trips are made by speed boats",
+        "Total pieces of mail delivered is at least TotalMail"
+    ],
+    "objective": "Minimize the total amount of gas consumed for delivering all the mail",
+    "description": "A mail delivery service in an island village delivers mail by regular and speed boats. A regular boat can carry \\param{RegularCapacity} pieces of mail per trip and uses \\param{RegularFuel} liters of gas. A speed boat can carry \\param{SpeedCapacity} pieces of mail per trip and uses \\param{SpeedFuel} liters of gas. There can be at most \\param{MaxRegularTrips} regular boat trips. Since customers want their mail as fast as possible, at least \\param{MinSpeedPercentage} of the trips must be made by speed boats. If the service needs to deliver \\param{TotalMail} pieces of mail, how many trips of each should be made to minimize the total amount of gas consumed?",
+    "parameters": [
+        {
+            "definition": "Maximum number of mail pieces a regular boat can carry per trip",
+            "symbol": "RegularCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Fuel usage of a regular boat per trip",
+            "symbol": "RegularFuel",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of mail pieces a speed boat can carry per trip",
+            "symbol": "SpeedCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Fuel usage of a speed boat per trip",
+            "symbol": "SpeedFuel",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of regular boat trips allowed",
+            "symbol": "MaxRegularTrips",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of trips that must be made by speed boats",
+            "symbol": "MinSpeedPercentage",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Total number of pieces of mail to be delivered",
+            "symbol": "TotalMail",
+            "value": 1000,
+            "shape": []
+        }
+    ]
+}

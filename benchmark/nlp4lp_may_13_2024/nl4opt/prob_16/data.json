@@ -1,0 +1,12 @@
+{
+    "CostZtube": 1000,
+    "ViewersZtube": 400000,
+    "CostSoorchle": 200,
+    "ViewersSoorchle": 5000,
+    "CostWassa": 100,
+    "ViewersWassa": 3000,
+    "MaxAdsSoorchle": 15,
+    "MaxPropWassa": 0.33,
+    "MinPropZtube": 0.05,
+    "Budget": 10000
+}

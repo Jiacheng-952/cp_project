@@ -1,0 +1,10 @@
+{
+    "CostPlush": 3,
+    "CostDoll": 2,
+    "MaxInventory": 700,
+    "ProfitPlush": 4,
+    "ProfitDoll": 2,
+    "MinPlushSold": 90,
+    "MaxPlushSold": 190,
+    "MaxDollsToPlushRatio": 2
+}

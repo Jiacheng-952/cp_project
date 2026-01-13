@@ -1,0 +1,42 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of different spare parts",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of machines capable of making the spare parts",
+            "symbol": "S",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time taken to make spare part k on machine s",
+            "symbol": "Time",
+            "value": "",
+            "shape": [
+                "K",
+                "S"
+            ]
+        },
+        {
+            "definition": "Profit obtained from making spare part k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Capacity of machine s for the spare parts",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        }
+    ],
+    "description": "Formulate the problem of determining the quantities of each spare part to be made during the month so as to maximize profit. The number of different spare parts is \\param{K}. The number of machines capable of making the spare parts is \\param{S}. The time taken to make spare part \\param{k} on machine \\param{s} is given by \\param{Time}. The profit obtained from making spare part \\param{k} is \\param{Profit}. Each machine \\param{s} has a capacity of \\param{Capacity} for the spare parts."
+}

@@ -1,0 +1,9 @@
+{
+    "TechnicianHoursPerShift": 8,
+    "ResearcherHoursPerShift": 5,
+    "TechnicianPaymentPerShift": 300,
+    "ResearcherPaymentPerShift": 100,
+    "RequiredTechnicianToResearcherRatio": 2,
+    "TotalUltrasoundHoursNeeded": 500,
+    "TotalBudget": 14000
+}

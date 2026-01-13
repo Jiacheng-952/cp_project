@@ -1,0 +1,70 @@
+{
+    "background": "A bakery makes almond and pistachio croissants, requiring butter and flour for each type. The bakery aims to minimize production time.",
+    "constraints": [
+        "Number of almond croissants is an integer",
+        "Number of pistachio croissants is an integer",
+        "Number of almond croissants is non-negative",
+        "Number of pistachio croissants is non-negative",
+        "Butter used for almond croissants and pistachio croissants cannot exceed TotalButter units",
+        "Flour used for almond croissants and pistachio croissants cannot exceed TotalFlour units",
+        "At least AlmondPistachioRatio times as many almond croissants should be made as pistachio croissants"
+    ],
+    "objective": "Minimize the total production time for almond and pistachio croissants",
+    "description": "A bakery makes almond and pistachio croissants. An almond croissant requires \\param{ButterA} units of butter and \\param{FlourA} units of flour. A pistachio croissant requires \\param{ButterP} units of butter and \\param{FlourP} units of flour. The bakery has available \\param{TotalButter} units of butter and \\param{TotalFlour} units of flour. Since the almond croissant is more popular, at least \\param{AlmondPistachioRatio} times as many almond croissants should be made as pistachio croissants. If making an almond croissant takes \\param{TimeA} minutes and making a pistachio croissant takes \\param{TimeP} minutes, how many of each should be made to minimize the total production time?",
+    "parameters": [
+        {
+            "definition": "Units of butter required for an almond croissant",
+            "symbol": "ButterA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of flour required for an almond croissant",
+            "symbol": "FlourA",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of butter required for a pistachio croissant",
+            "symbol": "ButterP",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of flour required for a pistachio croissant",
+            "symbol": "FlourP",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of butter",
+            "symbol": "TotalButter",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of flour",
+            "symbol": "TotalFlour",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Proportion of almond croissants relative to pistachio croissants",
+            "symbol": "AlmondPistachioRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Production time for an almond croissant",
+            "symbol": "TimeA",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Production time for a pistachio croissant",
+            "symbol": "TimeP",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

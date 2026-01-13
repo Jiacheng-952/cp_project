@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of fat in each serving of apple flavored baby food",
+            "symbol": "FatApple",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of folate in each serving of apple flavored baby food",
+            "symbol": "FolateApple",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of fat in each serving of carrot flavored baby food",
+            "symbol": "FatCarrot",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of folate in each serving of carrot flavored baby food",
+            "symbol": "FolateCarrot",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of servings of carrot flavored baby food",
+            "symbol": "MinServingsCarrot",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Multiplied number of apple servings compared to carrot servings",
+            "symbol": "AppleCarrotRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of folate that the baby can consume",
+            "symbol": "MaxFolate",
+            "value": 100,
+            "shape": []
+        }
+    ],
+    "description": "A parent feeds their baby two flavors of baby food, apple and carrot, in order to meet the babies fat and folate requirements. Each serving of apple flavored baby food contains \\param{FatApple} units of fat and \\param{FolateApple} units of folate. Each serving of carrot flavored baby food contains \\param{FatCarrot} units of fat and \\param{FolateCarrot} units of folate. The baby does not like the carrot flavor, and therefore he must eat \\param{AppleCarrotRatio} times as many apple flavored baby food as carrot flavored baby food. However, he must eat at least \\param{MinServingsCarrot} servings of carrot flavored baby food. If the baby can consume at most \\param{MaxFolate} units of folate, how many servings of each should he eat to maximize his fat intake?"
+}

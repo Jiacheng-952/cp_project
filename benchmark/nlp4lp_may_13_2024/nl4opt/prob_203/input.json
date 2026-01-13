@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of milk in a bottle of black milk tea",
+            "symbol": "BlackMilk",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Amount of honey in a bottle of black milk tea",
+            "symbol": "BlackHoney",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of milk in a bottle of matcha milk tea",
+            "symbol": "MatchaMilk",
+            "value": 525,
+            "shape": []
+        },
+        {
+            "definition": "Amount of honey in a bottle of matcha milk tea",
+            "symbol": "MatchaHoney",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one bottle of black milk tea",
+            "symbol": "ProfitBlack",
+            "value": 7.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one bottle of matcha milk tea",
+            "symbol": "ProfitMatcha",
+            "value": 5.0,
+            "shape": []
+        },
+        {
+            "definition": "Total available amount of milk",
+            "symbol": "TotalMilk",
+            "value": 30000,
+            "shape": []
+        },
+        {
+            "definition": "Total available amount of honey",
+            "symbol": "TotalHoney",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A milk tea shop owner would like to sell two different milk teas: black milk tea and matcha milk tea. Each contains both milk and honey. A bottle of black milk tea contains \\param{BlackMilk} grams of milk and \\param{BlackHoney} grams of honey, whereas a bottle of matcha milk tea contains \\param{MatchaMilk} grams of milk and \\param{MatchaHoney} grams of honey. The profit from each bottle of black milk tea sold is \\param{ProfitBlack} and the profit from each bottle of matcha milk tea sold is \\param{ProfitMatcha}. If his total production must not exceed his available stock of \\param{TotalMilk} grams of milk and \\param{TotalHoney} grams of honey, how many bottles of each type of milk tea should be made to maximize profits?"
+}

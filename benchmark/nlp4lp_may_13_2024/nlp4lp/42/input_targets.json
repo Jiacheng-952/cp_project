@@ -1,0 +1,32 @@
+{
+    "background": "The problem is to find the minimum number of employees needed to meet a certain coverage requirement where employees work for a set number of consecutive days followed by a mandatory rest period.",
+    "constraints": [
+        "Each employee works for WorkingDays consecutive days",
+        "Each employee must have at least RestingDays consecutive days of rest",
+        "Number of employees is a non-negative integer"
+    ],
+    "objective": "Minimize the number of employees to hire to meet the coverage requirements",
+    "description": "Calculate the minimum number of employees to hire such that the requirements for coverage (as described by \\param{Num}) can be met with each employee working for \\param{WorkingDays} consecutive days followed by at least \\param{RestingDays} consecutive resting days.",
+    "parameters": [
+        {
+            "definition": "The number of users on the nth day",
+            "symbol": "Num",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Number of consecutive working days before a resting period",
+            "symbol": "WorkingDays",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of consecutive resting days",
+            "symbol": "RestingDays",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

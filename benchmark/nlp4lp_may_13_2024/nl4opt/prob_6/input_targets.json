@@ -1,0 +1,51 @@
+{
+  "background": "A farmer has a certain amount of land to allocate to growing tomatoes and potatoes. She has preferences regarding the proportions of each crop and minimum quantities to meet demands, while aiming to maximize profit within the constraints of soil and weather.",
+  "constraints": [
+    "A total area of up to TotalArea hectares is available for planting",
+    "The number of hectares allocated to tomatoes must be at least MinTomatoes",
+    "The number of hectares allocated to potatoes must be at least MinPotatoes",
+    "The number of hectares of tomatoes cannot exceed twice the number of hectares of MaxRatioTomatoes in potatoes",
+    "The areas allocated for tomatoes and potatoes are non-negative",
+    "The areas allocated for tomatoes and potatoes are continuous variables (hectares can be fractional)"
+  ],
+  "objective": "Maximize the profit from planting crops, where profit is calculated by the sum of ProfitTomatoes per hectare for tomatoes and ProfitPotatoes per hectare for potatoes.",
+  "description": "A farmer has \\var{TotalArea} hectares available to grow tomatoes and potatoes. She prefers to plant more tomatoes than potatoes, but the soil and weather conditions allow her to grow at most twice the \\var{MaxRatioTomatoes} the amount of tomatoes to that of potatoes. In addition, she must grow at least \\var{MinTomatoes} hectares of tomatoes and at least \\var{MinPotatoes} hectares of potatoes to meet community demands. If the profit per hectare of tomatoes is $\\var{ProfitTomatoes} and the profit per hectare of potatoes is $\\var{ProfitPotatoes}, how many hectares of each crop should she plant to maximize profit? What is this profit?",
+  "parameters": [
+    {
+      "definition": "Total area available for tomatoes and potatoes",
+      "symbol": "TotalArea",
+      "value": 140,
+      "shape": []
+    },
+    {
+      "definition": "Maximum ratio of area of tomatoes to potatoes",
+      "symbol": "MaxRatioTomatoes",
+      "value": 2,
+      "shape": []
+    },
+    {
+      "definition": "Minimum area required for tomatoes",
+      "symbol": "MinTomatoes",
+      "value": 20,
+      "shape": []
+    },
+    {
+      "definition": "Minimum area required for potatoes",
+      "symbol": "MinPotatoes",
+      "value": 30,
+      "shape": []
+    },
+    {
+      "definition": "Profit per hectare of tomatoes",
+      "symbol": "ProfitTomatoes",
+      "value": 350,
+      "shape": []
+    },
+    {
+      "definition": "Profit per hectare of potatoes",
+      "symbol": "ProfitPotatoes",
+      "value": 600,
+      "shape": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of newspapers a labrador can deliver at a time",
+            "symbol": "LabradorNewspaperCount",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Number of bone treats required for a labrador service",
+            "symbol": "LabradorBoneTreatCount",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of newspapers a golden retriever can deliver at a time",
+            "symbol": "GoldenRetrieverNewspaperCount",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of bone treats required for a golden retriever service",
+            "symbol": "GoldenRetrieverBoneTreatCount",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Total number of small bone treats available",
+            "symbol": "TotalBoneTreatsAvailable",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of golden retrievers that must be used",
+            "symbol": "MinGoldenRetrievers",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of dogs that can be labradors",
+            "symbol": "MaxLabradorProportion",
+            "value": 0.6,
+            "shape": []
+        }
+    ],
+    "description": "A dog school trains labradors and golden retrievers to deliver newspapers. A labrador can deliver \\param{LabradorNewspaperCount} newspapers at a time and requires \\param{LabradorBoneTreatCount} small bone treats for service. A golden retriever can deliver \\param{GoldenRetrieverNewspaperCount} newspapers at a time and requires \\param{GoldenRetrieverBoneTreatCount} small bone treats per service. The school only has \\param{TotalBoneTreatsAvailable} small bone treats available. In addition, at least \\param{MinGoldenRetrievers} golden retrievers must be used and at most \\param{MaxLabradorProportion} of the dogs can be labradors. How many of each dog should be used to maximize the number of newspapers that can be delivered?"
+}

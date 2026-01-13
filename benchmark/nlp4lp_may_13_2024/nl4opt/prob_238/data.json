@@ -1,0 +1,11 @@
+{
+    "DoughLarge": 12,
+    "ToppingsLarge": 5,
+    "TimeLarge": 12,
+    "DoughMedium": 8,
+    "ToppingsMedium": 4,
+    "TimeMedium": 8,
+    "MinDough": 10000,
+    "MinToppings": 4400,
+    "MinMedium": 200
+}

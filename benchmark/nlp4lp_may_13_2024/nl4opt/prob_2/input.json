@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Weekly salary for a senior accountant",
+            "symbol": "WageSenior",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Weekly salary for a junior accountant",
+            "symbol": "WageJunior",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of accountants",
+            "symbol": "MinAccountants",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of senior accountants",
+            "symbol": "MinSenior",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "The ratio of the number of senior accountants to junior accountants",
+            "symbol": "RatioSeniorJunior",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Maximum weekly wage bill",
+            "symbol": "MaxWageBill",
+            "value": 150000,
+            "shape": []
+        }
+    ],
+    "description": "An accounting firm has senior accountants earning \\param{WageSenior} per week and junior accountants earning \\param{WageJunior} per week. The contracts with companies to provide accounting services require at least \\param{MinAccountants} accountants, of whom at least \\param{MinSenior} must be senior accountants. To make sure there is enough experience on the accounting team, the number of senior accountants should be at least \\param{RatioSeniorJunior} of the number of junior accountants. The firm wants to keep the weekly wage bill below \\param{MaxWageBill}. Formulate an LP to minimize the wage bill."
+}

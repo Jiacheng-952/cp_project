@@ -1,0 +1,9 @@
+{
+    "BusCapacity": 20,
+    "BusDuration": 30,
+    "CarCapacity": 6,
+    "CarDuration": 15,
+    "MaxBusTrips": 10,
+    "MinCarTripProportion": 0.6,
+    "TotalMonkeys": 300
+}

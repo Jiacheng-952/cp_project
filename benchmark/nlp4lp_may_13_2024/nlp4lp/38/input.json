@@ -1,0 +1,33 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum storage capacity",
+            "symbol": "Capacity",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Cost of holding one unit of product",
+            "symbol": "HoldingCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Selling price in each period",
+            "symbol": "Price",
+            "value": 0,
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Cost of buying in each period",
+            "symbol": "Cost",
+            "value": 0,
+            "shape": [
+                "N"
+            ]
+        }
+    ],
+    "description": "Determine the amount of buying and selling in each period to maximize the profit over the months, given the constraints of maximum storage \\param{Capacity}, holding costs \\param{HoldingCost}, selling prices \\param{Price}, and buying costs \\param{Cost}."
+}

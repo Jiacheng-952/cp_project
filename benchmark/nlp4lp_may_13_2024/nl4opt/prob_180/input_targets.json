@@ -1,0 +1,58 @@
+{
+    "background": "A water salesman should decide how many small and large kegs to use for transporting water from a glacier, abiding by the constraints on keg capacities, keg counts, and transportation limits.",
+    "constraints": [
+        "Number of small kegs used is non-negative",
+        "Number of large kegs used is non-negative",
+        "Number of small kegs used is at most MaxSmallKegs",
+        "Number of large kegs used is at most MaxLargeKegs",
+        "At least MinSmallLargeRatio times as many small kegs are used as large kegs",
+        "At most MaxKegsTransport kegs can be transported in total",
+        "At least MinLargeKegs kegs must be large"
+    ],
+    "objective": "Maximize the total volume of glacial water transported",
+    "description": "A water salesman collects water from a glacier and transports it in either small or large kegs. A small keg can hold \\param{SmallKegCapacity} liters of water while a large keg can hold \\param{LargeKegCapacity} liters of water. The salesman has available at most \\param{MaxSmallKegs} small kegs and \\param{MaxLargeKegs} large kegs. Since small kegs are easier to carry, at least \\param{MinSmallLargeRatio} times as many small kegs must be used than large kegs. If he can transport at most \\param{MaxKegsTransport} kegs total and at least \\param{MinLargeKegs} kegs must be large, how many of each should he use to maximize the total amount of glacial water he can transport?",
+    "parameters": [
+        {
+            "definition": "Amount of water a small keg can hold",
+            "symbol": "SmallKegCapacity",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Amount of water a large keg can hold",
+            "symbol": "LargeKegCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of small kegs available",
+            "symbol": "MaxSmallKegs",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of large kegs available",
+            "symbol": "MaxLargeKegs",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of kegs that can be transported",
+            "symbol": "MaxKegsTransport",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large kegs required",
+            "symbol": "MinLargeKegs",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of small kegs to the number of large kegs",
+            "symbol": "MinSmallLargeRatio",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

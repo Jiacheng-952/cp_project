@@ -1,0 +1,57 @@
+{
+    "background": "A city employs seasonal and permanent snow removers to clear snow after heavy snowfall.",
+    "constraints": [
+        "Seasonal snow removers work HoursSeasonal hours per shift",
+        "Permanent snow removers work HoursPermanent hours per shift",
+        "The city pays seasonal snow removers PaySeasonal per shift",
+        "The city pays permanent snow removers PayPermanent per shift",
+        "The city needs TotalHoursRequired hours of snow remover labor",
+        "The city has a budget of TotalBudget",
+        "Number of seasonal snow removers is an integer",
+        "Number of permanent snow removers is an integer",
+        "Number of seasonal snow removers is non-negative",
+        "Number of permanent snow removers is non-negative",
+        "Total hours worked by seasonal and permanent snow removers should meet or exceed TotalHoursRequired",
+        "Total budget spent on seasonal and permanent snow removers should not exceed TotalBudget"
+    ],
+    "objective": "Minimize the total number of snow removers",
+    "description": "A city employs seasonal and permanent snow removers. A seasonal snow remover works \\var{HoursSeasonal} hours per shift and gets paid \\var{PaySeasonal}. A permanent snow remover works \\var{HoursPermanent} hours per shift and gets paid \\var{PayPermanent}. Currently the city needs \\var{TotalHoursRequired} hours of snow remover labor after a heavy snowfall. If the city has a budget of \\var{TotalBudget}, how many of each type of worker should be hired to minimize the total number of snow removers?",
+    "parameters": [
+        {
+            "definition": "Number of hours a seasonal snow remover works per shift",
+            "symbol": "HoursSeasonal",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a seasonal snow remover per shift",
+            "symbol": "PaySeasonal",
+            "value": 120.0,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours a permanent snow remover works per shift",
+            "symbol": "HoursPermanent",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Payment for a permanent snow remover per shift",
+            "symbol": "PayPermanent",
+            "value": 250.0,
+            "shape": []
+        },
+        {
+            "definition": "Total required labor hours for snow removal",
+            "symbol": "TotalHoursRequired",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for snow removal",
+            "symbol": "TotalBudget",
+            "value": 6500.0,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "background": "A new fast food place makes wraps and platters, each requiring different amounts of meat and rice and differing in preparation time.",
+    "constraints": [
+        "Number of wraps is an integer",
+        "Number of platters is an integer",
+        "Number of wraps is non-negative",
+        "Number of platters is non-negative",
+        "The place must use at least MinMeat units of meat",
+        "The place must use at least MinRice units of rice",
+        "At least RatioWrapPlatter times as many wraps need to be made as platters"
+    ],
+    "objective": "Minimize the total production time",
+    "description": "A new fast food place makes wraps and platters. Each wrap requires \\var{MeatWrap} units of meat and \\var{RiceWrap} units of rice. Each platter requires \\var{MeatPlatter} units of meant and \\var{RicePlatter} units of rice. While each wrap takes \\var{TimeWrap} minutes to make, each platter takes \\var{TimePlatter} minutes to make. The fast food place must use at least \\var{MinMeat} units of meat and \\var{MinRice} units of rice. Since wraps are easier to eat on the go, at least \\var{RatioWrapPlatter} times as many wraps need to be made as platter. How many of each should the fast food place make to minimize the total production time?",
+    "parameters": [
+        {
+            "definition": "Units of meat required for one wrap",
+            "symbol": "MeatWrap",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of rice required for one wrap",
+            "symbol": "RiceWrap",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of meat required for one platter",
+            "symbol": "MeatPlatter",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of rice required for one platter",
+            "symbol": "RicePlatter",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one wrap",
+            "symbol": "TimeWrap",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one platter",
+            "symbol": "TimePlatter",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of meat",
+            "symbol": "MinMeat",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of rice",
+            "symbol": "MinRice",
+            "value": 2500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of wraps to platters",
+            "symbol": "RatioWrapPlatter",
+            "value": 0.33,
+            "shape": []
+        }
+    ]
+}

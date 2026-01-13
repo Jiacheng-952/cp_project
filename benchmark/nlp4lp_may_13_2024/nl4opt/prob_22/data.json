@@ -1,0 +1,9 @@
+{
+    "MaxTime": 300,
+    "TimeRegHeat": 3,
+    "TimeRegCool": 5,
+    "TimeTempHeat": 5,
+    "TimeTempCool": 8,
+    "ProfitReg": 8,
+    "ProfitTemp": 10
+}

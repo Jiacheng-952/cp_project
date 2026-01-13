@@ -1,0 +1,13 @@
+{
+    "MetalCheap": 3,
+    "AcidCheap": 5,
+    "FoamCheap": 8,
+    "MetalExpensive": 5,
+    "AcidExpensive": 8,
+    "FoamExpensive": 10,
+    "HeatCheap": 2,
+    "HeatExpensive": 3,
+    "MetalTotal": 200,
+    "AcidTotal": 300,
+    "HeatMax": 50
+}

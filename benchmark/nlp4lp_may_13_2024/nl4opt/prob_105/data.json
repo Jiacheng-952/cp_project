@@ -1,0 +1,7 @@
+{
+    "Tc": 4,
+    "To": 6,
+    "MinCleansing": 100,
+    "MaxTotal": 300,
+    "MaxRatio": 2
+}

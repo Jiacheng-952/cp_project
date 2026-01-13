@@ -1,0 +1,51 @@
+{
+    "background": "An accounting firm is trying to optimize its weekly wage bill by employing senior and junior accountants to meet their service contract requirements while obeying certain constraints on minimum numbers and ratios of accountants.",
+    "constraints": [
+        "Number of senior accountants is a non-negative integer",
+        "Number of junior accountants is a non-negative integer",
+        "Total number of accountants greater than or equal to MinAccountants",
+        "Number of senior accountants greater than or equal to MinSenior",
+        "Number of senior accountants greater than or equal to RatioSeniorJunior times the number of junior accountants",
+        "Total weekly wage bill for senior and junior accountants less than or equal to MaxWageBill"
+    ],
+    "objective": "Minimize the total weekly wage bill for the firm",
+    "description": "An accounting firm has senior accountants earning \\var{WageSenior} per week and junior accountants earning \\var{WageJunior} per week. The contracts with companies to provide accounting services require at least \\var{MinAccountants} accountants, of whom at least \\var{MinSenior} must be senior accountants. To make sure there is enough experience on the accounting team, the number of senior accountants should be at least \\var{RatioSeniorJunior} of the number of junior accountants. The firm wants to keep the weekly wage bill below \\var{MaxWageBill}. Formulate an LP to minimize the wage bill.",
+    "parameters": [
+        {
+            "definition": "Weekly salary for a senior accountant",
+            "symbol": "WageSenior",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Weekly salary for a junior accountant",
+            "symbol": "WageJunior",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of accountants",
+            "symbol": "MinAccountants",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of senior accountants",
+            "symbol": "MinSenior",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "The ratio of the number of senior accountants to junior accountants",
+            "symbol": "RatioSeniorJunior",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Maximum weekly wage bill",
+            "symbol": "MaxWageBill",
+            "value": 150000,
+            "shape": []
+        }
+    ]
+}

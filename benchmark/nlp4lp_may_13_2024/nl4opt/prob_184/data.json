@@ -1,0 +1,10 @@
+{
+    "HorsesPerMediumCart": 2,
+    "CapacityMediumCart": 30,
+    "HorsesPerLargeCart": 4,
+    "CapacityLargeCart": 70,
+    "TotalHorses": 60,
+    "MinimumMediumCarts": 5,
+    "MinimumLargeCarts": 5,
+    "CartRatio": 3.0
+}

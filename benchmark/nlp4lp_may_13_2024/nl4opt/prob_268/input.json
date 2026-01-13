@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Time to prepare one in-vivo experiment",
+            "symbol": "TimeInVivoPrep",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Time to execute one in-vivo experiment",
+            "symbol": "TimeInVivoExec",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Time to prepare one ex-vivo experiment",
+            "symbol": "TimeExVivoPrep",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Time to execute one ex-vivo experiment",
+            "symbol": "TimeExVivoExec",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Radiation units received from one in-vivo experiment",
+            "symbol": "RadiationInVivo",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Radiation units received from one ex-vivo experiment",
+            "symbol": "RadiationExVivo",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum time allowed for preparing the experiments",
+            "symbol": "MaxTimePrep",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Maximum time allowed for executing the experiments",
+            "symbol": "MaxTimeExec",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A researcher must perform two types of experiments, in-vivo and ex-vivo. In-vivo experiments require \\param{TimeInVivoPrep} minutes to prepare and \\param{TimeInVivoExec} minutes to execute. Ex-vivo experiments require \\param{TimeExVivoPrep} minutes to prepare and \\param{TimeExVivoExec} minutes to execute. In addition, in-vivo experiments give the researcher \\param{RadiationInVivo} units of radiation while ex-vivo experiments give the researcher \\param{RadiationExVivo} units of radiation. At most \\param{MaxTimePrep} minutes can be used for preparation and \\param{MaxTimeExec} minutes for execution of the experiments. How many of each experiment should be scheduled by the researcher to minimize the total radiation received by the researcher?"
+}

@@ -1,0 +1,82 @@
+{
+    "background": "Maple Oil processes different types of crude oil using compounds A and B to generate net revenue. The company aims to determine the quantity of each type of oil to process to maximize net revenue given the limitations of the available compounds.",
+    "constraints": [
+        "Number of light oil tanks processed is non-negative",
+        "Number of non-sticky oil tanks processed is non-negative",
+        "Number of heavy oil tanks processed is non-negative",
+        "Consumption of compound A for light oil does not exceed TotalCompoundA",
+        "Consumption of compound B for light oil does not exceed TotalCompoundB",
+        "Total consumption of compound A for all oils does not exceed TotalCompoundA",
+        "Total consumption of compound B for all oils does not exceed TotalCompoundB"
+    ],
+    "objective": "Maximize the total net revenue from processing light oil, non-sticky oil, and heavy oil",
+    "description": "Maple Oil processes three types of crude oil: light oil, non-sticky oil and heavy oil. Each tank of light oil produces a net revenue of \\param{RevenueLight}, each tank of non-sticky oil produces a net revenue of \\param{RevenueNonSticky}, and each tank of heavy oil produces a net revenue of \\param{RevenueHeavy}. To process a tank of light oil, \\param{CompoundALight} units of compound A and \\param{CompoundBLight} units of compound B are required. To process a tank of non-sticky oil, \\param{CompoundANonSticky} units of compound A and \\param{CompoundBNonSticky} units of compound B are required. To process a tank of heavy oil, \\param{CompoundAHeavy} units of compound A and \\param{CompoundBHeavy} units of compound B are required. Currently the company has \\param{TotalCompoundA} units of compound A and \\param{TotalCompoundB} units of compound B to process. How many full or partial tanks of each oil should the company process so that net revenue is maximized?",
+    "parameters": [
+        {
+            "definition": "Net revenue from processing a tank of light oil",
+            "symbol": "RevenueLight",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Net revenue from processing a tank of non-sticky oil",
+            "symbol": "RevenueNonSticky",
+            "value": 750,
+            "shape": []
+        },
+        {
+            "definition": "Net revenue from processing a tank of heavy oil",
+            "symbol": "RevenueHeavy",
+            "value": 950,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound A required to process a tank of light oil",
+            "symbol": "CompoundALight",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound B required to process a tank of light oil",
+            "symbol": "CompoundBLight",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound A required to process a tank of non-sticky oil",
+            "symbol": "CompoundANonSticky",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound B required to process a tank of non-sticky oil",
+            "symbol": "CompoundBNonSticky",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound A required to process a tank of heavy oil",
+            "symbol": "CompoundAHeavy",
+            "value": 9,
+            "shape": []
+        },
+        {
+            "definition": "Units of compound B required to process a tank of heavy oil",
+            "symbol": "CompoundBHeavy",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total units of compound A available for processing",
+            "symbol": "TotalCompoundA",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Total units of compound B available for processing",
+            "symbol": "TotalCompoundB",
+            "value": 150,
+            "shape": []
+        }
+    ]
+}

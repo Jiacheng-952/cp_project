@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of people required to shovel snow for a small truck",
+            "symbol": "PeopleSmallTruck",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of snow that a small truck can carry",
+            "symbol": "CapacitySmallTruck",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of people required to shovel snow for a large truck",
+            "symbol": "PeopleLargeTruck",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of snow that a large truck can carry",
+            "symbol": "CapacityLargeTruck",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Total number of people available for shoveling snow",
+            "symbol": "TotalPeople",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small trucks required",
+            "symbol": "MinSmallTrucks",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large trucks required",
+            "symbol": "MinLargeTrucks",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Proportion of the number of small trucks to large trucks",
+            "symbol": "TruckProportion",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "A snow removal company removes snow from neighborhoods using small trucks and large trucks. A small truck requires \\param{PeopleSmallTruck} people to shovel the snow and can carry \\param{CapacitySmallTruck} units of snow. A large truck requires \\param{PeopleLargeTruck} people to shovel the snow and can carry \\param{CapacityLargeTruck} units of snow. The company has available \\param{TotalPeople} people. In addition, because some neighborhoods don\u2019t allow big trucks, at least \\param{MinSmallTrucks} trucks must be small. There must be at least \\param{MinLargeTrucks} large trucks as well, and the number of small trucks must be \\param{TruckProportion} times the number of large trucks. How many of each truck should be used to maximize the total amount of snow that can be transported?"
+}

@@ -1,0 +1,7 @@
+{
+    "CapacityCow": 20,
+    "CapacityElephant": 50,
+    "MinBricks": 1000,
+    "MaxCowElephantRatio": 2.0,
+    "MaxElephantsToCows": 1.0
+}

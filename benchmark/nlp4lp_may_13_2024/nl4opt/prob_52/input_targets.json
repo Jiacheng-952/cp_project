@@ -1,0 +1,51 @@
+{
+    "background": "A sandwich company can open two types of stores, a dine-in place and a food-truck.",
+    "constraints": [
+        "Number of dine-in places is an integer",
+        "Number of food-trucks is an integer",
+        "Number of dine-in places is non-negative",
+        "Number of food-trucks is non-negative",
+        "Dine-in places and food-trucks collectively make at least MinSandProd sandwiches per day",
+        "Total number of employees used by dine-in places and food-trucks does not exceed TotalEmp"
+    ],
+    "objective": "Minimize the total number of dine-in places and food-trucks",
+    "description": "A sandwich company can open two types of stores, a dine-in place and a food-truck. A dine-in place can make \\var{DineInProd} sandwiches per day and requires \\var{DineInEmp} employees to operate. A food-truck can make \\var{FoodTruckProd} sandwiches per day and requires \\var{FoodTruckEmp} employees to operate. The company must make at least \\var{MinSandProd} sandwiches per day but they only have available \\var{TotalEmp} employees. How many of each type of store should the company open to minimize the total number of stores?",
+    "parameters": [
+        {
+            "definition": "Sandwich production per day by a dine-in place",
+            "symbol": "DineInProd",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Employees needed to operate a dine-in place",
+            "symbol": "DineInEmp",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Sandwich production per day by a food-truck",
+            "symbol": "FoodTruckProd",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Employees needed to operate a food-truck",
+            "symbol": "FoodTruckEmp",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of sandwiches to be made per day",
+            "symbol": "MinSandProd",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total available employees",
+            "symbol": "TotalEmp",
+            "value": 35,
+            "shape": []
+        }
+    ]
+}

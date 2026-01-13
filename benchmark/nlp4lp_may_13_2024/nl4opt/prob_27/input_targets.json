@@ -1,0 +1,67 @@
+{
+    "background": "A hobbyist makes model trains and planes using wood and paint.",
+    "constraints": [
+        "Number of model trains is an integer",
+        "Number of model planes is an integer",
+        "Number of model trains is non-negative",
+        "Number of model planes is non-negative",
+        "The hobbyist can use at most TotalWood units of wood",
+        "The hobbyist can use at most TotalPaint units of paint",
+        "Each model train uses WoodTrain units of wood",
+        "Each model plane uses WoodPlane units of wood",
+        "Each model train uses PaintTrain units of paint",
+        "Each model plane uses PaintPlane units of paint"
+    ],
+    "objective": "The hobbyist wants to maximize his profit",
+    "description": "A hobbyist makes model trains and planes using wood and paint. A model train requires \\var{WoodTrain} units of wood and \\var{PaintTrain} units of paint. A model plane requires \\var{WoodPlane} units of wood and \\var{PaintPlane} units of paint. The hobbyist has available \\var{TotalWood} units of wood and \\var{TotalPaint} units of paint. If the profit per model train is $\\var{ProfitTrain} and the profit per model plane is $\\var{ProfitPlane}, how many of each should be made to maximize his profit?",
+    "parameters": [
+        {
+            "definition": "Units of wood required to make a model train",
+            "symbol": "WoodTrain",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a model train",
+            "symbol": "PaintTrain",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of wood required to make a model plane",
+            "symbol": "WoodPlane",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a model plane",
+            "symbol": "PaintPlane",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of wood",
+            "symbol": "TotalWood",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of paint",
+            "symbol": "TotalPaint",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Profit per model train",
+            "symbol": "ProfitTrain",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per model plane",
+            "symbol": "ProfitPlane",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

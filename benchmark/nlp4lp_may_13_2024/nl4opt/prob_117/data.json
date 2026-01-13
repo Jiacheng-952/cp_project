@@ -1,0 +1,11 @@
+{
+    "FatPerBurger": 10,
+    "CaloriesPerBurger": 300,
+    "FatPerPizzaSlice": 8,
+    "CaloriesPerPizzaSlice": 250,
+    "MinFat": 130,
+    "MinCalories": 3000,
+    "CholesterolPerBurger": 12,
+    "CholesterolPerPizzaSlice": 10,
+    "PizzaBurgerRatio": 0.33
+}

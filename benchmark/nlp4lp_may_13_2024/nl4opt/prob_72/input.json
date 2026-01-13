@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of customers a small branch can serve per day",
+            "symbol": "ServeSmall",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of bank tellers required for a small branch",
+            "symbol": "TellersSmall",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of customers a large branch can serve per day",
+            "symbol": "ServeLarge",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Number of bank tellers required for a large branch",
+            "symbol": "TellersLarge",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Total number of bank tellers available",
+            "symbol": "TellersTotal",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of customers to be served per day",
+            "symbol": "MinCustomers",
+            "value": 1200,
+            "shape": []
+        }
+    ],
+    "description": "A bank can build small and large branches to serve their customers. A small branch can serve \\param{ServeSmall} customers per day and requires \\param{TellersSmall} bank tellers. A large branch can serve \\param{ServeLarge} customers per day and requires \\param{TellersLarge} bank tellers. The bank has available \\param{TellersTotal} bank tellers and needs to be able to serve at least \\param{MinCustomers} customers per day. How many of each branch size should they build to minimize the total number of branches needed?"
+}

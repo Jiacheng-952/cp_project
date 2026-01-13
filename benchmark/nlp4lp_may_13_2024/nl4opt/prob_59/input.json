@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of mango juice required to make one mango bubble tea",
+            "symbol": "MangoJuicePerMangoTea",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of tea required to make one mango bubble tea",
+            "symbol": "TeaPerMangoTea",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of lychee juice required to make one lychee bubble tea",
+            "symbol": "LycheeJuicePerLycheeTea",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of tea required to make one lychee bubble tea",
+            "symbol": "TeaPerLycheeTea",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Total units of mango juice available",
+            "symbol": "TotalMangoJuice",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Total units of lychee juice available",
+            "symbol": "TotalLycheeJuice",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of lychee bubble teas of total bubble teas made",
+            "symbol": "MinLycheeRatio",
+            "value": 0.4,
+            "shape": []
+        }
+    ],
+    "description": "A bubble tea shop sells mango and lychee bubble tea. Each mango bubble tea requires \\param{MangoJuicePerMangoTea} units of mango juice and \\param{TeaPerMangoTea} units of tea. Each lychee bubble tea requires \\param{LycheeJuicePerLycheeTea} units of lychee juice and \\param{TeaPerLycheeTea} units of tea. The shop has available \\param{TotalMangoJuice} units of mango juice and \\param{TotalLycheeJuice} units of lychee juice. At least \\param{MinLycheeRatio} of the bubble teas made must be lychee flavored. However, mango bubble tea sells better and thus the number of mango bubble teas made must be larger than the number of lychee bubble teas made. How many of each bubble tea flavor should be made to minimize the total amount of tea needed?"
+}

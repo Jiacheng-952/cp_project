@@ -1,0 +1,6 @@
+{
+    "BusCapacity": 9,
+    "CarCapacity": 4,
+    "MinChildren": 100,
+    "MinCars": 5
+}

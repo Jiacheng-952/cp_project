@@ -1,0 +1,7 @@
+{
+    "PillTime": 10,
+    "ShotTime": 20,
+    "RatioShotsToPills": 3,
+    "MinPills": 30,
+    "TotalTime": 10000
+}

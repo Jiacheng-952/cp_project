@@ -1,0 +1,8 @@
+{
+    "WideCapacity": 50,
+    "NarrowCapacity": 20,
+    "WideGarbage": 6,
+    "NarrowGarbage": 3,
+    "MaxWideTrails": 3,
+    "MaxCapacity": 225
+}

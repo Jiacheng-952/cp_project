@@ -1,0 +1,7 @@
+{
+    "WidePipeCapacity": 25,
+    "NarrowPipeCapacity": 15,
+    "MaxWideToNarrowRatio": 0.33,
+    "MinTotalWater": 900,
+    "MinWidePipes": 5
+}

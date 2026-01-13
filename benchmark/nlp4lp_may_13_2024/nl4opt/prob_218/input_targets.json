@@ -1,0 +1,44 @@
+{
+    "background": "A taco stand sells regular and deluxe tacos, aiming to maximize profit within the constraints of supply and demand.",
+    "constraints": [
+        "x1 is non-negative",
+        "x2 is non-negative",
+        "The number of regular tacos (x1) is at most DemandRegularMax",
+        "The number of deluxe tacos (x2) is at most DemandDeluxeMax",
+        "The total number of tacos (x1 + x2) is at most SupplyTotalMax"
+    ],
+    "objective": "Maximize the total profit from regular and deluxe tacos",
+    "description": "A taco stand sells regular tacos and deluxe tacos with extra meat. The stand makes x1 regular tacos at a profit of \\param{ProfitRegular} each and x2 deluxe tacos at a profit of \\param{ProfitDeluxe} each (x1 and x2 are unknown variables both greater than or equal to 0). There is a demand for at most \\param{DemandRegularMax} regular tacos and at most \\param{DemandDeluxeMax} deluxe tacos. The stand only has enough supplies to sell at most \\param{SupplyTotalMax} tacos of either type. How many of each taco should the stand make to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Profit per regular taco",
+            "symbol": "ProfitRegular",
+            "value": 2.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per deluxe taco",
+            "symbol": "ProfitDeluxe",
+            "value": 3.55,
+            "shape": []
+        },
+        {
+            "definition": "Demand maximum for regular tacos",
+            "symbol": "DemandRegularMax",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Demand maximum for deluxe tacos",
+            "symbol": "DemandDeluxeMax",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Supply limit for total tacos",
+            "symbol": "SupplyTotalMax",
+            "value": 70,
+            "shape": []
+        }
+    ]
+}

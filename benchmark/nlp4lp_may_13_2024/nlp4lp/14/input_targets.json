@@ -1,0 +1,40 @@
+{
+    "background": "The problem is to find the largest possible ball by radius, which is entirely contained within a given set P, where the center of this ball is referred to as the Chebychev center of P.",
+    "constraints": [
+        "The radii of balls are non-negative",
+        "The ball must be completely within the set P, which is defined by the constraints Ax \u2264 b"
+    ],
+    "objective": "Maximize the radius r of the ball centered at the Chebychev center that lies entirely within P",
+    "description": "PROBLEM TYPE\nLP\n\nINPUT FORMAT \n\n{\n    \"A\": [[a_i_j for j in 1, ..., N] for i in 1, ..., M],\n    \"b\": [b_i for i in 1, ..., M]\n}\n\nOBJECTIVE\nWe are interested in finding a ball with the largest possible radius, which is entirely contained within the set \\param{P} (The center of such a ball is called the Chebychev center of \\param{P}).",
+    "parameters": [
+        {
+            "definition": "The number of inequalities defining the set P",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The ambient space dimension of the set P",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The coefficients of the linear inequalities defining the set P",
+            "symbol": "A",
+            "value": "",
+            "shape": [
+                "M",
+                "N"
+            ]
+        },
+        {
+            "definition": "The right-hand side of the inequalities defining the set P",
+            "symbol": "B",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ]
+}

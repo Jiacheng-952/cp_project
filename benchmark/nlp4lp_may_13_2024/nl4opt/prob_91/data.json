@@ -1,0 +1,10 @@
+{
+    "ItemsAMadePerDay": 30,
+    "ElectricityA": 100,
+    "ItemsBMadePerDay": 50,
+    "ElectricityB": 120,
+    "MinItems": 1000,
+    "MaxElectricity": 3000,
+    "MaxPercentB": 0.3,
+    "MinMachineA": 5
+}

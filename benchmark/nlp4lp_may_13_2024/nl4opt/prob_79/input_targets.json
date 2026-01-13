@@ -1,0 +1,63 @@
+{
+    "background": "A crepe store sells chocolate and peanut butter crepes, which require chocolate spread, peanut butter spread, and crepe mix.",
+    "constraints": [
+        "Number of chocolate crepes is an integer",
+        "Number of peanut butter crepes is an integer",
+        "Number of chocolate crepes is non-negative",
+        "Number of peanut butter crepes is non-negative",
+        "The number of peanut butter crepes exceeds the number of chocolate crepes",
+        "At least MinChocoRatio of the crepes made should be chocolate",
+        "The store has a total of TotalChocolateSpread units of chocolate spread",
+        "The store has a total of TotalPeanutButterSpread units of peanut butter spread",
+        "A chocolate crepe requires ChocoCrepeChocolate units of chocolate spread",
+        "A chocolate crepe requires ChocoCrepeMix units of crepe mix",
+        "A peanut butter crepe requires PBCrepePeanutButter units of peanut butter spread",
+        "A peanut butter crepe requires PBCrepeMix units of crepe mix"
+    ],
+    "objective": "Minimize the total amount of crepe mix needed",
+    "description": "A crepe store sells chocolate and peanut butter crepes. A chocolate crepe requires \\param{ChocoCrepeChocolate} units of chocolate spread and \\param{ChocoCrepeMix} units of crepe mix. A peanut butter crepe requires \\param{PBCrepePeanutButter} units of peanut butter spread and \\param{PBCrepeMix} units of crepe mix. Recently, the peanut butter crepe has been more popular and therefore the number of peanut butter crepes made must exceed the number of chocolate crepes made. However, at least \\param{MinChocoRatio} of the crepes made should be chocolate. The store has available \\param{TotalChocolateSpread} units of chocolate spread and \\param{TotalPeanutButterSpread} units of peanut butter spread. How many of each should the store make to minimize the total amount of crepe mix needed?",
+    "parameters": [
+        {
+            "definition": "Units of chocolate spread required to make a chocolate crepe",
+            "symbol": "ChocoCrepeChocolate",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of crepe mix required to make a chocolate crepe",
+            "symbol": "ChocoCrepeMix",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of peanut butter spread required to make a peanut butter crepe",
+            "symbol": "PBCrepePeanutButter",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of crepe mix required to make a peanut butter crepe",
+            "symbol": "PBCrepeMix",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "The minimum ratio of chocolate crepes to all crepes made",
+            "symbol": "MinChocoRatio",
+            "value": 0.25,
+            "shape": []
+        },
+        {
+            "definition": "Total units of chocolate spread available",
+            "symbol": "TotalChocolateSpread",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Total units of peanut butter spread available",
+            "symbol": "TotalPeanutButterSpread",
+            "value": 450,
+            "shape": []
+        }
+    ]
+}

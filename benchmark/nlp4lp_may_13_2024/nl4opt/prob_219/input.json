@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Minimum number of math workbooks to be made",
+            "symbol": "MinMath",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of English workbooks to be made",
+            "symbol": "MinEnglish",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of math workbooks to be made",
+            "symbol": "MaxMath",
+            "value": 140,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of English workbooks to be made",
+            "symbol": "MaxEnglish",
+            "value": 170,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of workbooks to be sent under the contract",
+            "symbol": "MinTotalWorkbooks",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Profit per math workbook",
+            "symbol": "ProfitMath",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Profit per English workbook",
+            "symbol": "ProfitEnglish",
+            "value": 17,
+            "shape": []
+        }
+    ],
+    "description": "A printing company sells math workbooks and English workbooks. To meet demand, they must make at least \\param{MinMath} math workbooks and at least \\param{MinEnglish} English workbooks. However, they can make at most \\param{MaxMath} math workbooks and at most \\param{MaxEnglish} English workbooks. The company has a contract with a school to send at least \\param{MinTotalWorkbooks} workbooks of either type. If the profit per math workbook is $\\param{ProfitMath} and the profit per English workbook is $\\param{ProfitEnglish}, how many of each should the company make to maximize profit?"
+}

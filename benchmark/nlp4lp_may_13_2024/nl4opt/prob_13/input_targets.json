@@ -1,0 +1,61 @@
+{
+  "background": "A cleaning company in Edmonton is planning to advertise their new dishwashing detergent using a limited budget on radio and social media ads to get the best possible exposure.",
+  "constraints": [
+    "Total cost of ads must not exceed budget B",
+    "At least MinR radio ads should be ordered",
+    "No more than MaxR radio ads should be ordered",
+    "At least MinS social media ads should be contracted"
+  ],
+  "objective": "Maximize the total exposure, in terms of viewers, from both radio and social media ads",
+  "description": "A cleaning company located in Edmonton wants to get the best exposure possible for promoting their new dishwashing detergent without exceeding their \\param{B} advertising budget. To do so, the company decides to spend their money on two forms of advertising: (1) radio ads and (2) social media ads. Each radio ad costs \\param{Cr}; each social media ad costs \\param{Cs}. The expected exposure, based on industry ratings, is \\param{Er} viewers for each radio ad. Additionally, the expected exposure for each social media ad is \\param{Es} viewers. The company decides that at least \\param{MinR} but no more than \\param{MaxR} radio ads should be ordered, and that at least \\param{MinS} social media ads should be contracted. How many ads of each type should be run to obtain maximum exposure while staying within the budget?",
+  "parameters": [
+    {
+      "definition": "Total advertising budget",
+      "symbol": "B",
+      "value": 250000,
+      "shape": []
+    },
+    {
+      "definition": "Cost of one radio ad",
+      "symbol": "Cr",
+      "value": 5000,
+      "shape": []
+    },
+    {
+      "definition": "Cost of one social media ad",
+      "symbol": "Cs",
+      "value": 9150,
+      "shape": []
+    },
+    {
+      "definition": "Expected exposure per radio ad",
+      "symbol": "Er",
+      "value": 60500,
+      "shape": []
+    },
+    {
+      "definition": "Expected exposure per social media ad",
+      "symbol": "Es",
+      "value": 50000,
+      "shape": []
+    },
+    {
+      "definition": "Minimum number of radio ads",
+      "symbol": "MinR",
+      "value": 15,
+      "shape": []
+    },
+    {
+      "definition": "Maximum number of radio ads",
+      "symbol": "MaxR",
+      "value": 40,
+      "shape": []
+    },
+    {
+      "definition": "Minimum number of social media ads",
+      "symbol": "MinS",
+      "value": 35,
+      "shape": []
+    }
+  ]
+}

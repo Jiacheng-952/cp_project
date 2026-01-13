@@ -1,0 +1,219 @@
+{
+    "parameters": [
+        {
+            "definition": "Total space available for all animals and activities",
+            "symbol": "AllSpace",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of heifers",
+            "symbol": "NHeifers",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Quantity of milk produced",
+            "symbol": "NMilk",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Space required per heifer",
+            "symbol": "HeiferSpace",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Space required per cow",
+            "symbol": "CowSpace",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of calves per cow",
+            "symbol": "CowCalve",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Price of a sold bullock",
+            "symbol": "PriceBullock",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Price of a sold heifer",
+            "symbol": "PriceHeifer",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Price of a sold cow",
+            "symbol": "PriceCow",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Loss for selling a heifer",
+            "symbol": "LossHeifer",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Loss for selling a cow",
+            "symbol": "LossCow",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Revenue from milk production",
+            "symbol": "RevenueMilk",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of cows that can be housed",
+            "symbol": "NMaxCow",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Outlay for maintaining a cow",
+            "symbol": "CowOutlay",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of grain consumed by a cow",
+            "symbol": "CowGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of sugar consumed by a cow",
+            "symbol": "CowSugar",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of sugar produced per acre",
+            "symbol": "SugarPerAcre",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Space required per acre of grain",
+            "symbol": "SpaceGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Division of overall space dedicated to grain production",
+            "symbol": "GrainDivision",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Yield of grain per acre",
+            "symbol": "GrainYield",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Buy price of grain",
+            "symbol": "BuyPriceGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Sell price of grain",
+            "symbol": "SellPriceGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Buy price of sugar",
+            "symbol": "BuyPriceSugar",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Sell price of sugar",
+            "symbol": "SellPriceSugar",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour hours required for heifers",
+            "symbol": "LabourHeifers",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour hours required for cows",
+            "symbol": "LabourCow",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour hours required for grain production",
+            "symbol": "LabourGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour hours required for sugar production",
+            "symbol": "LabourSugar",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra heifers",
+            "symbol": "ExtraHeifers",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra cows",
+            "symbol": "ExtraCow",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra grain",
+            "symbol": "ExtraGrain",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra sugar",
+            "symbol": "ExtraSugar",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour cost",
+            "symbol": "LabourCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Labour hours available",
+            "symbol": "LabourHour",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra labour cost",
+            "symbol": "ExtraLabourCost",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "How should the farmer operate over the next five years to maximize profit using \\param{AllSpace}, \\param{NHeifers}, \\param{NMilk}, \\param{HeiferSpace}, \\param{CowSpace}, \\param{CowCalve}, \\param{PriceBullock}, \\param{PriceHeifer}, \\param{PriceCow}, \\param{LossHeifer}, \\param{LossCow}, \\param{RevenueMilk}, \\param{NMaxCow}, \\param{CowOutlay}, \\param{CowGrain}, \\param{CowSugar}, \\param{SugarPerAcre}, \\param{SpaceGrain}, \\param{GrainDivision}, \\param{GrainYield}, \\param{BuyPriceGrain}, \\param{SellPriceGrain}, \\param{BuyPriceSugar}, \\param{SellPriceSugar}, \\param{LabourHeifers}, \\param{LabourCow}, \\param{LabourGrain}, \\param{LabourSugar}, \\param{ExtraHeifers}, \\param{ExtraCow}, \\param{ExtraGrain}, \\param{ExtraSugar}, \\param{LabourCost}, \\param{LabourHour}, and \\param{ExtraLabourCost}?"
+}

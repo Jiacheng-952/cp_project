@@ -1,0 +1,7 @@
+{
+    "SmallWagonCapacity": 20,
+    "LargeWagonCapacity": 50,
+    "MinRatioSmallToLarge": 2,
+    "MinLargeWagons": 10,
+    "TotalOre": 2000
+}

@@ -1,0 +1,31 @@
+{
+    "parameters": [
+        {
+            "definition": "Demand for the product in each period i",
+            "symbol": "Deliver",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Cost to hold one unit of product in storage for one period",
+            "symbol": "StorageCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Cost to switch the production from one period to another",
+            "symbol": "SwitchCost",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Total number of periods",
+            "symbol": "T",
+            "value": 0,
+            "shape": []
+        }
+    ],
+    "description": "Minimize the total cost of the production and inventory schedule over \\param{T} periods, given \\param{Deliver} for each period, a \\param{StorageCost} for holding inventory, and a \\param{SwitchCost} for changing production between periods."
+}

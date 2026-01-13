@@ -1,0 +1,9 @@
+{
+    "GuestsPerMinDense": 45,
+    "GuestsPerMinLoose": 20,
+    "ElectricityDense": 30,
+    "ElectricityLoose": 22,
+    "MinLooseLifts": 5,
+    "MinGuestsPerMin": 1000,
+    "TotalElectricity": 940
+}

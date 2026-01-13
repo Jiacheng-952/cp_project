@@ -1,0 +1,31 @@
+{
+    "background": "An international shipping company needs to transport containers using a fleet of large and small ships with different capacities, subject to port size restrictions and contract obligations.",
+    "constraints": [
+        "Number of large ships is non-negative",
+        "Number of small ships is non-negative",
+        "The number of large ships cannot exceed the number of small ships",
+        "At least MinContainers containers must be transported"
+    ],
+    "objective": "Minimize the number of ships used to fulfill the contract",
+    "description": "An international shipping company uses large and small ships to transport containers around the world. A large ship can carry \\param{LargeShipCapacity} containers while a small ship can carry \\param{SmallShipCapacity} containers. Because most ports are small, the number of large ships cannot exceed the number of small ships. If the company is under contract needs to transport at least \\param{MinContainers} containers, find the minimum number of ships that can be used.",
+    "parameters": [
+        {
+            "definition": "Capacity of a large ship",
+            "symbol": "LargeShipCapacity",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a small ship",
+            "symbol": "SmallShipCapacity",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of containers required to be transported",
+            "symbol": "MinContainers",
+            "value": 3000,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+  "background": "A store employs senior citizens and young adults, who have different wages.",
+  "constraints": [
+    "Total weekly wage must not exceed MaxWageBill",
+    "Each day at least MinWorkers must be on duty",
+    "Each day at least MinYoung must be young adults",
+    "Young adults must be at least YoungToSeniorRatio times the number of senior citizens",
+    "Number of senior citizens is non-negative",
+    "Number of young adults is non-negative",
+    "Number of senior citizens is an integer",
+    "Number of young adults is an integer"
+  ],
+  "objective": "Minimize the weekly wage bill",
+  "description": "A store employs senior citizens who earn \\var{WageSenior} per week and young adults who earn \\var{WageYoung} per week. The store must keep the weekly wage bill below \\var{MaxWageBill}. On any day, the store requires at least \\var{MinWorkers} workers, of whom at least \\var{MinYoung} must be young adults. To ensure the store runs smoothly, the number of young adults should be at least \\var{YoungToSeniorRatio} the number of senior citizens. Formulate a LP to minimize the wage bill.",
+  "parameters": [
+    {
+      "definition": "Wage for senior citizens per week",
+      "symbol": "WageSenior",
+      "value": 500,
+      "shape": []
+    },
+    {
+      "definition": "Wage for young adults per week",
+      "symbol": "WageYoung",
+      "value": 750,
+      "shape": []
+    },
+    {
+      "definition": "Maximum weekly wage bill",
+      "symbol": "MaxWageBill",
+      "value": 30000,
+      "shape": []
+    },
+    {
+      "definition": "Minimum number of workers required per day",
+      "symbol": "MinWorkers",
+      "value": 50,
+      "shape": []
+    },
+    {
+      "definition": "Minimum number of young adults required per day",
+      "symbol": "MinYoung",
+      "value": 10,
+      "shape": []
+    },
+    {
+      "definition": "Minimum fraction of young adults relative to senior citizens",
+      "symbol": "YoungToSeniorRatio",
+      "value": 0.33,
+      "shape": []
+    }
+  ]
+}

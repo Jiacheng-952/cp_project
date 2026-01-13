@@ -1,0 +1,8 @@
+{
+    "TruckCapacity": 1000,
+    "TruckCost": 300,
+    "VanCapacity": 500,
+    "VanCost": 100,
+    "MinPatties": 50000,
+    "Budget": 12500
+}

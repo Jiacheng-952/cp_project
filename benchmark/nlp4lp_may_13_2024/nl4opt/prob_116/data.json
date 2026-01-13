@@ -1,0 +1,11 @@
+{
+    "AcneFactory1": 12,
+    "AntibacterialFactory1": 15,
+    "AcneFactory2": 20,
+    "AntibacterialFactory2": 10,
+    "BaseGelFactory1": 30,
+    "BaseGelFactory2": 45,
+    "TotalBaseGel": 5000,
+    "MinAcneCream": 800,
+    "MinAntibacterialCream": 1000
+}

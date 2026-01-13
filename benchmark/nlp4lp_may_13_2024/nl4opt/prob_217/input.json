@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Percentage of cat paw snacks in the first snack mix",
+            "symbol": "PctCatPawFirst",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Percentage of gold shark snacks in the first snack mix",
+            "symbol": "PctGoldSharkFirst",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Percentage of cat paw snacks in the second snack mix",
+            "symbol": "PctCatPawSecond",
+            "value": 0.35,
+            "shape": []
+        },
+        {
+            "definition": "Percentage of gold shark snacks in the second snack mix",
+            "symbol": "PctGoldSharkSecond",
+            "value": 0.65,
+            "shape": []
+        },
+        {
+            "definition": "Total kg of cat paw snacks available",
+            "symbol": "TotalCatPaw",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total kg of gold shark snacks available",
+            "symbol": "TotalGoldShark",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kg of the first snack mix",
+            "symbol": "ProfitFirstMix",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kg of the second snack mix",
+            "symbol": "ProfitSecondMix",
+            "value": 15,
+            "shape": []
+        }
+    ],
+    "description": "Super Shop sells cat paw snacks and gold shark snacks in bulk. It plans to sell them into two snack mix products. The first mix contains \\param{PctCatPawFirst}% cat paw snacks and \\param{PctGoldSharkFirst}% gold shark snacks. The second mix contains \\param{PctCatPawSecond}% cat paw snacks and \\param{PctGoldSharkSecond}% gold shark snacks. The store has on hand \\param{TotalCatPaw} kg of cat paw snacks and \\param{TotalGoldShark} kg of gold shark snacks. If the profit per kg of the first mix is $\\param{ProfitFirstMix} and the profit per kg of the second mix is $\\param{ProfitSecondMix}, how many kg of each should be prepared to maximize profit?"
+}

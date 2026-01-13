@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of one serving of Rice",
+            "symbol": "CostRice",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Calories contained in one serving of Rice",
+            "symbol": "CalRice",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Protein contained in one serving of Rice",
+            "symbol": "ProtRice",
+            "value": 4.5,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one serving of Kebab",
+            "symbol": "CostKebab",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Calories contained in one serving of Kebab",
+            "symbol": "CalKebab",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Protein contained in one serving of Kebab",
+            "symbol": "ProtKebab",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required calories per day",
+            "symbol": "MinCal",
+            "value": 2200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required protein per day",
+            "symbol": "MinProt",
+            "value": 30,
+            "shape": []
+        }
+    ],
+    "description": "Jordan is a chef. He wants to design a diet consisting of Kebabs and Rice. Assume that each serving of Rice costs \\param{CostRice} and contains \\param{CalRice} calories and \\param{ProtRice} grams of protein. Assume that each serving of Kebab costs \\param{CostKebab} and contains \\param{CalKebab} calories and \\param{ProtKebab} grams of protein. He's interested in spending as little money as possible but he wants to ensure that his meals have at least \\param{MinCal} calories and at least \\param{MinProt} grams of protein per day. Formulate a linear programming problem that will help minimize the cost of the diet."
+}

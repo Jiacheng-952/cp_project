@@ -1,0 +1,7 @@
+{
+    "TemperatureCheckTime": 2,
+    "BloodTestTime": 10,
+    "MinBloodTests": 45,
+    "TemperatureBloodTestFactor": 5,
+    "TotalStaffTime": 22000
+}

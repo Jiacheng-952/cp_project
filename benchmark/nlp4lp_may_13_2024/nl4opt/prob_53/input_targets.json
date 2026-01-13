@@ -1,0 +1,63 @@
+{
+    "background": "There are two processes to plate coins with gold: Process A and Process B, each with different requirements and yields.",
+    "constraints": [
+        "Number of Process A operations is an integer",
+        "Number of Process B operations is an integer",
+        "Number of Process A operations is non-negative",
+        "Number of Process B operations is non-negative",
+        "Total units of gold used by Process A and B cannot exceed TotalGold",
+        "Total wires used by Process A and B cannot exceed TotalWires"
+    ],
+    "objective": "Maximize the total number of coins plated by running an optimal number of operations for each process",
+    "description": "There are two processes, process A and process B, to plate a coin with gold. Process A requires \\var{GoldA} units of gold, \\var{WireA} wires, and can plate \\var{CoinsA} coins. Process B requires \\var{GoldB} units of gold, \\var{WireB} wires, and can plate \\var{CoinsB} coins. There are \\var{TotalGold} units of gold and \\var{TotalWires} wires available. How many processes of each type should be run to maximize the total number of coins that can be plated?",
+    "parameters": [
+        {
+            "definition": "Gold requirement for process A",
+            "symbol": "GoldA",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Wire requirement for process A",
+            "symbol": "WireA",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of coins plated by process A",
+            "symbol": "CoinsA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Gold requirement for process B",
+            "symbol": "GoldB",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Wire requirement for process B",
+            "symbol": "WireB",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of coins plated by process B",
+            "symbol": "CoinsB",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Total units of gold available",
+            "symbol": "TotalGold",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total number of wires available",
+            "symbol": "TotalWires",
+            "value": 300,
+            "shape": []
+        }
+    ]
+}

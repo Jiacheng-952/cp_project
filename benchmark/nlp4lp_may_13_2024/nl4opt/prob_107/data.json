@@ -1,0 +1,11 @@
+{
+    "ProteinFish": 10,
+    "IronFish": 12,
+    "ProteinChicken": 15,
+    "IronChicken": 8,
+    "MinProtein": 130,
+    "MinIron": 120,
+    "MinChickenFishRatio": 2,
+    "FatFish": 7,
+    "FatChicken": 10
+}

@@ -1,0 +1,69 @@
+{
+    "background": "A company produces liquid and foam hand sanitizers, each requiring different quantities of water and alcohol, under resource constraints and a production preference.",
+    "constraints": [
+        "Number of liquid hand sanitizers is non-negative",
+        "Number of foam hand sanitizers is non-negative",
+        "Total water used in liquid hand sanitizers is at most WaterTotal",
+        "Total alcohol used in liquid hand sanitizers is at most AlcoholTotal",
+        "The number of foam hand sanitizers must exceed the number of liquid hand sanitizers",
+        "Up to MaxLiquid liquid hand sanitizers can be made"
+    ],
+    "objective": "Maximize the total number of hands cleaned by the produced hand sanitizers",
+    "description": "A company makes both liquid and foam hand sanitizer. Liquid hand sanitizer requires \\param{WaterL} units of water and \\param{AlcoholL} units of alcohol. Foam hand sanitizer requires \\param{WaterF} units of water and \\param{AlcoholF} units of alcohol. The company has available \\param{WaterTotal} units of water and \\param{AlcoholTotal} units of alcohol. The number of foam hand sanitizers made must exceed the number of liquid hand sanitizers. In addition, at most \\param{MaxLiquid} liquid hand sanitizers can be made. If each liquid hand sanitizer can clean \\param{CleanHandsL} hands and each foam hand sanitizer can clean \\param{CleanHandsF} hands, how many of each should the company make to maximize the number of hands that can be cleaned?",
+    "parameters": [
+        {
+            "definition": "Units of water required to make one unit of liquid hand sanitizer",
+            "symbol": "WaterL",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Units of alcohol required to make one unit of liquid hand sanitizer",
+            "symbol": "AlcoholL",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required to make one unit of foam hand sanitizer",
+            "symbol": "WaterF",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Units of alcohol required to make one unit of foam hand sanitizer",
+            "symbol": "AlcoholF",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Total units of water available",
+            "symbol": "WaterTotal",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Total units of alcohol available",
+            "symbol": "AlcoholTotal",
+            "value": 2100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of liquid hand sanitizers that can be produced",
+            "symbol": "MaxLiquid",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of hands that can be cleaned by one unit of liquid hand sanitizer",
+            "symbol": "CleanHandsL",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Number of hands that can be cleaned by one unit of foam hand sanitizer",
+            "symbol": "CleanHandsF",
+            "value": 20,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "TimeInVivoPrep": 30,
+    "TimeInVivoExec": 60,
+    "TimeExVivoPrep": 45,
+    "TimeExVivoExec": 30,
+    "RadiationInVivo": 2,
+    "RadiationExVivo": 3,
+    "MaxTimePrep": 400,
+    "MaxTimeExec": 500
+}

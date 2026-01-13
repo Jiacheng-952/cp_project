@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of east-west streets",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of north-south streets",
+            "symbol": "W",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time to cross street segment going west, for given street n and segment w",
+            "symbol": "WestTime",
+            "value": "",
+            "shape": [
+                "N",
+                "W-1"
+            ]
+        },
+        {
+            "definition": "Time to cross street segment going north, for given street n and segment w",
+            "symbol": "NorthTime",
+            "value": "",
+            "shape": [
+                "N-1",
+                "W"
+            ]
+        }
+    ],
+    "description": "Determine the optimal path the delivery person should take to ensure the package is delivered in the least amount of time. The path is constrained by the number of east-west streets, \\param{N}, and the number of north-south streets, \\param{W}. Each east-west street segment \\param{WestTime} and each north-south street segment \\param{NorthTime} takes a certain amount of time to cross."
+}

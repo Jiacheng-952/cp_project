@@ -1,0 +1,63 @@
+{
+    "background": "An artisan makes two types of terracotta jars: a thin jar and a stubby jar.",
+    "constraints": [
+        "Number of thin jars is an integer",
+        "Number of stubby jars is an integer",
+        "Number of thin jars is non-negative",
+        "Number of stubby jars is non-negative",
+        "Total shaping time for thin and stubby jars cannot exceed TotalShapingTime minutes per week",
+        "Total baking time for thin and stubby jars cannot exceed TotalBakingTime minutes per week"
+    ],
+    "objective": "Maximize the artisan's weekly profit from the jars",
+    "description": "An artisan makes two types of terracotta jars: a thin jar and a stubby jar. Each thin jar requires \\var{ThinShapingTime} minutes of shaping time and \\var{ThinBakingTime} minutes of baking time. Each stubby jar requires \\var{StubbyShapingTime} minutes of shaping time and \\var{StubbyBakingTime} minutes of baking time. Per week, there are \\var{TotalShapingTime} minutes available for shaping and \\var{TotalBakingTime} minutes available for baking. The profit per thin jar is \\var{ProfitThin} and the profit per stubby jar is \\var{ProfitStubby}. How many jars of each type should the artisan make to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Minutes required to shape one thin jar",
+            "symbol": "ThinShapingTime",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minutes required to bake one thin jar",
+            "symbol": "ThinBakingTime",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Minutes required to shape one stubby jar",
+            "symbol": "StubbyShapingTime",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minutes required to bake one stubby jar",
+            "symbol": "StubbyBakingTime",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Total available shaping minutes per week",
+            "symbol": "TotalShapingTime",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Total available baking minutes per week",
+            "symbol": "TotalBakingTime",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per thin jar",
+            "symbol": "ProfitThin",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per stubby jar",
+            "symbol": "ProfitStubby",
+            "value": 9,
+            "shape": []
+        }
+    ]
+}

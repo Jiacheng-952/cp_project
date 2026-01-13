@@ -1,0 +1,71 @@
+{
+    "parameters": [
+        {
+            "definition": "Total amount of batter available",
+            "symbol": "TotalBatter",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of milk available",
+            "symbol": "TotalMilk",
+            "value": 14000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of batter required for a crepe cake",
+            "symbol": "BatterCrepe",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Amount of milk required for a crepe cake",
+            "symbol": "MilkCrepe",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Amount of batter required for a sponge cake",
+            "symbol": "BatterSponge",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Amount of milk required for a sponge cake",
+            "symbol": "MilkSponge",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Amount of batter required for a birthday cake",
+            "symbol": "BatterBirthday",
+            "value": 450,
+            "shape": []
+        },
+        {
+            "definition": "Amount of milk required for a birthday cake",
+            "symbol": "MilkBirthday",
+            "value": 350,
+            "shape": []
+        },
+        {
+            "definition": "Profit per crepe cake",
+            "symbol": "ProfitCrepe",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Profit per sponge cake",
+            "symbol": "ProfitSponge",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Profit per birthday cake",
+            "symbol": "ProfitBirthday",
+            "value": 15,
+            "shape": []
+        }
+    ],
+    "description": "A small bakery has \\param{TotalBatter} grams of batter and \\param{TotalMilk} grams of milk to make their crepe cakes, sponge cakes, and birthday cakes. A crepe cake needs \\param{BatterCrepe} grams of batter and \\param{MilkCrepe} grams of milk. A sponge cake requires \\param{BatterSponge} grams of batter and \\param{MilkSponge} grams of milk. A birthday cake requires \\param{BatterBirthday} grams of batter and \\param{MilkBirthday} grams of milk. If the profit per crepe cake is $\\param{ProfitCrepe}, the profit per sponge cake is $\\param{ProfitSponge}, and the profit per birthday cake is $\\param{ProfitBirthday}, how many of each should the bakery make to maximize their profit?"
+}

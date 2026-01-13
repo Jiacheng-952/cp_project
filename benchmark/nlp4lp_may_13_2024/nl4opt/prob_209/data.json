@@ -1,0 +1,13 @@
+{
+    "CalciumMin": 15,
+    "VitaminMixMin": 20,
+    "ProteinMin": 20,
+    "CostRegular": 20,
+    "CostPremium": 35,
+    "CalciumRegular": 4,
+    "VitaminMixRegular": 7,
+    "ProteinRegular": 10,
+    "CalciumPremium": 12,
+    "VitaminMixPremium": 10,
+    "ProteinPremium": 16
+}

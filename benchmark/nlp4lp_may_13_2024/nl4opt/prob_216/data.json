@@ -1,0 +1,13 @@
+{
+    "TotalBatter": 20000,
+    "TotalMilk": 14000,
+    "BatterCrepe": 400,
+    "MilkCrepe": 200,
+    "BatterSponge": 500,
+    "MilkSponge": 300,
+    "BatterBirthday": 450,
+    "MilkBirthday": 350,
+    "ProfitCrepe": 12,
+    "ProfitSponge": 10,
+    "ProfitBirthday": 15
+}

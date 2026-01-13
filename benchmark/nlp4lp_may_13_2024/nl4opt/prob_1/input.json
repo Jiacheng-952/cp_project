@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum number of color printers that can be produced per day",
+            "symbol": "MaxColor",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of black and white printers that can be produced per day",
+            "symbol": "MaxBW",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of printers that the paper tray installing machine can equip per day",
+            "symbol": "MaxTotal",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Profit generated per color printer",
+            "symbol": "ProfitColor",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Profit generated per black and white printer",
+            "symbol": "ProfitBW",
+            "value": 70,
+            "shape": []
+        }
+    ],
+    "description": "An office supply company makes two types of printers: color printers and black and white printers. Different sections of the factory with different teams produce each printer. The color printer team can produce at most \\param{MaxColor} color printers per day while the black and white printer team can produce at most \\param{MaxBW} black and white printers per day. Both teams require use of the same paper tray installing machine and this machine can make at most \\param{MaxTotal} printers of either type each day. Color printers generate a profit of \\param{ProfitColor} per printer while black and white printers generate a profit of \\param{ProfitBW} per printer. How many of each printer should be made to maximize the company's profit?"
+}

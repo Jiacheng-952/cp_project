@@ -1,0 +1,44 @@
+{
+    "background": "A baking process requires the mixing of chemicals A and B, where chemical A can be hazardous, and the mix must take minimum time to be effective while adhering to safety and minimum quantity requirements.",
+    "constraints": [
+        "Number of units of chemical A is non-negative",
+        "Number of units of chemical B is non-negative",
+        "For every unit of chemical B, there can be at most MaxRatioAtoB units of chemical A",
+        "At least MinUnitsA units of chemical A must be present in the mixer",
+        "The total number of units in the mixer must be at least MinTotalUnits"
+    ],
+    "objective": "Minimize the total effective time of chemicals A and B in the mixer",
+    "description": "Both chemical A and chemical B need to be added to a mixer for making bread. One unit of chemical A takes \\param{TimeA} seconds to be effective while one unit of chemical B takes \\param{TimeB} seconds to be effective. Because chemical A can be dangerous, there has to be at most \\param{MaxRatioAtoB} as much chemical A as chemical B in the mixer. If there has to be at least \\param{MinUnitsA} units of chemical A in the mixer and at least \\param{MinTotalUnits} units of total chemicals in the mixer, how many units of each should be added to minimize the total time it takes for the mixed bread to be ready?",
+    "parameters": [
+        {
+            "definition": "Time for one unit of chemical A to be effective",
+            "symbol": "TimeA",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Time for one unit of chemical B to be effective",
+            "symbol": "TimeB",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed ratio of chemical A to chemical B",
+            "symbol": "MaxRatioAtoB",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of chemical A",
+            "symbol": "MinUnitsA",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total required units of chemicals",
+            "symbol": "MinTotalUnits",
+            "value": 1500,
+            "shape": []
+        }
+    ]
+}

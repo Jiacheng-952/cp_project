@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Total acres available for growing fruits",
+            "symbol": "TotalAcres",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres of apples that must be grown",
+            "symbol": "MinApples",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres of pears that must be grown",
+            "symbol": "MinPears",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of growing apples",
+            "symbol": "ProfitApple",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of growing pears",
+            "symbol": "ProfitPear",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of pears to apples in growing",
+            "symbol": "MaxPearsToApplesRatio",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "Ben is growing apples and pears on his orchard. He has \\param{TotalAcres} acres available on which he must grow a minimum of \\param{MinApples} acres of apples and a minimum of \\param{MinPears} acres of pears to meet demands. The profit per acre of apple is \\$\\param{ProfitApple} and the profit per acre of pear is \\$\\param{ProfitPear}. He prefers to grow more pears than apples but limitations in his workforce allow him to grow at most \\param{MaxPearsToApplesRatio} times the amount of pears as apples. How many of each fruit should Ben grow in order to maximize his profit? What is that profit?"
+}

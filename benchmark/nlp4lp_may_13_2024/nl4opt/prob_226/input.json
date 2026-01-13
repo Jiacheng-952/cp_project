@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Rate of equipment transportation by a cart",
+            "symbol": "CartRate",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers required by a cart",
+            "symbol": "CartWorkers",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Rate of equipment transportation by a trolley",
+            "symbol": "TrolleyRate",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers required by a trolley",
+            "symbol": "TrolleyWorkers",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of trolleys to be used",
+            "symbol": "MinTrolleys",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of the transportation that can be using trolleys",
+            "symbol": "MaxTrolleyPercentage",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Required rate of equipment delivery",
+            "symbol": "DeliveryRate",
+            "value": 100,
+            "shape": []
+        }
+    ],
+    "description": "A concert organizer has to transport equipment using carts or trolleys. Carts can transport \\param{CartRate} kg/min of equipment and requires \\param{CartWorkers} workers. Trolleys can transport \\param{TrolleyRate} kg/min of equipment and requires \\param{TrolleyWorkers} workers. There must be at least \\param{MinTrolleys} trolleys to be used. Additionally, only a maximum of \\param{MaxTrolleyPercentage} of the transportation can be using trolleys. The organizer has to deliver at a rate of \\param{DeliveryRate} kg/min of equipment. How many of each transportation method should be used to minimize the total number of workers?"
+}

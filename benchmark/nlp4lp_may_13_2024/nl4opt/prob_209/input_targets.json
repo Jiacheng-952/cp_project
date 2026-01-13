@@ -1,0 +1,80 @@
+{
+    "background": "Lucy is looking to mix dog food from regular and premium brands to meet certain nutritional requirements while minimizing costs.",
+    "constraints": [
+        "The mix must have at least CalciumMin units of calcium",
+        "The mix must have at least VitaminMixMin units of vitamin mix",
+        "The mix must have at least ProteinMin units of protein",
+        "The number of regular brand bags is non-negative",
+        "The number of premium brand bags is non-negative"
+    ],
+    "objective": "Minimize the total cost of mixing the dog food while meeting the required nutritional values",
+    "description": "Lucy has a dog and she wants his food to be mixed. In order to keep the dog healthy but also keep the food tasty, the mix needs to have a minimum of \\param{CalciumMin} units of calcium, \\param{VitaminMixMin} units of vitamin mix, and \\param{ProteinMin} units of protein. A regular brand costs \\param{CostRegular} per bag and contains \\param{CalciumRegular} units of calcium, \\param{VitaminMixRegular} units of vitamin mix, and \\param{ProteinRegular} units of protein. A premium brand costs \\param{CostPremium} per bag and contains \\param{CalciumPremium} units of calcium, \\param{VitaminMixPremium} units of vitamin mix, and \\param{ProteinPremium} units of protein. How many bags of each brand should Lucy mix in order to minimize cost while also meeting the taste and health requirements.",
+    "parameters": [
+        {
+            "definition": "Minimum units of calcium required",
+            "symbol": "CalciumMin",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of vitamin mix required",
+            "symbol": "VitaminMixMin",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of protein required",
+            "symbol": "ProteinMin",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Cost of a bag of regular brand food",
+            "symbol": "CostRegular",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Cost of a bag of premium brand food",
+            "symbol": "CostPremium",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Calcium units in a bag of regular brand food",
+            "symbol": "CalciumRegular",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Vitamin mix units in a bag of regular brand food",
+            "symbol": "VitaminMixRegular",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Protein units in a bag of regular brand food",
+            "symbol": "ProteinRegular",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Calcium units in a bag of premium brand food",
+            "symbol": "CalciumPremium",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Vitamin mix units in a bag of premium brand food",
+            "symbol": "VitaminMixPremium",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Protein units in a bag of premium brand food",
+            "symbol": "ProteinPremium",
+            "value": 16,
+            "shape": []
+        }
+    ]
+}

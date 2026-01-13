@@ -1,0 +1,56 @@
+{
+    "background": "A pharmaceutical company is producing daytime and nighttime painkiller pills, both containing painkiller medicine, with nighttime pills also containing sleep medicine. There are limited resources for producing these pills, and certain minimum production requirements must be met.",
+    "constraints": [
+        "Total units of painkiller medicine used cannot exceed TotalPainkillerUnits",
+        "At least MinimumDaytimePercentage % of the total number of pills must be daytime pills",
+        "At least MinimumNighttimePills nighttime pills must be made",
+        "Number of daytime pills is non-negative",
+        "Number of nighttime pills is non-negative"
+    ],
+    "objective": "Minimize the total amount of sleep medicine used in the pills",
+    "description": "A pharmaceutical company has \\param{TotalPainkillerUnits} units of painkiller medicine and makes daytime and nighttime painkiller pills. A daytime pill has \\param{DaytimePainkillerUnits} units of painkiller medicine and \\param{DaytimeSleepUnits} units of sleep medicine. A nighttime pill has \\param{NighttimePainkillerUnits} units of painkiller medicine and \\param{NighttimeSleepUnits} units of sleep medicine. Since some people don\u2019t want the sleeping effect, at least \\param{MinimumDaytimePercentage} of the pills must be daytime pills. However, at least \\param{MinimumNighttimePills} nighttime pills must be made. How many of each pill should be made to minimize the total amount of sleep medicine required?",
+    "parameters": [
+        {
+            "definition": "Total units of painkiller medicine available",
+            "symbol": "TotalPainkillerUnits",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Units of painkiller medicine per daytime pill",
+            "symbol": "DaytimePainkillerUnits",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleep medicine per daytime pill",
+            "symbol": "DaytimeSleepUnits",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of painkiller medicine per nighttime pill",
+            "symbol": "NighttimePainkillerUnits",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleep medicine per nighttime pill",
+            "symbol": "NighttimeSleepUnits",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of pills that must be daytime pills",
+            "symbol": "MinimumDaytimePercentage",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of nighttime pills required",
+            "symbol": "MinimumNighttimePills",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Luggage movement capacity of a 4-wheeler vehicle per day",
+            "symbol": "CapacityFourWheeler",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by a 4-wheeler vehicle per day",
+            "symbol": "PollutionFourWheeler",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Luggage movement capacity of a 3-wheeler vehicle per day",
+            "symbol": "CapacityThreeWheeler",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Pollution produced by a 3-wheeler vehicle per day",
+            "symbol": "PollutionThreeWheeler",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total luggage movement capacity required per day",
+            "symbol": "MinLuggageCapacity",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable pollution output per day",
+            "symbol": "MaxPollution",
+            "value": 430,
+            "shape": []
+        }
+    ],
+    "description": "An airport buys two types of vehicles, a 4-wheeler and 3-wheeler, to help move luggage. A 4-wheeler vehicle can move \\param{CapacityFourWheeler} luggage per day and produces \\param{PollutionFourWheeler} units of pollutant per day. A 3-wheeler vehicle can move \\param{CapacityThreeWheeler} luggage per day and produces \\param{PollutionThreeWheeler} units of pollutant per day. The airport needs to be able to move at least \\param{MinLuggageCapacity} luggage per day. To avoid over-polluting the airport, they can produce at most \\param{MaxPollution} units of pollutant per day. How many of each vehicle should the airport buy to minimize the total number of vehicles needed."
+}

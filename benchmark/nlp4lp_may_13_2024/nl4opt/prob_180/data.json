@@ -1,0 +1,9 @@
+{
+    "SmallKegCapacity": 40,
+    "LargeKegCapacity": 100,
+    "MaxSmallKegs": 30,
+    "MaxLargeKegs": 10,
+    "MaxKegsTransport": 25,
+    "MinLargeKegs": 5,
+    "MinSmallLargeRatio": 2
+}

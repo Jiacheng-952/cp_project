@@ -1,0 +1,83 @@
+{
+    "parameters": [
+        {
+            "definition": "Total units of paint available",
+            "symbol": "PaintAvailable",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total units of glitter available",
+            "symbol": "GlitterAvailable",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Total units of glue available",
+            "symbol": "GlueAvailable",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a large art piece",
+            "symbol": "PaintLarge",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of glitter required to make a large art piece",
+            "symbol": "GlitterLarge",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue required to make a large art piece",
+            "symbol": "GlueLarge",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of paint required to make a small art piece",
+            "symbol": "PaintSmall",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of glitter required to make a small art piece",
+            "symbol": "GlitterSmall",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue required to make a small art piece",
+            "symbol": "GlueSmall",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large art pieces to be made",
+            "symbol": "MinLarge",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small art pieces to be made",
+            "symbol": "MinSmall",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per large art piece",
+            "symbol": "ProfitLarge",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Profit per small art piece",
+            "symbol": "ProfitSmall",
+            "value": 15,
+            "shape": []
+        }
+    ],
+    "description": "An art store makes large and small art pieces. The store has available \\param{PaintAvailable} units of paint, \\param{GlitterAvailable} units of glitter, and \\param{GlueAvailable} units of glue. To make a large art piece requires \\param{PaintLarge} units of paint, \\param{GlitterLarge} units of glitter, and \\param{GlueLarge} units of glue. To make a small art piece requires \\param{PaintSmall} units of paint, \\param{GlitterSmall} units of glitter, and \\param{GlueSmall} units of glue. The store must make at least \\param{MinLarge} units of each large and small art pieces. If the profit per large art piece is $\\param{ProfitLarge} and the profit per small art piece is $\\param{ProfitSmall}, how many of each should be made to maximize profit?"
+}

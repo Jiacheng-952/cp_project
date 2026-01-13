@@ -1,0 +1,7 @@
+{
+    "SubsoilWater": 10,
+    "TopsoilWater": 6,
+    "TotalBags": 150,
+    "MinTopsoil": 10,
+    "MaxTopsoilProportion": 0.33
+}

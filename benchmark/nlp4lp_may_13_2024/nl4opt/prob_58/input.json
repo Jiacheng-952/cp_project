@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Volume of honey a glass jar can hold",
+            "symbol": "VolGlass",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Volume of honey a plastic jar can hold",
+            "symbol": "VolPlastic",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of plastic jars to glass jars to be filled",
+            "symbol": "MinRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of glass jars to be filled",
+            "symbol": "MinGlass",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of honey available",
+            "symbol": "TotalHoney",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "A honey farmer sells his honey in glass and plastic jars. A glass jar can hold \\param{VolGlass} ml of honey while a plastic jar can hold \\param{VolPlastic} ml of honey. Since glass jars are more expensive, at least \\param{MinRatio} times as many plastic jars must be filled as glass jars. However, at least \\param{MinGlass} glass jars should be filled. If the farmer has \\param{TotalHoney} ml of honey, how many jars of each should be filled to maximize the total number of bottles filled?"
+}

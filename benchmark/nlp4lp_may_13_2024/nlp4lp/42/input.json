@@ -1,0 +1,25 @@
+{
+    "parameters": [
+        {
+            "definition": "The number of users on the nth day",
+            "symbol": "Num",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Number of consecutive working days before a resting period",
+            "symbol": "WorkingDays",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of consecutive resting days",
+            "symbol": "RestingDays",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "Calculate the minimum number of employees to hire such that the requirements for coverage (as described by \\param{Num}) can be met with each employee working for \\param{WorkingDays} consecutive days followed by at least \\param{RestingDays} consecutive resting days."
+}

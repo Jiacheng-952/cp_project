@@ -1,0 +1,11 @@
+{
+    "VitaminCOrange": 5,
+    "VitaminAOrange": 3,
+    "SugarOrange": 5,
+    "VitaminCGrapefruit": 7,
+    "VitaminAGrapefruit": 5,
+    "SugarGrapefruit": 6,
+    "MinVitaminC": 80,
+    "MinVitaminA": 70,
+    "OrangeGrapefruitRatio": 2
+}

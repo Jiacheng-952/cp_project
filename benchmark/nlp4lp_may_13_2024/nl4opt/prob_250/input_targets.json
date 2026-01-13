@@ -1,0 +1,44 @@
+{
+    "background": "A soda company sells soda in cans and glass bottles with different volumes, looking to maximize the total number of units produced while satisfying daily volume and ratio constraints.",
+    "constraints": [
+        "Number of cans is non-negative",
+        "Number of glass bottles is non-negative",
+        "Total volume of soda from cans and bottles is at least MinTotalVolume ml",
+        "The number of cans is at least CanBottleRatio times greater than the number of glass bottles",
+        "At least MinBottles of glass bottles are produced"
+    ],
+    "objective": "Maximize the total number of units (cans and bottles) produced",
+    "description": "A soda company sells soda in two types of containers: cans and glass bottles. A can holds \\param{CanVolume} ml of soda whereas a glass bottle holds \\param{BottleVolume} ml of soda. The soda company needs to bottle at least \\param{MinTotalVolume} ml of soda every day and due to the ability to sell soda cans as packs, there must be at least \\param{CanBottleRatio} times more cans than glass bottles. However, because of previous contracts with gas stations, there must be at least \\param{MinBottles} glass bottles made. How many of each should be made to maximize the total number of units produced?",
+    "parameters": [
+        {
+            "definition": "Volume of soda a can holds",
+            "symbol": "CanVolume",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Volume of soda a glass bottle holds",
+            "symbol": "BottleVolume",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total volume of soda to bottle every day",
+            "symbol": "MinTotalVolume",
+            "value": 1000000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of cans to the number of glass bottles",
+            "symbol": "CanBottleRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of glass bottles to produce",
+            "symbol": "MinBottles",
+            "value": 100,
+            "shape": []
+        }
+    ]
+}

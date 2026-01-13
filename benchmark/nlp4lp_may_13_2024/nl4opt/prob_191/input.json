@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of packages transported per trip by truck",
+            "symbol": "PackageTruck",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of packages transported per trip by car",
+            "symbol": "PackageCar",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Gas used per trip by truck",
+            "symbol": "GasTruck",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Gas used per trip by car",
+            "symbol": "GasCar",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of truck trips",
+            "symbol": "MaxTruckTrips",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of trips made by car",
+            "symbol": "MinCarTripProp",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of packages to be transported",
+            "symbol": "MinPackages",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A shipping company needs to transport packages by either truck or car. A truck can transport \\param{PackageTruck} packages per trip while a car can transport \\param{PackageCar} packages per trip. In addition, a truck uses \\param{GasTruck} liters of gas per trip while a car uses \\param{GasCar} liters of gas per trip. There can be at most \\param{MaxTruckTrips} truck trips made and at least \\param{MinCarTripProp} of all the trips must be made by car. The company needs to transport at least \\param{MinPackages} packages. How many of each transportation should they use to minimize the total amount of gas consumed?"
+}

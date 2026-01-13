@@ -1,0 +1,27 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of observed data points",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Observed values of y",
+            "symbol": "Y",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Observed values of x",
+            "symbol": "X",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "Fit the \u2018best\u2019 straight line y = bx + a where the objective is to minimize the maximum deviation of all the \\param{K} observed values of \\param{Y} from the value predicted by the linear relationship. The observed values of y are given by \\param{Y} and the observed values of x are given by \\param{X}."
+}

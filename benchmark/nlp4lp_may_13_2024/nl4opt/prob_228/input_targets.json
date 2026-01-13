@@ -1,0 +1,56 @@
+{
+    "background": "A ski resort is looking to add two types of ski lifts, densely-seated and loosely-seated, to transport guests up the slopes. The lifts have different capacities, speeds, and electricity consumption rates. The resort aims to meet a minimum guest transportation rate while adhering to electricity usage constraints.",
+    "constraints": [
+        "Number of densely-seated ski lifts is non-negative",
+        "Number of loosely-seated ski lifts is non-negative",
+        "Number of loosely-seated ski lifts is at least MinLooseLifts",
+        "Guests transported per minute by densely-seated and loosely-seated ski lifts combined is at least MinGuestsPerMin",
+        "Electricity used by all ski lifts combined does not exceed TotalElectricity"
+    ],
+    "objective": "Minimize the total number of ski lifts needed",
+    "description": "An extremely large ski resort is looking into purchasing two types of ski lifts, a densely-seated one and a loosely-seated one. The densely-seated ski lift is able to bring \\param{GuestsPerMinDense} guests up the slopes every minute whereas the loosely-seated ski lift can transport \\param{GuestsPerMinLoose} guests every minute. The densely-seated ski lift uses \\param{ElectricityDense} units of electricity and the loosely-seated lift uses \\param{ElectricityLoose} units of electricity. There must be at least \\param{MinLooseLifts} loosely-seated ski lifts because they move slower and are friendlier for beginners. The ski resort needs at least \\param{MinGuestsPerMin} guests every minute to make a profit and has available \\param{TotalElectricity} units of electricity. How many of each type of ski lifts should they plan to install to minimize the total number of ski lifts needed?",
+    "parameters": [
+        {
+            "definition": "Number of guests transported per minute by the densely-seated ski lift",
+            "symbol": "GuestsPerMinDense",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Number of guests transported per minute by the loosely-seated ski lift",
+            "symbol": "GuestsPerMinLoose",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Electricity units used by the densely-seated ski lift",
+            "symbol": "ElectricityDense",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Electricity units used by the loosely-seated ski lift",
+            "symbol": "ElectricityLoose",
+            "value": 22,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of loosely-seated ski lifts required",
+            "symbol": "MinLooseLifts",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of guests per minute required for profit",
+            "symbol": "MinGuestsPerMin",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of electricity",
+            "symbol": "TotalElectricity",
+            "value": 940,
+            "shape": []
+        }
+    ]
+}

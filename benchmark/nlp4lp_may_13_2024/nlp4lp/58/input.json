@@ -1,0 +1,82 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of parts to be produced",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce each part 'p' on machine 'm'",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost associated with each machine 'm'",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Availability in hours of each machine 'm' per month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Price obtained from selling each part 'p'",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part 'p' that must be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Standard cost for a machine to run for one hour",
+            "symbol": "StandardCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Overtime cost for a machine to run for one hour beyond the standard availability",
+            "symbol": "OvertimeCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Numbers of overtime hours available for a machine to run beyond standard availability",
+            "symbol": "OvertimeHour",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The minimum profit the manufacturer wants to achieve",
+            "symbol": "MinProfit",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "Determine the quantity of batches for each part the manufacturer should produce every month, ensuring all constraints are met, where the manufacturer has \\param{P} different parts, \\param{M} machines, \\param{TimeRequired} matrix indicating the time each machine takes to produce a part, \\param{MachineCosts} indicating the cost of each machine, \\param{Availability} of each machine, \\param{Prices} of each part, \\param{MinBatches} required for each part, a \\param{StandardCost} of running a machine per hour, an \\param{OvertimeCost} for running a machine beyond the standard hours, an \\param{OvertimeHour} available for overtime work for each machine, and a \\param{MinProfit} that the manufacturer aims to achieve."
+}

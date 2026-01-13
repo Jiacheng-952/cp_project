@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of meat required for one wrap",
+            "symbol": "MeatWrap",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of rice required for one wrap",
+            "symbol": "RiceWrap",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of meat required for one platter",
+            "symbol": "MeatPlatter",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of rice required for one platter",
+            "symbol": "RicePlatter",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one wrap",
+            "symbol": "TimeWrap",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one platter",
+            "symbol": "TimePlatter",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of meat",
+            "symbol": "MinMeat",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of rice",
+            "symbol": "MinRice",
+            "value": 2500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of wraps to platters",
+            "symbol": "RatioWrapPlatter",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A new fast food place makes wraps and platters. Each wrap requires \\param{MeatWrap} units of meat and \\param{RiceWrap} units of rice. Each platter requires \\param{MeatPlatter} units of meant and \\param{RicePlatter} units of rice. While each wrap takes \\param{TimeWrap} minutes to make, each platter takes \\param{TimePlatter} minutes to make. The fast food place must use at least \\param{MinMeat} units of meat and \\param{MinRice} units of rice. Since wraps are easier to eat on the go, at least \\param{RatioWrapPlatter} times as many wraps need to be made as platter. How many of each should the fast food place make to minimize the total production time?"
+}

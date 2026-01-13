@@ -1,0 +1,55 @@
+{
+    "background": "A meat processing plant is allocating hours to its two machines for the production of hams and pork ribs, with the aim of maximizing profit from their batches.",
+    "constraints": [
+        "Number of ham batches is non-negative",
+        "Number of pork rib batches is non-negative",
+        "Total slicer hours for hams and pork ribs is at most MaxHours",
+        "Total packer hours for hams and pork ribs is at most MaxHours"
+    ],
+    "objective": "Maximize the profit from the batches of hams and pork ribs produced",
+    "description": "A meat processing plant uses two machines, a meat slicer and a meat packer, to make their hams and pork ribs. To produce one batch of hams requires \\param{HamSlicerHours} hours on the meat slicer and \\param{HamPackerHours} hours on the meat packer. To produce one batch of pork ribs requires \\param{RibSlicerHours} hours on the meat slicer and \\param{RibPackerHours} hours on the meat packer. Each machine runs for at most \\param{MaxHours} hours per year. If the profit per batch of hams is \\param{HamProfit} and the profit per batch of pork ribs is \\param{RibProfit}, how many batches of each should be made to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Hours required on the meat slicer to produce one batch of hams",
+            "symbol": "HamSlicerHours",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Hours required on the meat packer to produce one batch of hams",
+            "symbol": "HamPackerHours",
+            "value": 2.5,
+            "shape": []
+        },
+        {
+            "definition": "Hours required on the meat slicer to produce one batch of pork ribs",
+            "symbol": "RibSlicerHours",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Hours required on the meat packer to produce one batch of pork ribs",
+            "symbol": "RibPackerHours",
+            "value": 3.5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum operating hours per year for each machine",
+            "symbol": "MaxHours",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of hams",
+            "symbol": "HamProfit",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Profit per batch of pork ribs",
+            "symbol": "RibProfit",
+            "value": 300,
+            "shape": []
+        }
+    ]
+}

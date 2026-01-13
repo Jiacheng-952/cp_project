@@ -1,0 +1,44 @@
+{
+    "background": "A cleaning company requires an optimal mix of cleansing and odor-removing chemicals to clean houses efficiently.",
+    "constraints": [
+        "The amount of cleansing chemical used is at least MinCleansing units",
+        "The total amount of chemicals used is at most MaxTotal units per house",
+        "The amount of cleansing chemical cannot exceed MaxRatio times the amount of odor-removing chemical",
+        "The amount of cleansing chemical used is non-negative",
+        "The amount of odor-removing chemical used is non-negative"
+    ],
+    "objective": "Minimize the total time taken to clean a house",
+    "description": "A cleaning company uses a cleansing chemical and odor-removing chemical to clean a house. Each unit of the cleansing chemical takes \\param{Tc} units to be effective while each unit of the odor-removing chemical takes \\param{To} minutes to be effective. The company must use at least \\param{MinCleansing} units of the cleansing chemical. In total, at least \\param{MaxTotal} units of chemicals can be used per house. Further, because the cleansing chemical is strong, there can be at most \\param{MaxRatio} times the amount of cleansing chemical as odor-removing chemical. How many units of each should be used to minimize the total time it takes for a house to be cleaned?",
+    "parameters": [
+        {
+            "definition": "Time effectiveness of cleansing chemical per unit",
+            "symbol": "Tc",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Time effectiveness of odor-removing chemical per unit",
+            "symbol": "To",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of cleansing chemical required",
+            "symbol": "MinCleansing",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total units of chemicals used per house",
+            "symbol": "MaxTotal",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of cleansing to odor-removing chemical",
+            "symbol": "MaxRatio",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Hours worked per shift by staff teachers",
+            "symbol": "HoursStaff",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for staff teachers",
+            "symbol": "PayStaff",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Hours worked per shift by substitute teachers",
+            "symbol": "HoursSub",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for substitute teachers",
+            "symbol": "PaySub",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total required teaching hours for the summer term",
+            "symbol": "TotalHours",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for teacher payments",
+            "symbol": "Budget",
+            "value": 40000,
+            "shape": []
+        }
+    ],
+    "description": "A school employs staff and substitute teachers. Per shift, staff teachers work \\param{HoursStaff} hours and get paid \\param{PayStaff}. Per shift, substitute teachers work \\param{HoursSub} hours and get paid \\param{PaySub}. For the summer term, the school requires \\param{TotalHours} hours of teaching availability. If the school has a budget of \\param{Budget}, how many of each teacher should be hired to minimize the total number of teachers?"
+}

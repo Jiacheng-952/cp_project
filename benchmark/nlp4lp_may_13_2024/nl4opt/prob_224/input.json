@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time taken for a temperature check",
+            "symbol": "TemperatureCheckTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Time taken for a blood test",
+            "symbol": "BloodTestTime",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of blood tests required",
+            "symbol": "MinBloodTests",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Factor by which temperature checks must be more than blood tests",
+            "symbol": "TemperatureBloodTestFactor",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total staff time available in minutes",
+            "symbol": "TotalStaffTime",
+            "value": 22000,
+            "shape": []
+        }
+    ],
+    "description": "A disease testing station is conducting a temperature check and/or a blood test on each patient. A temperature check takes \\param{TemperatureCheckTime} minutes while a blood test takes \\param{BloodTestTime} minutes. The disease testing station must conduct at least \\param{MinBloodTests} blood tests. Since the temperature check is recommended to be performed on most people, the testing station requires that the temperature check is performed at least \\param{TemperatureBloodTestFactor} times as many as the blood test. If the disease testing station only has a total of \\param{TotalStaffTime} staff minutes, how many of each test or check should be done to maximize the number of patients seen?"
+}

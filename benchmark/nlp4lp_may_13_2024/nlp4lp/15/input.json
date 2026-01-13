@@ -1,0 +1,61 @@
+{
+    "parameters": [
+        {
+            "definition": "Initial cash available for investment",
+            "symbol": "Cash",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Hours required to produce one unit of product i",
+            "symbol": "Hour",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost to produce one unit of product i",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Selling price for one unit of product i",
+            "symbol": "Price",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Percentage of income to reinvest for product i",
+            "symbol": "InvestPercentage",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Hours required for upgrading the machinery",
+            "symbol": "UpgradeHours",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost associated with upgrading the machinery",
+            "symbol": "UpgradeCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total available machine hours",
+            "symbol": "AvailableHours",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "We are aiming at maximizing total net income subject to the \\param{Cash} availability and machine capacity limitations. The problem parameters include: the initial \\param{Cash} available, the \\param{Hour}(s) required to produce each of the \\param{P} products, the \\param{Cost} to produce each of the products, the \\param{Price} at which each product can be sold, the \\param{InvestPercentage} of income from each product to be reinvested, the \\param{UpgradeHours} required for upgrading the machinery, the \\param{UpgradeCost} associated with upgrading, and the total available \\param{AvailableHours} for machine operation."
+}

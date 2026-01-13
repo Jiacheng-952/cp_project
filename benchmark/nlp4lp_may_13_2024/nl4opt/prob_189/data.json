@@ -1,0 +1,8 @@
+{
+    "TubeCapacity": 50,
+    "TubeCost": 500,
+    "TankerCapacity": 30,
+    "TankerCost": 200,
+    "MinVolume": 1000,
+    "Budget": 3750
+}

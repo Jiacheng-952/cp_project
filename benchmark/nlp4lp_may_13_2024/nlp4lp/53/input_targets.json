@@ -1,0 +1,83 @@
+{
+    "background": "A manufacturer needs to determine the quantity of batches for each part to produce monthly in order to maximize profit, with particular constraints on machines, parts, production time, costs, and sales parameters.",
+    "constraints": [
+        "Number of batches of each part is non-negative",
+        "Total production time does not exceed the product of machine availability and the number of machines",
+        "Minimum production of each part must meet or exceed MinBatches",
+        "Total machine costs and extra costs should not exceed the sum of selling prices of all batches produced minus the production costs",
+        "Extra hours used cannot exceed MaxExtra hours"
+    ],
+    "objective": "Maximize the manufacturer's profit from part production, considering the costs and constraints on production capacity and time",
+    "description": "How many batches of each part should the manufacturer produce each month to maximize profit, considering the following parameters: number of machines (\\param{M}), number of parts (\\param{P}), time required (\\param{TimeRequired}), machine costs (\\param{MachineCosts}), machine availability (\\param{Availability}), selling prices (\\param{Prices}), minimum batches required (\\param{MinBatches}), extra costs (\\param{ExtraCosts}), and maximum extra hours (\\param{MaxExtra})?",
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of parts",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce a batch of part p on machine m",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost associated with running machine m",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Availability of machine m for production each month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Price obtained from selling a batch of part p",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part p that should be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Extra cost incurred when running machine m beyond regular operation",
+            "symbol": "ExtraCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Maximum extra hours machine m can be run",
+            "symbol": "MaxExtra",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ]
+}

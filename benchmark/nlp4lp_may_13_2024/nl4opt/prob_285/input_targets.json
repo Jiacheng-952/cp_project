@@ -1,0 +1,53 @@
+{
+    "background": "A park is deciding on the number and type of trails to construct, with a focus on managing visitor capacity and minimizing environmental impact in terms of garbage production.",
+    "constraints": [
+        "Number of wide trails is non-negative",
+        "Number of narrow trails is non-negative",
+        "Total visitors from wide trails does not exceed WideCapacity multiplied by the number of wide trails",
+        "Total visitors from narrow trails does not exceed NarrowCapacity multiplied by the number of narrow trails",
+        "Total number of trails does not exceed MaxWideTrails for wide trails",
+        "Total visitors every day does not exceed MaxCapacity",
+        "Total number of wide trails is an integer",
+        "Total number of narrow trails is an integer"
+    ],
+    "objective": "Minimize the total amount of garbage produced by the trails",
+    "description": "A park is designing their trails and can either create a wide trail or a narrow trail. A wide trail can take \\param{WideCapacity} visitors every day while the narrow trail expects \\param{NarrowCapacity} visitors every day. The wide trail will introduce \\param{WideGarbage} units of garbage and the narrow trail will introduce \\param{NarrowGarbage} units of garbage. There can be at most \\param{MaxWideTrails} wide trails and the park hopes to have at most \\param{MaxCapacity} visitors every day. How many of each type of trail should the park construct to minimize the total amount of garbage produced.",
+    "parameters": [
+        {
+            "definition": "Visitor capacity per day for the wide trail",
+            "symbol": "WideCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Visitor capacity per day for the narrow trail",
+            "symbol": "NarrowCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of garbage introduced by one wide trail",
+            "symbol": "WideGarbage",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of garbage introduced by one narrow trail",
+            "symbol": "NarrowGarbage",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of wide trails allowed",
+            "symbol": "MaxWideTrails",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total visitor capacity per day",
+            "symbol": "MaxCapacity",
+            "value": 225,
+            "shape": []
+        }
+    ]
+}

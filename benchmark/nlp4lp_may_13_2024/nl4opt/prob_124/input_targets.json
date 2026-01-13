@@ -1,0 +1,56 @@
+{
+    "background": "A boy is trying to meet his dietary requirements for magnesium and zinc through a combination of gummies and pills, with certain preferences and limitations on the amounts he can consume.",
+    "constraints": [
+        "Number of gummies is non-negative",
+        "Number of pills is non-negative",
+        "Boy must take at least MinPills pills",
+        "Boy must eat at least GummyPillRatio times the number of gummies as pills",
+        "Total magnesium from gummies and pills is at most MaxMg units"
+    ],
+    "objective": "Maximize the boy's zinc intake from gummies and pills",
+    "description": "A boy needs to get enough magnesium and zinc in his diet by eating chewable gummies and taking pills. Each gummy contains \\param{MgGummy} units of magnesium and \\param{ZnGummy} units of zinc. Each pill contains \\param{MgPill} units of magnesium and \\param{ZnPill} units of zinc. The boy must take at least \\param{MinPills} pills. Since he prefers gummies more, he must eat at least \\param{GummyPillRatio} times the amount of gummies as pills. If the boy can consume at most \\param{MaxMg} units of magnesium, how many of each should he eat to maximize his zinc intake?",
+    "parameters": [
+        {
+            "definition": "Units of magnesium contained in each gummy",
+            "symbol": "MgGummy",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of zinc contained in each gummy",
+            "symbol": "ZnGummy",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of magnesium contained in each pill",
+            "symbol": "MgPill",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of zinc contained in each pill",
+            "symbol": "ZnPill",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum amount of pills the boy must take",
+            "symbol": "MinPills",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "The ratio of the minimum amount of gummies to pills required",
+            "symbol": "GummyPillRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of magnesium the boy can consume",
+            "symbol": "MaxMg",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

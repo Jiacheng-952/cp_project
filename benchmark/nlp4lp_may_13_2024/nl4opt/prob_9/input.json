@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Monthly budget for carrots and cucumbers",
+            "symbol": "Budget",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Cost per carrot",
+            "symbol": "CostCarrot",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Cost per cucumber",
+            "symbol": "CostCucumber",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per carrot",
+            "symbol": "ProfitCarrot",
+            "value": 0.75,
+            "shape": []
+        },
+        {
+            "definition": "Profit per cucumber",
+            "symbol": "ProfitCucumber",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Estimated maximum ratio of cucumbers sold to carrots sold",
+            "symbol": "RatioCucumbersToCarrots",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of carrots sold per month",
+            "symbol": "MinCarrotsSold",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of carrots sold per month",
+            "symbol": "MaxCarrotsSold",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "Each month a store owner can spend at most \\param{Budget} on carrots and cucumbers. A carrot costs the store owner \\param{CostCarrot} and a cucumber costs the store owner \\param{CostCucumber}. Each carrot is sold for a profit of \\param{ProfitCarrot} and each cucumber is sold for a profit of \\param{ProfitCucumber}. The owner estimates that the number of cucumbers sold is at most \\param{RatioCucumbersToCarrots} of the number of carrots sold. He also estimates that at least \\param{MinCarrotsSold} carrots but at most \\param{MaxCarrotsSold} carrots are sold each month. How many of each, carrots and cucumbers, should be sold in order to maximize the profit?"
+}

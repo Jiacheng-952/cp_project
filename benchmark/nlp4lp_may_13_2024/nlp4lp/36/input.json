@@ -1,0 +1,27 @@
+{
+    "parameters": [
+        {
+            "definition": "Total Capacity of the Knapsack",
+            "symbol": "C",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Value of item k",
+            "symbol": "Value",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Size of item k",
+            "symbol": "Size",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "Maximize the total value of the packed items, where the knapsack has a capacity of \\param{C}. Each item k has a value of \\param{Value} and a size of \\param{Size}."
+}

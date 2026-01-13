@@ -1,0 +1,66 @@
+{
+    "background": "A sports company produces multiple products using various raw materials. The amount of each raw material and the requirements for each product are known. Each product has an associated selling price, production cost, and market demand. The company aims to determine the number of each product to produce to maximize profit within the material limitations and market demand constraints.",
+    "constraints": [
+        "All products must be produced using available raw materials without exceeding their amounts",
+        "Each product's production must meet its raw material requirement per unit",
+        "Each product's production should not exceed its market demand",
+        "Number of units produced of each product must be non-negative"
+    ],
+    "objective": "Maximize the profit for the month by determining the number of each product to produce",
+    "description": "How many of each product should the sports produce in order to maximize its profit for the month, given the \\param{N} different raw materials available, where each material i has an available amount of \\param{Available}, and each product j has a requirement of \\param{Requirements} units of material i, a selling price of \\param{Prices}, a production cost of \\param{Costs}, and a market demand of \\param{Demands}?",
+    "parameters": [
+        {
+            "definition": "Number of different raw materials",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different products",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of raw material i available",
+            "symbol": "Available",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Amount of raw material i required to produce one unit of product j",
+            "symbol": "Requirements",
+            "value": "",
+            "shape": [
+                "N",
+                "M"
+            ]
+        },
+        {
+            "definition": "Price at which product j can be sold",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Cost of producing one unit of product j",
+            "symbol": "Costs",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Demand for product j",
+            "symbol": "Demands",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ]
+}

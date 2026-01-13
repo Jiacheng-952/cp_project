@@ -1,0 +1,42 @@
+{
+    "background": "A logistics problem dealing with the transportation of soybeans from multiple supply terminals to various destinations, with routes connecting terminals and destinations. Each route has associated transportation costs and each destination has a specific demand to be met, while each terminal has a limited supply.",
+    "constraints": [
+        "Transported quantity from terminal to destination is non-negative",
+        "Transported quantity from each terminal cannot exceed its supply",
+        "Transported quantity to each destination must meet its demand"
+    ],
+    "objective": "Minimize the total transportation costs of delivering soybeans from terminals to destinations",
+    "description": "PROBLEM TYPE: LP\n\nINPUT FORMAT:\n\n{\n    \"routes\": [\n       {\n        \"start\": i,\n        \"end\": j,\n        \"C\": \\param{Cost}_{i,j},\n       }\n    ],\n    \"demand\": [\n        {\n            \"destination\": l,\n            \"D\": \\param{Demand}_{l}\n        }\n    ],\n    \"supply\": [\n        {\n            \"terminal\": k,\n            \"S\": \\param{Supply}_{k}\n        }\n    ]\n}\n\nOBJECTIVE: What quantity of soybeans should they transport from source to destination to minimize transportation costs?",
+    "parameters": [
+        {
+            "definition": "Number of terminals",
+            "symbol": "NumTerminals",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of destinations",
+            "symbol": "NumDestinations",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of transportation for route from terminal i to destination j",
+            "symbol": "Cost",
+            "value": "",
+            "shape": ["NumTerminals", "NumDestinations"]
+        },
+        {
+            "definition": "Demand at each destination",
+            "symbol": "Demand",
+            "value": "",
+            "shape": ["NumDestinations"]
+        },
+        {
+            "definition": "Supply at each terminal",
+            "symbol": "Supply",
+            "value": "",
+            "shape": ["NumTerminals"]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Calories contained in each pack of ramen",
+            "symbol": "CaloriesRamen",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Protein contained in each pack of ramen",
+            "symbol": "ProteinRamen",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Sodium contained in each pack of ramen",
+            "symbol": "SodiumRamen",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Calories contained in each pack of fries",
+            "symbol": "CaloriesFries",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Protein contained in each pack of fries",
+            "symbol": "ProteinFries",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Sodium contained in each pack of fries",
+            "symbol": "SodiumFries",
+            "value": 75,
+            "shape": []
+        },
+        {
+            "definition": "Maximum fraction of meals that can be ramen",
+            "symbol": "MaxRamenFraction",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total caloric intake",
+            "symbol": "MinCalories",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total protein intake",
+            "symbol": "MinProtein",
+            "value": 80,
+            "shape": []
+        }
+    ],
+    "description": "A travelling salesman only eats ramen and fries. Each pack of ramen contains \\param{CaloriesRamen} calories, \\param{ProteinRamen} grams of protein, and \\param{SodiumRamen} mg of sodium. Each pack of fries contains \\param{CaloriesFries} calories, \\param{ProteinFries} grams of protein, and \\param{SodiumFries} mg of sodium. Since fries are easier to eat while driving, at most \\param{MaxRamenFraction} of his meals can be ramen. The salesman wants to ensure he eats at least \\param{MinCalories} calories and \\param{MinProtein} grams of protein. How many of each should he eat to minimize his sodium intake?"
+}

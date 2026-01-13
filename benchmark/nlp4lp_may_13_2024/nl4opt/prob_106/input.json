@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Allergy pills produced per hour by factory 1",
+            "symbol": "AllergyPillsFactory1",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Fever reducing pills produced per hour by factory 1",
+            "symbol": "FeverPillsFactory1",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Allergy pills produced per hour by factory 2",
+            "symbol": "AllergyPillsFactory2",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Fever reducing pills produced per hour by factory 2",
+            "symbol": "FeverPillsFactory2",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of rare compound required by factory 1",
+            "symbol": "CompoundFactory1",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of rare compound required by factory 2",
+            "symbol": "CompoundFactory2",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total units of the rare compound available",
+            "symbol": "TotalCompound",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required allergy pills",
+            "symbol": "MinAllergyPills",
+            "value": 700,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required fever reducing pills",
+            "symbol": "MinFeverPills",
+            "value": 600,
+            "shape": []
+        }
+    ],
+    "description": "A drug company is making allergy pills and fever reducing pills in two factories, factory 1 and factory 2. Factory 1 produces \\param{AllergyPillsFactory1} allergy pills and \\param{FeverPillsFactory1} fever reducing pills per hour. Factory 2 produces \\param{AllergyPillsFactory2} allergy pills and \\param{FeverPillsFactory2} fever reducing pills per hour. Factory 1 is much more efficient and only requires \\param{CompoundFactory1} units of a rare compound while factory 2 requires \\param{CompoundFactory2} units of a rare compound. The company only has available \\param{TotalCompound} units of the rare compound. If the company must make at least \\param{MinAllergyPills} allergy pills and \\param{MinFeverPills} fever reducing pills, how many hours should each factory be run to minimize the total time needed?"
+}

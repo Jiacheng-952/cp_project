@@ -1,0 +1,9 @@
+{
+    "CalCheesecake": 200,
+    "SugarCheesecake": 40,
+    "CalCaramelCake": 250,
+    "SugarCaramelCake": 50,
+    "CheeseCaramelRatio": 3,
+    "MinCaramel": 3,
+    "MaxCalories": 10000
+}

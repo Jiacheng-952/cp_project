@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of people a van can carry",
+            "symbol": "VanCapacity",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of people a car can carry",
+            "symbol": "CarCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of voters to transport to the polls",
+            "symbol": "MinimumVoters",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of the number of vans to the total number of vehicles",
+            "symbol": "MaxVansRatio",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A volunteer organization transports voters to the polls on Election Day either by vans or cars. They have vans which can carry \\param{VanCapacity} people and cars which can carry \\param{CarCapacity} people. They need to transport at least \\param{MinimumVoters} voters to the polls. In addition, at most \\param{MaxVansRatio} of the vehicles can be vans. How many of each vehicle should be used to minimize the total number of cars used?"
+}

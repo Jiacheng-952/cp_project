@@ -1,0 +1,67 @@
+{
+    "background": "A souvenir shop makes wooden elephants and tigers with plastic ornaments.",
+    "constraints": [
+        "Number of elephants is an integer",
+        "Number of tigers is an integer",
+        "Number of elephants is non-negative",
+        "Number of tigers is non-negative",
+        "Total wood used for elephants and tigers is at most TotalWood grams per week",
+        "Total plastic used for elephants and tigers is at most TotalPlastic grams per week",
+        "Each elephant requires WoodElephant grams of wood",
+        "Each elephant requires PlasticElephant grams of plastic",
+        "Each tiger requires WoodTiger grams of wood",
+        "Each tiger requires PlasticTiger grams of plastic"
+    ],
+    "objective": "The souvenir shop wants to maximize its profit",
+    "description": "A souvenir shop makes wooden elephants and tigers with plastic ornaments. Each elephant requires \\var{WoodElephant} grams of wood and \\var{PlasticElephant} grams of plastic. Each tiger requires \\var{WoodTiger} grams of wood and \\var{PlasticTiger} grams of plastic. In a week, \\var{TotalWood} grams of wood and \\var{TotalPlastic} grams of plastic are available. The profit per elephant sold is \\var{ProfitElephant} and the profit per tiger sold is \\var{ProfitTiger}. How many of each should be made in order to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Wood required for one elephant",
+            "symbol": "WoodElephant",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Plastic required for one elephant",
+            "symbol": "PlasticElephant",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Wood required for one tiger",
+            "symbol": "WoodTiger",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Plastic required for one tiger",
+            "symbol": "PlasticTiger",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total available wood per week",
+            "symbol": "TotalWood",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total available plastic per week",
+            "symbol": "TotalPlastic",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per elephant",
+            "symbol": "ProfitElephant",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per tiger",
+            "symbol": "ProfitTiger",
+            "value": 4,
+            "shape": []
+        }
+    ]
+}

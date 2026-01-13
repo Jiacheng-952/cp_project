@@ -1,0 +1,9 @@
+{
+    "PackageTruck": 50,
+    "PackageCar": 30,
+    "GasTruck": 20,
+    "GasCar": 15,
+    "MaxTruckTrips": 5,
+    "MinCarTripProp": 0.33,
+    "MinPackages": 500
+}

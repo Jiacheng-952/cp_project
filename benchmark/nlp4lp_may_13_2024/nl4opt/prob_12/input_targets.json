@@ -1,0 +1,63 @@
+{
+    "background": "A breakfast joint makes two different sandwiches: a regular and a special. Both need eggs and bacon.",
+    "constraints": [
+        "Number of regular sandwiches is an integer",
+        "Number of special sandwiches is an integer",
+        "Number of regular sandwiches is non-negative",
+        "Number of special sandwiches is non-negative",
+        "Eggs used for regular sandwiches and special sandwiches cannot exceed TotalEggs",
+        "Bacon used for regular sandwiches and special sandwiches cannot exceed TotalBacon"
+    ],
+    "objective": "Maximize the joint's profit from selling regular and special sandwiches",
+    "description": "A breakfast joint makes two different sandwiches: a regular and a special. Both need eggs and bacon. Each regular sandwich requires \\var{EggsReg} eggs and \\var{BaconReg} slices of bacon. Each special sandwich requires \\var{EggsSpec} eggs and \\var{BaconSpec} slices of bacon. The joint has a total of \\var{TotalEggs} eggs and \\var{TotalBacon} slices of bacon. It makes a profit of \\var{ProfitReg} per regular sandwich and a profit of \\var{ProfitSpec} per special sandwich. How many of each sandwich should be made to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Number of eggs required for a regular sandwich",
+            "symbol": "EggsReg",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of eggs required for a special sandwich",
+            "symbol": "EggsSpec",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of slices of bacon required for a regular sandwich",
+            "symbol": "BaconReg",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of slices of bacon required for a special sandwich",
+            "symbol": "BaconSpec",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total number of eggs available",
+            "symbol": "TotalEggs",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Total number of slices of bacon available",
+            "symbol": "TotalBacon",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling a regular sandwich",
+            "symbol": "ProfitReg",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling a special sandwich",
+            "symbol": "ProfitSpec",
+            "value": 4,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "background": "A research group has two methods, A and B, for producing fabric and plastic, both of which consume a special element. The goal is to meet minimum production requirements for fabric and plastic with limited availability of the special element.",
+    "constraints": [
+        "At least MinFabric units of fabric must be produced",
+        "At least MinPlastic units of plastic must be produced",
+        "Number of hours using method A is non-negative",
+        "Number of hours using method B is non-negative"
+    ],
+    "objective": "Minimize the total time needed to produce at least MinFabric units of fabric and at least MinPlastic units of plastic",
+    "description": "A research group is making fabric and plastic using two methods, method A and method B. Method A produces \\param{FabricA} units of fabric and \\param{PlasticA} units of plastic per hour. Method B produces \\param{FabricB} units of fabric and \\param{PlasticB} units of plastic per hour. Method A requires \\param{ElementA} units of a special element while method B requires \\param{ElementB} units of the same special element. The research group has \\param{TotalElement} units of the special element and must make at least \\param{MinFabric} units of fabric and \\param{MinPlastic} units of plastic. How many of each method should be executed to minimize the total time needed?",
+    "parameters": [
+        {
+            "definition": "Units of fabric produced by method A per hour",
+            "symbol": "FabricA",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Units of fabric produced by method B per hour",
+            "symbol": "FabricB",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic produced by method A per hour",
+            "symbol": "PlasticA",
+            "value": 14,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic produced by method B per hour",
+            "symbol": "PlasticB",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Units of the special element required by method A",
+            "symbol": "ElementA",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Units of the special element required by method B",
+            "symbol": "ElementB",
+            "value": 65,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of the special element",
+            "symbol": "TotalElement",
+            "value": 3500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of fabric that must be produced",
+            "symbol": "MinFabric",
+            "value": 1400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of plastic that must be produced",
+            "symbol": "MinPlastic",
+            "value": 1000,
+            "shape": []
+        }
+    ]
+}

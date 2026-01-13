@@ -1,0 +1,74 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of parts",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce a batch of part p on machine m",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost associated with running machine m",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Availability of machine m for production each month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Price obtained from selling a batch of part p",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part p that should be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Extra cost incurred when running machine m beyond regular operation",
+            "symbol": "ExtraCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Maximum extra hours machine m can be run",
+            "symbol": "MaxExtra",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ],
+    "description": "How many batches of each part should the manufacturer produce each month to maximize profit, considering the following parameters: number of machines (\\param{M}), number of parts (\\param{P}), time required (\\param{TimeRequired}), machine costs (\\param{MachineCosts}), machine availability (\\param{Availability}), selling prices (\\param{Prices}), minimum batches required (\\param{MinBatches}), extra costs (\\param{ExtraCosts}), and maximum extra hours (\\param{MaxExtra})?"
+}

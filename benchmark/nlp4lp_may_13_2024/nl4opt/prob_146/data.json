@@ -1,0 +1,11 @@
+{
+    "BlueberryAntioxidants": 3,
+    "BlueberryMinerals": 5,
+    "StrawberryAntioxidants": 1,
+    "StrawberryMinerals": 7,
+    "MinAntioxidants": 90,
+    "MinMinerals": 100,
+    "StrawberryBlueberryRatio": 0.33,
+    "BlueberrySugar": 5,
+    "StrawberrySugar": 7
+}

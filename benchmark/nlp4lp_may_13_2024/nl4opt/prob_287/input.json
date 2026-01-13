@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Total number of patients to transport each day",
+            "symbol": "TotalPatients",
+            "value": 320,
+            "shape": []
+        },
+        {
+            "definition": "Number of patients transported per shift by a type II ambulance",
+            "symbol": "AmbulanceCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Cost per shift for a type II ambulance",
+            "symbol": "AmbulanceCost",
+            "value": 820,
+            "shape": []
+        },
+        {
+            "definition": "Number of patients transported per shift by a hospital van",
+            "symbol": "VanCapacity",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Cost per shift for a hospital van",
+            "symbol": "VanCost",
+            "value": 550,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of shifts that can be hospital vans",
+            "symbol": "MaxVanShiftProportion",
+            "value": 0.6,
+            "shape": []
+        }
+    ],
+    "description": "A hospital needs to transport \\param{TotalPatients} patients every day. A type II ambulance can move \\param{AmbulanceCapacity} patients every shift and costs the hospital \\param{AmbulanceCost}. A hospital van can move \\param{VanCapacity} patients and costs the hospital \\param{VanCost} every shift. The hospital can have at most \\param{MaxVanShiftProportion} of shifts be hospital vans due to union limitations of the type II ambulance drivers. How many shifts using each type of vehicle should be scheduled to minimize the total cost to the hospital?"
+}

@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Minimum units of vitamin A needed",
+            "symbol": "VitaminAmin",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of vitamin C needed",
+            "symbol": "VitaminCmin",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A in a crab cake",
+            "symbol": "VitaminAcrab",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin C in a crab cake",
+            "symbol": "VitaminCcrab",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A in a lobster roll",
+            "symbol": "VitaminAlobster",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin C in a lobster roll",
+            "symbol": "VitaminClobster",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Maximum fraction of meals that can be lobster rolls",
+            "symbol": "LobsterFractionMax",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Units of unsaturated fat in a crab cake",
+            "symbol": "FatCrab",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of unsaturated fat in a lobster roll",
+            "symbol": "FatLobster",
+            "value": 6,
+            "shape": []
+        }
+    ],
+    "description": "A sailor can eat either crab cakes or lobster rolls for his meals. He needs to ensure he gets at least \\param{VitaminAmin} units of vitamin A and at least \\param{VitaminCmin} units of vitamin C. Each crab cake contains \\param{VitaminAcrab} units of vitamin A and \\param{VitaminCcrab} units of vitamin C. Each lobster roll contains \\param{VitaminAlobster} units of vitamin A and \\param{VitaminClobster} units of vitamin C. In addition, since lobster is more expensive, at most \\param{LobsterFractionMax} of his meals should be lobster rolls. If each crab cake contains \\param{FatCrab} units of unsaturated fat and each lobster roll contains \\param{FatLobster} units of unsaturated fat, how many of each should he eat to minimize his unsaturated fat intake?"
+}

@@ -1,0 +1,44 @@
+{
+    "background": "The government is planning to revamp the water transportation system by deciding on a distribution of wide and narrow pipes to deliver a minimum amount of water to houses in the area.",
+    "constraints": [
+        "Number of wide pipes is non-negative",
+        "Number of narrow pipes is non-negative",
+        "Number of wide pipes is at most MaxWideToNarrowRatio times the number of narrow pipes",
+        "At least MinTotalWater units of water must be transported every minute",
+        "At least MinWidePipes wide pipes must be used"
+    ],
+    "objective": "Minimize the total number of wide and narrow pipes required",
+    "description": "The government is reworking the pipes to transport water to houses in the area. The water can be transported through wide pipes or narrow pipes. Wide pipes can transport \\param{WidePipeCapacity} units of water per minute and narrow pipes can transport \\param{NarrowPipeCapacity} units of water per minute. Due to logistics, the number of wide pipes can be at most \\param{MaxWideToNarrowRatio} times the number of narrow pipes. If there needs to be at least \\param{MinTotalWater} units of water transported every minute, and at least \\param{MinWidePipes} wide pipes must be used, minimize the total number of pipes required.",
+    "parameters": [
+        {
+            "definition": "Capacity of water transported by wide pipes per minute",
+            "symbol": "WidePipeCapacity",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of water transported by narrow pipes per minute",
+            "symbol": "NarrowPipeCapacity",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of wide pipes as a fraction of narrow pipes",
+            "symbol": "MaxWideToNarrowRatio",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total units of water to be transported every minute",
+            "symbol": "MinTotalWater",
+            "value": 900,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of wide pipes to be used",
+            "symbol": "MinWidePipes",
+            "value": 5,
+            "shape": []
+        }
+    ]
+}

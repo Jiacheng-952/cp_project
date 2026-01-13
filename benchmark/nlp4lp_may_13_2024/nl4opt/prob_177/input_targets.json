@@ -1,0 +1,39 @@
+{
+    "background": "A corn farmer needs to send corn to the city using tractors and cars, each with different carrying capacities. There is a requirement on the minimum ratio of cars to tractors, as well as a minimum corn shipment weight.",
+    "constraints": [
+        "Each tractor can carry up to Tc kg of corn",
+        "Each car can carry up to Cc kg of corn",
+        "Number of cars used must be at least Ratio times the number of tractors used",
+        "At least MinCorn kg of corn must be sent to the city",
+        "Number of tractors is non-negative",
+        "Number of cars is non-negative"
+    ],
+    "objective": "Minimize the total number of tractors and cars needed to send corn to the city",
+    "description": "A corn farmer sends his corn to the city by either tractor or car. A tractor can carry \\param{Tc} kg of corn while a car can carry \\param{Cc} kg of corn. Since tractors are very slow, the number of cars used has to be at least \\param{Ratio} times the number of tractors used. If at least \\param{MinCorn} kg of corn need to be sent to the city, minimize the total number of tractors and cars needed.",
+    "parameters": [
+        {
+            "definition": "Capacity of the tractor for carrying corn",
+            "symbol": "Tc",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of the car for carrying corn",
+            "symbol": "Cc",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of number of cars used to number of tractors used",
+            "symbol": "Ratio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum amount of corn to be sent to the city",
+            "symbol": "MinCorn",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

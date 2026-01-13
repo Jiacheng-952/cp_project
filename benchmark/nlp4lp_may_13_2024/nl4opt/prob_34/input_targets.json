@@ -1,0 +1,61 @@
+{
+    "background": "Ayse mixes two fertilizers, C and Y, to produce a plant growth compound which must meet certain nitrous oxide and vitamin mix requirements.",
+    "constraints": [
+        "The compound must contain at least MinNitrous units of nitrous oxide",
+        "The compound must contain at least MinVitamin units of vitamin mix",
+        "The amount of fertilizer C used is non-negative",
+        "The amount of fertilizer Y used is non-negative"
+    ],
+    "objective": "Minimize the cost of Ayse's compound",
+    "description": "Ayse produces a plant growth compound by mixing two types of fertilizer: C and Y. This growth compound must contain at least \\var{MinNitrous} units of nitrous oxide and \\var{MinVitamin} units of vitamin mix. Fertilizer C and Y cost \\var{CostC} and \\var{CostY} per kg respectively. Fertilizer C contains \\var{NitrousC} units of nitrous oxide per kg and \\var{VitaminC} units of vitamin mix per kg. Fertilizer Y contains \\var{NitrousY} units of nitrous oxide per kg and \\var{VitaminY} unit of vitamin mix per kg. Determine the minimum cost of Ayse's compound.",
+    "parameters": [
+        {
+            "definition": "Cost of fertilizer C per kg",
+            "symbol": "CostC",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Cost of fertilizer Y per kg",
+            "symbol": "CostY",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of nitrous oxide per kg in fertilizer C",
+            "symbol": "NitrousC",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of vitamin mix per kg in fertilizer C",
+            "symbol": "VitaminC",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of nitrous oxide per kg in fertilizer Y",
+            "symbol": "NitrousY",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of vitamin mix per kg in fertilizer Y",
+            "symbol": "VitaminY",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of nitrous oxide in the growth compound",
+            "symbol": "MinNitrous",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of vitamin mix in the growth compound",
+            "symbol": "MinVitamin",
+            "value": 8,
+            "shape": []
+        }
+    ]
+}

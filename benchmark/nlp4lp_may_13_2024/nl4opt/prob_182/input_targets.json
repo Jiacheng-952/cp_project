@@ -1,0 +1,56 @@
+{
+    "background": "The fish in a freezing pond need to be transported using helicopters and cars to maintain their survival, with each mode of transport having different capacities and time requirements.",
+    "constraints": [
+        "Number of helicopter trips is non-negative",
+        "Number of car trips is non-negative",
+        "At least MinFishNeeded fish must be transported",
+        "There can be at most MaxHelicopterTrips helicopter trips",
+        "At least CarTripPercentage percent of the total number of trips must be by car"
+    ],
+    "objective": "Minimize the total time needed to transport all the fish",
+    "description": "The weather is freezing and the fish in the pond need to be transported either by helicopter or car. A helicopter can take \\param{FishPerHelicopter} fish per trip and takes \\param{TimeHelicopter} minutes. A car can take \\param{FishPerCar} fish per trip and takes \\param{TimeCar} minutes. Since helicopter trips are expensive, there can be at most \\param{MaxHelicopterTrips} helicopter trips. In addition, at least \\param{CarTripPercentage} of the trips should be by car. If at least \\param{MinFishNeeded} fish need to be transported, how many of each trip should be taken to minimize the total time needed?",
+    "parameters": [
+        {
+            "definition": "Number of fish transported per helicopter trip",
+            "symbol": "FishPerHelicopter",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Time taken per helicopter trip",
+            "symbol": "TimeHelicopter",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Number of fish transported per car trip",
+            "symbol": "FishPerCar",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Time taken per car trip",
+            "symbol": "TimeCar",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of helicopter trips allowed",
+            "symbol": "MaxHelicopterTrips",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Percentage of trips that should be by car",
+            "symbol": "CarTripPercentage",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of fish that need to be transported",
+            "symbol": "MinFishNeeded",
+            "value": 300,
+            "shape": []
+        }
+    ]
+}

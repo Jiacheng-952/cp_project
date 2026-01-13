@@ -1,0 +1,51 @@
+{
+    "background": "A clothing company looking to optimize its product distribution between retail stores and factory outlets, aiming to reduce the number of stores in operation while meeting customer and employee constraints.",
+    "constraints": [
+        "Number of retail stores is non-negative",
+        "Number of factory outlets is non-negative",
+        "Total number of customers from retail stores and factory outlets must be at least MinCustomers",
+        "Total number of employees distributed to all stores cannot exceed TotalEmployees",
+        "Each retail store requires RetailEmployees employees to operate",
+        "Each factory outlet requires OutletEmployees employees to run"
+    ],
+    "objective": "Minimize the number of stores (retail stores and factory outlets) that must be open",
+    "description": "A clothing company can sell their product in two types of stores, a retail store and a factory outlet. A retail store brings in \\param{RetailCustomers} customers every day and requires \\param{RetailEmployees} employees to operate. A factory outlet brings in \\param{OutletCustomers} customers every day and due to the lower traffic and being in more remote areas, requires \\param{OutletEmployees} employees to run. Company executives decided that there must be at least \\param{MinCustomers} customers every day, and can make available \\param{TotalEmployees} employees. How should the company distribute their product to the two types of store to reduce the number of stores that must be open?",
+    "parameters": [
+        {
+            "definition": "Number of customers a retail store brings in every day",
+            "symbol": "RetailCustomers",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Number of customers a factory outlet brings in every day",
+            "symbol": "OutletCustomers",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees required to operate a retail store",
+            "symbol": "RetailEmployees",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees required to operate a factory outlet",
+            "symbol": "OutletEmployees",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of customers every day",
+            "symbol": "MinCustomers",
+            "value": 1200,
+            "shape": []
+        },
+        {
+            "definition": "Total number of employees available to operate all stores",
+            "symbol": "TotalEmployees",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

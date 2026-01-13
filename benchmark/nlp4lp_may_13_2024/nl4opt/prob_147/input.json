@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of Popsicle sticks required for a beam bridge",
+            "symbol": "PopsicleBeam",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue required for a beam bridge",
+            "symbol": "GlueBeam",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of Popsicle sticks required for a truss bridge",
+            "symbol": "PopsicleTruss",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Units of glue required for a truss bridge",
+            "symbol": "GlueTruss",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Total available Popsicle sticks",
+            "symbol": "TotalPopsicles",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of glue",
+            "symbol": "TotalGlue",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of truss bridges",
+            "symbol": "MaxTruss",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Mass supported by a beam bridge",
+            "symbol": "MassBeam",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Mass supported by a truss bridge",
+            "symbol": "MassTruss",
+            "value": 60,
+            "shape": []
+        }
+    ],
+    "description": "An engineering school has a bridge building competition where students must build as many beam bridges and truss bridges as they can using Popsicle sticks and glue. A beam bridge requires \\param{PopsicleBeam} Popsicle sticks and \\param{GlueBeam} units of glue while a truss bridge requires \\param{PopsicleTruss} Popsicle sticks and \\param{GlueTruss} units of glue. Each team has at most \\param{TotalPopsicles} Popsicle sticks and \\param{TotalGlue} units of glue. In addition, each team can build at most \\param{MaxTruss} truss bridges and the number of beam bridges must be larger than the number of truss bridges. If a beam bridge can hold \\param{MassBeam} grams and a truss bridge can hold \\param{MassTruss} grams, how many of each bridge should a team build to maximize the total mass that can be supported?"
+}

@@ -1,0 +1,46 @@
+{
+    "background": "A cough syrup company sells cough syrup in kids and adult size bottles with a certain ratio required between adult size and kids size bottles and a minimum number of kids size bottles required.",
+    "constraints": [
+        "Number of kids size bottles is an integer",
+        "Number of adult size bottles is an integer",
+        "Number of kids size bottles is non-negative",
+        "Number of adult size bottles is non-negative",
+        "Total volume of cough syrup used cannot exceed TotalSyrup ml",
+        "At least RatioAdultToKids times as many adult size bottles must be made as kids size bottles",
+        "At least MinKidBottles kids size bottles must be made"
+    ],
+    "objective": "Maximize the total number of bottles produced",
+    "description": "A cough syrup company sells cough syrup in kids and adult size bottles. A kids size bottle can hold \\param{VolKid} ml of cough syrup while an adult size bottle can hold \\param{VolAdult} ml of cough syrup. Since there is no difference in concentration of medical ingredients between the two bottles, at least \\param{RatioAdultToKids} times as many adult size bottle must be made as kids size bottles. However, at least \\param{MinKidBottles} kids size bottles must be made. If the company has \\param{TotalSyrup} ml of cough syrup available, how many bottles of each should be made to maximize the total number of bottles?",
+    "parameters": [
+        {
+            "definition": "Volume of cough syrup that a kids size bottle can hold",
+            "symbol": "VolKid",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Volume of cough syrup that an adult size bottle can hold",
+            "symbol": "VolAdult",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of adult size bottles to kids size bottles",
+            "symbol": "RatioAdultToKids",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of kids size bottles",
+            "symbol": "MinKidBottles",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of cough syrup available",
+            "symbol": "TotalSyrup",
+            "value": 25000,
+            "shape": []
+        }
+    ]
+}

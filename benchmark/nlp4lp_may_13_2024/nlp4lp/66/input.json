@@ -1,0 +1,26 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of towns to visit",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Index of the start city",
+            "symbol": "StartCity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Distance from city i to city j",
+            "symbol": "Distances",
+            "value": "",
+            "shape": [
+                "N",
+                "N"
+            ]
+        }
+    ],
+    "description": "Determine the shortest route that the traveler can take to visit all \\param{N} towns and return to \\param{StartCity}."
+}

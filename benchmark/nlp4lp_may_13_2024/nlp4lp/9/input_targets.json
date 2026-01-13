@@ -1,0 +1,38 @@
+{
+    "background": "A linear programming task aimed at finding bounds on the fourth moment of a random variable Z, given its first and second moments.",
+    "constraints": [
+        "Variable K is non-negative",
+        "Array p[i] is non-negative for each i in 1 to K",
+        "Lower and upper bounds for E[Z^4] should not be negative"
+    ],
+    "objective": "Determine the lower and upper bounds on the expected value of Z raised to the fourth power",
+    "description": "PROBLEM TYPE\nLP\n\nINPUT FORMAT\n\n{\n    \"K\": \\param{K},\n    \"p\": [\\param{P[i]} for i in 0, ..., \\param{K}]\n    \"E[Z]\": \\param{ExpectedZ},\n    \"E[Z^2]\": \\param{ExpectedZSquared},\n}\n\nOBJECTIVE\nUse linear programming to find lower and upper bounds on \\param{E[Z^4]}.",
+    "parameters": [
+        {
+            "definition": "Number of terms in the sequence",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Coefficients of the linear combination",
+            "symbol": "P",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Expected value of Z",
+            "symbol": "ExpectedZ",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Expected value of Z squared",
+            "symbol": "ExpectedZSquared",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

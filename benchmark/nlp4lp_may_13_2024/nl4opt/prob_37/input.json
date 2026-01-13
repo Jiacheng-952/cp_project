@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum budget for mangos and guavas",
+            "symbol": "MaxBudget",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one mango",
+            "symbol": "CostMango",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one guava",
+            "symbol": "CostGuava",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one mango",
+            "symbol": "ProfitMango",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling one guava",
+            "symbol": "ProfitGuava",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum mangos sold per month",
+            "symbol": "MinMangos",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum mangos sold per month",
+            "symbol": "MaxMangos",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Maximum guavas sold per month as a ratio of mangos sold",
+            "symbol": "RatioGuavas",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A food truck owner can spend at most \\param{MaxBudget} on mangos and guavas. A mango costs the food truck owner \\param{CostMango} and a guava costs him \\param{CostGuava}. Spices are added and each mango is sold for a profit of \\param{ProfitMango} while each guava is sold for a profit of \\param{ProfitGuava}. The owner estimates that at least \\param{MinMangos} mangos but at the most \\param{MaxMangos} are sold each month. He also estimates that the number of guavas sold is at most a third of the mangos sold (expressed as \\param{RatioGuavas} times the number of mangos). How many mangos and guavas should be sold in order to maximize the profit?"
+}

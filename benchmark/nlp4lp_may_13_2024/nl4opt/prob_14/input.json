@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Total amount of gold available",
+            "symbol": "TotalGold",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of gold required for one long cable",
+            "symbol": "GoldLong",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of gold required for one short cable",
+            "symbol": "GoldShort",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of short cables to long cables",
+            "symbol": "RatioShortLong",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of long cables to be made",
+            "symbol": "MinLong",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Profit per long cable",
+            "symbol": "ProfitLong",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Profit per short cable",
+            "symbol": "ProfitShort",
+            "value": 5,
+            "shape": []
+        }
+    ],
+    "description": "There is \\param{TotalGold} mg of gold available that is needed to make long and short cables. Long cables require \\param{GoldLong} mg of gold while short cables require \\param{GoldShort} mg of gold. Because of their compact size, at least \\param{RatioShortLong} times the number of short cables are needed than the long cables. In addition, there needs to be at least \\param{MinLong} long cables made. If each long cable sold results in a \\param{ProfitLong} profit and each short cable sold results in a \\param{ProfitShort} profit, how many of each type of cable should be made to maximize profit?"
+}

@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of the tractor for carrying corn",
+            "symbol": "Tc",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of the car for carrying corn",
+            "symbol": "Cc",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of number of cars used to number of tractors used",
+            "symbol": "Ratio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum amount of corn to be sent to the city",
+            "symbol": "MinCorn",
+            "value": 500,
+            "shape": []
+        }
+    ],
+    "description": "A corn farmer sends his corn to the city by either tractor or car. A tractor can carry \\param{Tc} kg of corn while a car can carry \\param{Cc} kg of corn. Since tractors are very slow, the number of cars used has to be at least \\param{Ratio} times the number of tractors used. If at least \\param{MinCorn} kg of corn need to be sent to the city, minimize the total number of tractors and cars needed."
+}

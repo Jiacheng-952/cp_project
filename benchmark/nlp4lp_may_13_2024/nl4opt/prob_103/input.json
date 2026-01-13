@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Total units of tooth medication available",
+            "symbol": "TotalMedication",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Units of tooth medication required for a small bone",
+            "symbol": "SmallMedication",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of meat required for a small bone",
+            "symbol": "SmallMeat",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of tooth medication required for a large bone",
+            "symbol": "LargeMedication",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of meat required for a large bone",
+            "symbol": "LargeMeat",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total bones made that must be small",
+            "symbol": "MinSmallBonePercentage",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large bones to be made",
+            "symbol": "MinLargeBones",
+            "value": 30,
+            "shape": []
+        }
+    ],
+    "description": "An dog hospital has \\param{TotalMedication} units of tooth medication to make both small and large bones. A small bone requires \\param{SmallMedication} units of tooth medication and \\param{SmallMeat} units of meat. A large bone requires \\param{LargeMedication} units of tooth medication and \\param{LargeMeat} units of meat. Since most dogs prefer the small bones, at least \\param{MinSmallBonePercentage} of the bones made must be small. In addition, the hospital must make at least \\param{MinLargeBones} large bones. How many of each bone should be made to minimize the amount of meat needed?"
+}

@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Time taken on the printing machine to make a ream of graph paper",
+            "symbol": "TimePrintingGraph",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time taken on the scanning machine to make a ream of graph paper",
+            "symbol": "TimeScanningGraph",
+            "value": 5.5,
+            "shape": []
+        },
+        {
+            "definition": "Time taken on the printing machine to make a ream of music paper",
+            "symbol": "TimePrintingMusic",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Time taken on the scanning machine to make a ream of music paper",
+            "symbol": "TimeScanningMusic",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum available time per day for the printing machine",
+            "symbol": "MaxTimePrinting",
+            "value": 350,
+            "shape": []
+        },
+        {
+            "definition": "Maximum available time per day for the scanning machine",
+            "symbol": "MaxTimeScanning",
+            "value": 350,
+            "shape": []
+        },
+        {
+            "definition": "Profit per package of graph paper sold",
+            "symbol": "ProfitGraph",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Profit per package of music paper sold",
+            "symbol": "ProfitMusic",
+            "value": 2.5,
+            "shape": []
+        }
+    ],
+    "description": "Forest Paper makes two types of products: graph paper and music paper. Each type of paper requires the use of two machines, a printing machine and a scanning machine. It takes \\param{TimePrintingGraph} minutes on the printing machine and \\param{TimeScanningGraph} minutes on the scanning machine to make a ream of graph paper. On the other hand, it takes \\param{TimePrintingMusic} minutes on the printing machine and \\param{TimeScanningMusic} minutes on the scanning machine to make a ream of music paper. Each machine is available for a maximum of \\param{MaxTimePrinting} minutes (printing machine) and \\param{MaxTimeScanning} minutes (scanning machine) per day. The company sells a package of graph paper at a profit of \\param{ProfitGraph} and a package of music paper at a profit of \\param{ProfitMusic}. The company can sell all the paper it makes. How many reams of each type should the company produce in a day in order to maximize profit? What is that profit?"
+}

@@ -1,0 +1,41 @@
+{
+    "background": "The production involves multiple products and machines, with each product requiring specific production time on each machine and yielding a certain profit.",
+    "constraints": [
+        "Each product k must be produced in non-negative quantities",
+        "For each machine m, the total production time for all products cannot exceed AvailableTime"
+    ],
+    "objective": "Maximize the total profit from producing different products subject to production time constraints on each machine",
+    "description": "Determine the quantities to be produced such that all the production constraints are satisfied and the profit is maximized. The parameters include the number of different products \\param{NumProducts} and the number of different machines \\param{NumMachines}. Each product k requires \\param{ProduceTime}_{k,m} to produce on machine m. Each machine m has a total available time of \\param{AvailableTime}_m. The profit from producing one unit of product k is \\param{Profit}_k.",
+    "parameters": [
+        {
+            "definition": "Number of different products",
+            "symbol": "NumProducts",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different machines",
+            "symbol": "NumMachines",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time to produce one unit of product k on machine m",
+            "symbol": "ProduceTime",
+            "value": "",
+            "shape": ["NumProducts", "NumMachines"]
+        },
+        {
+            "definition": "Total available time on machine m",
+            "symbol": "AvailableTime",
+            "value": "",
+            "shape": ["NumMachines"]
+        },
+        {
+            "definition": "Profit from producing one unit of product k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": ["NumProducts"]
+        }
+    ]
+}

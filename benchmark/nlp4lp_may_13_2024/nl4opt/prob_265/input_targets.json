@@ -1,0 +1,37 @@
+{
+    "background": "A golf course needs to minimize the total number of carts used to transport guests while adhering to space limitations and minimum guest requirements.",
+    "constraints": [
+        "Number of golf carts is non-negative",
+        "Number of pull carts is non-negative",
+        "At most MaxGolfCartProportion of the total number of carts can be golf carts",
+        "At least MinGuests guests need to be transported"
+    ],
+    "objective": "Minimize the total number of carts needed to transport guests",
+    "description": "A golf course is hosting an event and can transport guests using either golf carts or pull carts. A golf cart can take \\param{GolfCartCapacity} guests while a pull cart can take \\param{PullCartCapacity} guest. Since golf carts take up a lot of space, at most \\param{MaxGolfCartProportion} of carts can be golf carts. If the golf course needs to transport at least \\param{MinGuests} guests, how many of each cart should be used to minimize the total number of carts needed?",
+    "parameters": [
+        {
+            "definition": "Number of guests that a golf cart can take",
+            "symbol": "GolfCartCapacity",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Number of guests that a pull cart can take",
+            "symbol": "PullCartCapacity",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of carts that can be golf carts",
+            "symbol": "MaxGolfCartProportion",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of guests the golf course needs to transport",
+            "symbol": "MinGuests",
+            "value": 80,
+            "shape": []
+        }
+    ]
+}

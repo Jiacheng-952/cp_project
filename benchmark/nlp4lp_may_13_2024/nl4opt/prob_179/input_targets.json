@@ -1,0 +1,50 @@
+{
+    "background": "An industrial tire company needs to deliver large tires to remote engineering sites with a minimum delivery requirement, a budget, and constraints on transport modes.",
+    "constraints": [
+        "Number of plane trips is non-negative",
+        "Number of truck trips is non-negative",
+        "At least MinTires tires must be transported in total",
+        "The total cost must not exceed Budget",
+        "The number of plane trips cannot exceed the number of truck trips"
+    ],
+    "objective": "Minimize the total number of trips (plane + truck)",
+    "description": "An industrial tire company delivers large tires for equipment to remote engineering sites either by cargo planes or ultrawide trucks. Each cargo plane can transport \\param{TiresPlane} tires per trip and costs \\param{CostPlane}. Each ultrawide truck can transport \\param{TiresTruck} tires per trip and costs \\param{CostTruck}. The company needs to transport at least \\param{MinTires} tires and has available \\param{Budget}. Because most remote sites don't have proper airports, the number of plane trips cannot exceed the number of ultrawide truck trips. How many trips of each should be done to minimize the total number of trips?",
+    "parameters": [
+        {
+            "definition": "Tires transported per trip by cargo plane",
+            "symbol": "TiresPlane",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Cost per trip of a cargo plane",
+            "symbol": "CostPlane",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Tires transported per trip by ultrawide truck",
+            "symbol": "TiresTruck",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Cost per trip of an ultrawide truck",
+            "symbol": "CostTruck",
+            "value": 700,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of tires required to transport",
+            "symbol": "MinTires",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Available budget for transport",
+            "symbol": "Budget",
+            "value": 22000,
+            "shape": []
+        }
+    ]
+}

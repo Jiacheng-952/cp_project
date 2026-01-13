@@ -1,0 +1,10 @@
+{
+    "SmallCapacity": 20,
+    "LargeCapacity": 50,
+    "SmallUnload": 1,
+    "LargeUnload": 3,
+    "ContainerRatio": 3,
+    "MinSmallContainers": 5,
+    "MinLargeContainers": 3,
+    "PeopleAvailable": 100
+}

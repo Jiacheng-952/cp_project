@@ -1,0 +1,9 @@
+{
+    "CarsPerHourElectric": 5,
+    "ElectricityPerJack": 6,
+    "CarsPerHourGas": 4,
+    "GasPerJack": 7,
+    "MaxElectricJacks": 15,
+    "MaxElectricity": 50,
+    "MaxGas": 80
+}

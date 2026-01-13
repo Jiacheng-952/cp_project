@@ -1,0 +1,54 @@
+{
+    "background": "A lab has a limited amount of mRNA anti-viral to produce children's and adult vaccines, each requiring differing amounts of mRNA and fever suppressant, with a minimum proportion of adult vaccines required and a minimum number of children's vaccines to be produced.",
+    "constraints": [
+        "Total mRNA used in children's and adult vaccines cannot exceed TotalMRna mg",
+        "At least MinAdultVaccineProp of the vaccines must be adult vaccines",
+        "At least MinChildVaccines children's vaccines must be made"
+    ],
+    "objective": "Minimize the total amount of fever suppressant used in both children's and adult vaccines",
+    "description": "A lab has \\param{TotalMRna} mg of mRNA anti-viral available to make children's and adult vaccines. Each children's vaccine contains \\param{MRnaPerChildVaccine} mg of mRNA and \\param{FeverSuppressantPerChildVaccine} mg of fever suppressant. Each adult vaccine contains \\param{MRnaPerAdultVaccine} mg of mRNA and \\param{FeverSuppressantPerAdultVaccine} mg of fever suppressant. Since adult vaccines are more essential, at least \\param{MinAdultVaccineProp} of vaccines should be adult vaccines. However, at least \\param{MinChildVaccines} children's vaccines should be made. How many of each vaccine should be made to minimize the amount of fever suppressant used?",
+    "parameters": [
+        {
+            "definition": "Total amount of mRNA anti-viral available",
+            "symbol": "TotalMRna",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of mRNA per children's vaccine",
+            "symbol": "MRnaPerChildVaccine",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Amount of mRNA per adult vaccine",
+            "symbol": "MRnaPerAdultVaccine",
+            "value": 75,
+            "shape": []
+        },
+        {
+            "definition": "Amount of fever suppressant per children's vaccine",
+            "symbol": "FeverSuppressantPerChildVaccine",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Amount of fever suppressant per adult vaccine",
+            "symbol": "FeverSuppressantPerAdultVaccine",
+            "value": 75,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of vaccines as adult vaccines",
+            "symbol": "MinAdultVaccineProp",
+            "value": 0.7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of children's vaccines",
+            "symbol": "MinChildVaccines",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

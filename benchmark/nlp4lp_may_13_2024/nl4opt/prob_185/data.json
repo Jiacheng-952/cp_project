@@ -1,0 +1,9 @@
+{
+    "LabradorNewspaperCount": 7,
+    "LabradorBoneTreatCount": 5,
+    "GoldenRetrieverNewspaperCount": 10,
+    "GoldenRetrieverBoneTreatCount": 6,
+    "TotalBoneTreatsAvailable": 1500,
+    "MinGoldenRetrievers": 50,
+    "MaxLabradorProportion": 0.6
+}

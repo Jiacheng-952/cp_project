@@ -1,0 +1,32 @@
+{
+    "background": "The problem is about curve fitting, specifically quadratic curve fitting, which involves finding a quadratic function that best fits a given set of data points in terms of minimizing the sum of absolute deviations between observed values and those predicted by the quadratic function.",
+    "constraints": [
+        "The curve is a quadratic function of the form y = c * x^2 + b * x + a"
+    ],
+    "objective": "Minimize the sum of absolute deviations between the observed values (ObservedValues) and the values predicted by the quadratic function using the observed x-values (ObservedXValues)",
+    "description": "Fit the \u2018best\u2019 quadratic curve y = c * x^2 + b * x + a to this set of data points. The objective is to minimize the sum of absolute deviations of each observed value of \\param{ObservedValues} from the value predicted by the quadratic relationship with \\param{ObservedXValues}.",
+    "parameters": [
+        {
+            "definition": "Number of data points",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Observed y values at each data point k",
+            "symbol": "ObservedValues",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Observed x values at each data point k",
+            "symbol": "ObservedXValues",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

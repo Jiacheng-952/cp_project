@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of eggs required for a regular sandwich",
+            "symbol": "EggsReg",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of eggs required for a special sandwich",
+            "symbol": "EggsSpec",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of slices of bacon required for a regular sandwich",
+            "symbol": "BaconReg",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of slices of bacon required for a special sandwich",
+            "symbol": "BaconSpec",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total number of eggs available",
+            "symbol": "TotalEggs",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Total number of slices of bacon available",
+            "symbol": "TotalBacon",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling a regular sandwich",
+            "symbol": "ProfitReg",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Profit from selling a special sandwich",
+            "symbol": "ProfitSpec",
+            "value": 4,
+            "shape": []
+        }
+    ],
+    "description": "A breakfast joint makes two different sandwiches: a regular and a special. Both need eggs and bacon. Each regular sandwich requires \\param{EggsReg} eggs and \\param{BaconReg} slices of bacon. Each special sandwich requires \\param{EggsSpec} eggs and \\param{BaconSpec} slices of bacon. The joint has a total of \\param{TotalEggs} eggs and \\param{TotalBacon} slices of bacon. It makes a profit of \\param{ProfitReg} per regular sandwich and a profit of \\param{ProfitSpec} per special sandwich. How many of each sandwich should be made to maximize profit?"
+}

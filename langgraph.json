@@ -1,0 +1,12 @@
+{
+  "dockerfile_lines": [],
+  "graphs": {
+    "optag": "./src/workflow.py:optag",
+    "optag_with_memory": "./src/workflow.py:optag_with_memory",
+    "podcast_generation": "./src/podcast/graph/builder.py:workflow",
+    "ppt_generation": "./src/ppt/graph/builder.py:workflow"
+  },
+  "python_version": "3.12",
+
+  "dependencies": ["."]
+}

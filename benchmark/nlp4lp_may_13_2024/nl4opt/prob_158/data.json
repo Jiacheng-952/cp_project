@@ -1,0 +1,6 @@
+{
+    "SmallBusCapacity": 20,
+    "LargeBusCapacity": 50,
+    "MinStudents": 500,
+    "MaxLargeBusProportion": 0.2
+}

@@ -1,0 +1,9 @@
+{
+    "SmallCapacity": 50,
+    "LargeCapacity": 80,
+    "RatioSmallToLarge": 2,
+    "MaxSmallSuitcases": 70,
+    "MaxLargeSuitcases": 50,
+    "MinLargeSuitcases": 15,
+    "MaxTotalSuitcases": 70
+}

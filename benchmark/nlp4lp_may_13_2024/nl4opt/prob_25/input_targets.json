@@ -1,0 +1,43 @@
+{
+    "background": "A family wants to invest its total budget into two types of real estate: apartments and townhouses.",
+    "constraints": [
+        "Money invested in both apartments and townhouses must be non-negative",
+        "Total investment in apartments and townhouses must not exceed TotalInvestment",
+        "Investment in apartments must not exceed MaxApartments",
+        "Investment in apartments must be at least MinInvestmentRatio times the investment in townhouses"
+    ],
+    "objective": "Maximize the total profit from investing in apartments and townhouses, with profit rates of ProfitRateApts and ProfitRateTH respectively",
+    "description": "My family has decided to invest in real estate for the first time. Currently, they have \\var{TotalInvestment} to invest, some in apartments and the rest in townhouses. The money invested in apartments must not be greater than \\var{MaxApartments}. They have decided that the money invested in apartments must be at least \\var{MinInvestmentRatio} as much as that in townhouses. If the apartments earn \\var{ProfitRateApts}, and the townhouses earn \\var{ProfitRateTH}, how much money should they invest in each to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Total investment amount available",
+            "symbol": "TotalInvestment",
+            "value": 600000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount that can be invested in apartments",
+            "symbol": "MaxApartments",
+            "value": 200000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the money invested in apartments to that in townhouses",
+            "symbol": "MinInvestmentRatio",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for apartments",
+            "symbol": "ProfitRateApts",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for townhouses",
+            "symbol": "ProfitRateTH",
+            "value": 0.15,
+            "shape": []
+        }
+    ]
+}

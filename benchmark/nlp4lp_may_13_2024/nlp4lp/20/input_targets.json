@@ -1,0 +1,114 @@
+{
+    "background": "The company is involved in the buying, storing, and manufacturing process where it deals with different types of items, which can either be vegetables or not. Each item has its own buying price and contributes differently to the manufacturing process concerning its hardness. There is also storage space which incurs a cost, and the company starts with an initial amount of items. The company wishes to maximize profit, considering the constraints related to the refining capacity for vegetable and non-vegetable items, storage size, cost, and item usage.",
+    "constraints": [
+        "Maximum amount of vegetables that can be refined per month is defined by MaxVegRefiningPerMonth",
+        "Maximum amount of non-vegetables that can be refined per month is defined by MaxNonVegRefiningPerMonth",
+        "The storage has a size limit defined by StorageSize",
+        "The hardness of each item used in manufacturing must be within the range of MinHardness and MaxHardness",
+        "There is a minimum usage constraint for items as given by MinUsage",
+        "There are certain dependencies between the items as defined in Dependencies"
+    ],
+    "objective": "Maximize the company's profit from its buying, storing, and manufacturing policy",
+    "description": "LP or MILP\n\nWhat buying, storing and manufacturing policy should the company pursue in order to maximize profit?\n\n{\n    \"buy_price\": [[\\param{BuyPrice} for i in 1,...,\\param{I}] for m in 1,...,\\param{M}],\n    \"sell_price\": \\param{SellPrice},\n    \"is_vegetable\": [\\param{IsVegetable} for i in 1,...,\\param{I}],\n    \"max_vegetable_refining_per_month\": \\param{MaxVegRefiningPerMonth},\n    \"max_non_vegetable_refining_per_month\": \\param{MaxNonVegRefiningPerMonth},\n    \"storage_size\": \\param{StorageSize},\n    \"storage_cost\": \\param{StorageCost},\n    \"max_hardness\": \\param{MaxHardness},\n    \"min_hardness\": \\param{MinHardness},\n    \"hardness\": [\\param{Hardness} for i in 1,...,\\param{I}],\n    \"init_amount\": \\param{InitialAmount},\n    \"min_usage\": \\param{MinUsage},\n    \"dependencies\": [\\param{Dependencies} for i in 1,...,\\param{I}]\n}",
+    "parameters": [
+        {
+            "definition": "Number of goods I",
+            "symbol": "I",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of months M",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Buying price of good i in month m",
+            "symbol": "BuyPrice",
+            "value": "",
+            "shape": [
+                "I",
+                "M"
+            ]
+        },
+        {
+            "definition": "Selling price",
+            "symbol": "SellPrice",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Indicator whether good i is a vegetable or not",
+            "symbol": "IsVegetable",
+            "value": "",
+            "shape": [
+                "I"
+            ]
+        },
+        {
+            "definition": "Maximum refining capacity for vegetables per month",
+            "symbol": "MaxVegRefiningPerMonth",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum refining capacity for non-vegetables per month",
+            "symbol": "MaxNonVegRefiningPerMonth",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Storage capacity",
+            "symbol": "StorageSize",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Storage cost per unit per month",
+            "symbol": "StorageCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum hardness of goods that can be processed",
+            "symbol": "MaxHardness",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Minimum hardness of goods that can be processed",
+            "symbol": "MinHardness",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Hardness of good i",
+            "symbol": "Hardness",
+            "value": "",
+            "shape": [
+                "I"
+            ]
+        },
+        {
+            "definition": "Initial amount of goods available for processing",
+            "symbol": "InitialAmount",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Minimum usage of goods",
+            "symbol": "MinUsage",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Dependencies of goods i",
+            "symbol": "Dependencies",
+            "value": "",
+            "shape": [
+                "I"
+            ]
+        }
+    ]
+}

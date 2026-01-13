@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time effectiveness of cleansing chemical per unit",
+            "symbol": "Tc",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Time effectiveness of odor-removing chemical per unit",
+            "symbol": "To",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of cleansing chemical required",
+            "symbol": "MinCleansing",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total units of chemicals used per house",
+            "symbol": "MaxTotal",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of cleansing to odor-removing chemical",
+            "symbol": "MaxRatio",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "A cleaning company uses a cleansing chemical and odor-removing chemical to clean a house. Each unit of the cleansing chemical takes \\param{Tc} units to be effective while each unit of the odor-removing chemical takes \\param{To} minutes to be effective. The company must use at least \\param{MinCleansing} units of the cleansing chemical. In total, at least \\param{MaxTotal} units of chemicals can be used per house. Further, because the cleansing chemical is strong, there can be at most \\param{MaxRatio} times the amount of cleansing chemical as odor-removing chemical. How many units of each should be used to minimize the total time it takes for a house to be cleaned?"
+}

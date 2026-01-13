@@ -1,0 +1,8 @@
+{
+    "CowsPerHelicopter": 3,
+    "PollutionPerHelicopter": 5,
+    "CowsPerTruck": 7,
+    "PollutionPerTruck": 10,
+    "TotalCows": 80,
+    "MaxTruckTrips": 8
+}

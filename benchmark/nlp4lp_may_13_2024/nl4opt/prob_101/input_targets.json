@@ -1,0 +1,68 @@
+{
+    "background": "A man on a strict diet wants to optimize his meal replacement drink consumption between two brands, alpha and omega, to meet certain dietary requirements while minimizing sugar intake.",
+    "constraints": [
+        "Number of alpha brand drinks is non-negative",
+        "Number of omega brand drinks is non-negative",
+        "The drinks must provide at least MinProtein grams of protein",
+        "The drinks must provide at least MinCalories calories",
+        "At most MaxPropOmega of the drink should be omega brand"
+    ],
+    "objective": "Minimize the total sugar intake from both the alpha and omega brand drinks",
+    "description": "A man on a strict diet only drinks meal replacement drinks from two brands, alpha and omega. The alpha brand drink contains \\param{ProteinAlpha} grams of protein, \\param{SugarAlpha} grams of sugar, and \\param{CaloriesAlpha} calories per bottle. The omega brand drink contains \\param{ProteinOmega} grams of protein, \\param{SugarOmega} grams of sugar, and \\param{CaloriesOmega} calories per bottle. The man wants to get at least \\param{MinProtein} grams of protein and \\param{MinCalories} calories. In addition, because the omega brand drink contains tiny amounts of caffeine, at most \\param{MaxPropOmega} of the drink should be omega brand. How many bottles of each should he drink to minimize his sugar intake?",
+    "parameters": [
+        {
+            "definition": "Protein content per bottle of alpha brand",
+            "symbol": "ProteinAlpha",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Sugar content per bottle of alpha brand",
+            "symbol": "SugarAlpha",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Calories per bottle of alpha brand",
+            "symbol": "CaloriesAlpha",
+            "value": 350,
+            "shape": []
+        },
+        {
+            "definition": "Protein content per bottle of omega brand",
+            "symbol": "ProteinOmega",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Sugar content per bottle of omega brand",
+            "symbol": "SugarOmega",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Calories per bottle of omega brand",
+            "symbol": "CaloriesOmega",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum protein requirement",
+            "symbol": "MinProtein",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum calorie requirement",
+            "symbol": "MinCalories",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of the drink that can be omega brand",
+            "symbol": "MaxPropOmega",
+            "value": 0.35,
+            "shape": []
+        }
+    ]
+}

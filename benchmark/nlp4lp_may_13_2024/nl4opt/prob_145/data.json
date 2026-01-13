@@ -1,0 +1,11 @@
+{
+    "PainKillersProcess1": 35,
+    "SleepingPillsProcess1": 12,
+    "PainKillersProcess2": 50,
+    "SleepingPillsProcess2": 30,
+    "MaterialProcess1": 50,
+    "MaterialProcess2": 60,
+    "TotalMaterial": 2000,
+    "MinPainKillers": 1200,
+    "MinSleepingPills": 1200
+}

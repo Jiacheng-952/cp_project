@@ -1,0 +1,44 @@
+{
+    "background": "A market owner is starting a jam business and needs to decide on the allocation of jam into small packets and jugs to maximize the units sold.",
+    "constraints": [
+        "Number of sets of small packets is non-negative",
+        "Number of jugs is non-negative",
+        "Total volume of jam in sets of small packets and jugs cannot exceed TotalJam ml",
+        "At least JugPacketRatio times as many jugs as sets of small packets must be used",
+        "At least MinSmallPackets sets of small packets should be filled"
+    ],
+    "objective": "Maximize the total number of units (sets of small packets and jugs) the market owner can sell",
+    "description": "A market owner wants to start a jam business. He can either sell one unit of jam to customers in a set of small packets or jugs. A set of small packets can hold \\param{VolumeSmallPackets} ml of jam while a jug can hold \\param{VolumeJug} ml of jam. Since a set of small packets are more expensive to make, at least \\param{JugPacketRatio} times as many jugs must be used than sets of small packets. On the other hand, at least \\param{MinSmallPackets} sets of small packets should be filled. If the market owner has \\param{TotalJam} ml of jam, how many sets of small packets or jugs should be selected to maximize the total number of units that he can sell to his customers?",
+    "parameters": [
+        {
+            "definition": "Volume for a set of small packets",
+            "symbol": "VolumeSmallPackets",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Volume for a jug",
+            "symbol": "VolumeJug",
+            "value": 1250,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of jugs to sets of small packets",
+            "symbol": "JugPacketRatio",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of sets of small packets",
+            "symbol": "MinSmallPackets",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of jam",
+            "symbol": "TotalJam",
+            "value": 65000,
+            "shape": []
+        }
+    ]
+}

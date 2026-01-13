@@ -1,0 +1,72 @@
+{
+    "background": "John has a berry farm on which to plant blueberries and raspberries with constraints on budget for watering, available labor, and total acreage.",
+    "constraints": [
+        "Number of acres of blueberries is non-negative",
+        "Number of acres of raspberries is non-negative",
+        "Total acres of blueberries and raspberries cannot exceed TotalAcres",
+        "Total labor for blueberries and raspberries cannot exceed TotalLaborDays",
+        "Total watering cost for blueberries and raspberries cannot exceed BudgetWatering",
+        "Labor for blueberries per acre is LaborBlueberry",
+        "Watering cost for blueberries per acre is CostWaterBlueberry",
+        "Labor for raspberries per acre is LaborRaspberry",
+        "Watering cost for raspberries per acre is CostWaterRaspberry"
+    ],
+    "objective": "Maximize the profit from planting blueberries and raspberries",
+    "description": "John has a \\var{TotalAcres} acre berry farm on which to plant blueberries and raspberries. John has $\\var{BudgetWatering} to spend on watering and \\var{TotalLaborDays} days worth of labor available. For each acre of blueberries, \\var{LaborBlueberry} days worth of labor and $\\var{CostWaterBlueberry} in watering costs is required. For each acre of raspberries, \\var{LaborRaspberry} days worth of labor and $\\var{CostWaterRaspberry} in watering costs is required. The profit per acre of blueberries is $\\var{ProfitBlueberry} and the profit per acre of raspberries is $\\var{ProfitRaspberry}. Formulate an LP problem in order to maximize profit.",
+    "parameters": [
+        {
+            "definition": "Total acreage available for planting berries",
+            "symbol": "TotalAcres",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for watering",
+            "symbol": "BudgetWatering",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Total days worth of labor available",
+            "symbol": "TotalLaborDays",
+            "value": 575,
+            "shape": []
+        },
+        {
+            "definition": "Days of labor required per acre of blueberries",
+            "symbol": "LaborBlueberry",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Watering cost per acre of blueberries",
+            "symbol": "CostWaterBlueberry",
+            "value": 22,
+            "shape": []
+        },
+        {
+            "definition": "Days of labor required per acre of raspberries",
+            "symbol": "LaborRaspberry",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Watering cost per acre of raspberries",
+            "symbol": "CostWaterRaspberry",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of blueberries",
+            "symbol": "ProfitBlueberry",
+            "value": 56,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of raspberries",
+            "symbol": "ProfitRaspberry",
+            "value": 75,
+            "shape": []
+        }
+    ]
+}

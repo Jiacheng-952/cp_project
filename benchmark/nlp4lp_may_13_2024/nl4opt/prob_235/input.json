@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Total units of resin available",
+            "symbol": "TotalResin",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Units of resin required per molar",
+            "symbol": "ResinMolar",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of resin required per canine",
+            "symbol": "ResinCanine",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of pain killer required per molar",
+            "symbol": "PainKillerMolar",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of pain killer required per canine",
+            "symbol": "PainKillerCanine",
+            "value": 2.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of cavities to be filled in canines",
+            "symbol": "MinCaninePercentage",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of molars required to be filled",
+            "symbol": "MinMolars",
+            "value": 45,
+            "shape": []
+        }
+    ],
+    "description": "A dentist has \\param{TotalResin} units of resin to fill cavities in both molars and canines. Molars require \\param{ResinMolar} units of resin and \\param{PainKillerMolar} units of pain killer. Canines require \\param{ResinCanine} units of resin and \\param{PainKillerCanine} units of pain killer. Since this dentist sees more cavities in canines, at least \\param{MinCaninePercentage} of cavities filled must be in canines. In addition, the dentist must reserve materials to fill at least \\param{MinMolars} molars. How many of each type of teeth should the dentist schedule to fill to minimize the amount of pain killer needed?"
+}

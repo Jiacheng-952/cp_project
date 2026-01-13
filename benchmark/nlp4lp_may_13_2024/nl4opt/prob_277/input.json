@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Ratio of mechanical keyboards to standard keyboards",
+            "symbol": "RatioMechanicalStandard",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic required for one mechanical keyboard",
+            "symbol": "PlasticPerMechanical",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of solder required for one mechanical keyboard",
+            "symbol": "SolderPerMechanical",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic required for one standard keyboard",
+            "symbol": "PlasticPerStandard",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of solder required for one standard keyboard",
+            "symbol": "SolderPerStandard",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of standard keyboards to be produced",
+            "symbol": "MinStandard",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of plastic",
+            "symbol": "TotalPlastic",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of solder",
+            "symbol": "TotalSolder",
+            "value": 250,
+            "shape": []
+        }
+    ],
+    "description": "A keyboard manufacturer makes mechanical and standard keyboards. The manufacturer aims to have \\param{RatioMechanicalStandard} times as many mechanical than standard keyboards. A mechanical keyboard costs \\param{PlasticPerMechanical} units of plastic and \\param{SolderPerMechanical} units of solder whereas a standard keyboard costs \\param{PlasticPerStandard} units of plastic and \\param{SolderPerStandard} unit of solder. There must be at least \\param{MinStandard} standard keyboards. If the company has available \\param{TotalPlastic} units of plastic and \\param{TotalSolder} units of solder, how many of each type should be manufactured to maximize the total number of keyboards?"
+}

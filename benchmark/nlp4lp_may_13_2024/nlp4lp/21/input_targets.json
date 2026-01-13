@@ -1,0 +1,82 @@
+{
+    "background": "A company with multiple machines and product lines seeks to maximize profit while managing manufacturing, maintenance, storage, and inventory constraints.",
+    "constraints": [
+        "Each machine can operate up to WorkHours per time period",
+        "Storage limit for product k in time period i is given by Limit",
+        "The number of machines utilized is limited to M",
+        "Maintenance, manufacturing, and storage times fit within the available WorkHours",
+        "Products must have non-negative production and storage quantities"
+    ],
+    "objective": "Maximize the company's profit from selling its products while minimizing storage and production costs",
+    "ambiguities": [
+        "The exact relationship between manufacturing time and the number of products is not specified.",
+        "Whether the storage price is per unit, per time period, or a combination is not clear.",
+        "It is unclear if profit per product k is a constant value or if it varies.",
+        "The way that the KeepQuantity affects the production or storage decision is not specified.",
+        "How the maintenance time affects machine availability across different time periods needs clarification."
+    ],
+    "description": "What selling, storing and manufacturing policy should the company pursue in order to maximize profit? The company has \\param{M} machines and produces \\param{K} different products. Each product k has a profit of \\param{Profit}. The time taken to manufacture product k on machine m is given by \\param{Time}. There are maintenance times for each machine m in each time period i, denoted by \\param{Maintain}. The limit for storing product k for time period i is given by \\param{Limit}, and the company has a store price of \\param{StorePrice}. The company aims to keep a quantity of \\param{KeepQuantity} for product k, and there are \\param{WorkHours} working hours available for production.",
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Profit for product k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Time taken by product k on machine m",
+            "symbol": "Time",
+            "value": "",
+            "shape": [
+                "K",
+                "M"
+            ]
+        },
+        {
+            "definition": "Maintenance time for machine m in time period i",
+            "symbol": "Maintain",
+            "value": "",
+            "shape": [
+                "I",
+                "M"
+            ]
+        },
+        {
+            "definition": "Limit of storing product k for time period i",
+            "symbol": "Limit",
+            "value": "",
+            "shape": [
+                "K",
+                "I"
+            ]
+        },
+        {
+            "definition": "Price for storing products",
+            "symbol": "StorePrice",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of product k to keep",
+            "symbol": "KeepQuantity",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Number of working hours",
+            "symbol": "WorkHours",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

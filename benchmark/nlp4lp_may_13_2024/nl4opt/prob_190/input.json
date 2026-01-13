@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a small crate",
+            "symbol": "SmallCrateCapacity",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a large crate",
+            "symbol": "LargeCrateCapacity",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of small crates to large crates",
+            "symbol": "SmallToLargeRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of small crates available",
+            "symbol": "MaxSmallCrates",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of large crates available",
+            "symbol": "MaxLargeCrates",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total number of crates the truck can take",
+            "symbol": "MaxTotalCrates",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large crates that must be used",
+            "symbol": "MinLargeCrates",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "A grape farmer transports his grapes in either small crates or large crates. A small crate can take \\param{SmallCrateCapacity} grapes while a large crate can take \\param{LargeCrateCapacity}. Because his customers prefer smaller crates, at least \\param{SmallToLargeRatio} times as many small crates must be used than large crates. The farmer has available at most \\param{MaxSmallCrates} small crates and at most \\param{MaxLargeCrates} large crates. In addition, his truck can take at most \\param{MaxTotalCrates} crates total and he must use at least \\param{MinLargeCrates} large crates. How many of each crate should he use to maximize the total number of grapes he can transport?"
+}

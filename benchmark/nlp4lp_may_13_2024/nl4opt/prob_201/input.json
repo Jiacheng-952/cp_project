@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit per refrigerator",
+            "symbol": "ProfitRefrigerator",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Profit per stove",
+            "symbol": "ProfitStove",
+            "value": 260,
+            "shape": []
+        },
+        {
+            "definition": "Mover time required per refrigerator",
+            "symbol": "MoverTimeRefrigerator",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Mover time required per stove",
+            "symbol": "MoverTimeStove",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Setup time required per refrigerator",
+            "symbol": "SetupTimeRefrigerator",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Setup time required per stove",
+            "symbol": "SetupTimeStove",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Total available mover time",
+            "symbol": "TotalMoverTime",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Total available setup time",
+            "symbol": "TotalSetupTime",
+            "value": 13000,
+            "shape": []
+        }
+    ],
+    "description": "An appliance company sells and installs refrigerators and stoves. Each refrigerator takes \\param{MoverTimeRefrigerator} minutes of mover time and \\param{SetupTimeRefrigerator} minutes of setup time. Each stove takes \\param{MoverTimeStove} minutes of mover time and \\param{SetupTimeStove} minutes of setup time. The company has available \\param{TotalMoverTime} minutes of mover time and \\param{TotalSetupTime} minutes of setup time. If the profit per refrigerator is $\\param{ProfitRefrigerator} and the profit per stove is $\\param{ProfitStove}, how many of each should they sell in order to maximize profit?"
+}

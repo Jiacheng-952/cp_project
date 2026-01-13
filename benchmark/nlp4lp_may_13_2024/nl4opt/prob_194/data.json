@@ -1,0 +1,10 @@
+{
+    "PeopleSmallTruck": 2,
+    "CapacitySmallTruck": 30,
+    "PeopleLargeTruck": 4,
+    "CapacityLargeTruck": 50,
+    "TotalPeople": 30,
+    "MinSmallTrucks": 10,
+    "MinLargeTrucks": 3,
+    "TruckProportion": 2
+}

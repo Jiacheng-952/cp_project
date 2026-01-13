@@ -1,0 +1,10 @@
+{
+    "PctCatPawFirst": 0.2,
+    "PctGoldSharkFirst": 0.8,
+    "PctCatPawSecond": 0.35,
+    "PctGoldSharkSecond": 0.65,
+    "TotalCatPaw": 20,
+    "TotalGoldShark": 50,
+    "ProfitFirstMix": 12,
+    "ProfitSecondMix": 15
+}

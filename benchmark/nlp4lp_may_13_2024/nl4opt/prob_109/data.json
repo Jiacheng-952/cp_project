@@ -1,0 +1,7 @@
+{
+    "TAuto": 10,
+    "TManual": 15,
+    "RatioManualToAuto": 2,
+    "MinPatientsAuto": 20,
+    "TotalTime": 20000
+}

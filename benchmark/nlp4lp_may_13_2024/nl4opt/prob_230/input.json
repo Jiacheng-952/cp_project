@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Effective time for each calcium pill",
+            "symbol": "Tc",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Effective time for each vitamin D pill",
+            "symbol": "Td",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of pills to be taken in a month",
+            "symbol": "Pmin",
+            "value": 130,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of vitamin D pills to be taken in a month",
+            "symbol": "Dmin",
+            "value": 40,
+            "shape": []
+        }
+    ],
+    "description": "A student takes calcium pills and vitamin D pills one after the other. Each calcium pill takes \\param{Tc} minutes to be effective while each vitamin D pill takes \\param{Td} minutes to be effective. Over a month, the student must take at least \\param{Pmin} pills of medication and at least \\param{Dmin} should be vitamin D pills because they enhance the absorption of calcium in the body. Since vitamin D is complimentary to calcium, the student must take more calcium pills than vitamin D pills. How many pills of each should the student take to minimize the total time it takes for the medication to be effective?"
+}

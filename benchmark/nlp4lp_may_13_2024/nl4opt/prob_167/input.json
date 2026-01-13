@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a small wagon",
+            "symbol": "SmallWagonCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a large wagon",
+            "symbol": "LargeWagonCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of small wagons to the number of large wagons",
+            "symbol": "MinRatioSmallToLarge",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large wagons required",
+            "symbol": "MinLargeWagons",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Total units of ore that need to be taken to the surface",
+            "symbol": "TotalOre",
+            "value": 2000,
+            "shape": []
+        }
+    ],
+    "description": "A mine sends ore to the surface in small and large wagons. A small wagon holds \\param{SmallWagonCapacity} units of ore while a large wagon holds \\param{LargeWagonCapacity} units of ore. To avoid taking up too much space on the ramps, the number of small wagons must be at least \\param{MinRatioSmallToLarge} times as much as the number of large wagons. In addition, at least \\param{MinLargeWagons} large wagons must be used. If \\param{TotalOre} units of ore need to be taken to the surface, minimize the total number of wagons needed."
+}

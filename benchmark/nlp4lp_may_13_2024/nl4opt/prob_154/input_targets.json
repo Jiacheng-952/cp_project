@@ -1,0 +1,63 @@
+{
+    "background": "A lawn mowing service uses small and large teams to mow lawns, with different numbers of employees and capacities for each team size.",
+    "constraints": [
+        "Number of employees in small teams plus number of employees in large teams is less than or equal to TotalEmployees",
+        "Number of small teams is non-negative",
+        "Number of large teams is non-negative",
+        "Number of small teams is at least MinRatioSmallToLarge times the number of large teams",
+        "There are at least MinLargeTeams large teams",
+        "There are at least MinSmallTeams small teams"
+    ],
+    "objective": "Maximize the total area of lawn mowed",
+    "description": "A lawn mowing service provides neighborhood services using small teams and large teams. A small team requires \\param{SmallTeamEmployees} employees and can mow \\param{SmallTeamArea} sq ft of lawn. A large team requires \\param{LargeTeamEmployees} employees and can mow \\param{LargeTeamArea} sq ft of lawn. The company has \\param{TotalEmployees} employees available. Because most people have smaller lawns in the city, the number of small teams must be at least \\param{MinRatioSmallToLarge} times as much as the number of large teams. In addition, to make sure the company can meet all demands, there has to be at least \\param{MinLargeTeams} large teams and at least \\param{MinSmallTeams} small teams. How many of each team type should be used to maximize the amount of lawn that can be mowed?",
+    "parameters": [
+        {
+            "definition": "Number of employees required for a small team",
+            "symbol": "SmallTeamEmployees",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Lawn area mowed by a small team",
+            "symbol": "SmallTeamArea",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees required for a large team",
+            "symbol": "LargeTeamEmployees",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Lawn area mowed by a large team",
+            "symbol": "LargeTeamArea",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Total number of employees available",
+            "symbol": "TotalEmployees",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of small teams to large teams",
+            "symbol": "MinRatioSmallToLarge",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large teams",
+            "symbol": "MinLargeTeams",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small teams",
+            "symbol": "MinSmallTeams",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

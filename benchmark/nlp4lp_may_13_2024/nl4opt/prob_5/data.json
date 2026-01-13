@@ -1,0 +1,7 @@
+{
+    "TotalInvestment": 100000,
+    "MaxTelecomInvestment": 70000,
+    "MinTelecomRatio": 3,
+    "ProfitTelecom": 0.03,
+    "ProfitHealthcare": 0.01
+}

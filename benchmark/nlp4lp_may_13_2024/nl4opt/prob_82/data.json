@@ -1,0 +1,8 @@
+{
+    "HotDogsSmall": 30,
+    "WorkersSmall": 2,
+    "HotDogsLarge": 70,
+    "WorkersLarge": 4,
+    "MinHotDogs": 500,
+    "TotalWorkers": 30
+}

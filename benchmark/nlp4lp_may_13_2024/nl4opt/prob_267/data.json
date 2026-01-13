@@ -1,0 +1,10 @@
+{
+    "MaterialBasketball": 5,
+    "HourBasketball": 1,
+    "MaterialFootball": 3,
+    "HourFootball": 2,
+    "TotalMaterial": 1500,
+    "TotalHours": 750,
+    "BasketballFootballRatio": 3,
+    "MinFootballs": 50
+}

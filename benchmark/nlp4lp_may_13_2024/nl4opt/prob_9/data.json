@@ -1,0 +1,10 @@
+{
+    "Budget": 500,
+    "CostCarrot": 0.3,
+    "CostCucumber": 0.5,
+    "ProfitCarrot": 0.75,
+    "ProfitCucumber": 0.8,
+    "RatioCucumbersToCarrots": 0.33,
+    "MinCarrotsSold": 300,
+    "MaxCarrotsSold": 500
+}

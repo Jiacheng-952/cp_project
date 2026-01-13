@@ -1,0 +1,6 @@
+{
+    "BikeCapacity": 3,
+    "CarCapacity": 5,
+    "MaxCarProportion": 0.4,
+    "MinPeople": 500
+}

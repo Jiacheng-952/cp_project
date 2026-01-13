@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Total acres of land available for picking tea leaves",
+            "symbol": "TotalAcres",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Amount of tea leaves picked by the traditional machine per acre",
+            "symbol": "TradPickRate",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of waste created by the traditional machine per acre",
+            "symbol": "TradWasteRate",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the traditional machine per acre",
+            "symbol": "TradFuelUse",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Amount of tea leaves picked by the modern machine per acre",
+            "symbol": "ModPickRate",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Amount of waste created by the modern machine per acre",
+            "symbol": "ModWasteRate",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the modern machine per acre",
+            "symbol": "ModFuelUse",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Total available fuel for picking tea leaves",
+            "symbol": "TotalFuel",
+            "value": 9000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum waste handling capacity",
+            "symbol": "MaxWaste",
+            "value": 6000,
+            "shape": []
+        }
+    ],
+    "description": "A tea estate has available \\param{TotalAcres} acres of land and they need to pick the tea leaves either using a traditional machine or modern machine. For each acre of land, the traditional machine can pick \\param{TradPickRate} kg of tea leaves, creates \\param{TradWasteRate} kg of waste, and requires \\param{TradFuelUse} liters of fuel. For each acre of land, the modern machine can pick \\param{ModPickRate} kg of tea leaves, creates \\param{ModWasteRate} kg of waste, and requires \\param{ModFuelUse} liters of fuel. The estate has available \\param{TotalFuel} liters of fuel and can handle at most \\param{MaxWaste} kg of waste. For how many acres should each machine be used to maximize the amount of tea leaves that can be picked?"
+}

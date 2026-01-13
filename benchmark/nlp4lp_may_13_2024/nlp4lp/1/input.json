@@ -1,0 +1,42 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of different goods produced by the firm",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of different raw materials used by the firm",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Available amount of raw material i",
+            "symbol": "Available",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Requirement of raw material i to produce one unit of good j",
+            "symbol": "Requirements",
+            "value": "",
+            "shape": [
+                "N",
+                "M"
+            ]
+        },
+        {
+            "definition": "Revenue earned from selling one unit of good j",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ],
+    "description": "A firm produces \\param{M} different goods using \\param{N} different raw materials. The firm has \\param{Available} amount of raw material i available. Good j requires \\param{Requirements} units of material i per unit produced. Good j results in a revenue of \\param{Prices} per unit produced. How much of each good should the firm produce in order to maximize its total revenue?"
+}

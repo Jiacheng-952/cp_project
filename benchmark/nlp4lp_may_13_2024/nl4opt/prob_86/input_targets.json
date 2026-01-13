@@ -1,0 +1,68 @@
+{
+    "background": "A coffee shop aims to determine the quantity of mochas and regular coffees to make, utilizing limited resources of coffee powder and milk, while adhering to a popularity constraint that demands a minimum ratio of mochas to regular coffees.",
+    "constraints": [
+        "Number of mochas is non-negative",
+        "Number of regular coffees is non-negative",
+        "Total uses of coffee powder does not exceed TotalCoffeePowder",
+        "Total uses of milk does not exceed TotalMilk",
+        "The number of mochas made is at least MochaToRegularRatio times the number of regular coffees"
+    ],
+    "objective": "Minimize the total production time for mochas and regular coffees",
+    "description": "A coffee shop sells mochas and regular coffees. Each mocha requires \\param{CoffeePowderPerMocha} units of coffee powder and \\param{MilkPerMocha} units of milk. Each regular coffee requires \\param{CoffeePowderPerRegular} units of coffee powder and \\param{MilkPerRegular} units of milk. The shop has available \\param{TotalCoffeePowder} units of coffee powder and \\param{TotalMilk} units of milk. Making a mocha takes \\param{TimePerMocha} minutes and making a regular coffee takes \\param{TimePerRegular} minutes. Since mochas are more popular among people, the shop must make at least \\param{MochaToRegularRatio} times as many mochas as regular coffees. How many of each should they make to minimize the total production time?",
+    "parameters": [
+        {
+            "definition": "Units of coffee powder required to make one mocha",
+            "symbol": "CoffeePowderPerMocha",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of milk required to make one mocha",
+            "symbol": "MilkPerMocha",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of coffee powder required to make one regular coffee",
+            "symbol": "CoffeePowderPerRegular",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of milk required to make one regular coffee",
+            "symbol": "MilkPerRegular",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of coffee powder",
+            "symbol": "TotalCoffeePowder",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of milk",
+            "symbol": "TotalMilk",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Time required to make one mocha",
+            "symbol": "TimePerMocha",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time required to make one regular coffee",
+            "symbol": "TimePerRegular",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the number of mochas to the number of regular coffees",
+            "symbol": "MochaToRegularRatio",
+            "value": 0.33,
+            "shape": []
+        }
+    ]
+}

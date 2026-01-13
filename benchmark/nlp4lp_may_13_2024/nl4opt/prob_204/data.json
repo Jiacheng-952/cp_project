@@ -1,0 +1,10 @@
+{
+    "C": 100,
+    "I": 50,
+    "CostMilk": 1.0,
+    "CalciumMilk": 40,
+    "IronMilk": 25,
+    "CostVeg": 2.0,
+    "CalciumVeg": 15,
+    "IronVeg": 30
+}

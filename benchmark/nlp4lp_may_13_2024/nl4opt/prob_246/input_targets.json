@@ -1,0 +1,56 @@
+{
+    "background": "A lighting company offers two types of lights, LED fixtures and fluorescence lamps, which differ in their electricity usage and frequency of change.",
+    "constraints": [
+        "At least PFluorescence fluorescence lamps must be installed",
+        "At least MinLights light fixtures are required in total",
+        "No more than MaxElectricity units of electricity can be used per hour",
+        "Number of LED lights is non-negative",
+        "Number of fluorescence lamps is non-negative"
+    ],
+    "objective": "Minimize the total number of light changes over a decade",
+    "description": "A lighting company has access to two types of lights to provide their customers, an LED fixture, and a fluorescence lamp. The LED light uses \\param{ELed} units of electricity per hour and needs to be changed \\param{NLed} times a decade. Conversely, the fluorescence lamp uses \\param{EFluorescence} units of electricity per hour and needs to be changed \\param{NFluorescence} times a decade. Due to previous installations, at least \\param{PFluorescence} implemented lights must be fluorescence lamps. If the customer requires at least \\param{MinLights} light fixtures and can use at most \\param{MaxElectricity} units of electricity, how many of each light should be installed to reduce the total number of light changes?",
+    "parameters": [
+        {
+            "definition": "Electricity used per hour by an LED light",
+            "symbol": "ELed",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Times an LED light needs to be changed per decade",
+            "symbol": "NLed",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Electricity used per hour by a fluorescence lamp",
+            "symbol": "EFluorescence",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Times a fluorescence lamp needs to be changed per decade",
+            "symbol": "NFluorescence",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of lights that must be fluorescence lamps",
+            "symbol": "PFluorescence",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of light fixtures required",
+            "symbol": "MinLights",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of electricity that can be used",
+            "symbol": "MaxElectricity",
+            "value": 2000,
+            "shape": []
+        }
+    ]
+}

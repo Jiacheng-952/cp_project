@@ -1,0 +1,9 @@
+{
+    "HelicopterCapacity": 5,
+    "HelicopterTripTime": 1,
+    "BusCapacity": 8,
+    "BusTripTime": 3,
+    "MinPatients": 120,
+    "MinHelicopterTripsPercentage": 0.33,
+    "MaxBusTrips": 10
+}

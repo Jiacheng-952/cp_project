@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Volume of water that a glass bottle can hold",
+            "symbol": "VolumeGlass",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Volume of water that a plastic bottle can hold",
+            "symbol": "VolumePlastic",
+            "value": 750,
+            "shape": []
+        },
+        {
+            "definition": "The minimum ratio of the number of plastic bottles to the number of glass bottles",
+            "symbol": "RatioPlasticToGlass",
+            "value": 3.0,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of glass bottles that must be produced",
+            "symbol": "MinGlassBottles",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of water available",
+            "symbol": "TotalWaterVolume",
+            "value": 250000,
+            "shape": []
+        }
+    ],
+    "description": "A water company sells water in glass and plastic bottles. A glass bottle can hold \\param{VolumeGlass} ml of water while a plastic bottle can hold \\param{VolumePlastic} ml of water. Because most customer prefer plastic bottles, the number of plastic bottles must be at least \\param{RatioPlasticToGlass} times the number of glass bottles. However, there must be at least \\param{MinGlassBottles} glass bottles. If the company has available \\param{TotalWaterVolume} ml of water, how many of each bottle should be made to maximize the total number of bottles?"
+}

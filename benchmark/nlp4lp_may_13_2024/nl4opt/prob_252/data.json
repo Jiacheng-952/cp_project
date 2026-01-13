@@ -1,0 +1,9 @@
+{
+    "LargeUnitCapacity": 6,
+    "LargeUnitSpots": 2,
+    "SmallUnitCapacity": 2,
+    "SmallUnitSpots": 1,
+    "MinSmallUnits": 5,
+    "MinLargeUnitProportion": 0.75,
+    "TotalPeople": 80
+}

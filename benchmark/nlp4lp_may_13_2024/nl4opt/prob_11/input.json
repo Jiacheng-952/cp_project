@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Total budget for investments",
+            "symbol": "TotalBudget",
+            "value": 760000,
+            "shape": []
+        },
+        {
+            "definition": "Profit yield per dollar invested in condos",
+            "symbol": "ProfitCondo",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit yield per dollar invested in detached houses",
+            "symbol": "ProfitHouse",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total investment that must be in condos",
+            "symbol": "MinPercentCondo",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum investment in detached houses",
+            "symbol": "MinInvestHouse",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "Mrs. Watson wants to invest in the real-estate market and has a total budget of at most \\param{TotalBudget}. She has two choices which include condos and detached houses. Each dollar invested in condos yields a \\param{ProfitCondo} profit and each dollar invested in detached houses yields a \\param{ProfitHouse} profit. A minimum of \\param{MinPercentCondo} of all money invested must be in condos, and at least \\param{MinInvestHouse} must be in detached houses. Formulate an LP that can be used to maximize total profit earned from Mrs. Watson's investment."
+}

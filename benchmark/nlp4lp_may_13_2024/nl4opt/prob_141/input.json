@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of protein in a turkey dinner",
+            "symbol": "ProteinTurkeyDinner",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Amount of carbs in a turkey dinner",
+            "symbol": "CarbsTurkeyDinner",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of fat in a turkey dinner",
+            "symbol": "FatTurkeyDinner",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Amount of protein in a tuna salad sandwich",
+            "symbol": "ProteinTunaSalad",
+            "value": 18,
+            "shape": []
+        },
+        {
+            "definition": "Amount of carbs in a tuna salad sandwich",
+            "symbol": "CarbsTunaSalad",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Amount of fat in a tuna salad sandwich",
+            "symbol": "FatTunaSalad",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required grams of protein",
+            "symbol": "MinProtein",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required grams of carbs",
+            "symbol": "MinCarbs",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of total meals that can be turkey dinners",
+            "symbol": "MaxTurkeyDinnerProportion",
+            "value": 0.4,
+            "shape": []
+        }
+    ],
+    "description": "A bodybuilder buys pre-prepared meals, a turkey dinner, and a tuna salad sandwich. The turkey dinner contains \\param{ProteinTurkeyDinner} grams of protein, \\param{CarbsTurkeyDinner} grams of carbs, and \\param{FatTurkeyDinner} grams of fat. The tuna salad sandwich contains \\param{ProteinTunaSalad} grams of protein, \\param{CarbsTunaSalad} grams of carbs, and \\param{FatTunaSalad} grams of fat. The bodybuilder wants to get at least \\param{MinProtein} grams of protein and \\param{MinCarbs} grams of carbs. In addition, because the turkey dinner is expensive, at most \\param{MaxTurkeyDinnerProportion} of the meals should be turkey dinners. How many of each meal should he eat if he wants to minimize his fat intake?"
+}

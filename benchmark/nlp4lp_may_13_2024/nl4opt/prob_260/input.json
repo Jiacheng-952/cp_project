@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of fabric produced by method A per hour",
+            "symbol": "FabricA",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Units of fabric produced by method B per hour",
+            "symbol": "FabricB",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic produced by method A per hour",
+            "symbol": "PlasticA",
+            "value": 14,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic produced by method B per hour",
+            "symbol": "PlasticB",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Units of the special element required by method A",
+            "symbol": "ElementA",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Units of the special element required by method B",
+            "symbol": "ElementB",
+            "value": 65,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of the special element",
+            "symbol": "TotalElement",
+            "value": 3500,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of fabric that must be produced",
+            "symbol": "MinFabric",
+            "value": 1400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of plastic that must be produced",
+            "symbol": "MinPlastic",
+            "value": 1000,
+            "shape": []
+        }
+    ],
+    "description": "A research group is making fabric and plastic using two methods, method A and method B. Method A produces \\param{FabricA} units of fabric and \\param{PlasticA} units of plastic per hour. Method B produces \\param{FabricB} units of fabric and \\param{PlasticB} units of plastic per hour. Method A requires \\param{ElementA} units of a special element while method B requires \\param{ElementB} units of the same special element. The research group has \\param{TotalElement} units of the special element and must make at least \\param{MinFabric} units of fabric and \\param{MinPlastic} units of plastic. How many of each method should be executed to minimize the total time needed?"
+}

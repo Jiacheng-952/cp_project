@@ -1,0 +1,50 @@
+{
+    "background": "A biotechnology company uses a limited supply of antibiotics to produce first-dose and second-dose vaccines, both of which also require gelatine. The production must result in more first-dose vaccines than second-dose vaccines while meeting a minimum production requirement for the second-dose.",
+    "constraints": [
+        "The number of first-dose vaccines is non-negative",
+        "The number of second-dose vaccines is non-negative",
+        "The total antibiotics used cannot exceed the AntibioticsAvailable units",
+        "The number of first-dose vaccines must be greater than the number of second-dose vaccines",
+        "At least MinimumSecondDose second-dose vaccines must be produced"
+    ],
+    "objective": "Minimize the total amount of gelatine used in the vaccine production",
+    "description": "A biotechnology company has AntibioticsAvailable units of antibiotics available which is important to the process of making a first-dose and second-dose of vaccines. The first-dose vaccine requires AntibioticsFirstDose units of antibiotics and GelatineFirstDose mg of gelatine whereas the second-dose vaccine requires AntibioticsSecondDose units of antibiotics and GelatineSecondDose mg of gelatine. Since the first-dose vaccine is required before the second-dose vaccine, there must be more first-dose than second-dose vaccines manufactured. However, at least MinimumSecondDose second-dose vaccines must be made. How many of each vaccine should be made to minimize the amount of gelatine used?",
+    "parameters": [
+        {
+            "definition": "Total units of antibiotics available",
+            "symbol": "AntibioticsAvailable",
+            "value": 35000,
+            "shape": []
+        },
+        {
+            "definition": "Units of antibiotics required for first-dose vaccine",
+            "symbol": "AntibioticsFirstDose",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of antibiotics required for second-dose vaccine",
+            "symbol": "AntibioticsSecondDose",
+            "value": 65,
+            "shape": []
+        },
+        {
+            "definition": "Milligrams of gelatine required for first-dose vaccine",
+            "symbol": "GelatineFirstDose",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Milligrams of gelatine required for second-dose vaccine",
+            "symbol": "GelatineSecondDose",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of second-dose vaccines to be produced",
+            "symbol": "MinimumSecondDose",
+            "value": 40,
+            "shape": []
+        }
+    ]
+}

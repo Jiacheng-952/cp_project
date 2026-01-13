@@ -1,0 +1,6 @@
+{
+    "GolfCartCapacity": 4,
+    "PullCartCapacity": 1,
+    "MaxGolfCartProportion": 0.6,
+    "MinGuests": 80
+}

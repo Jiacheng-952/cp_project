@@ -1,0 +1,87 @@
+{
+    "background": "The company seeks to maximize daily profit by determining an optimal production mix for N different products, considering assembly and testing time constraints, material costs, and the potential for overtime and discounts.",
+    "constraints": [
+        "Total assembly hours must not exceed MaxAssembly hours",
+        "Total testing hours must not exceed MaxTesting hours",
+        "The number of products produced is non-negative",
+        "The number of overtime assembly hours used is at most MaxOvertimeAssembly"
+    ],
+    "objective": "Maximize the total daily profit, which is the total revenue minus the total cost including overtime costs, regular material costs, and considering material discounts",
+    "description": "We want to maximize the daily profit of the company, which is the total revenue minus the total cost. The company has \\param{N} different products, each requiring \\param{AssemblyHour} hours for assembly, \\param{TestingHour} hours for testing, and with a material cost of \\param{MaterialCost}. The company cannot exceed \\param{MaxAssembly} hours for assembly and \\param{MaxTesting} hours for testing. Each product can be sold at \\param{Price}, but there is an opportunity to work \\param{MaxOvertimeAssembly} overtime hours for assembly at a cost of \\param{OvertimeAssemblyCost} per hour. Additionally, a material discount of \\param{MaterialDiscount} is offered when a purchase reaches the \\param{DiscountThreshold}.",
+    "parameters": [
+        {
+            "definition": "Number of different products",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Hours required to assemble product i",
+            "symbol": "AssemblyHour",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Hours required to test product i",
+            "symbol": "TestingHour",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Material cost for product i",
+            "symbol": "MaterialCost",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Maximum total hours available for assembly",
+            "symbol": "MaxAssembly",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total hours available for testing",
+            "symbol": "MaxTesting",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Selling price for product i",
+            "symbol": "Price",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Maximum overtime hours available for assembly",
+            "symbol": "MaxOvertimeAssembly",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Overtime cost for assembly per hour",
+            "symbol": "OvertimeAssemblyCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Discount on material cost when a certain threshold is reached",
+            "symbol": "MaterialDiscount",
+            "value": 0.0,
+            "shape": []
+        },
+        {
+            "definition": "Threshold for the quantity to reach to obtain the material discount",
+            "symbol": "DiscountThreshold",
+            "value": 0,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "background": "The problem involves determining the optimal quantities of various spare parts to be produced in a month, considering the time required on different machines and the machines' monthly capacities.",
+    "constraints": [
+        "Every spare part quantity produced is non-negative",
+        "Total time used on each machine for all spare parts cannot exceed the machine's monthly capacity"
+    ],
+    "objective": "Maximize the total profit from the production of spare parts",
+    "description": "Formulate the problem of determining the quantities of each spare part to be made during the month so as to maximize \\param{Profit}. Each spare part k requires \\param{Time} on machine s, and each machine s has a maximum monthly capacity of \\param{Capacity}.",
+    "parameters": [
+        {
+            "definition": "Number of spare parts to be produced",
+            "symbol": "NumParts",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of machines available",
+            "symbol": "NumMachines",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The time taken to make one unit of spare part k on machine s",
+            "symbol": "Time",
+            "value": "",
+            "shape": ["NumParts", "NumMachines"]
+        },
+        {
+            "definition": "Profit from producing one unit of spare part k",
+            "symbol": "Profit",
+            "value": "",
+            "shape": ["NumParts"]
+        },
+        {
+            "definition": "Capacity of machine s for the month",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": ["NumMachines"]
+        }
+    ]
+}

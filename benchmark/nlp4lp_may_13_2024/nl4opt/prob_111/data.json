@@ -1,0 +1,11 @@
+{
+    "VitaminAmin": 80,
+    "VitaminCmin": 100,
+    "VitaminAcrab": 5,
+    "VitaminCcrab": 7,
+    "VitaminAlobster": 8,
+    "VitaminClobster": 4,
+    "LobsterFractionMax": 0.4,
+    "FatCrab": 4,
+    "FatLobster": 6
+}

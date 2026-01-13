@@ -1,0 +1,11 @@
+{
+    "HeartLab1": 20,
+    "LungLab1": 30,
+    "HeartLab2": 30,
+    "LungLab2": 40,
+    "WorkerLab1": 3,
+    "WorkerLab2": 5,
+    "TotalWorkerHours": 1500,
+    "MinHeartPills": 20000,
+    "MinLungPills": 30000
+}

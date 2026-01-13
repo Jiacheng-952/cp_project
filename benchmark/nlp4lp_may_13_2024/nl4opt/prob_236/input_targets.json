@@ -1,0 +1,76 @@
+{
+    "background": "A food delivery person can work shifts on either bikes or scooters, with different numbers of orders delivered, energy required, and tips earned for each. They have limited shifts and energy per month, and a minimum order and scooter shift requirement.",
+    "constraints": [
+        "Total number of shifts is non-negative",
+        "Number of bike shifts is non-negative",
+        "Number of scooter shifts is non-negative",
+        "Total number of shifts is at most TotalShifts",
+        "Total energy used by all shifts is at most TotalEnergy",
+        "Total number of orders delivered is at least MinOrders",
+        "Number of scooter shifts is at least MinScooterShifts"
+    ],
+    "objective": "Maximize the total tips received from all shifts",
+    "description": "A food delivery person can either have shifts on bikes or scooters. A shift on a bike can deliver \\param{OrdersBike} orders, takes \\param{EnergyBike} units of energy, and brings in \\param{TipsBike} on tips because it is faster. A shift on a scooter can deliver \\param{OrdersScooter} orders, takes \\param{EnergyScooter} units of energy, and brings in \\param{TipsScooter} on tips. The delivery person has available \\param{TotalShifts} shifts a month and has \\param{TotalEnergy} units of energy and must bring at least \\param{MinOrders} orders. He must have at least \\param{MinScooterShifts} shifts on a scooter because bikes are harder to get. How many shifts on each type of transportation should the delivery person schedule to maximize tips received?",
+    "parameters": [
+        {
+            "definition": "Orders delivered on a bike shift",
+            "symbol": "OrdersBike",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Energy consumed on a bike shift",
+            "symbol": "EnergyBike",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Tips received on a bike shift",
+            "symbol": "TipsBike",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Orders delivered on a scooter shift",
+            "symbol": "OrdersScooter",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Energy consumed on a scooter shift",
+            "symbol": "EnergyScooter",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Tips received on a scooter shift",
+            "symbol": "TipsScooter",
+            "value": 43,
+            "shape": []
+        },
+        {
+            "definition": "Total shifts available per month",
+            "symbol": "TotalShifts",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Total energy available",
+            "symbol": "TotalEnergy",
+            "value": 230,
+            "shape": []
+        },
+        {
+            "definition": "Minimum orders required",
+            "symbol": "MinOrders",
+            "value": 320,
+            "shape": []
+        },
+        {
+            "definition": "Minimum scooter shifts required",
+            "symbol": "MinScooterShifts",
+            "value": 5,
+            "shape": []
+        }
+    ]
+}

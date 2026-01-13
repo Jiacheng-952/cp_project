@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time to administer a spit test",
+            "symbol": "SpitTestTime",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time to administer a swab test",
+            "symbol": "SwabTestTime",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of spit tests to swabs",
+            "symbol": "SpitSwabRatio",
+            "value": 2.0,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of swabs",
+            "symbol": "MinSwabs",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total operation time of the popup clinic",
+            "symbol": "TotalTime",
+            "value": 8000,
+            "shape": []
+        }
+    ],
+    "description": "A popup clinic is doing virus testing with either spit tests or swabs. A spit test takes \\param{SpitTestTime} minutes to administer while a swab takes \\param{SwabTestTime} minutes to administer. Since the spit test is more accurate, at least \\param{SpitSwabRatio} times as many spit tests should be given as swabs. However, at least \\param{MinSwabs} swabs must be administered. If the popup clinic operates for \\param{TotalTime} minutes, maximize the number of tests that can be administered."
+}

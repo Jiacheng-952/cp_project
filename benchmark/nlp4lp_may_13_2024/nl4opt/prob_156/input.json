@@ -1,0 +1,23 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a van",
+            "symbol": "VanCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a truck",
+            "symbol": "TruckCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total pairs of shoes to be supplied",
+            "symbol": "MinPairs",
+            "value": 2000,
+            "shape": []
+        }
+    ],
+    "description": "A shoe company supplies shoes to stores via vans and trucks. A van can transport \\param{VanCapacity} pairs of shoes while a truck can transport \\param{TruckCapacity} pairs of shoes. The company must supply a minimum of \\param{MinPairs} pairs of shoes around the city. Since most stores are small, the number of trucks used cannot exceed the number of vans used.  Find the minimum number of vans that can be used?"
+}

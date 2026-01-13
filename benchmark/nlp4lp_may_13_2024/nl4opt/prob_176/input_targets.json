@@ -1,0 +1,31 @@
+{
+    "background": "A jam company needs to determine the minimum number of small and large jars to meet a minimum volume requirement for shipping jam, with a preference for small jars over large ones.",
+    "constraints": [
+        "Number of large jars is non-negative",
+        "Number of small jars is non-negative",
+        "Number of large jars does not exceed the number of small jars",
+        "Total volume of jam in jars is at least MinimumVolume ml"
+    ],
+    "objective": "Minimize the total number of jars used to ship at least MinimumVolume ml of jam",
+    "description": "A jam company sends its product out in small and large jars. A \\param{SmallJarVolume} ml small jar can hold while a \\param{LargeJarVolume} ml large jar can hold. Most stores prefer the smaller size, and so the number of large jars cannot exceed the number of small jars. If the company wants to ship at least \\param{MinimumVolume} ml of jam, find the minimum number of jars that can be used.",
+    "parameters": [
+        {
+            "definition": "Volume of jam that a small jar can hold",
+            "symbol": "SmallJarVolume",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Volume of jam that a large jar can hold",
+            "symbol": "LargeJarVolume",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total volume of jam needed for shipment",
+            "symbol": "MinimumVolume",
+            "value": 100000,
+            "shape": []
+        }
+    ]
+}

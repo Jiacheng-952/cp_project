@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Calories per slice of cheesecake",
+            "symbol": "CalCheesecake",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar per slice of cheesecake",
+            "symbol": "SugarCheesecake",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Calories per slice of caramel cake",
+            "symbol": "CalCaramelCake",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Grams of sugar per slice of caramel cake",
+            "symbol": "SugarCaramelCake",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of cheesecake slices to caramel cake slices",
+            "symbol": "CheeseCaramelRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of caramel cake slices to be eaten",
+            "symbol": "MinCaramel",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum calorie intake",
+            "symbol": "MaxCalories",
+            "value": 10000,
+            "shape": []
+        }
+    ],
+    "description": "A competitive eater challenges himself to eat slices of cheesecake and caramel cake. Each slice of cheesecake contains \\param{CalCheesecake} calories and \\param{SugarCheesecake} grams of sugar. Each slice of caramel cake contains \\param{CalCaramelCake} calories and \\param{SugarCaramelCake} grams of sugar. He prefers cheesecake and decides to eat at least \\param{CheeseCaramelRatio} times as many slices of cheesecake as caramel cake. However, he must also eat at least \\param{MinCaramel} slices of caramel cake. If he can consume at most \\param{MaxCalories} calories in one day, how many slices of each cake should he eat to maximize the total amount of sugar he consumes?"
+}

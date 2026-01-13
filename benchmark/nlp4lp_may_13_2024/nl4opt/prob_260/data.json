@@ -1,0 +1,11 @@
+{
+    "FabricA": 25,
+    "FabricB": 45,
+    "PlasticA": 14,
+    "PlasticB": 25,
+    "ElementA": 60,
+    "ElementB": 65,
+    "TotalElement": 3500,
+    "MinFabric": 1400,
+    "MinPlastic": 1000
+}

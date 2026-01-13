@@ -1,0 +1,41 @@
+{
+    "background": "The problem focuses on finding an optimal trading strategy that involves deciding on the quantity of goods to buy and sell each month, considering storage capacity and associated costs.",
+    "constraints": [
+        "The amount of goods held in storage must be non-negative",
+        "The amount of goods sold in each period must be non-negative",
+        "The amount of goods bought in each period must be non-negative",
+        "The amount of goods stored must not exceed the maximum storage capacity, Capacity"
+    ],
+    "objective": "Maximize the total profit over the months from buying and selling goods",
+    "description": "Determine the amount of buying and selling in each period to maximize the profit over the months, given the constraints of maximum storage \\param{Capacity}, holding costs \\param{HoldingCost}, selling prices \\param{Price}, and buying costs \\param{Cost}.",
+    "parameters": [
+        {
+            "definition": "Maximum storage capacity",
+            "symbol": "Capacity",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Cost of holding one unit of product",
+            "symbol": "HoldingCost",
+            "value": 0,
+            "shape": []
+        },
+        {
+            "definition": "Selling price in each period",
+            "symbol": "Price",
+            "value": 0,
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Cost of buying in each period",
+            "symbol": "Cost",
+            "value": 0,
+            "shape": [
+                "N"
+            ]
+        }
+    ]
+}

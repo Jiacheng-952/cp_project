@@ -1,0 +1,149 @@
+\ Model sports_scheduling_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ play_once_0_1: match_0_1_0_0 + match_0_1_0_1 + match_0_1_0_2
+   + match_0_1_0_3 + match_0_1_1_0 + match_0_1_1_1 + match_0_1_1_2
+   + match_0_1_1_3 + match_0_1_2_0 + match_0_1_2_1 + match_0_1_2_2
+   + match_0_1_2_3 + match_0_1_3_0 + match_0_1_3_1 + match_0_1_3_2
+   + match_0_1_3_3 + match_0_1_4_0 + match_0_1_4_1 + match_0_1_4_2
+   + match_0_1_4_3 + match_0_1_5_0 + match_0_1_5_1 + match_0_1_5_2
+   + match_0_1_5_3 + match_0_1_6_0 + match_0_1_6_1 + match_0_1_6_2
+   + match_0_1_6_3 = 1
+ play_once_0_2: match_0_2_0_0 + match_0_2_0_1 + match_0_2_0_2
+   + match_0_2_0_3 + match_0_2_1_0 + match_0_2_1_1 + match_0_2_1_2
+   + match_0_2_1_3 + match_0_2_2_0 + match_0_2_2_1 + match_0_2_2_2
+   + match_0_2_2_3 + match_0_2_3_0 + match_0_2_3_1 + match_0_2_3_2
+   + match_0_2_3_3 + match_0_2_4_0 + match_0_2_4_1 + match_0_2_4_2
+   + match_0_2_4_3 + match_0_2_5_0 + match_0_2_5_1 + match_0_2_5_2
+   + match_0_2_5_3 + match_0_2_6_0 + match_0_2_6_1 + match_0_2_6_2
+   + match_0_2_6_3 = 1
+ play_once_0_4: match_0_4_0_0 + match_0_4_0_1 + match_0_4_0_2
+   + match_0_4_0_3 + match_0_4_1_0 + match_0_4_1_1 + match_0_4_1_2
+   + match_0_4_1_3 + match_0_4_2_0 + match_0_4_2_1 + match_0_4_2_2
+   + match_0_4_2_3 + match_0_4_3_0 + match_0_4_3_1 + match_0_4_3_2
+   + match_0_4_3_3 + match_0_4_4_0 + match_0_4_4_1 + match_0_4_4_2
+   + match_0_4_4_3 + match_0_4_5_0 + match_0_4_5_1 + match_0_4_5_2
+   + match_0_4_5_3 + match_0_4_6_0 + match_0_4_6_1 + match_0_4_6_2
+   + match_0_4_6_3 = 1
+ play_once_0_5: match_0_5_0_0 + match_0_5_0_1 + match_0_5_0_2
+   + match_0_5_0_3 + match_0_5_1_0 + match_0_5_1_1 + match_0_5_1_2
+   + match_0_5_1_3 + match_0_5_2_0 + match_0_5_2_1 + match_0_5_2_2
+   + match_0_5_2_3 + match_0_5_3_0 + match_0_5_3_1 + match_0_5_3_2
+   + match_0_5_3_3 + match_0_5_4_0 + match_0_5_4_1 + match_0_5_4_2
+   + match_0_5_4_3 + match_0_5_5_0 + match_0_5_5_1 + match_0_5_5_2
+   + match_0_5_5_3 + match_0_5_6_0 + match_0_5_6_1 + match_0_5_6_2
+   + match_0_5_6_3 = 1
+ play_once_0_6: match_0_6_0_0 + match_0_6_0_1 + match_0_6_0_2
+   + match_0_6_0_3 + match_0_6_1_0 + match_0_6_1_1 + match_0_6_1_2
+   + match_0_6_1_3 + match_0_6_2_0 + match_0_6_2_1 + match_0_6_2_2
+   + match_0_6_2_3 + match_0_6_3_0 + match_0_6_3_1 + match_0_6_3_2
+   + match_0_6_3_3 + match_0_6_4_0 + match_0_6_4_1 + match_0_6_4_2
+   + match_0_6_4_3 + match_0_6_5_0 + match_0_6_5_1 + match_0_6_5_2
+   + match_0_6_5_3 + match_0_6_6_0 + match_0_6_6_1 + match_0_6_6_2
+   + match_0_6_6_3 = 1
+ play_once_0_7: match_0_7_0_0 + match_0_7_0_1 + match_0_7_0_2
+   + match_0_7_0_3 + match_0_7_1_0 + match_0_7_1_1 + match_0_7_1_2
+   + match_0_7_1_3 + match_0_7_2_0 + match_0_7_2_1 + match_0_7_2_2
+   + match_0_7_2_3 + match_0_7_3_0 + match_0_7_3_1 + match_0_7_3_2
+   + match_0_7_3_3 + match_0_7_4_0 + match_0_7_4_1 + match_0_7_4_2
+   + match_0_7_4_3 + match_0_7_5_0 + match_0_7_5_1 + match_0_7_5_2
+   + match_0_7_5_3 + match_0_7_6_0 + match_0_7_6_1 + match_0_7_6_2
+   + match_0_7_6_3 = 1
+ home_count_eq_0: - match_0_1_0_0 - match_0_1_0_1 - match_0_1_0_2
+   - match_0_1_0_3 - match_0_1_1_0 - match_0_1_1_1 - match_0_1_1_2
+   - match_0_1_1_3 - match_0_1_2_0 - match_0_1_2_1 - match_0_1_2_2
+   - match_0_1_2_3 - match_0_1_3_0 - match_0_1_3_1 - match_0_1_3_2
+   - match_0_1_3_3 - match_0_1_4_0 - match_0_1_4_1 - match_0_1_4_2
+   - match_0_1_4_3 - match_0_1_5_0 - match_0_1_5_1 - match_0_1_5_2
+   - match_0_1_5_3 - match_0_1_6_0 - match_0_1_6_1 - match_0_1_6_2
+   - match_0_1_6_3 - match_0_2_0_0 - match_0_2_0_1 - match_0_2_0_2
+   - match_0_2_0_3 - match_0_2_1_0 - match_0_2_1_1 - match_0_2_1_2
+   - match_0_2_1_3 - match_0_2_2_0 - match_0_2_2_1 - match_0_2_2_2
+   - match_0_2_2_3 - match_0_2_3_0 - match_0_2_3_1 - match_0_2_3_2
+   - match_0_2_3_3 - match_0_2_4_0 - match_0_2_4_1 - match_0_2_4_2
+   - match_0_2_4_3 - match_0_2_5_0 - match_0_2_5_1 - match_0_2_5_2
+   - match_0_2_5_3 - match_0_2_6_0 - match_0_2_6_1 - match_0_2_6_2
+   - match_0_2_6_3 - match_0_3_0_0 - match_0_3_0_1 - match_0_3_0_2
+   - match_0_3_0_3 - match_0_3_1_0 - match_0_3_1_1 - match_0_3_1_2
+   - match_0_3_1_3 - match_0_3_2_0 - match_0_3_2_1 - match_0_3_2_2
+   - match_0_3_2_3 - match_0_3_3_0 - match_0_3_3_1 - match_0_3_3_2
+   - match_0_3_3_3 - match_0_3_4_0 - match_0_3_4_1 - match_0_3_4_2
+   - match_0_3_4_3 - match_0_3_5_0 - match_0_3_5_1 - match_0_3_5_2
+   - match_0_3_5_3 - match_0_3_6_0 - match_0_3_6_1 - match_0_3_6_2
+   - match_0_3_6_3 - match_0_4_0_0 - match_0_4_0_1 - match_0_4_0_2
+   - match_0_4_0_3 - match_0_4_1_0 - match_0_4_1_1 - match_0_4_1_2
+   - match_0_4_1_3 - match_0_4_2_0 - match_0_4_2_1 - match_0_4_2_2
+   - match_0_4_2_3 - match_0_4_3_0 - match_0_4_3_1 - match_0_4_3_2
+   - match_0_4_3_3 - match_0_4_4_0 - match_0_4_4_1 - match_0_4_4_2
+   - match_0_4_4_3 - match_0_4_5_0 - match_0_4_5_1 - match_0_4_5_2
+   - match_0_4_5_3 - match_0_4_6_0 - match_0_4_6_1 - match_0_4_6_2
+   - match_0_4_6_3 - match_0_5_0_0 - match_0_5_0_1 - match_0_5_0_2
+   - match_0_5_0_3 - match_0_5_1_0 - match_0_5_1_1 - match_0_5_1_2
+   - match_0_5_1_3 - match_0_5_2_0 - match_0_5_2_1 - match_0_5_2_2
+   - match_0_5_2_3 - match_0_5_3_0 - match_0_5_3_1 - match_0_5_3_2
+   - match_0_5_3_3 - match_0_5_4_0 - match_0_5_4_1 - match_0_5_4_2
+   - match_0_5_4_3 - match_0_5_5_0 - match_0_5_5_1 - match_0_5_5_2
+   - match_0_5_5_3 - match_0_5_6_0 - match_0_5_6_1 - match_0_5_6_2
+   - match_0_5_6_3 - match_0_6_0_0 - match_0_6_0_1 - match_0_6_0_2
+   - match_0_6_0_3 - match_0_6_1_0 - match_0_6_1_1 - match_0_6_1_2
+   - match_0_6_1_3 - match_0_6_2_0 - match_0_6_2_1 - match_0_6_2_2
+   - match_0_6_2_3 - match_0_6_3_0 - match_0_6_3_1 - match_0_6_3_2
+   - match_0_6_3_3 - match_0_6_4_0 - match_0_6_4_1 - match_0_6_4_2
+   - match_0_6_4_3 - match_0_6_5_0 - match_0_6_5_1 - match_0_6_5_2
+   - match_0_6_5_3 - match_0_6_6_0 - match_0_6_6_1 - match_0_6_6_2
+   - match_0_6_6_3 - match_0_7_0_0 - match_0_7_0_1 - match_0_7_0_2
+   - match_0_7_0_3 - match_0_7_1_0 - match_0_7_1_1 - match_0_7_1_2
+   - match_0_7_1_3 - match_0_7_2_0 - match_0_7_2_1 - match_0_7_2_2
+   - match_0_7_2_3 - match_0_7_3_0 - match_0_7_3_1 - match_0_7_3_2
+   - match_0_7_3_3 - match_0_7_4_0 - match_0_7_4_1 - match_0_7_4_2
+   - match_0_7_4_3 - match_0_7_5_0 - match_0_7_5_1 - match_0_7_5_2
+   - match_0_7_5_3 - match_0_7_6_0 - match_0_7_6_1 - match_0_7_6_2
+   - match_0_7_6_3 + home_count_0 = 0
+Bounds
+ -infinity <= home_count_0 <= 5
+Binaries
+ match_0_1_0_0 match_0_1_0_1 match_0_1_0_2 match_0_1_0_3 match_0_1_1_0
+ match_0_1_1_1 match_0_1_1_2 match_0_1_1_3 match_0_1_2_0 match_0_1_2_1
+ match_0_1_2_2 match_0_1_2_3 match_0_1_3_0 match_0_1_3_1 match_0_1_3_2
+ match_0_1_3_3 match_0_1_4_0 match_0_1_4_1 match_0_1_4_2 match_0_1_4_3
+ match_0_1_5_0 match_0_1_5_1 match_0_1_5_2 match_0_1_5_3 match_0_1_6_0
+ match_0_1_6_1 match_0_1_6_2 match_0_1_6_3 match_0_2_0_0 match_0_2_0_1
+ match_0_2_0_2 match_0_2_0_3 match_0_2_1_0 match_0_2_1_1 match_0_2_1_2
+ match_0_2_1_3 match_0_2_2_0 match_0_2_2_1 match_0_2_2_2 match_0_2_2_3
+ match_0_2_3_0 match_0_2_3_1 match_0_2_3_2 match_0_2_3_3 match_0_2_4_0
+ match_0_2_4_1 match_0_2_4_2 match_0_2_4_3 match_0_2_5_0 match_0_2_5_1
+ match_0_2_5_2 match_0_2_5_3 match_0_2_6_0 match_0_2_6_1 match_0_2_6_2
+ match_0_2_6_3 match_0_3_0_0 match_0_3_0_1 match_0_3_0_2 match_0_3_0_3
+ match_0_3_1_0 match_0_3_1_1 match_0_3_1_2 match_0_3_1_3 match_0_3_2_0
+ match_0_3_2_1 match_0_3_2_2 match_0_3_2_3 match_0_3_3_0 match_0_3_3_1
+ match_0_3_3_2 match_0_3_3_3 match_0_3_4_0 match_0_3_4_1 match_0_3_4_2
+ match_0_3_4_3 match_0_3_5_0 match_0_3_5_1 match_0_3_5_2 match_0_3_5_3
+ match_0_3_6_0 match_0_3_6_1 match_0_3_6_2 match_0_3_6_3 match_0_4_0_0
+ match_0_4_0_1 match_0_4_0_2 match_0_4_0_3 match_0_4_1_0 match_0_4_1_1
+ match_0_4_1_2 match_0_4_1_3 match_0_4_2_0 match_0_4_2_1 match_0_4_2_2
+ match_0_4_2_3 match_0_4_3_0 match_0_4_3_1 match_0_4_3_2 match_0_4_3_3
+ match_0_4_4_0 match_0_4_4_1 match_0_4_4_2 match_0_4_4_3 match_0_4_5_0
+ match_0_4_5_1 match_0_4_5_2 match_0_4_5_3 match_0_4_6_0 match_0_4_6_1
+ match_0_4_6_2 match_0_4_6_3 match_0_5_0_0 match_0_5_0_1 match_0_5_0_2
+ match_0_5_0_3 match_0_5_1_0 match_0_5_1_1 match_0_5_1_2 match_0_5_1_3
+ match_0_5_2_0 match_0_5_2_1 match_0_5_2_2 match_0_5_2_3 match_0_5_3_0
+ match_0_5_3_1 match_0_5_3_2 match_0_5_3_3 match_0_5_4_0 match_0_5_4_1
+ match_0_5_4_2 match_0_5_4_3 match_0_5_5_0 match_0_5_5_1 match_0_5_5_2
+ match_0_5_5_3 match_0_5_6_0 match_0_5_6_1 match_0_5_6_2 match_0_5_6_3
+ match_0_6_0_0 match_0_6_0_1 match_0_6_0_2 match_0_6_0_3 match_0_6_1_0
+ match_0_6_1_1 match_0_6_1_2 match_0_6_1_3 match_0_6_2_0 match_0_6_2_1
+ match_0_6_2_2 match_0_6_2_3 match_0_6_3_0 match_0_6_3_1 match_0_6_3_2
+ match_0_6_3_3 match_0_6_4_0 match_0_6_4_1 match_0_6_4_2 match_0_6_4_3
+ match_0_6_5_0 match_0_6_5_1 match_0_6_5_2 match_0_6_5_3 match_0_6_6_0
+ match_0_6_6_1 match_0_6_6_2 match_0_6_6_3 match_0_7_0_0 match_0_7_0_1
+ match_0_7_0_2 match_0_7_0_3 match_0_7_1_0 match_0_7_1_1 match_0_7_1_2
+ match_0_7_1_3 match_0_7_2_0 match_0_7_2_1 match_0_7_2_2 match_0_7_2_3
+ match_0_7_3_0 match_0_7_3_1 match_0_7_3_2 match_0_7_3_3 match_0_7_4_0
+ match_0_7_4_1 match_0_7_4_2 match_0_7_4_3 match_0_7_5_0 match_0_7_5_1
+ match_0_7_5_2 match_0_7_5_3 match_0_7_6_0 match_0_7_6_1 match_0_7_6_2
+ match_0_7_6_3
+Generals
+ home_count_0
+End

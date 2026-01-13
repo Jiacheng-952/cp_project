@@ -1,0 +1,13 @@
+{
+    "Powder1": 3,
+    "Glue1": 5,
+    "Slime1": 4,
+    "Powder2": 8,
+    "Glue2": 6,
+    "Slime2": 5,
+    "Mess1": 2,
+    "Mess2": 4,
+    "TotalPowder": 100,
+    "TotalGlue": 90,
+    "MaxMess": 30
+}

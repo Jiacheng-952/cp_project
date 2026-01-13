@@ -1,0 +1,11 @@
+{
+    "NorthernInjectionsRate": 800,
+    "NorthernCreamRate": 700,
+    "WesternInjectionsRate": 650,
+    "WesternCreamRate": 750,
+    "NorthernPlasticRate": 40,
+    "WesternPlasticRate": 35,
+    "TotalPlastic": 60000,
+    "MinInjections": 800000,
+    "MinCream": 700000
+}

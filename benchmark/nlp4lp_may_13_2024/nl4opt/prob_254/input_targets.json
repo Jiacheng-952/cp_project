@@ -1,0 +1,56 @@
+{
+    "background": "Grain is transported from a farm to local grocery stores in either large or tiny bags, each requiring a certain amount of energy for transportation. There are limits to the energy available and a demand ratio that requires twice as many large bags as tiny bags.",
+    "constraints": [
+        "Number of large bags is non-negative",
+        "Number of tiny bags is non-negative",
+        "The total energy used for transporting bags cannot exceed TotalEnergy units",
+        "There must be twice as many large bags as tiny bags",
+        "There must be at least MinTinyBags tiny bags"
+    ],
+    "objective": "Maximize the total weight of grain transported in bags",
+    "description": "Grain is transported from a farm to local grocery stores in either large bags or tiny bags. Large bags can hold \\param{LargeBagCapacity} kg of grain and requires \\param{LargeBagEnergy} units of energy to transport. Tiny bags can hold \\param{TinyBagCapacity} kg of grain and requires \\param{TinyBagEnergy} units of energy to transport. The distribution process has access to \\param{TotalEnergy} units of energy. Because of the popularity of buying in bulk, there must be twice as many large bags as tiny bags of rice. Additionally, there must be at least \\param{MinTinyBags} tiny bags of rice. How many of each size of rice bags should be used to maximize the total amount of grain in weight?",
+    "parameters": [
+        {
+            "definition": "Capacity of a large bag",
+            "symbol": "LargeBagCapacity",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Energy required to transport a large bag",
+            "symbol": "LargeBagEnergy",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a tiny bag",
+            "symbol": "TinyBagCapacity",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Energy required to transport a tiny bag",
+            "symbol": "TinyBagEnergy",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Total energy available for transport",
+            "symbol": "TotalEnergy",
+            "value": 110,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of number of large bags to tiny bags",
+            "symbol": "BagRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of tiny bags required",
+            "symbol": "MinTinyBags",
+            "value": 20,
+            "shape": []
+        }
+    ]
+}

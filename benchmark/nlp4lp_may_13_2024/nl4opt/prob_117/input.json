@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Fat content per burger",
+            "symbol": "FatPerBurger",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Calories per burger",
+            "symbol": "CaloriesPerBurger",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Fat content per slice of pizza",
+            "symbol": "FatPerPizzaSlice",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Calories per slice of pizza",
+            "symbol": "CaloriesPerPizzaSlice",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required fat",
+            "symbol": "MinFat",
+            "value": 130,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required calories",
+            "symbol": "MinCalories",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Cholesterol per burger",
+            "symbol": "CholesterolPerBurger",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Cholesterol per slice of pizza",
+            "symbol": "CholesterolPerPizzaSlice",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of pizza slices to the number of burgers",
+            "symbol": "PizzaBurgerRatio",
+            "value": 0.33,
+            "shape": []
+        }
+    ],
+    "description": "A doctor recommends that a man eat burgers and pizza in order to put on weight. Each burger contains \\param{FatPerBurger} units of fat and \\param{CaloriesPerBurger} calories. Each slice of pizza contains \\param{FatPerPizzaSlice} units of fat and \\param{CaloriesPerPizzaSlice} calories. The man must get at least \\param{MinFat} units of fat and \\param{MinCalories} calories. Further, each burger contains \\param{CholesterolPerBurger} units of cholesterol while each slice of pizza contains \\param{CholesterolPerPizzaSlice} units of cholesterol. Since burgers are slightly more expensive, the man decides to eat at least \\param{PizzaBurgerRatio} times as many slices of pizza as burgers. How many of each should he eat to minimize his cholesterol intake?"
+}

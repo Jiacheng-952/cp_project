@@ -1,0 +1,58 @@
+{
+    "background": "A flooring company produces engineered hardwood and vinyl planks.",
+    "constraints": [
+        "Square feet of hardwood to be produced weekly is at least MinHardwood",
+        "Square feet of vinyl to be produced weekly is at least MinVinyl",
+        "Total square feet of flooring to be shipped weekly is at least MinTotalShip",
+        "Square feet of hardwood to be produced weekly is at most MaxHardwoodProd",
+        "Square feet of vinyl to be produced weekly is at most MaxVinylProd",
+        "Square feet of hardwood produced weekly is non-negative",
+        "Square feet of vinyl produced weekly is non-negative"
+    ],
+    "objective": "Maximize the company's profit from hardwood and vinyl planks produced weekly",
+    "description": "A flooring company produces engineered hardwood and vinyl planks. Their sales forecasts show an expected demand of at least \\var{MinHardwood} square feet of hardwood and \\var{MinVinyl} square feet of vinyl planks each week. To satisfy a shipping contract, a total of at least \\var{MinTotalShip} square feet of flooring must be shipped each week. Due to a labor shortage issue, no more than \\var{MaxHardwoodProd} square feet of hardwood and \\var{MaxVinylProd} square feet of vinyl can be produced weekly. If a square foot of hardwood flooring yields a profit of \\var{ProfitHardwood} and a square foot of vinyl planks produces a \\var{ProfitVinyl} profit, how many of each type of flooring should be made weekly to maximize the company's profit?",
+    "parameters": [
+        {
+            "definition": "Minimum demand of hardwood per week",
+            "symbol": "MinHardwood",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum demand of vinyl planks per week",
+            "symbol": "MinVinyl",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total square feet of flooring required to be shipped per week",
+            "symbol": "MinTotalShip",
+            "value": 60000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum hardwood production capacity per week",
+            "symbol": "MaxHardwoodProd",
+            "value": 50000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum vinyl production capacity per week",
+            "symbol": "MaxVinylProd",
+            "value": 30000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot of hardwood",
+            "symbol": "ProfitHardwood",
+            "value": 2.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot of vinyl",
+            "symbol": "ProfitVinyl",
+            "value": 3,
+            "shape": []
+        }
+    ]
+}

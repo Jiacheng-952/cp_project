@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Time required to prepare a batch of medication patches",
+            "symbol": "TimeMedicationPatches",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Materials required to prepare a batch of medication patches",
+            "symbol": "MaterialsMedicationPatches",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time required to prepare a batch of anti-biotic creams",
+            "symbol": "TimeAntiBioticCreams",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Materials required to prepare a batch of anti-biotic creams",
+            "symbol": "MaterialsAntiBioticCreams",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Maximum total number of batches of medication patches and anti-biotic creams due to storage",
+            "symbol": "MaxTotalBatches",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total staff time available for preparation",
+            "symbol": "TotalStaffTime",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Total units of materials available",
+            "symbol": "TotalMaterials",
+            "value": 530,
+            "shape": []
+        },
+        {
+            "definition": "Number of people treated by a batch of medication patches",
+            "symbol": "PeopleTreatedMedicationPatches",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of people treated by a batch of anti-biotic creams",
+            "symbol": "PeopleTreatedAntiBioticCreams",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "A hospital prepares batches of medication patches and anti-biotic creams. Each medication patch requires \\param{TimeMedicationPatches} minutes to prepare and \\param{MaterialsMedicationPatches} units of materials. Each anti-biotic cream requires \\param{TimeAntiBioticCreams} minutes to prepare and \\param{MaterialsAntiBioticCreams} units of materials. Since anti-biotic creams are used more often, there must be at least twice as many anti-biotic creams as medication patches. Due to storage reasons, the hospital can make at most \\param{MaxTotalBatches} batches of medication patches and anti-biotic creams in total. The hospital has available \\param{TotalStaffTime} minutes of staff to spare and \\param{TotalMaterials} units of materials. If each batch of medication patches can treat \\param{PeopleTreatedMedicationPatches} people and each batch of anti-biotic cream can treat \\param{PeopleTreatedAntiBioticCreams} people, how many batches of each should be made to maximize the number of people that can be treated?"
+}

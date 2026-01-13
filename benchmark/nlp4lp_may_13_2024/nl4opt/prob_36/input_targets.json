@@ -1,0 +1,80 @@
+{
+    "background": "A car manufacturer produces two types of car oils: Oil Max and Oil Max Pro, each containing different amounts of substances A, B, and C. They must decide the quantity of each type of oil to maximize profits given the limited amounts of the substances.",
+    "constraints": [
+        "Number of Oil Max containers is non-negative",
+        "Number of Oil Max Pro containers is non-negative",
+        "Total grams of substance A used in all containers is at most TotalA",
+        "Total grams of substance B used in all containers is at most TotalB",
+        "Total grams of substance C used in all containers is at most TotalC"
+    ],
+    "objective": "Maximize the total profit from the production of Oil Max and Oil Max Pro containers",
+    "description": "A car manufacturer makes two types of car oils: Oil Max and Oil Max Pro. A container of Oil Max contains \\param{AinMax} grams of substance A, \\param{BinMax} grams of substance B and \\param{CinMax} grams of substance C. A container of Oil Max Pro contains \\param{AinMaxPro} grams of substance A, \\param{BinMaxPro} grams of substance B and \\param{CinMaxPro} grams of substance C. The car manufacturer has \\param{TotalA} grams of substance A, \\param{TotalB} grams of substance B, \\param{TotalC} grams of substance C. In addition, the profit per container of Oil Max is $\\param{ProfitMax} and the profit per container of Oil Max Pro is $\\param{ProfitMaxPro}. How many containers of each type of oil should the car manufacturer make to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Amount of substance A in a container of Oil Max",
+            "symbol": "AinMax",
+            "value": 46,
+            "shape": []
+        },
+        {
+            "definition": "Amount of substance B in a container of Oil Max",
+            "symbol": "BinMax",
+            "value": 43,
+            "shape": []
+        },
+        {
+            "definition": "Amount of substance C in a container of Oil Max",
+            "symbol": "CinMax",
+            "value": 56,
+            "shape": []
+        },
+        {
+            "definition": "Amount of substance A in a container of Oil Max Pro",
+            "symbol": "AinMaxPro",
+            "value": 13,
+            "shape": []
+        },
+        {
+            "definition": "Amount of substance B in a container of Oil Max Pro",
+            "symbol": "BinMaxPro",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Amount of substance C in a container of Oil Max Pro",
+            "symbol": "CinMaxPro",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Total available amount of substance A",
+            "symbol": "TotalA",
+            "value": 1345,
+            "shape": []
+        },
+        {
+            "definition": "Total available amount of substance B",
+            "symbol": "TotalB",
+            "value": 346,
+            "shape": []
+        },
+        {
+            "definition": "Total available amount of substance C",
+            "symbol": "TotalC",
+            "value": 1643,
+            "shape": []
+        },
+        {
+            "definition": "Profit per container of Oil Max",
+            "symbol": "ProfitMax",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Profit per container of Oil Max Pro",
+            "symbol": "ProfitMaxPro",
+            "value": 15,
+            "shape": []
+        }
+    ]
+}

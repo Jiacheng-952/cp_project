@@ -1,0 +1,44 @@
+{
+    "background": "An oil and gas company needs to transport oil to the port using containers and trucks with certain capacities and restrictions.",
+    "constraints": [
+        "Number of containers used is non-negative",
+        "Number of trucks used is non-negative",
+        "Number of trucks used is at most TruckContainerRatio times the number of containers used",
+        "At least MinimumUnits units of oil need to be sent to the port",
+        "At least MinimumContainers containers need to be used"
+    ],
+    "objective": "Minimize the total number of containers and trucks needed to transport the oil",
+    "description": "An oil and gas company is sending their oil to the port using containers and trucks. A container can hold \\param{ContainerCapacity} units of oil while a truck can hold \\param{TruckCapacity} units of oil. Due to government restrictions, the number of trucks used has to at most \\param{TruckContainerRatio} times the number of containers used. If at least \\param{MinimumUnits} units of oil need to be sent to the port and at least \\param{MinimumContainers} containers need to be used, minimize the total number of containers and trucks needed.",
+    "parameters": [
+        {
+            "definition": "Capacity of a container",
+            "symbol": "ContainerCapacity",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a truck",
+            "symbol": "TruckCapacity",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of number of trucks to number of containers",
+            "symbol": "TruckContainerRatio",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total units of oil to send to the port",
+            "symbol": "MinimumUnits",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of containers to use",
+            "symbol": "MinimumContainers",
+            "value": 15,
+            "shape": []
+        }
+    ]
+}

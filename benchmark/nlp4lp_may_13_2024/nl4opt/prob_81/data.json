@@ -1,0 +1,10 @@
+{
+    "MotionDropsPerMinute": 50,
+    "MotionConsumption": 30,
+    "ManualDropsPerMinute": 75,
+    "ManualConsumption": 20,
+    "MaxManualFraction": 0.4,
+    "MinMotionMachines": 3,
+    "MinDropsPerMinute": 1000,
+    "MaxEnergyPerMinute": 500
+}

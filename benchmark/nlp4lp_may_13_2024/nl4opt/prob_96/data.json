@@ -1,0 +1,11 @@
+{
+    "CocoaMilk": 4,
+    "MilkMilk": 7,
+    "CocoaDark": 6,
+    "MilkDark": 3,
+    "TotalCocoa": 2000,
+    "TotalMilk": 1750,
+    "MilkDarkRatio": 2,
+    "TimeMilk": 15,
+    "TimeDark": 12
+}

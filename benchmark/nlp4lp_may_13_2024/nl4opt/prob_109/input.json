@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time taken by the automatic machine per patient",
+            "symbol": "TAuto",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Time taken by the manual machine per patient",
+            "symbol": "TManual",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of patients processed by the manual machine to those processed by the automatic machine",
+            "symbol": "RatioManualToAuto",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of patients that can be processed by the automatic machine",
+            "symbol": "MinPatientsAuto",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Total clinic operation time in minutes",
+            "symbol": "TotalTime",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "A clinic takes patient blood pressure either using an automatic machine or a manual machine. The automatic machine takes \\param{TAuto} minutes per patient while the manual machine takes \\param{TManual} minutes per patient. Since the automatic machine frequently breaks, at least \\param{RatioManualToAuto} times as many patients must have their blood pressure taken by the manual machine than the automatic machine. However, at least \\param{MinPatientsAuto} patients can be processed by the automatic machine. If the clinic is open for \\param{TotalTime} minutes, maximize the number of patients whose blood pressure can be taken."
+}

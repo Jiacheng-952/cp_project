@@ -1,0 +1,55 @@
+{
+    "background": "A school employs staff and substitute teachers with different working hours and payment rates. The school requires a certain number of teaching hours for the summer term within a limited budget.",
+    "constraints": [
+        "Number of staff teachers is an integer",
+        "Number of substitute teachers is an integer",
+        "Number of staff teachers is non-negative",
+        "Number of substitute teachers is non-negative",
+        "Total hours of teaching by staff and substitute teachers must be at least TotalHours",
+        "Total payment to staff and substitute teachers can not exceed Budget",
+        "Staff teachers work HoursStaff hours per shift",
+        "Substitute teachers work HoursSub hours per shift",
+        "Staff teachers get paid PayStaff per shift",
+        "Substitute teachers get paid PaySub per shift"
+    ],
+    "objective": "Minimize the total number of teachers hired",
+    "description": "A school employs staff and substitute teachers. Per shift, staff teachers work \\var{HoursStaff} hours and get paid \\var{PayStaff}. Per shift, substitute teachers work \\var{HoursSub} hours and get paid \\var{PaySub}. For the summer term, the school requires \\var{TotalHours} hours of teaching availability. If the school has a budget of \\var{Budget}, how many of each teacher should be hired to minimize the total number of teachers?",
+    "parameters": [
+        {
+            "definition": "Hours worked per shift by staff teachers",
+            "symbol": "HoursStaff",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for staff teachers",
+            "symbol": "PayStaff",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Hours worked per shift by substitute teachers",
+            "symbol": "HoursSub",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for substitute teachers",
+            "symbol": "PaySub",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Total required teaching hours for the summer term",
+            "symbol": "TotalHours",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for teacher payments",
+            "symbol": "Budget",
+            "value": 40000,
+            "shape": []
+        }
+    ]
+}

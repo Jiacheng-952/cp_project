@@ -1,0 +1,9 @@
+{
+    "TotalPainkillerUnits": 800,
+    "DaytimePainkillerUnits": 6,
+    "DaytimeSleepUnits": 2,
+    "NighttimePainkillerUnits": 5,
+    "NighttimeSleepUnits": 5,
+    "MinimumDaytimePercentage": 0.4,
+    "MinimumNighttimePills": 200
+}

@@ -1,0 +1,6 @@
+{
+    "LargePlaneCapacity": 30,
+    "SmallPlaneCapacity": 10,
+    "MinimumCarsDelivered": 300,
+    "PollutionRatio": 0.33
+}

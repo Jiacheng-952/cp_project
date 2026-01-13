@@ -1,0 +1,72 @@
+{
+    "background": "The problem is to optimize total manpower requirement over a period of five years considering the manpower needed for two different operations (one and two) for producing various products every year. Stock levels, production capacities, demands, and input coefficients between products are also considered.",
+    "constraints": [],
+    "objective": "Maximize the total manpower requirement over five years",
+    "description": "Maximize the total manpower requirement over five years. The manpower requirements for operations one in year k is \\param{ManpowerOne}, and for operations two is \\param{ManpowerTwo}. The stock level of product k at the beginning of the year is \\param{Stock}, the production capacity for product k for the year is \\param{Capacity}, and the demand for product k for the year is \\param{Demand}. The input one coefficient for product k with respect to product j is \\param{InputOne}, and the input two coefficient for product k with respect to product j is \\param{InputTwo}.",
+    "parameters": [
+        {
+            "definition": "The number of years over which the total manpower requirement is maximized",
+            "symbol": "K",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Manpower requirements for operations one in year k",
+            "symbol": "ManpowerOne",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Manpower requirements for operations two in year k",
+            "symbol": "ManpowerTwo",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Stock level of product k at the beginning of the year",
+            "symbol": "Stock",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Production capacity for product k for the year",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Demand for product k for the year",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Input one coefficient for product k with respect to product j",
+            "symbol": "InputOne",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "Input two coefficient for product k with respect to product j",
+            "symbol": "InputTwo",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        }
+    ]
+}

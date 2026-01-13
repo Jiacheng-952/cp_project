@@ -1,0 +1,7 @@
+{
+    "PreventionPillCost": 15,
+    "TreatmentPillCost": 25,
+    "PreventionTreatmentRatio": 2,
+    "MinTreatmentPills": 50,
+    "Budget": 10000
+}

@@ -1,0 +1,10 @@
+{
+    "CostA": 100,
+    "CostB": 80,
+    "ProteinA": 10,
+    "ProteinB": 7,
+    "FatA": 8,
+    "FatB": 15,
+    "MinProtein": 30,
+    "MinFat": 50
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hours per shift for an ultrasound technician",
+            "symbol": "TechnicianHoursPerShift",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours per shift for a graduate researcher",
+            "symbol": "ResearcherHoursPerShift",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for an ultrasound technician",
+            "symbol": "TechnicianPaymentPerShift",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Payment per shift for a graduate researcher",
+            "symbol": "ResearcherPaymentPerShift",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Required ratio of ultrasound technician shifts to graduate researcher shifts",
+            "symbol": "RequiredTechnicianToResearcherRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total hours of ultrasound service needed",
+            "symbol": "TotalUltrasoundHoursNeeded",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for hiring workers",
+            "symbol": "TotalBudget",
+            "value": 14000,
+            "shape": []
+        }
+    ],
+    "description": "A hospital hires ultrasound technicians and graduate researchers to image patients. An ultrasound technician works \\param{TechnicianHoursPerShift} hours per shift while a graduate researcher works \\param{ResearcherHoursPerShift} hours per shift. Ultrasound technicians are paid \\param{TechnicianPaymentPerShift} per shift while graduate researchers are paid \\param{ResearcherPaymentPerShift} per shift. However, due to regulations, there must be \\param{RequiredTechnicianToResearcherRatio} times as many ultrasound technician shifts than graduate researcher shifts. Currently, the hospital needs \\param{TotalUltrasoundHoursNeeded} hours of ultrasound services to meet needs. If the hospital has a budget of \\param{TotalBudget}, how many of each worker certified to use the ultrasound should be scheduled to reduce the total number of workers?"
+}

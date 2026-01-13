@@ -1,0 +1,73 @@
+{
+    "background": "The objective is to maximize the total production in the last two years, taking into consideration the constraints of two different types of resources, manpower allocation, stock levels, capacities, and a limit on the total manpower available.",
+    "constraints": [
+        "The consumption of InputOne per year is non-negative and within its availability",
+        "The consumption of InputTwo per year is non-negative and within its availability",
+        "Manpower allocation for ManpowerOne is non-negative and within its limit",
+        "Manpower allocation for ManpowerTwo is non-negative and within its limit",
+        "Stock levels must be maintained as per Stock non-negativity and limits",
+        "Production capacities must be respected according to Capacity",
+        "The total manpower used must not exceed the upper limit, ManpowerLimit",
+        "All variables of production, resources, and manpower must be non-negative"
+    ],
+    "objective": "Maximize total production in the last two years",
+    "description": "Maximize total production in the last two years using the given constraints on production inputs from two resource types (\\param{InputOne} and \\param{InputTwo}), manpower allocations (\\param{ManpowerOne} and \\param{ManpowerTwo}), stock levels (\\param{Stock}), capacities (\\param{Capacity}), and the upper limit of manpower (\\param{ManpowerLimit}).",
+    "parameters": [
+        {
+            "definition": "The production inputs from resource type one to product k in year j",
+            "symbol": "InputOne",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "The manpower allocated to resource type one for product k",
+            "symbol": "ManpowerOne",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "The production inputs from resource type two to product k in year j",
+            "symbol": "InputTwo",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "The manpower allocated to resource type two for product k",
+            "symbol": "ManpowerTwo",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Stock levels of product k at the start of the planning horizon",
+            "symbol": "Stock",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Production capacity for product k",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "The upper limit of manpower",
+            "symbol": "ManpowerLimit",
+            "value": "",
+            "shape": []
+        }
+    ]
+}

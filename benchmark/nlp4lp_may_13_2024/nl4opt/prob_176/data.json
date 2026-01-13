@@ -1,0 +1,5 @@
+{
+    "SmallJarVolume": 50,
+    "LargeJarVolume": 200,
+    "MinimumVolume": 100000
+}

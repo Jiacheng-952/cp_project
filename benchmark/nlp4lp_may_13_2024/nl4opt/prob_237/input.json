@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of audience members per pop concert",
+            "symbol": "PopAudience",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Practice days required for one pop concert",
+            "symbol": "PopPracticeDays",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of audience members per R&B concert",
+            "symbol": "RbAudience",
+            "value": 240,
+            "shape": []
+        },
+        {
+            "definition": "Practice days required for one R&B concert",
+            "symbol": "RbPracticeDays",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of audience members required",
+            "symbol": "MinAudience",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Total available practice days",
+            "symbol": "AvailablePracticeDays",
+            "value": 180,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of R&B concerts",
+            "symbol": "MaxRbConcertsProportion",
+            "value": 0.4,
+            "shape": []
+        }
+    ],
+    "description": "A singer has two types of concerts he can hold, pop and R&B. Each pop concert will bring in \\param{PopAudience} audience members and take \\param{PopPracticeDays} days of practice. Every R&B concert brings in \\param{RbAudience} audience members and takes \\param{RbPracticeDays} days of practice. The singer must bring in at least \\param{MinAudience} audience members and only has available \\param{AvailablePracticeDays} days for practice. If he can at most perform \\param{MaxRbConcertsProportion} of his concerts as R&B because he likes pop songs more, how many of each type of concert should be created to minimize the total number of concerts?"
+}

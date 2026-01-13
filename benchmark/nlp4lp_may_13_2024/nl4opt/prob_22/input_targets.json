@@ -1,0 +1,63 @@
+{
+    "background": "A glass factory makes two types of glass panes: a regular glass pane and a tempered glass pane, both requiring time on heating and cooling machines with limited daily availability.",
+    "constraints": [
+        "Number of regular glass panes is an integer",
+        "Number of tempered glass panes is an integer",
+        "Number of regular glass panes is non-negative",
+        "Number of tempered glass panes is non-negative",
+        "Total time used in heating machine by regular glass panes cannot exceed MaxTime minutes per day",
+        "Total time used in cooling machine by regular glass panes cannot exceed MaxTime minutes per day",
+        "Total time used in heating machine by tempered glass panes cannot exceed MaxTime minutes per day",
+        "Total time used in cooling machine by tempered glass panes cannot exceed MaxTime minutes per day",
+        "TimeRegHeat minutes are required to heat one regular glass pane",
+        "TimeRegCool minutes are required to cool one regular glass pane",
+        "TimeTempHeat minutes are required to heat one tempered glass pane",
+        "TimeTempCool minutes are required to cool one tempered glass pane"
+    ],
+    "objective": "Maximize the total profit from making regular and tempered glass panes",
+    "description": "A glass factory makes two types of glass panes: a regular glass pane and a tempered glass pane. Both require time on a heating and cooling machine. Both machines are available for a maximum of \\var{MaxTime} minutes per day. It takes \\var{TimeRegHeat} minutes in the heating machine and \\var{TimeRegCool} minutes in the cooling machine to make one regular glass pane. It takes \\var{TimeTempHeat} minutes in the heating machine and \\var{TimeTempCool} minutes in the cooling machine to make one tempered glass pane. The profit per pane of regular glass is \\var{ProfitReg} and the profit per pane of tempered glass is \\var{ProfitTemp}. How many panes of each glass type should the factory make to maximize profit? What is the maximum profit?",
+    "parameters": [
+        {
+            "definition": "Maximum daily usage time of the heating and cooling machines",
+            "symbol": "MaxTime",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one regular glass pane in the heating machine",
+            "symbol": "TimeRegHeat",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time to cool one regular glass pane in the cooling machine",
+            "symbol": "TimeRegCool",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to make one tempered glass pane in the heating machine",
+            "symbol": "TimeTempHeat",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Time to cool one tempered glass pane in the cooling machine",
+            "symbol": "TimeTempCool",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per regular glass pane",
+            "symbol": "ProfitReg",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Profit per tempered glass pane",
+            "symbol": "ProfitTemp",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

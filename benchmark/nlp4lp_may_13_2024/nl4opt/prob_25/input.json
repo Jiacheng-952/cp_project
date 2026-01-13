@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Total investment amount available",
+            "symbol": "TotalInvestment",
+            "value": 600000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount that can be invested in apartments",
+            "symbol": "MaxApartments",
+            "value": 200000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of the money invested in apartments to that in townhouses",
+            "symbol": "MinInvestmentRatio",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for apartments",
+            "symbol": "ProfitRateApts",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Profit rate for townhouses",
+            "symbol": "ProfitRateTH",
+            "value": 0.15,
+            "shape": []
+        }
+    ],
+    "description": "My family has decided to invest in real estate for the first time. Currently, they have \\param{TotalInvestment} to invest, some in apartments and the rest in townhouses. The money invested in apartments must not be greater than \\param{MaxApartments}. They have decided that the money invested in apartments must be at least \\param{MinInvestmentRatio} as much as that in townhouses. If the apartments earn \\param{ProfitRateApts}, and the townhouses earn \\param{ProfitRateTH}, how much money should they invest in each to maximize profit?"
+}

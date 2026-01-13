@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of units of goods delivered per trip by camel caravan",
+            "symbol": "UnitsCamel",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Travel time per trip for camel caravan",
+            "symbol": "TimeCamel",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Number of units of goods delivered per trip by desert truck",
+            "symbol": "UnitsTruck",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Travel time per trip for desert truck",
+            "symbol": "TimeTruck",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total units of goods that need to be delivered",
+            "symbol": "GoodsTotal",
+            "value": 1500,
+            "shape": []
+        }
+    ],
+    "description": "A company in the desert can transport goods to rural cities either by camel caravans or desert trucks. A camel caravan can deliver \\param{UnitsCamel} units of goods per trip and takes \\param{TimeCamel} hours. A desert truck can deliver \\param{UnitsTruck} units of goods per trip and takes \\param{TimeTruck} hours. However, due to the cost of fuel, the company prefers to have more camel caravans than desert trucks. If the company needs to deliver \\param{GoodsTotal} units of goods, how many of each method of transportation should the company organize to minimize the total number of hours required?"
+}

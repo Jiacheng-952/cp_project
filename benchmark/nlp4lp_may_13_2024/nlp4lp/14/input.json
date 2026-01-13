@@ -1,0 +1,34 @@
+{
+    "parameters": [
+        {
+            "definition": "The number of inequalities defining the set P",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The ambient space dimension of the set P",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "The coefficients of the linear inequalities defining the set P",
+            "symbol": "A",
+            "value": "",
+            "shape": [
+                "M",
+                "N"
+            ]
+        },
+        {
+            "definition": "The right-hand side of the inequalities defining the set P",
+            "symbol": "B",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ],
+    "description": "PROBLEM TYPE\nLP\n\nINPUT FORMAT \n\n{\n    \"A\": [[a_i_j for j in 1, ..., N] for i in 1, ..., M],\n    \"b\": [b_i for i in 1, ..., M]\n}\n\nOBJECTIVE\nWe are interested in finding a ball with the largest possible radius, which is entirely contained within the set \\param{P} (The center of such a ball is called the Chebychev center of \\param{P})."
+}

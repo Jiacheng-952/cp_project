@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Maximum number of wired headphones that can be produced per day by the wired team",
+            "symbol": "MaxWired",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of wireless headphones that can be produced per day by the wireless team",
+            "symbol": "MaxWireless",
+            "value": 170,
+            "shape": []
+        },
+        {
+            "definition": "Maximum capacity of shared audio testing machine per day",
+            "symbol": "MaxTesting",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Profit per wired headphone",
+            "symbol": "ProfitWired",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Profit per wireless headphone",
+            "symbol": "ProfitWireless",
+            "value": 20,
+            "shape": []
+        }
+    ],
+    "description": "A audio company make two types of headphones: wired headphones and wireless headphones. Two different teams make each type of headphones. The wired team can make at most \\param{MaxWired} wired headphones per day and the wireless team can make at most \\param{MaxWireless} wireless headphones per day. Both teams require use of a shared audio testing machine, and this machine can be used to make a maximum of \\param{MaxTesting} headphones per day. The profit per wired headphone is \\param{ProfitWired} and the profit per wireless headphone \\param{ProfitWireless}. How many of each headphone should be made to maximize profit?"
+}

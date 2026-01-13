@@ -1,0 +1,46 @@
+{
+    "background": "A factory needs to provide transportation for its employees using a mix of taxis and company cars, taking into account the capacities of each and specific limits on company car usage.",
+    "constraints": [
+        "Each taxi ride can carry up to TaxiCapacity employees",
+        "Each company car ride can carry up to CarCapacity employees",
+        "At most MaxCarRideProportion of the rides can be company car rides",
+        "There must be at least MinCarRides of company car rides",
+        "There must be enough rides to transport at least MinEmployees employees",
+        "Number of taxi rides is non-negative",
+        "Number of company car rides is non-negative"
+    ],
+    "objective": "Minimize the total number of taxi rides",
+    "description": "A factory provides rides for its employees in either taxis or company cars. Each taxi ride can take \\param{TaxiCapacity} employees while each company car ride can take \\param{CarCapacity} employees. Since buying and maintaining cars is expensive, at most \\param{MaxCarRideProportion} of the rides can be company car rides. However, there has to be at least \\param{MinCarRides} company car rides. If the company needs to transport at least \\param{MinEmployees} employees, how many rides of each should be done to minimize the total number of taxi rides.",
+    "parameters": [
+        {
+            "definition": "Number of employees that a taxi ride can take",
+            "symbol": "TaxiCapacity",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of employees that a company car ride can take",
+            "symbol": "CarCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of the total rides that can be company car rides",
+            "symbol": "MaxCarRideProportion",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of company car rides",
+            "symbol": "MinCarRides",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of employees to be transported",
+            "symbol": "MinEmployees",
+            "value": 500,
+            "shape": []
+        }
+    ]
+}

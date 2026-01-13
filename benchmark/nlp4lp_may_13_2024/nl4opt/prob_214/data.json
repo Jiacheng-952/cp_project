@@ -1,0 +1,10 @@
+{
+    "B": 100000,
+    "Pbasketball": 0.5,
+    "Phorse": 0.25,
+    "Psoccer": 0.1,
+    "Rbasketball": 1.2,
+    "Rhorse": 0.5,
+    "Rsoccer": 0.1,
+    "Pmax": 0.3
+}

@@ -1,0 +1,10 @@
+{
+    "FreightCapacity": 5,
+    "AirCapacity": 3,
+    "FreightCost": 300,
+    "AirCost": 550,
+    "MinimumTons": 200,
+    "Budget": 20000,
+    "AirFraction": 0.3,
+    "MinimumFreightTrips": 5
+}

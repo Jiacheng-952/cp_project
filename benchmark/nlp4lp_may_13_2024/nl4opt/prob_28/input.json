@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Profit earned from one phone",
+            "symbol": "ProfitPhone",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Profit earned from one laptop",
+            "symbol": "ProfitLaptop",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Floor space required by one phone",
+            "symbol": "SpacePhone",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Floor space required by one laptop",
+            "symbol": "SpaceLaptop",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Total available floor space",
+            "symbol": "TotalSpace",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total appliances that must be laptops",
+            "symbol": "MinLaptopRatio",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one phone for the store",
+            "symbol": "CostPhone",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one laptop for the store",
+            "symbol": "CostLaptop",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount store wants to spend on inventory",
+            "symbol": "MaxSpend",
+            "value": 6000,
+            "shape": []
+        }
+    ],
+    "description": "An electronics store wants to optimize how many phones and laptops are enough to keep in inventory. A phone will earn the store \\param{ProfitPhone} in profits, and a laptop will earn \\param{ProfitLaptop}. A phone requires \\param{SpacePhone} sq ft of floor space, whereas a laptop requires \\param{SpaceLaptop} sq ft. In total, \\param{TotalSpace} sq ft of floor space is available. The store stocks only phones and laptops. Corporate has required that at least \\param{MinLaptopRatio} of all appliances in stock be laptops. Finally, a phone costs \\param{CostPhone} for the store, and a laptop, \\param{CostLaptop}. The store wants to spend at most \\param{MaxSpend}. Formulate an LP that can be used to maximize the store's profit."
+}

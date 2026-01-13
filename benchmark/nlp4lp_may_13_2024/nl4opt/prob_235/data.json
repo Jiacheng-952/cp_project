@@ -1,0 +1,9 @@
+{
+    "TotalResin": 3000,
+    "ResinMolar": 20,
+    "ResinCanine": 15,
+    "PainKillerMolar": 3,
+    "PainKillerCanine": 2.3,
+    "MinCaninePercentage": 0.6,
+    "MinMolars": 45
+}

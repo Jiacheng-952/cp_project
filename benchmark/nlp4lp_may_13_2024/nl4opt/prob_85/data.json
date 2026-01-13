@@ -1,0 +1,11 @@
+{
+    "LakeSize": 250,
+    "FishNet": 8,
+    "FishLine": 5,
+    "BaitNet": 4,
+    "BaitLine": 3,
+    "PainNet": 2,
+    "PainLine": 1,
+    "TotalBait": 800,
+    "MaxPain": 350
+}

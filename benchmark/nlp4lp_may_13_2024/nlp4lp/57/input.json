@@ -1,0 +1,78 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of part types",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce one batch of part p on machine m",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost of operating machine m for one month",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Number of hours machine m is available each month without overtime",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Price received for selling one batch of part p",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part p to be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Standard cost for operating all machines during normal operating hours",
+            "symbol": "StandardCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Extra cost for operating a machine in overtime per hour",
+            "symbol": "OvertimeCost",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of overtime hours available for machine m",
+            "symbol": "OvertimeHour",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        }
+    ],
+    "description": "PROBLEM TYPE\nLP\n\nINPUT FORMAT \n\n{\n    \"time_required\": [[TimeRequired for p in 1, ..., P] for m in 1, ..., M],\n    \"machine_costs\": [MachineCosts for m in 1, ..., M],\n    \"availability\": [Availability for m in 1, ..., M],\n    \"prices\": [Prices for p in 1, ..., P],\n    \"min_batches\": [MinBatches for p in 1, ..., P],\n    \"standard_cost\": StandardCost,\n    \"overtime_cost\": OvertimeCost,\n    \"overtime_hour\": OvertimeHour\n}\n\n\nOBJECTIVE\nHow many batches of each part should the manufacturer produce each month to maximize profit?"
+}

@@ -1,0 +1,61 @@
+{
+    "background": "There are two types of pills, pill A and pill B, which contain sleep-inducing and anti-inflammatory medicine in specified amounts. The cost for each type of pill is given and a patient needs a minimum amount of each type of medicine.",
+    "constraints": [
+        "Number of pill A is non-negative",
+        "Number of pill B is non-negative",
+        "The total sleep-inducing medicine from pills A and B must be at least MinSleep units",
+        "The total anti-inflammatory medicine from pills A and B must be at least MinAntiInfl units"
+    ],
+    "objective": "Minimize the total cost of purchasing pills A and B to meet medicinal requirements",
+    "description": "Sleep inducing medicine and anti-inflammatory medicine are found in two pills, pill A and pill B. One pill A contains \\param{SleepA} units of sleep inducing medicine and \\param{AntiInflA} units of anti-inflammatory medicine. One pill B contains \\param{SleepB} units of sleep-inducing medicine and \\param{AntiInflB} unit of anti-inflammatory medicine. The cost per pill for pill A is \\param{CostA} and the cost per pill for pill B is \\param{CostB}. A patient must consume these two pills to get at least \\param{MinSleep} units of sleep-inducing medicine and \\param{MinAntiInfl} units of anti-inflammatory medicine. Formulate an LP to minimize the cost for the patient.",
+    "parameters": [
+        {
+            "definition": "Units of sleep inducing medicine in pill A",
+            "symbol": "SleepA",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of anti-inflammatory medicine in pill A",
+            "symbol": "AntiInflA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleep inducing medicine in pill B",
+            "symbol": "SleepB",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of anti-inflammatory medicine in pill B",
+            "symbol": "AntiInflB",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill for pill A",
+            "symbol": "CostA",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Cost per pill for pill B",
+            "symbol": "CostB",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of sleep-inducing medicine",
+            "symbol": "MinSleep",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of anti-inflammatory medicine",
+            "symbol": "MinAntiInfl",
+            "value": 50,
+            "shape": []
+        }
+    ]
+}

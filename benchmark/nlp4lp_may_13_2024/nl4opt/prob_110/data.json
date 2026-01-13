@@ -1,0 +1,10 @@
+{
+    "MedicineThroat1": 0.5,
+    "MedicineLungs1": 0.4,
+    "MedicineThroat2": 0.2,
+    "MedicineLungs2": 0.5,
+    "Sugar1": 0.5,
+    "Sugar2": 0.3,
+    "MaxMedicineThroat": 5,
+    "MinMedicineLungs": 4
+}

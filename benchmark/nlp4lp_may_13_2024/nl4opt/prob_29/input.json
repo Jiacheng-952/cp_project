@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of regular candy in each kilogram of the regular mix",
+            "symbol": "RegCandyRegMix",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sour candy in each kilogram of the regular mix",
+            "symbol": "SourCandyRegMix",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kilogram of the regular mix",
+            "symbol": "ProfitRegMix",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of regular candy in each kilogram of the sour surprise mix",
+            "symbol": "RegCandySourMix",
+            "value": 0.1,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sour candy in each kilogram of the sour surprise mix",
+            "symbol": "SourCandySourMix",
+            "value": 0.9,
+            "shape": []
+        },
+        {
+            "definition": "Profit per kilogram of the sour surprise mix",
+            "symbol": "ProfitSourMix",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of regular candy available",
+            "symbol": "TotalRegCandy",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Total amount of sour candy available",
+            "symbol": "TotalSourCandy",
+            "value": 60,
+            "shape": []
+        }
+    ],
+    "description": "A candy store mixes regular candy and sour candy to prepare two products, regular mix and sour surprise mix. Each kilogram of the regular mix contains \\param{RegCandyRegMix} kg of regular candy and \\param{SourCandyRegMix} kg of sour candy. The profit per kilogram of the regular mix is $\\param{ProfitRegMix}. Each kilogram of the sour surprise mix contains \\param{RegCandySourMix} kg of regular candy and \\param{SourCandySourMix} kg of sour candy. The profit per kilogram of the sour surprise mix is $\\param{ProfitSourMix}. The candy store has \\param{TotalRegCandy} kg of regular candy and \\param{TotalSourCandy} kg of sour candy available. How many kilograms of each type of candy mix should be created to maximize profits?"
+}

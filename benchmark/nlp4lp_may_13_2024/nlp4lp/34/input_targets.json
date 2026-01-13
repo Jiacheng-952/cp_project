@@ -1,0 +1,80 @@
+{
+    "background": "The problem involves scheduling generators to operate during different periods of the day in order to meet a specified electricity demand at minimum cost. Each generator has its own operational constraints and costs associated with running, producing extra power, and starting up.",
+    "constraints": [
+        "Generator output must meet or exceed the demand for each period",
+        "Each generator can operate only within its minimum and maximum levels",
+        "The total number of generators used cannot exceed the available number of each generator"
+    ],
+    "objective": "Minimize the total cost of running generators, which includes running costs, extra costs for exceeding certain thresholds, and start-up costs",
+    "description": "Which generators should be working in which periods of the day to minimize the total cost given the demand (\\param{Demand}) for each period, the number of each generator (\\param{NumGenerator}), the minimum (\\param{MinLevel}) and maximum (\\param{MaxLevel}) levels of each generator, the running costs (\\param{RunCost}), the extra costs (\\param{ExtraCost}), and the start-up costs (\\param{StartCost}) for each generator?",
+    "parameters": [
+        {
+            "definition": "Total number of periods",
+            "symbol": "T",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total number of generators",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Demand during period t",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "T"
+            ]
+        },
+        {
+            "definition": "Number of generator k",
+            "symbol": "NumGenerator",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Minimum level of generator k",
+            "symbol": "MinLevel",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Maximum level of generator k",
+            "symbol": "MaxLevel",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Running cost of generator k",
+            "symbol": "RunCost",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Extra cost of generator k",
+            "symbol": "ExtraCost",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Start-up cost of generator k",
+            "symbol": "StartCost",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

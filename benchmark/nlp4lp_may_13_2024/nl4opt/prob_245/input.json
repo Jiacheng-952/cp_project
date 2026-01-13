@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of customers a large cruise ship can carry",
+            "symbol": "LargeShipCapacity",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by a large cruise ship trip",
+            "symbol": "LargeShipPollution",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Number of customers a small cruise ship can carry",
+            "symbol": "SmallShipCapacity",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Pollution units produced by a small cruise ship trip",
+            "symbol": "SmallShipPollution",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of large cruise ship trips",
+            "symbol": "MaxLargeShipTrips",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total trips that must be by small cruise ships",
+            "symbol": "MinSmallShipTripPercent",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of customers the company aims to transport",
+            "symbol": "MinCustomers",
+            "value": 20000,
+            "shape": []
+        }
+    ],
+    "description": "A cruise company can either have two types of trips, a large cruise ship or a small cruise ship. A large cruise ship trip can carry \\param{LargeShipCapacity} customers and produces \\param{LargeShipPollution} units of pollution. A small cruise ship trip can carry \\param{SmallShipCapacity} customers and produces \\param{SmallShipPollution} units of pollution. There can be at most \\param{MaxLargeShipTrips} large cruise ship trips and at least \\param{MinSmallShipTripPercent} of the total trips must be made by small cruise ships. If the cruise company aims to transport at least \\param{MinCustomers} customers, how many of each size of cruise ships should the company use to minimize the total amount of pollution produced?"
+}

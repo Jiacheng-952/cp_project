@@ -1,0 +1,53 @@
+{
+    "id": "rail_scheduling_001",
+    "problem_type": {
+        "major_category": "scheduling",
+        "subcategory": "rail_scheduling"
+    },
+    "abstract_problem": "This is a single-direction railway scheduling problem that requires arranging arrival and departure times for trains at each station within a given time window. To ensure safe operations, trains must maintain a minimum headway interval at each station. The objective is to **minimize the total travel time of all trains** while satisfying stopping requirements and interval constraints.\n\n## Key Constraints\n\n1. **Time Window**: All departure and arrival times must be within the specified time limit defined by system parameters\n2. **Headway Constraints**: For any two trains at any station, the difference between their arrival times must be at least the minimum headway interval, and the difference between their departure times must also meet the same requirement\n3. **Dwell Time**: For stopping trains at intermediate stations (excluding origin and destination), dwell time must be within the minimum and maximum allowed stopping time limits\n4. **Origin/Destination Handling**: At the origin station, arrival time equals departure time; at the destination station, departure time equals arrival time\n5. **Running Time Constraints**: Departure time from previous station plus the corresponding section running time equals the arrival time at the next station, based on train speed class\n6. **No Overtaking**: Only one train is allowed at a station at any time (either stopping or passing through)",
+    "parameters": {
+        "num_stations": "7",
+        "num_trains": "16",
+        "num_sections": "6",
+        "time_limit": "160",
+        "min_headway": "5",
+        "min_stop_time": "2",
+        "max_stop_time": "15",
+        "speed_classes": "['250', '300', '350']"
+    },
+    "files": {
+        "station": {
+            "path": "data/station.csv",
+            "description": "Station information with columns: station (station name), mile (distance from origin in miles). Each station has only one track for train operations. Only one train is allowed at a station at any given time (either stopping or passing through). Train overtaking is not allowed - for any station, the succeeding train can only arrive after the preceding train has departed. Data format: | station | mile |\n|---------|------|\n| A       | 0    |\n| B       | 50   |\n| C       | 100  |\n| D       | 170  |\n| E       | 210  |\n| F       | 250  |\n| G       | 300  |"
+        },
+        "train": {
+            "path": "data/train.csv",
+            "description": "Train information with columns: trainNO (train number), speed (speed class), A-G (stopping pattern at each station, 1=stop, 0=pass through). When passing through, arrival and departure times are equal, but the track is still occupied. All trains travel sequentially through stations A to G. The travel time of a train is calculated as its arrival time at Station G minus its departure time from Station A. Data format: | trainNO | speed | A | B | C | D | E | F | G |\n|---------|-------|---|---|---|---|---|---|---|\n| G1      | 350   | 1 | 0 | 0 | 0 | 0 | 1 | 1 |\n| G3      | 350   | 1 | 1 | 1 | 0 | 1 | 0 | 1 |\n| ...     | ...   |...|...|...|...|...|...|...|"
+        },
+        "runtime": {
+            "path": "data/runtime.csv",
+            "description": "Section running times for different speed classes. Each row represents a section (format: 'from_station-to_station') and provides running times for different speed classes. The departure time from the previous station plus the corresponding running time equals the arrival time at the next station. Note: Speed class column names are in string format ('300', '350'). Data format: | station | '300' | '350' |\n|---------|-------|-------|\n| A-B     | 10    | 9     |\n| B-C     | 20    | 18    |\n| C-D     | 14    | 12    |\n| D-E     | 8     | 7     |\n| E-F     | 8     | 7     |\n| F-G     | 10    | 8     |"
+        },
+        "parameter": {
+            "path": "data/parameter.csv",
+            "description": "System parameters in transposed format. First row contains parameter names: T (time limit), H (minimum headway), MINSTOP, MAXSTOP. Second row contains their corresponding values. Parameter Descriptions: T: Time limit; all arrival/departure times must be within [0, T]. H: Minimum headway; any two trains at the same station must have at least H minutes between their arrival/departure times. MINSTOP: Minimum dwell time at intermediate stations. MAXSTOP: Maximum dwell time at intermediate stations. Data format: | T   | H | MINSTOP | MAXSTOP |\n|-----|---|---------|----------|\n| 160 | 5 | 2       | 15       |"
+        }
+    },
+    "data_reading_notes": "When reading the data files, pay attention to the following:\n- train.csv: Column names are 'trainNO' and 'speed' (for train number and speed class)\n- runtime.csv: Speed class column names are strings ('300', '350'), not integers\n- parameter.csv: Transposed format - parameter names in first row (T, H, MINSTOP, MAXSTOP), values in second row\n- Important: The data examples shown are only for format demonstration. The actual numerical values may differ and must be read from the actual data files.\n\nEnsure you use the correct column names to avoid KeyError exceptions.",
+    "concrete_problem": "",
+    "mathematical_formulation": "model.md",
+    "solver_code": "solve.py",
+    "generator_code": "generator.py",
+    "optimal_value": 1194.0,
+    "verification": {
+        "solver": "Gurobi",
+        "status": "optimal",
+        "solve_time_seconds": null,
+        "log_file": "logs/solver.log"
+    },
+    "metadata": {
+        "created_date": "2025-11-05",
+        "language": "English",
+        "problem_class": "MILP"
+    }
+}

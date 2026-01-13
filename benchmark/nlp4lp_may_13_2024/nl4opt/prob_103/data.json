@@ -1,0 +1,9 @@
+{
+    "TotalMedication": 2000,
+    "SmallMedication": 10,
+    "SmallMeat": 12,
+    "LargeMedication": 15,
+    "LargeMeat": 15,
+    "MinSmallBonePercentage": 0.5,
+    "MinLargeBones": 30
+}

@@ -1,0 +1,11 @@
+{
+    "A": 2500,
+    "TimeHeavyDuty": 2,
+    "TimeGasMower": 5,
+    "PollutionHeavyDuty": 12,
+    "FuelHeavyDuty": 3,
+    "PollutionGasMower": 10,
+    "FuelGasMower": 2,
+    "FuelTotal": 450,
+    "PollutionMax": 2000
+}

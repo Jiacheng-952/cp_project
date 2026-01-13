@@ -1,0 +1,9 @@
+{
+    "HamSlicerHours": 4,
+    "HamPackerHours": 2.5,
+    "RibSlicerHours": 2,
+    "RibPackerHours": 3.5,
+    "MaxHours": 4000,
+    "HamProfit": 150,
+    "RibProfit": 300
+}

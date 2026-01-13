@@ -1,0 +1,8 @@
+{
+    "OldVanCapacity": 100,
+    "NewVanCapacity": 80,
+    "OldVanPollution": 50,
+    "NewVanPollution": 30,
+    "MinBottles": 5000,
+    "MaxNewVans": 30
+}

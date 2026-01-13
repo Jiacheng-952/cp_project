@@ -1,0 +1,95 @@
+{
+    "background": "An ice cream store makes chocolate and vanilla ice cream by the gallon within given limits and time constraints.",
+    "constraints": [
+        "Number of gallons of chocolate ice cream is an integer",
+        "Number of gallons of vanilla ice cream is an integer",
+        "Number of gallons of chocolate ice cream is non-negative",
+        "Number of gallons of vanilla ice cream is non-negative",
+        "The store must make at least MinChoc gallons of chocolate ice cream",
+        "The store must make at least MinVanilla gallons of vanilla ice cream",
+        "The store must make at most MaxChoc gallons of chocolate ice cream",
+        "The store must make at most MaxVanilla gallons of vanilla ice cream",
+        "It takes TimeChoc hours to produce a gallon of chocolate ice cream",
+        "It takes TimeVanilla hours to produce a gallon of vanilla ice cream",
+        "Total time available is TotalTime hours per week",
+        "At least MinWorkers workers are needed",
+        "WorkersChoc are working on the chocolate ice cream",
+        "WorkersVanilla are working on the vanilla ice cream"
+    ],
+    "objective": "Maximize the store's profit from selling chocolate and vanilla ice cream",
+    "description": "An ice cream store makes chocolate and vanilla ice cream by the gallon. In a week, they must make at least \\var{MinChoc} gallons of chocolate ice cream and at least \\var{MinVanilla} gallons of vanilla ice cream but at most \\var{MaxChoc} gallons of chocolate ice cream and at most \\var{MaxVanilla} gallons of vanilla ice cream. It takes \\var{TimeChoc} hour to produce a gallon of chocolate ice cream and \\var{TimeVanilla} hours to produce a gallon of vanilla ice cream. In a week, \\var{TotalTime} hours are available to make ice cream. In addition, at least \\var{MinWorkers} workers are needed with \\var{WorkersChoc} working on the chocolate ice cream and \\var{WorkersVanilla} on the vanilla ice cream at any time. If the profit per gallon of chocolate ice cream is $\\var{ProfitChoc} and the profit per gallon of vanilla ice cream is $\\var{ProfitVanilla}, how many gallons of each should be made to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Minimum gallons of chocolate ice cream required to be made in a week",
+            "symbol": "MinChoc",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum gallons of chocolate ice cream allowed to be made in a week",
+            "symbol": "MaxChoc",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Minimum gallons of vanilla ice cream required to be made in a week",
+            "symbol": "MinVanilla",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum gallons of vanilla ice cream allowed to be made in a week",
+            "symbol": "MaxVanilla",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce one gallon of chocolate ice cream",
+            "symbol": "TimeChoc",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce one gallon of vanilla ice cream",
+            "symbol": "TimeVanilla",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available time to make ice cream in a week",
+            "symbol": "TotalTime",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Profit per gallon of chocolate ice cream",
+            "symbol": "ProfitChoc",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Profit per gallon of vanilla ice cream",
+            "symbol": "ProfitVanilla",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of workers needed",
+            "symbol": "MinWorkers",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers working on chocolate ice cream",
+            "symbol": "WorkersChoc",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Number of workers working on vanilla ice cream",
+            "symbol": "WorkersVanilla",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

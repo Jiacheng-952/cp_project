@@ -1,0 +1,8 @@
+{
+    "BalloonCapacity": 4,
+    "GondolaCapacity": 6,
+    "BalloonPollution": 10,
+    "GondolaPollution": 15,
+    "MaxBalloons": 10,
+    "MinVisitors": 70
+}

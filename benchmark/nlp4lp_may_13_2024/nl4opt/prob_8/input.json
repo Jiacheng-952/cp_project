@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Total amount of money available for investment",
+            "symbol": "TotalInvestment",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum investment ratio in the favorite clothing company over the tech company",
+            "symbol": "InvestmentRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Maximum investment in the favorite tech company",
+            "symbol": "MaxTechInvestment",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Annual return rate of the favorite clothing company",
+            "symbol": "ReturnRateClothing",
+            "value": 0.07,
+            "shape": []
+        },
+        {
+            "definition": "Annual return rate of the favorite tech company",
+            "symbol": "ReturnRateTech",
+            "value": 0.1,
+            "shape": []
+        }
+    ],
+    "description": "Jacob has \\param{TotalInvestment} to invest. He has decided to invest in his favorite clothing company and his favorite tech company. He has decided that the money invested in his favorite clothing company must be at least \\param{InvestmentRatio} times as much as the amount invested in his favorite tech company. He has also limited himself to invest at most \\param{MaxTechInvestment} in his favorite tech company. If the money invested in his favorite clothing company earns \\param{ReturnRateClothing} and the money invested in his favorite tech company earns \\param{ReturnRateTech}, how much should he invest in each to maximize his profit?"
+}

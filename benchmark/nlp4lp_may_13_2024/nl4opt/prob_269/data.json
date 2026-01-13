@@ -1,0 +1,9 @@
+{
+    "BagsPerRunner": 3,
+    "TimePerRunner": 4,
+    "BagsPerCanoer": 10,
+    "TimePerCanoer": 2,
+    "MaxCanoeProportion": 0.33,
+    "TotalHours": 200,
+    "MinRunners": 4
+}

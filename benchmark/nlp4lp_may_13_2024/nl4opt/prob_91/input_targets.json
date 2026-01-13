@@ -1,0 +1,63 @@
+{
+    "background": "A factory operates two types of machines, A and B, to produce items. Both machines have different production rates and energy consumptions. The factory must meet minimum production requirements, adhere to electricity limitations, maintain a certain percentage of machine type B, and ensure a minimum number of machine A are used.",
+    "constraints": [
+        "Number of items made by machine A and B together is at least MinItems per day",
+        "Total electricity consumption by machines A and B is at most MaxElectricity kWh per day",
+        "Number of machine B is at most MaxPercentB percent of the total number of machines",
+        "Number of machine A used is at least MinMachineA",
+        "Total electricity used by machine A is at most ElectricityA * number of machine A",
+        "Total electricity used by machine B is at most ElectricityB * number of machine B"
+    ],
+    "objective": "Minimize the total number of machines used (both A and B)",
+    "description": "A factory has two machines, A and B. Each day, machine A can make \\param{ItemsAMadePerDay} items and consumes \\param{ElectricityA} kWh. Machine B can make \\param{ItemsBMadePerDay} items and consumes \\param{ElectricityB} kWh per day. The factory must produce at least \\param{MinItems} items per day and has \\param{MaxElectricity} kWh of electricity available per day. Since there are not many workers that can operate both machines, at most \\param{MaxPercentB} of the machines must be of type B. Further, at least \\param{MinMachineA} machines of type A should be used. How many of each machine should be used to minimize the total number of machines?",
+    "parameters": [
+        {
+            "definition": "Number of items machine A can make per day",
+            "symbol": "ItemsAMadePerDay",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Electricity consumed by machine A per day",
+            "symbol": "ElectricityA",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Number of items machine B can make per day",
+            "symbol": "ItemsBMadePerDay",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Electricity consumed by machine B per day",
+            "symbol": "ElectricityB",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total items the factory must produce per day",
+            "symbol": "MinItems",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount of electricity available for the factory per day",
+            "symbol": "MaxElectricity",
+            "value": 3000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of type B machines",
+            "symbol": "MaxPercentB",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of machine A to be used",
+            "symbol": "MinMachineA",
+            "value": 5,
+            "shape": []
+        }
+    ]
+}

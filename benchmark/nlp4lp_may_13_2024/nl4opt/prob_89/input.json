@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of goat meat required for one bowl of goat curry",
+            "symbol": "GoatMeatPerGoatCurry",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of curry base required for one bowl of goat curry",
+            "symbol": "CurryBasePerGoatCurry",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of chicken meat required for one bowl of chicken curry",
+            "symbol": "ChickenMeatPerChickenCurry",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of curry base required for one bowl of chicken curry",
+            "symbol": "CurryBasePerChickenCurry",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of goat meat",
+            "symbol": "TotalGoatMeat",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of chicken meat",
+            "symbol": "TotalChickenMeat",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of bowls that must be chicken curry",
+            "symbol": "MinChickenCurryProportion",
+            "value": 0.25,
+            "shape": []
+        }
+    ],
+    "description": "An Indian restaurant makes goat and chicken curry. Each bowl of goat curry requires \\param{GoatMeatPerGoatCurry} units of goat meat and \\param{CurryBasePerGoatCurry} units of the curry base. Each bowl of chicken curry requires \\param{ChickenMeatPerChickenCurry} units of chicken meat and \\param{CurryBasePerChickenCurry} units of the curry base. The restaurant has available \\param{TotalGoatMeat} units of goat meat and \\param{TotalChickenMeat} units of chicken meat. At least \\param{MinChickenCurryProportion} of the bowls made must be chicken curry. Since goat curry is more popular, the number of goat curry bowls must be larger than the number of chicken curry bowls. How many of each type of curry bowl should be made to minimize the total amount of curry base used?"
+}

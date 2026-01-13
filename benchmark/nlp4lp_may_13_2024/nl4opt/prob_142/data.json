@@ -1,0 +1,13 @@
+{
+    "Red1": 3,
+    "Blue1": 4,
+    "Green1": 5,
+    "Smelly1": 1,
+    "Red2": 5,
+    "Blue2": 3,
+    "Green2": 6,
+    "Smelly2": 2,
+    "TotalRed": 80,
+    "TotalBlue": 70,
+    "MaxSmelly": 10
+}

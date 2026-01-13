@@ -1,0 +1,68 @@
+{
+    "background": "A farmer has a fixed amount of land and limited resources for watering and pesticides for growing turnips and pumpkins to maximize his revenue.",
+    "constraints": [
+        "Acres of turnips plus acres of pumpkins must be less than or equal to TotalAcres",
+        "Watering time for turnips plus watering time for pumpkins must be less than or equal to TotalWateringTime",
+        "Pesticide cost for turnips plus pesticide cost for pumpkins must be less than or equal to TotalPesticideBudget",
+        "Acres of turnips is non-negative",
+        "Acres of pumpkins is non-negative"
+    ],
+    "objective": "Maximize the revenue from turnips (RevenueTurnips * acres of turnips) plus revenue from pumpkins (RevenuePumpkins * acres of pumpkins)",
+    "description": "A farmer has \\var{TotalAcres} acres of land to grow turnips and pumpkins. Turnips require \\var{WateringTurnips} minutes of watering and $\\var{PesticideTurnips} worth of pesticide per acre. Pumpkins require \\var{WateringPumpkins} minutes of watering and $\\var{PesticidePumpkins} worth of pesticide per acre. The farmer has \\var{TotalWateringTime} minutes available for watering and $\\var{TotalPesticideBudget} available to spend on pesticide. If the revenue per acre of turnips is $\\var{RevenueTurnips} and the revenue per acre of pumpkins is $\\var{RevenuePumpkins}, how many acres of each should he grow to maximize his revenue.",
+    "parameters": [
+        {
+            "definition": "Total acres of land available for growing turnips and pumpkins",
+            "symbol": "TotalAcres",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Time required for watering per acre of turnips",
+            "symbol": "WateringTurnips",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Pesticide cost per acre of turnips",
+            "symbol": "PesticideTurnips",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Time required for watering per acre of pumpkins",
+            "symbol": "WateringPumpkins",
+            "value": 90,
+            "shape": []
+        },
+        {
+            "definition": "Pesticide cost per acre of pumpkins",
+            "symbol": "PesticidePumpkins",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Total watering time available",
+            "symbol": "TotalWateringTime",
+            "value": 40000,
+            "shape": []
+        },
+        {
+            "definition": "Total pesticide budget available",
+            "symbol": "TotalPesticideBudget",
+            "value": 34000,
+            "shape": []
+        },
+        {
+            "definition": "Revenue per acre of turnips",
+            "symbol": "RevenueTurnips",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Revenue per acre of pumpkins",
+            "symbol": "RevenuePumpkins",
+            "value": 450,
+            "shape": []
+        }
+    ]
+}

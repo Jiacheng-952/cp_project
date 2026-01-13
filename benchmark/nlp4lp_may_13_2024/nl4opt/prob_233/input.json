@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Daily volume allowed by the high-volume pipe",
+            "symbol": "HighVolumeCapacity",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Number of technicians required to monitor one high-volume pipe",
+            "symbol": "HighVolumeTechs",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Daily volume allowed by the low-volume pipe",
+            "symbol": "LowVolumeCapacity",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Number of technicians required to monitor one low-volume pipe",
+            "symbol": "LowVolumeTechs",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Total daily gas volume demand",
+            "symbol": "Demand",
+            "value": 150000,
+            "shape": []
+        },
+        {
+            "definition": "Total number of technicians available",
+            "symbol": "TotalTechs",
+            "value": 160,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of high-volume pipes of the total number of pipes",
+            "symbol": "MaxHighVolumePercent",
+            "value": 0.35,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of low-volume pipes required",
+            "symbol": "MinLowVolumePipes",
+            "value": 8,
+            "shape": []
+        }
+    ],
+    "description": "An oil and gas company has two types of pipes, a high-volume and a low-volume one. Every day, the high-volume pipe allows \\param{HighVolumeCapacity} US gallons and it is recommended that \\param{HighVolumeTechs} technicians closely monitor the pipes to ensure that it is functioning properly. Each day, the low-volume pipe allows \\param{LowVolumeCapacity} US gallons and \\param{LowVolumeTechs} technicians should closely monitor for safety reasons. Every day, the oil and gas company needs to meet the demands of at least \\param{Demand} US gallons of gas and they have \\param{TotalTechs} technicians that are on their staff. Since the high-volume pipe has a higher risk of environmental damage, at most \\param{MaxHighVolumePercent} percent of the pipes can be high-volume ones. Additionally, there must be a minimum of \\param{MinLowVolumePipes} low-volume pipes. How many of each pipe types should be used to reduce the total number of pipes required?"
+}

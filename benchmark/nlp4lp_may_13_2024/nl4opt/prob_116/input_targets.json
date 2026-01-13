@@ -1,0 +1,68 @@
+{
+    "background": "A pharmacy produces acne and anti-bacterial creams in two factories with different production rates and requires a certain amount of base gel per hour for each factory. The pharmacy aims to meet minimum production requirements for both creams with a limited supply of base gel.",
+    "constraints": [
+        "A maximum of TotalBaseGel units of base gel is available",
+        "At least MinAcneCream units of acne cream must be produced in total",
+        "At least MinAntibacterialCream units of anti-bacterial cream must be produced in total",
+        "Number of hours factory 1 operates is non-negative",
+        "Number of hours factory 2 operates is non-negative"
+    ],
+    "objective": "Minimize the total hours of operation across both factories",
+    "description": "A pharmacy has two factories, factory 1 and factory 2, where they make acne cream and anti-bacterial cream. Factory 1 produces \\param{AcneFactory1} units of acne cream and \\param{AntibacterialFactory1} units of anti-bacterial cream per hour. Factory 2 produces \\param{AcneFactory2} units of acne cream and \\param{AntibacterialFactory2} units of anti-bacterial cream per hour. Factory 1 requires \\param{BaseGelFactory1} units of base gel per hour while factory 2 requires \\param{BaseGelFactory2} units of base gel per hour. The pharmacy has available \\param{TotalBaseGel} units of base gel. Further, they must make at least \\param{MinAcneCream} units of acne cream and \\param{MinAntibacterialCream} units of anti-bacterial cream. How many hours should each factory be run to minimize the total time needed?",
+    "parameters": [
+        {
+            "definition": "Quantity of acne cream produced by factory 1 per hour",
+            "symbol": "AcneFactory1",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of anti-bacterial cream produced by factory 1 per hour",
+            "symbol": "AntibacterialFactory1",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of acne cream produced by factory 2 per hour",
+            "symbol": "AcneFactory2",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Quantity of anti-bacterial cream produced by factory 2 per hour",
+            "symbol": "AntibacterialFactory2",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Base gel used by factory 1 per hour",
+            "symbol": "BaseGelFactory1",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Base gel used by factory 2 per hour",
+            "symbol": "BaseGelFactory2",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of base gel",
+            "symbol": "TotalBaseGel",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of acne cream to be produced",
+            "symbol": "MinAcneCream",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of anti-bacterial cream to be produced",
+            "symbol": "MinAntibacterialCream",
+            "value": 1000,
+            "shape": []
+        }
+    ]
+}

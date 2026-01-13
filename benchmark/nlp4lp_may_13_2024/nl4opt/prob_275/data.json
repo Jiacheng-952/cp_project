@@ -1,0 +1,7 @@
+{
+    "TimeA": 30,
+    "TimeB": 45,
+    "MaxRatioAtoB": 0.33,
+    "MinUnitsA": 300,
+    "MinTotalUnits": 1500
+}

@@ -1,0 +1,8 @@
+{
+    "SpecializedRate": 60,
+    "CommonRate": 40,
+    "SpecializedCharge": 100,
+    "CommonCharge": 72,
+    "MinimumImages": 10000,
+    "MinimumSpecializedProportion": 0.33
+}

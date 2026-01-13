@@ -1,0 +1,10 @@
+{
+    "InspectionTimeWashingMachine": 30,
+    "FixingTimeWashingMachine": 90,
+    "InspectionTimeFreezer": 20,
+    "FixingTimeFreezer": 125,
+    "TotalInspectionTime": 5000,
+    "TotalFixingTime": 20000,
+    "EarningsWashingMachine": 250,
+    "EarningsFreezer": 375
+}

@@ -1,0 +1,13 @@
+{
+    "C": 2200,
+    "P": 50,
+    "Cr": 70,
+    "HamburgerCost": 6.5,
+    "HamburgerCalories": 800,
+    "HamburgerProtein": 19,
+    "HamburgerCarbs": 20,
+    "WrapCost": 4,
+    "WrapCalories": 450,
+    "WrapProtein": 12,
+    "WrapCarbs": 10
+}

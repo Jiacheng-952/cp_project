@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Time for one unit of chemical A to be effective",
+            "symbol": "TimeA",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Time for one unit of chemical B to be effective",
+            "symbol": "TimeB",
+            "value": 45,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed ratio of chemical A to chemical B",
+            "symbol": "MaxRatioAtoB",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of chemical A",
+            "symbol": "MinUnitsA",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total required units of chemicals",
+            "symbol": "MinTotalUnits",
+            "value": 1500,
+            "shape": []
+        }
+    ],
+    "description": "Both chemical A and chemical B need to be added to a mixer for making bread. One unit of chemical A takes \\param{TimeA} seconds to be effective while one unit of chemical B takes \\param{TimeB} seconds to be effective. Because chemical A can be dangerous, there has to be at most \\param{MaxRatioAtoB} as much chemical A as chemical B in the mixer. If there has to be at least \\param{MinUnitsA} units of chemical A in the mixer and at least \\param{MinTotalUnits} units of total chemicals in the mixer, how many units of each should be added to minimize the total time it takes for the mixed bread to be ready?"
+}

@@ -1,0 +1,7 @@
+{
+    "TimeElectronic": 3,
+    "TimeRegular": 2,
+    "RatioElectronicRegular": 2,
+    "MinPatientsRegular": 50,
+    "TotalTime": 15000
+}

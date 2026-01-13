@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Calories per bowl of salmon",
+            "symbol": "CaloriesSalmon",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Protein per bowl of salmon",
+            "symbol": "ProteinSalmon",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Sodium per bowl of salmon",
+            "symbol": "SodiumSalmon",
+            "value": 80,
+            "shape": []
+        },
+        {
+            "definition": "Calories per bowl of eggs",
+            "symbol": "CaloriesEggs",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Protein per bowl of eggs",
+            "symbol": "ProteinEggs",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Sodium per bowl of eggs",
+            "symbol": "SodiumEggs",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of meals that can be eggs",
+            "symbol": "MaxEggProportion",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total calories required",
+            "symbol": "MinTotalCalories",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total protein required",
+            "symbol": "MinTotalProtein",
+            "value": 90,
+            "shape": []
+        }
+    ],
+    "description": "A macro-counting fitness guru only eats salmon and eggs. Each bowl of salmon contains \\param{CaloriesSalmon} calories, \\param{ProteinSalmon} grams of protein, and \\param{SodiumSalmon} mg of sodium. Each bowl of eggs contains \\param{CaloriesEggs} calories, \\param{ProteinEggs} grams of protein, and \\param{SodiumEggs} mg of sodium. Since the fitness guru has a limit to how many eggs he would like to eat, at most \\param{MaxEggProportion} of his meals can be eggs. The fitness guru needs to eat at least \\param{MinTotalCalories} calories and \\param{MinTotalProtein} grams of protein. How many of each type of meal should he eat to minimize his sodium intake?"
+}

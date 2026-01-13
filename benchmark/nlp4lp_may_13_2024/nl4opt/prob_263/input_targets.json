@@ -1,0 +1,44 @@
+{
+    "background": "A drop-in clinic has two testing methods with different time requirements and a certain ratio that must be maintained between the number of blood tests performed and the number of ear tests. The clinic operates for a limited amount of time.",
+    "constraints": [
+        "The time spent on blood tests is non-negative",
+        "The time spent on ear tests is non-negative",
+        "Blood tests performed should be at least [BloodEarRatio] times the ear tests performed",
+        "At least [MinEarTests] ear tests must be administered",
+        "The total time used for all tests cannot exceed [TotalTime] minutes"
+    ],
+    "objective": "Maximize the total number of tests performed",
+    "description": "A drop-in clinic is performing a test either through the ear or blood. A blood test takes \\param{BloodTestTime} minutes to perform while an ear test takes \\param{EarTestTime} minutes to perform. Since the blood test is more accurate, at least \\param{BloodEarRatio} times as many blood tests should be performed as ear tests. However, at least \\param{MinEarTests} ear tests must be administered. If the drop-in clinic operates for \\param{TotalTime} minutes, maximize the number of tests that can be performed.",
+    "parameters": [
+        {
+            "definition": "Time taken by one blood test",
+            "symbol": "BloodTestTime",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Time taken by one ear test",
+            "symbol": "EarTestTime",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of blood tests to ear tests",
+            "symbol": "BloodEarRatio",
+            "value": 0.33,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of ear tests",
+            "symbol": "MinEarTests",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Total operational time available",
+            "symbol": "TotalTime",
+            "value": 7525,
+            "shape": []
+        }
+    ]
+}

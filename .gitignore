@@ -1,0 +1,61 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.coverage
+.coverage.*
+agent_history.gif
+static/browser_history/*.gif
+
+# Virtual environments
+.venv
+venv/
+
+# Environment variables
+.env
+
+# user conf
+conf.yaml
+
+.idea/
+.langgraph_api/
+
+# coverage report
+coverage.xml
+coverage/
+
+*eval_results/
+
+benchmark/train-data
+benchmark/ComplexOR_raw
+benchmark/utils.ipynb
+benchmark/test*
+*.lp
+*.DS_Store
+test_*.py
+*.log
+*.txt
+debug_*.py
+
+# 测试相关文件
+*/tempCodeRunnerFile.py
+test*.py
+debug*.py
+benchmark/test*.jsonl
+
+# 评估结果和日志
+eval_results/
+*.log
+evaluation.log
+results.csv
+benchmark/test.jsonl
+
+# 测试输出文件
+*test_output*/
+*test_results*/
+*debug_output*/
+*.lp
+**CLAUDE.md

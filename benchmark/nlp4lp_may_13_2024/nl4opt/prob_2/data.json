@@ -1,0 +1,8 @@
+{
+    "WageSenior": 3000,
+    "WageJunior": 1000,
+    "MinAccountants": 100,
+    "MinSenior": 5,
+    "RatioSeniorJunior": 0.33,
+    "MaxWageBill": 150000
+}

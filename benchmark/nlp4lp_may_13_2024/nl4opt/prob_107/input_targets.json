@@ -1,0 +1,67 @@
+{
+    "background": "A patient needs to increase her protein and iron intake. She has the option of eating fish or chicken meals, each containing certain amounts of protein, iron, and fat.",
+    "constraints": [
+        "Patient needs at least MinProtein units of protein",
+        "Patient needs at least MinIron units of iron",
+        "The number of fish meals is non-negative",
+        "The number of chicken meals is non-negative"
+    ],
+    "objective": "Minimize the total fat intake from consuming fish and chicken meals",
+    "description": "A doctor recommends her patient eat more fish and chicken to increase her \\param{ProteinFish} and \\param{IronFish} intake. Each fish meal contains \\param{ProteinFish} units of protein and \\param{IronFish} units of iron. Each chicken meal contains \\param{ProteinChicken} units of protein and \\param{IronChicken} units of iron. The patient needs to consume at least \\param{MinProtein} units of protein and \\param{MinIron} units of iron. Since the chicken meal is less expensive, the patient prefers to consume at least \\param{MinChickenFishRatio} times as many chicken meals as fish meals. If each fish meal contains \\param{FatFish} units of fat and each chicken meal contains \\param{FatChicken} units of fat, how many meals of each should she eat to minimize her fat intake?",
+    "parameters": [
+        {
+            "definition": "Units of protein in each fish meal",
+            "symbol": "ProteinFish",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of iron in each fish meal",
+            "symbol": "IronFish",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of protein in each chicken meal",
+            "symbol": "ProteinChicken",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of iron in each chicken meal",
+            "symbol": "IronChicken",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of protein",
+            "symbol": "MinProtein",
+            "value": 130,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of iron",
+            "symbol": "MinIron",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of chicken meals to fish meals",
+            "symbol": "MinChickenFishRatio",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of fat in each fish meal",
+            "symbol": "FatFish",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of fat in each chicken meal",
+            "symbol": "FatChicken",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

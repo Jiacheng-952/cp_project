@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of chocolate mix required for each brownie",
+            "symbol": "ChocMixBrownie",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of fiber required for each brownie",
+            "symbol": "FiberBrownie",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of lemon mix required for each lemon square",
+            "symbol": "LemonMixSquare",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Units of fiber required for each lemon square",
+            "symbol": "FiberSquare",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of chocolate mix",
+            "symbol": "TotalChocMix",
+            "value": 2500,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of lemon mix",
+            "symbol": "TotalLemonMix",
+            "value": 3300,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of the total items that must be brownies",
+            "symbol": "MinBrownieProportion",
+            "value": 0.4,
+            "shape": []
+        }
+    ],
+    "description": "A bakery makes fiber supplemented brownies and lemon squares. Each brownie requires \\param{ChocMixBrownie} units of chocolate mix and \\param{FiberBrownie} units of fiber. Each lemon square requires \\param{LemonMixSquare} units of lemon mix and \\param{FiberSquare} units of fiber. Lemon squares sell much faster and thus the number of lemon squares made must be larger than the number of brownies made. However, to please all customers, at least \\param{MinBrownieProportion} of the items made must be brownies. If the bakery has \\param{TotalChocMix} units of chocolate mix and \\param{TotalLemonMix} units of lemon mix, how many of each should be made to minimize the total amount of fiber needed?"
+}

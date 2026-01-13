@@ -1,0 +1,58 @@
+{
+    "background": "Gold is used to make long and short cables, with each type requiring a different amount of gold. A certain proportion of short cables to long cables is required, and there is a minimum production requirement for long cables.",
+    "constraints": [
+        "Number of long cables is an integer",
+        "Number of short cables is an integer",
+        "Number of long cables is non-negative",
+        "Number of short cables is non-negative",
+        "Gold used for long cables plus gold used for short cables is less than or equal to TotalGold",
+        "Number of short cables is at least RatioShortLong times the number of long cables",
+        "Number of long cables is at least MinLong"
+    ],
+    "objective": "Maximize the profit from selling long and short cables",
+    "description": "There is \\var{TotalGold} mg of gold available that is needed to make long and short cables. Long cables require \\var{GoldLong} mg of gold while short cables require \\var{GoldShort} mg of gold. Because of their compact size, at least \\var{RatioShortLong} times the number of short cables are needed than the long cables. In addition, there needs to be at least \\var{MinLong} long cables made. If each long cable sold results in a \\var{ProfitLong} profit and each short cable sold results in a \\var{ProfitShort} profit, how many of each type of cable should be made to maximize profit?",
+    "parameters": [
+        {
+            "definition": "Total amount of gold available",
+            "symbol": "TotalGold",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of gold required for one long cable",
+            "symbol": "GoldLong",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Amount of gold required for one short cable",
+            "symbol": "GoldShort",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of short cables to long cables",
+            "symbol": "RatioShortLong",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of long cables to be made",
+            "symbol": "MinLong",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Profit per long cable",
+            "symbol": "ProfitLong",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Profit per short cable",
+            "symbol": "ProfitShort",
+            "value": 5,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "parameters": [
+        {
+            "definition": "Volume of a vintage bottle of vine",
+            "symbol": "VintageVolume",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Volume of a regular bottle of vine",
+            "symbol": "RegularVolume",
+            "value": 750,
+            "shape": []
+        },
+        {
+            "definition": "Total volume of vine available",
+            "symbol": "TotalVolume",
+            "value": 100000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of regular bottles to vintage bottles",
+            "symbol": "MinRegularVintageRatio",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of vintage bottles to be produced",
+            "symbol": "MinVintageBottles",
+            "value": 10,
+            "shape": []
+        }
+    ],
+    "description": "A vine company sells vine in vintage and regular bottles. A vintage bottle can hold \\param{VintageVolume} ml of vine while a regular bottle can hold \\param{RegularVolume} ml of vine. The company has available \\param{TotalVolume} ml of vine. Because vintage bottles are mostly bought by collectors, the number of regular bottles must be at least \\param{MinRegularVintageRatio} times as much as the number of vintage bottles. However, at least \\param{MinVintageBottles} vintage bottles must be made. How many of each should be made to maximize the total number of bottles produced?"
+}

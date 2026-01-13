@@ -1,0 +1,45 @@
+{
+    "background": "A doctor's office uses electronic and regular thermometers to take patients' temperatures with different reading times and required usage ratios.",
+    "constraints": [
+        "Number of patients checked by electronic thermometer is non-negative",
+        "Number of patients checked by regular thermometer is non-negative",
+        "Time used for electronic thermometer readings is at most TotalTime",
+        "Time used for regular thermometer readings is at most TotalTime",
+        "At least {RatioElectronicRegular} times as many patients should be checked by electronic thermometer compared to regular thermometer",
+        "At least {MinPatientsRegular} patients should be checked by regular thermometer"
+    ],
+    "objective": "Maximize the number of patients whose temperature can be taken within the TotalTime",
+    "description": "A doctor's office takes the temperature of patients one by one either by using an electronic or regular thermometer. The electronic thermometer takes \\param{TimeElectronic} minutes to make a reading while the regular thermometer takes \\param{TimeRegular} minutes to make a reading. Since the electronic thermometer is more accurate, at least \\param{RatioElectronicRegular} times as many patients should have their temperature checked by the electronic thermometer than the regular thermometer. Since the electronic thermometer has a cooldown time, at least \\param{MinPatientsRegular} patients should have their temperature checked by a regular thermometer. If the office is open for \\param{TotalTime} minutes, maximize the number of patients whose temperature can be taken?",
+    "parameters": [
+        {
+            "definition": "Time taken by the electronic thermometer for one reading",
+            "symbol": "TimeElectronic",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time taken by the regular thermometer for one reading",
+            "symbol": "TimeRegular",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum ratio of patients checked by the electronic thermometer to those checked by the regular thermometer",
+            "symbol": "RatioElectronicRegular",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of patients checked by the regular thermometer",
+            "symbol": "MinPatientsRegular",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Total time the doctor's office is open",
+            "symbol": "TotalTime",
+            "value": 15000,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "background": "An office is planning to purchase two types of printers, premium and regular models, for their headquarters. They have certain page output and ink usage requirements, and prefer premium over regular models.",
+    "constraints": [
+        "Number of premium printers is non-negative",
+        "Number of regular printers is non-negative",
+        "Total printing speed is at least MinPages pages per minute",
+        "Total ink usage is at most MaxInk units per minute"
+    ],
+    "objective": "Minimize the total number of printers purchased",
+    "description": "An office is buying printers for their headquarters, a premium model and a regular model. The premium model can print \\param{PremiumSpeed} pages per minute while the regular model can print \\param{RegularSpeed} pages per minute. In addition, the premium model requires \\param{PremiumInkUse} units of ink per minute while the regular model requires \\param{RegularInkUse} units of ink per minute. The office wants to make sure that at least \\param{MinPages} pages can be printed per minute and that at most \\param{MaxInk} units of ink are used per minute. Since the premium model is more user friendly, the number of regular printers must be less than the number of premium printers. How many of each printer should be bought to minimize the total number of printers in the office?",
+    "parameters": [
+        {
+            "definition": "Speed of printing for the premium model",
+            "symbol": "PremiumSpeed",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Speed of printing for the regular model",
+            "symbol": "RegularSpeed",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of ink used per minute by the premium model",
+            "symbol": "PremiumInkUse",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of ink used per minute by the regular model",
+            "symbol": "RegularInkUse",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum pages to be printed per minute by the office",
+            "symbol": "MinPages",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of ink to be used per minute by the office",
+            "symbol": "MaxInk",
+            "value": 35,
+            "shape": []
+        }
+    ]
+}

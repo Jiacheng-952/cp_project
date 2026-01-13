@@ -1,0 +1,63 @@
+{
+    "background": "A strata-management company is considering purchasing two types of air conditioners - low-power and high-power models - to cool down housing units within certain electricity and aesthetic constraints.",
+    "constraints": [
+        "Number of low-power air conditioners is non-negative",
+        "Number of high-power air conditioners is non-negative",
+        "Number of low-power air conditioners limited to MaxLowPowerProportion of the total air conditioners",
+        "At least MinHighPower high-powered air conditioners must be used",
+        "Need to condition at least MinHousingUnits housing units",
+        "Available electricity not to exceed TotalElectricity units"
+    ],
+    "objective": "Minimize the total number of air conditioners purchased",
+    "description": "A strata-management company is looking into purchasing two types of air conditioners, a low-power and a high-power model. A low-powered air conditioner can cool down \\param{LowPowerCapacity} housing units and uses \\param{LowPowerElectricity} units of electricity every day. A high-power model can cool down \\param{HighPowerCapacity} housing units and uses \\param{HighPowerElectricity} units of electricity every day. Since the low-powered model is not good for the aesthetics, the strata decided to limit the number of low-powered models to only \\param{MaxLowPowerProportion} and at least \\param{MinHighPower} high-powered models must be used. If the apartment needs to condition at least \\param{MinHousingUnits} housing units and has \\param{TotalElectricity} units of electricity available, how many of each air conditioner should the strata company buy to minimize the total number of air conditioners?",
+    "parameters": [
+        {
+            "definition": "Cooling capacity of a low-powered air conditioner",
+            "symbol": "LowPowerCapacity",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Electricity usage of a low-powered air conditioner per day",
+            "symbol": "LowPowerElectricity",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Cooling capacity of a high-powered air conditioner",
+            "symbol": "HighPowerCapacity",
+            "value": 17,
+            "shape": []
+        },
+        {
+            "definition": "Electricity usage of a high-powered air conditioner per day",
+            "symbol": "HighPowerElectricity",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of low-powered air conditioners",
+            "symbol": "MaxLowPowerProportion",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of high-powered air conditioners required",
+            "symbol": "MinHighPower",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of housing units to condition",
+            "symbol": "MinHousingUnits",
+            "value": 250,
+            "shape": []
+        },
+        {
+            "definition": "Total electricity available per day",
+            "symbol": "TotalElectricity",
+            "value": 3400,
+            "shape": []
+        }
+    ]
+}

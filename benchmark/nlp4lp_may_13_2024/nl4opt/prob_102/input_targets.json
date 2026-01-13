@@ -1,0 +1,80 @@
+{
+    "background": "A summer camp conducts science experiments creating slime using two different beakers, each with its own recipe of flour and special liquid and generating waste. The camp has limited supplies of flour, liquid, and waste capacity.",
+    "constraints": [
+        "Number of Beaker 1 used is non-negative",
+        "Number of Beaker 2 used is non-negative",
+        "Total flour used by Beaker 1 and Beaker 2 is less than or equal to TotalFlour",
+        "Total liquid used by Beaker 1 and Beaker 2 is less than or equal to TotalLiquid",
+        "Total waste produced by Beaker 1 and Beaker 2 is less than or equal to MaxWaste"
+    ],
+    "objective": "Maximize the total units of slime produced",
+    "description": "A summer camp does science experiments in two pre filled beakers, beaker 1 and beaker 2. Beaker 1 uses \\param{FlourBeaker1} units of flour and \\param{LiquidBeaker1} units of special liquid to make \\param{SlimeBeaker1} units of slime. Beaker 2 uses \\param{FlourBeaker2} units of flour and \\param{LiquidBeaker2} units of special liquid to make \\param{SlimeBeaker2} units of slime. However, beaker 1 creates \\param{WasteBeaker1} units of waste while beaker 2 creates \\param{WasteBeaker2} units of waste. The summer camp has \\param{TotalFlour} units of flour and \\param{TotalLiquid} units of special liquid available. If at most \\param{MaxWaste} units of waste can be produced, how many of each beaker should be used to maximize the amount of slime produced?",
+    "parameters": [
+        {
+            "definition": "Units of flour used by beaker 1",
+            "symbol": "FlourBeaker1",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of special liquid used by beaker 1",
+            "symbol": "LiquidBeaker1",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of slime produced by beaker 1",
+            "symbol": "SlimeBeaker1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of waste produced by beaker 1",
+            "symbol": "WasteBeaker1",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Units of flour used by beaker 2",
+            "symbol": "FlourBeaker2",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of special liquid used by beaker 2",
+            "symbol": "LiquidBeaker2",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of slime produced by beaker 2",
+            "symbol": "SlimeBeaker2",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of waste produced by beaker 2",
+            "symbol": "WasteBeaker2",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of flour",
+            "symbol": "TotalFlour",
+            "value": 150,
+            "shape": []
+        },
+        {
+            "definition": "Total available units of special liquid",
+            "symbol": "TotalLiquid",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of waste allowed",
+            "symbol": "MaxWaste",
+            "value": 30,
+            "shape": []
+        }
+    ]
+}

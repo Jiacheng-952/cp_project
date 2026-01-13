@@ -1,0 +1,51 @@
+{
+    "background": "Mark has a certain number of acres of land to grow potatoes and cucumbers to sell at a farmers' market with specific constraints and profit goals.",
+    "constraints": [
+        "Number of acres of potatoes is non-negative",
+        "Number of acres of cucumbers is non-negative",
+        "Number of acres used for both potatoes and cucumbers does not exceed TotalAcres",
+        "At least MinPotatoes acres of potatoes are grown",
+        "At least MinCucumbers acres of cucumbers are grown",
+        "Number of acres of cucumbers is at most MaxRatioCucPot times the number of acres of potatoes"
+    ],
+    "objective": "Maximize Mark's profits from growing potatoes and cucumbers",
+    "description": "Mark has \\var{TotalAcres} acres of land available to grow potatoes and cucumbers that he sells at a farmers' market. He must grow at least \\var{MinPotatoes} acres of potatoes and \\var{MinCucumbers} acres of cucumbers to meet his contract. Mark prefers to grow more cucumbers than potatoes, but he only has enough resources to grow at most twice the amount of cucumbers as potatoes, which is \\var{MaxRatioCucPot} times the acres of potatoes. If the profit per acre of potatoes is \\$\\var{ProfitPotatoes} and the profit per acre of cucumbers is \\$\\var{ProfitCucumbers}, how many acres of each should he grow to maximize his profit? What is that profit?",
+    "parameters": [
+        {
+            "definition": "Total acres of land available for potatoes and cucumbers",
+            "symbol": "TotalAcres",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres required to grow potatoes",
+            "symbol": "MinPotatoes",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Minimum acres required to grow cucumbers",
+            "symbol": "MinCucumbers",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of cucumbers to potatoes",
+            "symbol": "MaxRatioCucPot",
+            "value": 2.0,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of potatoes",
+            "symbol": "ProfitPotatoes",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of cucumbers",
+            "symbol": "ProfitCucumbers",
+            "value": 650,
+            "shape": []
+        }
+    ]
+}

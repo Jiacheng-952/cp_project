@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of units of sand a small container can hold",
+            "symbol": "SmallCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Number of units of sand a large container can hold",
+            "symbol": "LargeCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of people required to unload a small container",
+            "symbol": "SmallUnload",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Number of people required to unload a large container",
+            "symbol": "LargeUnload",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Ratio of the number of small containers to the number of large containers",
+            "symbol": "ContainerRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small containers used",
+            "symbol": "MinSmallContainers",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of large containers used",
+            "symbol": "MinLargeContainers",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total number of people available for unloading",
+            "symbol": "PeopleAvailable",
+            "value": 100,
+            "shape": []
+        }
+    ],
+    "description": "A sand company delivers sand for playgrounds in small and large containers. A small container requires \\param{SmallUnload} person to unload and can hold \\param{SmallCapacity} units of sand. A large container requires \\param{LargeUnload} people to unload and can hold \\param{LargeCapacity} units of sand. Since most playgrounds are small, the number of small containers used must be \\param{ContainerRatio} times the number of large containers used. In addition, there must be at least \\param{MinSmallContainers} small containers and \\param{MinLargeContainers} large containers used. If the company has \\param{PeopleAvailable} people available, maximize the amount of sand that they can deliver."
+}

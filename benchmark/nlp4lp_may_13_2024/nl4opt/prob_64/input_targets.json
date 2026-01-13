@@ -1,0 +1,63 @@
+{
+    "background": "There are two specialized containers, a small and large one, that are used to make a pharmaceutical paste.",
+    "constraints": [
+        "Number of small containers used is an integer",
+        "Number of large containers used is an integer",
+        "Number of small containers used is non-negative",
+        "Number of large containers used is non-negative",
+        "The total units of water used cannot exceed TotalWater",
+        "The total units of the powdered pill used cannot exceed TotalPill"
+    ],
+    "objective": "Maximize the amount of paste produced",
+    "description": "There are two specialized containers, a small and large one, that are used to make a pharmaceutical paste. The small container requires \\var{WaterSmall} units of water and \\var{PillSmall} units of the powdered pill to make \\var{PasteSmall} units of the paste. The large container requires \\var{WaterLarge} units of water and \\var{PillLarge} units of the powdered pill to make \\var{PasteLarge} units of the paste. The pharmacy has available \\var{TotalWater} units of water and \\var{TotalPill} units of the powdered pill. How many of each container should be used to maximize the amount of paste that can be made?",
+    "parameters": [
+        {
+            "definition": "Units of water required by the small container",
+            "symbol": "WaterSmall",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Units of powdered pill required by the small container",
+            "symbol": "PillSmall",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Units of paste produced by the small container",
+            "symbol": "PasteSmall",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of water required by the large container",
+            "symbol": "WaterLarge",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of powdered pill required by the large container",
+            "symbol": "PillLarge",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of paste produced by the large container",
+            "symbol": "PasteLarge",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total units of water available",
+            "symbol": "TotalWater",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Total units of powdered pill available",
+            "symbol": "TotalPill",
+            "value": 700,
+            "shape": []
+        }
+    ]
+}

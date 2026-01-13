@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of pain killers produced per hour by process 1",
+            "symbol": "PainKillersProcess1",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleeping pills produced per hour by process 1",
+            "symbol": "SleepingPillsProcess1",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Units of pain killers produced per hour by process 2",
+            "symbol": "PainKillersProcess2",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Units of sleeping pills produced per hour by process 2",
+            "symbol": "SleepingPillsProcess2",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Units of preliminary material required for process 1",
+            "symbol": "MaterialProcess1",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Units of preliminary material required for process 2",
+            "symbol": "MaterialProcess2",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Total units of preliminary material available",
+            "symbol": "TotalMaterial",
+            "value": 2000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of pain killers to be produced",
+            "symbol": "MinPainKillers",
+            "value": 1200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of sleeping pills to be produced",
+            "symbol": "MinSleepingPills",
+            "value": 1200,
+            "shape": []
+        }
+    ],
+    "description": "A drug company is making pain killers and sleeping pills using two processes, process 1 and process 2. Process 1 produces \\param{PainKillersProcess1} units of pain killers and \\param{SleepingPillsProcess1} units of sleeping pills per hour. Process 2 produces \\param{PainKillersProcess2} units of pain killers and \\param{SleepingPillsProcess2} units of sleeping pills per hour. Process 1 requires \\param{MaterialProcess1} units of preliminary material while process 2 requires \\param{MaterialProcess2} units of preliminary material. The drug company has available \\param{TotalMaterial} units of preliminary material and must make at least \\param{MinPainKillers} units of pain killers and \\param{MinSleepingPills} units of sleeping pills. How many of each process should be run to minimize the total time needed?"
+}

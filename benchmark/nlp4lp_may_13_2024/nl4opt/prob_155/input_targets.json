@@ -1,0 +1,56 @@
+{
+    "background": "An aquarium hosts shows featuring otters and dolphins, each performing tricks for treats. There are constraints on the number of performers and treats available.",
+    "constraints": [
+        "Number of otters used is non-negative",
+        "Number of dolphins used is non-negative",
+        "At least MinDolphins dolphins must be used",
+        "At most MaxOtterProportion of the performers can be otters",
+        "The total treats used cannot exceed TotalTreats"
+    ],
+    "objective": "Maximize the total number of tricks performed by otters and dolphins",
+    "description": "An aquarium does shows using otters and dolphins. An otter will do \\param{OtterTricks} tricks at a time and requires \\param{OtterTreats} treats to do so. A dolphin will do \\param{DolphinTricks} trick at a time and requires \\param{DolphinTreats} treats to do so. Since dolphins are more popular, at least \\param{MinDolphins} dolphins must be used and at most \\param{MaxOtterProportion} of the performers can be otters. If the aquarium only has \\param{TotalTreats} treats available, maximize the total number of tricks that can be performed.",
+    "parameters": [
+        {
+            "definition": "Number of tricks performed by an otter at a time",
+            "symbol": "OtterTricks",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of treats required by an otter to perform its tricks",
+            "symbol": "OtterTreats",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of tricks performed by a dolphin at a time",
+            "symbol": "DolphinTricks",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Number of treats required by a dolphin to perform its trick",
+            "symbol": "DolphinTreats",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of dolphins that must be used",
+            "symbol": "MinDolphins",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of performers that can be otters",
+            "symbol": "MaxOtterProportion",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Total number of treats available",
+            "symbol": "TotalTreats",
+            "value": 200,
+            "shape": []
+        }
+    ]
+}

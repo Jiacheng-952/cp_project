@@ -1,0 +1,9 @@
+{
+    "PeachRequirement": 3,
+    "PeachSyrup": 5,
+    "CherryRequirement": 5,
+    "CherrySyrup": 4,
+    "TotalPeach": 3000,
+    "TotalCherry": 4000,
+    "MinimumCherryPercentage": 0.33
+}

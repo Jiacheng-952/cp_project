@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of fruit required to produce one unit of wine",
+            "symbol": "FruitWine",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of water required to produce one unit of wine",
+            "symbol": "WaterWine",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Amount of water available",
+            "symbol": "WaterAvailable",
+            "value": 7000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of tea available",
+            "symbol": "TeaAvailable",
+            "value": 9000,
+            "shape": []
+        },
+        {
+            "definition": "Amount of fruit required to produce one unit of kombucha",
+            "symbol": "FruitKombucha",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of tea required to produce one unit of kombucha",
+            "symbol": "TeaKombucha",
+            "value": 7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of kombucha in the product mix",
+            "symbol": "MinKombuchaProp",
+            "value": 0.2,
+            "shape": []
+        }
+    ],
+    "description": "A brewery can ferment their product into either wine or kombucha. Each unit of wine requires \\param{FruitWine} units of fruit and \\param{WaterWine} units of water. Each unit of kombucha requires \\param{FruitKombucha} units of fruit and \\param{TeaKombucha} units of tea. The company has available \\param{WaterAvailable} units of water and \\param{TeaAvailable} units of tea. Wine sells for more, therefore the number of wine must be larger than the number of kombucha. Additionally, at least \\param{MinKombuchaProp} of their products made must be kombucha. How many of each should the brewery make to minimize the total units of fruit required?"
+}

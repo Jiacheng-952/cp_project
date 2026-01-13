@@ -1,0 +1,10 @@
+{
+    "InertGasA": 5,
+    "WaterA": 6,
+    "CompoundA": 10,
+    "InertGasB": 7,
+    "WaterB": 3,
+    "CompoundB": 8,
+    "TotalInertGas": 1000,
+    "TotalWater": 800
+}

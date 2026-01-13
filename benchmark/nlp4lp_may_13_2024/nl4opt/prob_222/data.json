@@ -1,0 +1,7 @@
+{
+    "StrawberryProfit": 5.5,
+    "SugarProfit": 12,
+    "MaxStrawberryDemand": 100,
+    "MaxSugarDemand": 80,
+    "MaxProductionCapacity": 100
+}

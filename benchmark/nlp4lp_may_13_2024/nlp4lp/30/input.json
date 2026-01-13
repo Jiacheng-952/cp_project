@@ -1,0 +1,44 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of departments",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of possible locations",
+            "symbol": "L",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Benefit of department k being located at location l",
+            "symbol": "Benefit",
+            "value": "",
+            "shape": [
+                "K",
+                "L"
+            ]
+        },
+        {
+            "definition": "Communication costs between departments k and j",
+            "symbol": "Communication",
+            "value": "",
+            "shape": [
+                "K",
+                "K"
+            ]
+        },
+        {
+            "definition": "Cost of locating at location l with requirement m",
+            "symbol": "Cost",
+            "value": "",
+            "shape": [
+                "L",
+                "L"
+            ]
+        }
+    ],
+    "description": "Where should each department be located so as to minimize overall yearly cost? The optimization should consider the benefit of department \\param{K} being located at location \\param{L}, the communication costs between departments \\param{K} and \\param{K}, and the costs of locating at location \\param{L} with requirement \\param{L}."
+}

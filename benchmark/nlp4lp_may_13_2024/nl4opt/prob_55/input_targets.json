@@ -1,0 +1,70 @@
+{
+    "background": "A farmer has a certain amount of land to process hay using either a windrower or a hay harvester. Each machine processes a different amount of hay, produces a certain amount of methane gas, and requires a certain amount of fuel per acre.",
+    "constraints": [
+        "Number of acres processed by the windrower is a non-negative integer",
+        "Number of acres processed by the hay harvester is a non-negative integer",
+        "Total acres processed by both machines cannot exceed TotalAcres",
+        "Total fuel used by both machines cannot exceed TotalFuel",
+        "Total methane produced by both machines cannot exceed MaxMethane",
+        "MethaneWindrower * acres processed by the windrower + MethaneHarvester * acres processed by the hay harvester <= MaxMethane",
+        "FuelWindrower * acres processed by the windrower + FuelHarvester * acres processed by the hay harvester <= TotalFuel"
+    ],
+    "objective": "Maximize the total amount of hay processed",
+    "description": "A farmer has \\(\\var{TotalAcres}\\) acres of land on which he must process hay using either a windrower or hay harvester. For each acre of land, the windrower can process \\(\\var{HayWindrower}\\) kg of hay while the hay harvester can process \\(\\var{HayHarvester}\\) kg of hay. Per acre, the windrower produces \\(\\var{MethaneWindrower}\\) kg of methane gas and requires \\(\\var{FuelWindrower}\\) kg of fuel. On the other hand, the hay harvester produces \\(\\var{MethaneHarvester}\\) kg of methane gas per acre and requires \\(\\var{FuelHarvester}\\) kg of fuel. There are \\(\\var{TotalFuel}\\) kg of fuel available and the farmer can produce at most \\(\\var{MaxMethane}\\) kg of methane gas. For how many acres should each machine be used to maximize the amount of hay processed?",
+    "parameters": [
+        {
+            "definition": "Total acres of available land for hay processing",
+            "symbol": "TotalAcres",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Hay processed by the windrower per acre",
+            "symbol": "HayWindrower",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Hay processed by the hay harvester per acre",
+            "symbol": "HayHarvester",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Methane gas produced by the windrower per acre",
+            "symbol": "MethaneWindrower",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the windrower per acre",
+            "symbol": "FuelWindrower",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Methane gas produced by the hay harvester per acre",
+            "symbol": "MethaneHarvester",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the hay harvester per acre",
+            "symbol": "FuelHarvester",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Total available fuel",
+            "symbol": "TotalFuel",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable methane gas production",
+            "symbol": "MaxMethane",
+            "value": 800,
+            "shape": []
+        }
+    ]
+}

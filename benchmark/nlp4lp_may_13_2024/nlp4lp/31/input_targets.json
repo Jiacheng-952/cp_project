@@ -1,0 +1,30 @@
+{
+    "background": "The problem involves finding the 'best' linear relationship in the form of Y = bX + a that fits a set of data points. The 'best' fit minimizes the total absolute deviation of observed Y values from those predicted by the linear equation.",
+    "constraints": [],
+    "objective": "Minimize the sum of absolute deviations between the observed Y values and the values predicted by the model Y = bX + a",
+    "description": "Fit the 'best' straight line \\param{Y} = b\\param{X} + a to this set of data points. The objective is to minimise the sum of absolute deviations of each observed value of \\param{Y} from the value predicted by the linear relationship.",
+    "parameters": [
+        {
+            "definition": "Number of data points",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Observed values of the dependent variable",
+            "symbol": "Y",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Observed values of the independent variable",
+            "symbol": "X",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ]
+}

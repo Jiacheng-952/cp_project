@@ -1,0 +1,34 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of different illuminations",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of lamp powers",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Coefficients relating lamp powers to illumination",
+            "symbol": "Coefficients",
+            "value": "",
+            "shape": [
+                "N",
+                "M"
+            ]
+        },
+        {
+            "definition": "Desired level of illuminations",
+            "symbol": "DesiredIlluminations",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        }
+    ],
+    "description": "Find the lamp powers \\param{power_j} that minimize the absolute error between the illuminations \\param{ill_i} and the desired illuminations \\param{DesiredIlluminations}. The relationship between the lamp powers and the illuminations is given by coefficients \\param{Coefficients}."
+}

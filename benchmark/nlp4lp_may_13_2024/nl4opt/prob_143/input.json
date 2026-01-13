@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Total units of medicinal ingredients available",
+            "symbol": "TotalMedicinalUnits",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Units of medicinal ingredients required for a large pill",
+            "symbol": "LargePillMedicinalUnits",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of filler required for a large pill",
+            "symbol": "LargePillFillerUnits",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of medicinal ingredients required for a small pill",
+            "symbol": "SmallPillMedicinalUnits",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Units of filler required for a small pill",
+            "symbol": "SmallPillFillerUnits",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum large pills to be produced",
+            "symbol": "MinimumLargePills",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total pills to be small pills",
+            "symbol": "MinimumSmallPillsPercentage",
+            "value": 0.6,
+            "shape": []
+        }
+    ],
+    "description": "A lab has \\param{TotalMedicinalUnits} units of medicinal ingredients to make two pills, a large pill and a small pill. A large pill requires \\param{LargePillMedicinalUnits} units of medicinal ingredients and \\param{LargePillFillerUnits} units of filler. A small pill requires \\param{SmallPillMedicinalUnits} units of medicinal ingredients and \\param{SmallPillFillerUnits} units of filler. The lab has to make at least \\param{MinimumLargePills} large pills. However, since small pills are more popular at least \\param{MinimumSmallPillsPercentage} of the total number of pills must be small. How many of each should be made to minimize the total number of filler material needed?"
+}

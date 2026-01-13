@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of tricks performed by an otter at a time",
+            "symbol": "OtterTricks",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of treats required by an otter to perform its tricks",
+            "symbol": "OtterTreats",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Number of tricks performed by a dolphin at a time",
+            "symbol": "DolphinTricks",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Number of treats required by a dolphin to perform its trick",
+            "symbol": "DolphinTreats",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of dolphins that must be used",
+            "symbol": "MinDolphins",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of performers that can be otters",
+            "symbol": "MaxOtterProportion",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Total number of treats available",
+            "symbol": "TotalTreats",
+            "value": 200,
+            "shape": []
+        }
+    ],
+    "description": "An aquarium does shows using otters and dolphins. An otter will do \\param{OtterTricks} tricks at a time and requires \\param{OtterTreats} treats to do so. A dolphin will do \\param{DolphinTricks} trick at a time and requires \\param{DolphinTreats} treats to do so. Since dolphins are more popular, at least \\param{MinDolphins} dolphins must be used and at most \\param{MaxOtterProportion} of the performers can be otters. If the aquarium only has \\param{TotalTreats} treats available, maximize the total number of tricks that can be performed."
+}

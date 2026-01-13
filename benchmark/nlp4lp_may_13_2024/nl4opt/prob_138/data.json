@@ -1,0 +1,11 @@
+{
+    "MaterialA": 30,
+    "MrnaA": 50,
+    "MaterialB": 40,
+    "MrnaB": 30,
+    "TotalMaterial": 300,
+    "TotalMrna": 400,
+    "MaxDosesA": 5,
+    "PeopleA": 12,
+    "PeopleB": 8
+}

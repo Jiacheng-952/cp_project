@@ -1,0 +1,9 @@
+{
+    "FullWeightedPrice": 2800,
+    "SemiWeightedPrice": 2400,
+    "TotalChips": 3500,
+    "ChipsFullWeighted": 20,
+    "ChipsSemiWeighted": 15,
+    "TotalTime": 6,
+    "ProductionTimePerKeyboard": 1.2
+}

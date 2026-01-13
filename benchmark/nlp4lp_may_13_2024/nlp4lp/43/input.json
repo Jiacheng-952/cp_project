@@ -1,0 +1,71 @@
+{
+    "parameters": [
+        {
+            "definition": "Amount of steel to produce in tons",
+            "symbol": "SteelQuantity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Percentage of manganese in the steel required",
+            "symbol": "ManganesePercent",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of silicon in the steel required",
+            "symbol": "SiliconMinPercent",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of silicon in the steel allowed",
+            "symbol": "SiliconMaxPercent",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Silicon content in the k-th stock",
+            "symbol": "SiliconContent",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Manganese content in the k-th stock",
+            "symbol": "ManganeseContent",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Price of manganese per ton",
+            "symbol": "ManganesePrice",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Cost of the k-th stock material per ton",
+            "symbol": "MaterialCost",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Selling price of steel per ton",
+            "symbol": "SellingPrice",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Price to melt one ton of steel",
+            "symbol": "MeltingPrice",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "How should the manufacture manage the steel to maximize profit? The manufacture has to decide on the optimal quantity of \\param{SteelQuantity} tons of steel to produce, taking into account the required \\param{ManganesePercent} percent manganese and ensuring the silicon content is between \\param{SiliconMinPercent} percent and \\param{SiliconMaxPercent} percent. The available stocks contain \\param{SiliconContent} percent Silicon and \\param{ManganeseContent} percent Manganese. The price of manganese is set at \\param{ManganesePrice} per ton, and the material cost for each stock is \\param{MaterialCost}. The company sells the steel at a price of \\param{SellingPrice} per ton but also incurs a melting cost of \\param{MeltingPrice} per ton."
+}

@@ -1,0 +1,27 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of data points",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Observed values of the dependent variable",
+            "symbol": "Y",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        },
+        {
+            "definition": "Observed values of the independent variable",
+            "symbol": "X",
+            "value": "",
+            "shape": [
+                "K"
+            ]
+        }
+    ],
+    "description": "Fit the 'best' straight line \\param{Y} = b\\param{X} + a to this set of data points. The objective is to minimise the sum of absolute deviations of each observed value of \\param{Y} from the value predicted by the linear relationship."
+}

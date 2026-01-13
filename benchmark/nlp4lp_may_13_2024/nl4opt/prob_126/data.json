@@ -1,0 +1,11 @@
+{
+    "EyeMachine1": 30,
+    "FootMachine1": 60,
+    "EyeMachine2": 45,
+    "FootMachine2": 30,
+    "WaterMachine1": 20,
+    "WaterMachine2": 15,
+    "TotalWater": 1200,
+    "MinEyeCream": 1300,
+    "MinFootCream": 1500
+}

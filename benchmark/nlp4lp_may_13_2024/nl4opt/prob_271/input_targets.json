@@ -1,0 +1,68 @@
+{
+    "background": "A clinical firm operates two factories, a northern and a western, where they make anti-itch injections and topical cream, both of which require plastic for packaging.",
+    "constraints": [
+        "The total available plastic is limited to TotalPlastic units",
+        "The firm must produce at least MinInjections grams of anti-itch injections",
+        "The firm must produce at least MinCream grams of topical cream",
+        "The number of hours the northern factory operates is non-negative",
+        "The number of hours the western factory operates is non-negative"
+    ],
+    "objective": "Minimize the total operational time of both the northern and western factories",
+    "description": "A clinical firm has two factories, a northern factory and a western factory, where they make expensive anti-itch injections and topical cream. Every hour, the northern factory makes \\param{NorthernInjectionsRate} g of anti-itch injections and \\param{NorthernCreamRate} g of topical cream. Every hour, the western factory makes \\param{WesternInjectionsRate} g of anti-itch injections and \\param{WesternCreamRate} g of topical cream. The northern factory requires \\param{NorthernPlasticRate} units of plastic per hour while the western factory requires \\param{WesternPlasticRate} units of plastic to manufacture the packaging. The clinical firm has available \\param{TotalPlastic} units of plastic. Further, they must make at least \\param{MinInjections} g of anti-itch injections and \\param{MinCream} g of topical cream. How many hours should each factory be run to minimize the total time needed?",
+    "parameters": [
+        {
+            "definition": "Amount of anti-itch injections produced per hour by the northern factory",
+            "symbol": "NorthernInjectionsRate",
+            "value": 800,
+            "shape": []
+        },
+        {
+            "definition": "Amount of topical cream produced per hour by the northern factory",
+            "symbol": "NorthernCreamRate",
+            "value": 700,
+            "shape": []
+        },
+        {
+            "definition": "Amount of anti-itch injections produced per hour by the western factory",
+            "symbol": "WesternInjectionsRate",
+            "value": 650,
+            "shape": []
+        },
+        {
+            "definition": "Amount of topical cream produced per hour by the western factory",
+            "symbol": "WesternCreamRate",
+            "value": 750,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic required per hour by the northern factory",
+            "symbol": "NorthernPlasticRate",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Units of plastic required per hour by the western factory",
+            "symbol": "WesternPlasticRate",
+            "value": 35,
+            "shape": []
+        },
+        {
+            "definition": "Total units of plastic available",
+            "symbol": "TotalPlastic",
+            "value": 60000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total amount of anti-itch injections to be produced",
+            "symbol": "MinInjections",
+            "value": 800000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total amount of topical cream to be produced",
+            "symbol": "MinCream",
+            "value": 700000,
+            "shape": []
+        }
+    ]
+}

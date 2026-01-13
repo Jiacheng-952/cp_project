@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of chicken a bus can carry",
+            "symbol": "BusCapacity",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Time taken per trip by bus",
+            "symbol": "BusTripTime",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of bus trips allowed",
+            "symbol": "MaxBusTrips",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Percentage of trips that must be by car",
+            "symbol": "MinimumCarTripPercentage",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Number of chicken a car can carry",
+            "symbol": "CarCapacity",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Time taken per trip by car",
+            "symbol": "CarTripTime",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Total number of chicken to be transported",
+            "symbol": "TotalChicken",
+            "value": 1200,
+            "shape": []
+        }
+    ],
+    "description": "A chicken farmer has sold his chicken and they need to be transported either by bus or by car. A bus can take \\param{BusCapacity} chicken and takes \\param{BusTripTime} hours per trip. A car can take \\param{CarCapacity} chicken and takes \\param{CarTripTime} hours per trip. There can be at most \\param{MaxBusTrips} bus trips and at least \\param{MinimumCarTripPercentage} of the trips must be by car. If the farmer needs to transport \\param{TotalChicken} chicken, how many trips of each should be done to minimize the total time needed to transport the chicken?"
+}

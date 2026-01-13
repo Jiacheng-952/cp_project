@@ -1,0 +1,61 @@
+{
+    "background": "A patient needs to treat a sore throat with syrups containing medicinal and sugar units. Each syrup delivers different units of medicine to the throat and lungs.",
+    "constraints": [
+        "Number of servings of syrup 1 is non-negative",
+        "Number of servings of syrup 2 is non-negative",
+        "Medicine for the throat from both syrups should not exceed MaxMedicineThroat units",
+        "Medicine to the lungs from both syrups should be at least MinMedicineLungs units"
+    ],
+    "objective": "Minimize the patient's sugar intake from consuming syrups",
+    "description": "A patient with a sore throat can drink two syrups, syrup 1 and syrup 2 for treatment. Per serving, syrup 1 delivers \\param{MedicineThroat1} units of medicine to the throat and \\param{MedicineLungs1} units of medicine to the lungs. Per serving, syrup 2 delivers \\param{MedicineThroat2} units of medicine to the throat and \\param{MedicineLungs2} units of medicine to the lungs. Furthermore, syrup 1 contains \\param{Sugar1} units of sugar while syrup 2 contains \\param{Sugar2} units of sugar per serving. The patient can get at most \\param{MaxMedicineThroat} units of medicine for the throat and at least \\param{MinMedicineLungs} units of medicine to the lungs. How many servings of each should the patient take to minimize his sugar intake?",
+    "parameters": [
+        {
+            "definition": "Medicine delivered to the throat by syrup 1 per serving",
+            "symbol": "MedicineThroat1",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Medicine delivered to the lungs by syrup 1 per serving",
+            "symbol": "MedicineLungs1",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Medicine delivered to the throat by syrup 2 per serving",
+            "symbol": "MedicineThroat2",
+            "value": 0.2,
+            "shape": []
+        },
+        {
+            "definition": "Medicine delivered to the lungs by syrup 2 per serving",
+            "symbol": "MedicineLungs2",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sugar contained in syrup 1 per serving",
+            "symbol": "Sugar1",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of sugar contained in syrup 2 per serving",
+            "symbol": "Sugar2",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum medicine units for the throat the patient can intake",
+            "symbol": "MaxMedicineThroat",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum medicine units for the lungs the patient needs to intake",
+            "symbol": "MinMedicineLungs",
+            "value": 4,
+            "shape": []
+        }
+    ]
+}

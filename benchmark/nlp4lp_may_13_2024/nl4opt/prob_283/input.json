@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of hours worked by a part-time staff member per week",
+            "symbol": "PartTimeHours",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Payment to a part-time staff member per week",
+            "symbol": "PartTimePayment",
+            "value": 450,
+            "shape": []
+        },
+        {
+            "definition": "Number of hours worked by a full-time staff member per week",
+            "symbol": "FullTimeHours",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Payment to a full-time staff member per week",
+            "symbol": "FullTimePayment",
+            "value": 1280,
+            "shape": []
+        },
+        {
+            "definition": "Total number of hours of labor needed by the municipality for the week",
+            "symbol": "TotalLaborHours",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total budget available for mail delivery for the season",
+            "symbol": "TotalBudget",
+            "value": 31500,
+            "shape": []
+        }
+    ],
+    "description": "A municipality hires full-time and part-time staff to deliver mail. Part-time staff works \\param{PartTimeHours} hours per week and gets paid \\param{PartTimePayment} dollars whereas a full-time staff works \\param{FullTimeHours} hours every week and gets paid \\param{FullTimePayment} dollars for that week. Since it is the week leading up to a holiday, planning ahead, the municipality needs \\param{TotalLaborHours} hours of mail staff labor. The municipality has a budget of \\param{TotalBudget} dollars for mail delivery for this season. How many of each type of staff should the municipality hire to decrease the total number of staff?"
+}

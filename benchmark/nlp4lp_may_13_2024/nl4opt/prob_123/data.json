@@ -1,0 +1,9 @@
+{
+    "TotalMorphine": 3000,
+    "MorphinePainkiller": 10,
+    "MorphineSleepingPill": 6,
+    "DigestiveMedicinePainkiller": 3,
+    "DigestiveMedicineSleepingPill": 5,
+    "MinPainkillers": 50,
+    "MinProportionSleepingPills": 0.7
+}

@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of gifts delivered by the new company per trip",
+            "symbol": "GiftsNew",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of gifts delivered by the old company per trip",
+            "symbol": "GiftsOld",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Amount of diesel used by the new company per trip",
+            "symbol": "DieselNew",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Amount of diesel used by the old company per trip",
+            "symbol": "DieselOld",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of gifts that need to be delivered",
+            "symbol": "MinGifts",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of trips the new company can make",
+            "symbol": "MaxTripsNew",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of all trips that must be made by the old company",
+            "symbol": "MinPercentOld",
+            "value": 0.4,
+            "shape": []
+        }
+    ],
+    "description": "A toy store decides to deliver gifts using two shipping companies, a new one and an old one. The new company can deliver \\param{GiftsNew} gifts per trip while the old company can deliver \\param{GiftsOld} gifts per trip. The new company uses \\param{DieselNew} liters of diesel per trip while the old company uses \\param{DieselOld} liters of diesel per trip. The toy store needs to deliver at least \\param{MinGifts} gifts. There can be at most \\param{MaxTripsNew} trips made by the new company. In order to make sure that the old company does not go out of business, at least \\param{MinPercentOld} of all trips must be made by the old company. How many trips should each company make to minimize the total amount of diesel used?"
+}

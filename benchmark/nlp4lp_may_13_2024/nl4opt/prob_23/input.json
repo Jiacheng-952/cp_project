@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Wood required for one elephant",
+            "symbol": "WoodElephant",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Plastic required for one elephant",
+            "symbol": "PlasticElephant",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Wood required for one tiger",
+            "symbol": "WoodTiger",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Plastic required for one tiger",
+            "symbol": "PlasticTiger",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Total available wood per week",
+            "symbol": "TotalWood",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total available plastic per week",
+            "symbol": "TotalPlastic",
+            "value": 4000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per elephant",
+            "symbol": "ProfitElephant",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per tiger",
+            "symbol": "ProfitTiger",
+            "value": 4,
+            "shape": []
+        }
+    ],
+    "description": "A souvenir shop makes wooden elephants and tigers with plastic ornaments. Each elephant requires \\param{WoodElephant} grams of wood and \\param{PlasticElephant} grams of plastic. Each tiger requires \\param{WoodTiger} grams of wood and \\param{PlasticTiger} grams of plastic. In a week, \\param{TotalWood} grams of wood and \\param{TotalPlastic} grams of plastic are available. The profit per elephant sold is \\param{ProfitElephant} and the profit per tiger sold is \\param{ProfitTiger}. How many of each should be made in order to maximize profit?"
+}

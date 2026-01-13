@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of metal extracted using process J",
+            "symbol": "MetalJ",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of water used by process J",
+            "symbol": "WaterJ",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of pollution produced by process J",
+            "symbol": "PollutionJ",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of metal extracted using process P",
+            "symbol": "MetalP",
+            "value": 9,
+            "shape": []
+        },
+        {
+            "definition": "Units of water used by process P",
+            "symbol": "WaterP",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of pollution produced by process P",
+            "symbol": "PollutionP",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of water available",
+            "symbol": "MaxWater",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of pollution allowable",
+            "symbol": "MaxPollution",
+            "value": 1350,
+            "shape": []
+        }
+    ],
+    "description": "There are two ways to extract metal from mined ores. The first way is to use process J and the second is process P. Process J can extract \\param{MetalJ} units of metal using \\param{WaterJ} units of water and produces \\param{PollutionJ} units of pollution. Process P can extract \\param{MetalP} units of metal using \\param{WaterP} units of water and produces \\param{PollutionP} units of pollution. There can be at most \\param{MaxWater} units of water and \\param{MaxPollution} units of pollution. How many of each type of processes should be performed to maximize the amount of metal extracted?"
+}

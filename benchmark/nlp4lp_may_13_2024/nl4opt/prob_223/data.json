@@ -1,0 +1,12 @@
+{
+    "CostPiTV": 1200,
+    "ReachPiTV": 2000,
+    "MaxCommercialsBetaVideo": 8,
+    "CostBetaVideo": 2000,
+    "ReachBetaVideo": 5000,
+    "CostGammaLive": 4000,
+    "ReachGammaLive": 9000,
+    "MaxPropGammaLive": 0.33,
+    "MinPropPiTV": 0.2,
+    "WeeklyBudget": 20000
+}

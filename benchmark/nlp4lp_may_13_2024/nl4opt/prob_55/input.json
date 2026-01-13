@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Total acres of available land for hay processing",
+            "symbol": "TotalAcres",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Hay processed by the windrower per acre",
+            "symbol": "HayWindrower",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Hay processed by the hay harvester per acre",
+            "symbol": "HayHarvester",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Methane gas produced by the windrower per acre",
+            "symbol": "MethaneWindrower",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the windrower per acre",
+            "symbol": "FuelWindrower",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Methane gas produced by the hay harvester per acre",
+            "symbol": "MethaneHarvester",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Fuel required by the hay harvester per acre",
+            "symbol": "FuelHarvester",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Total available fuel",
+            "symbol": "TotalFuel",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowable methane gas production",
+            "symbol": "MaxMethane",
+            "value": 800,
+            "shape": []
+        }
+    ],
+    "description": "A farmer has \\(\\param{TotalAcres}\\) acres of land on which he must process hay using either a windrower or hay harvester. For each acre of land, the windrower can process \\(\\param{HayWindrower}\\) kg of hay while the hay harvester can process \\(\\param{HayHarvester}\\) kg of hay. Per acre, the windrower produces \\(\\param{MethaneWindrower}\\) kg of methane gas and requires \\(\\param{FuelWindrower}\\) kg of fuel. On the other hand, the hay harvester produces \\(\\param{MethaneHarvester}\\) kg of methane gas per acre and requires \\(\\param{FuelHarvester}\\) kg of fuel. There are \\(\\param{TotalFuel}\\) kg of fuel available and the farmer can produce at most \\(\\param{MaxMethane}\\) kg of methane gas. For how many acres should each machine be used to maximize the amount of hay processed?"
+}

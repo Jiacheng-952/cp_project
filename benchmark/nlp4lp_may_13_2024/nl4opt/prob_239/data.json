@@ -1,0 +1,6 @@
+{
+    "LimousineCapacity": 12,
+    "BusCapacity": 18,
+    "MinimumPeople": 400,
+    "MinimumLimousinePercentage": 0.7
+}

@@ -1,0 +1,26 @@
+{
+    "background": "The problem is to determine the optimal distribution of N different files across floppy disks in a way that minimizes the total number of floppy disks used.",
+    "constraints": [
+        "The sum of file sizes on each floppy disk cannot exceed the Capacity",
+        "Each file must be placed on exactly one floppy disk",
+        "File sizes are non-negative"
+    ],
+    "objective": "Minimize the number of floppy disks used in the distribution of files",
+    "description": "How to distribute these files on the floppy disks in order to minimize the number of floppy disks used, given that each floppy disk has a \\param{Capacity} and there are N different files with sizes represented by \\param{Size}.",
+    "parameters": [
+        {
+            "definition": "Total capacity of a floppy disk",
+            "symbol": "Capacity",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Size of each file j",
+            "symbol": "Size",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        }
+    ]
+}

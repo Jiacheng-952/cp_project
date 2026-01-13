@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Carrying capacity of a scooter",
+            "symbol": "ScooterCapacity",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Carrying capacity of a rickshaw",
+            "symbol": "RickshawCapacity",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of vehicles that can be rickshaws",
+            "symbol": "MaxRickshawProportion",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of visitors to be transported",
+            "symbol": "MinVisitors",
+            "value": 300,
+            "shape": []
+        }
+    ],
+    "description": "A theme park transports its visitors around the park either by scooter or rickshaw. A scooter can carry \\param{ScooterCapacity} people while a rickshaw can carry \\param{RickshawCapacity} people. To avoid excessive pollution, at most \\param{MaxRickshawProportion} of the vehicles used can be rickshaws. If the park needs to transport at least \\param{MinVisitors} visitors, minimize the total number of scooters used."
+}

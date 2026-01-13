@@ -1,0 +1,56 @@
+{
+    "background": "A dim sum restaurant utilizes two methods for food delivery: cart and hand. The goal is to schedule servers between these two methods to achieve a target number of customer interactions per hour while minimizing food refills.",
+    "constraints": [
+        "Number of servers delivering by cart is non-negative",
+        "Number of servers delivering by hand is non-negative",
+        "At least MinCartShiftsPercentage of delivery shifts must be by cart",
+        "At least MinServersHand servers must be delivering by hand",
+        "The total number of customer interactions must meet or exceed TargetInteractions per hour"
+    ],
+    "objective": "Minimize the total number of refills per hour",
+    "description": "A dim sum restaurant can deliver their food by cart or by hand. Servers can deliver by cart and have \\param{InteractionsCart} customer interactions and will have to refill food \\param{RefillsCart} times an hour. They can also deliver more food by hand, due to the increased mobility, and have \\param{InteractionsHand} customer interactions while refilling food \\param{RefillsHand} times an hour. However, the customers get more options when delivering by cart, therefore at least \\param{MinCartShiftsPercentage} of delivery shifts must be by cart. There must be at least \\param{MinServersHand} servers delivering by hand for their direct customer service. If the restaurant wants to have \\param{TargetInteractions} customer interactions per hour, how many of each form of delivery should the dim sum restaurant schedule to minimize the total number of refills per hour?",
+    "parameters": [
+        {
+            "definition": "Number of customer interactions per hour by cart",
+            "symbol": "InteractionsCart",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Number of food refills per hour by cart",
+            "symbol": "RefillsCart",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of customer interactions per hour by hand",
+            "symbol": "InteractionsHand",
+            "value": 85,
+            "shape": []
+        },
+        {
+            "definition": "Number of food refills per hour by hand",
+            "symbol": "RefillsHand",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of delivery shifts that must be by cart",
+            "symbol": "MinCartShiftsPercentage",
+            "value": 0.7,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of servers delivering by hand",
+            "symbol": "MinServersHand",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Target total number of customer interactions per hour",
+            "symbol": "TargetInteractions",
+            "value": 4000,
+            "shape": []
+        }
+    ]
+}

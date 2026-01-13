@@ -1,0 +1,9 @@
+{
+    "SubmarineCapacity": 100,
+    "SubmarineFuel": 30,
+    "BoatCapacity": 80,
+    "BoatFuel": 25,
+    "MaxSubmarineTrips": 6,
+    "MinBoatTripProportion": 0.5,
+    "MinMail": 1000
+}

@@ -1,0 +1,44 @@
+{
+    "background": "A patient requires a combination of anxiety medication and anti-depressants with different effectiveness durations, subject to specific quantity requirements and ratio limits.",
+    "constraints": [
+        "Total units of medication is at least MinUnits",
+        "Anxiety medication units is at least MinAnxiety",
+        "Anxiety medication units is at most MaxAnxietyAntiDepressantRatio times the anti-depressant units",
+        "Number of anxiety medication units is non-negative",
+        "Number of anti-depressant units is non-negative"
+    ],
+    "objective": "Minimize the total time for the medication to be effective",
+    "description": "A patient takes anxiety medication and anti-depressants one after the other. Each unit of anxiety medication takes \\param{TAnxiety} minutes to be effective while each unit of anti-depressant takes \\param{TAntiDepressant} minutes to be effective. The patient must take at least \\param{MinUnits} units of medication and at least \\param{MinAnxiety} should be anxiety medication. Since the anxiety medication is strong, the patient can take at most \\param{MaxAnxietyAntiDepressantRatio} the amount of anxiety medication as anti-depressants. How many units of each should the patient take to minimize the total time it takes for the medication to be effective?",
+    "parameters": [
+        {
+            "definition": "Time for anxiety medication to be effective",
+            "symbol": "TAnxiety",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Time for anti-depressant to be effective",
+            "symbol": "TAntiDepressant",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total units of medication required",
+            "symbol": "MinUnits",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of anxiety medication required",
+            "symbol": "MinAnxiety",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Maximum ratio of anxiety medication units to anti-depressant units",
+            "symbol": "MaxAnxietyAntiDepressantRatio",
+            "value": 2,
+            "shape": []
+        }
+    ]
+}

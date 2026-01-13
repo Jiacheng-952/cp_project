@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "The number of people an escalator can transport every minute",
+            "symbol": "EscalatorRate",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "The number of people an elevator can transport every minute",
+            "symbol": "ElevatorRate",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "The units of space an escalator takes up",
+            "symbol": "EscalatorSpace",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "The units of space an elevator takes up",
+            "symbol": "ElevatorSpace",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "The minimum number of people the airport needs to have the capacity to transport every minute",
+            "symbol": "CapacityMinimum",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "The ratio of the minimum number of escalators to elevators",
+            "symbol": "EscalatorElevatorRatio",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "The minimum number of elevators that must be used",
+            "symbol": "ElevatorMinNumber",
+            "value": 2,
+            "shape": []
+        }
+    ],
+    "description": "An airport can either install escalators or elevators. Escalators can transport \\param{EscalatorRate} people every minute whereas elevators can transport \\param{ElevatorRate} people every minute. Escalators take up \\param{EscalatorSpace} units of space while elevators take \\param{ElevatorSpace} units of space. The airport needs to have enough capacity to transport at least \\param{CapacityMinimum} people every minute. Additionally, there must be at least \\param{EscalatorElevatorRatio} times more escalators than elevators and at least \\param{ElevatorMinNumber} elevators must be used. How many of each type should the airport install to minimize the total units of space taken?"
+}

@@ -1,0 +1,10 @@
+{
+    "CaloriesAlmonds": 200,
+    "ProteinAlmonds": 20,
+    "CaloriesCashews": 300,
+    "ProteinCashews": 25,
+    "FatAlmonds": 15,
+    "FatCashews": 12,
+    "MinCalories": 10000,
+    "MinProtein": 800
+}

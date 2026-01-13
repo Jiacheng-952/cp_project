@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of ducks per boat trip",
+            "symbol": "DucksPerBoat",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of ducks per canoe trip",
+            "symbol": "DucksPerCanoe",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Duration of a boat trip",
+            "symbol": "TimePerBoat",
+            "value": 20.0,
+            "shape": []
+        },
+        {
+            "definition": "Duration of a canoe trip",
+            "symbol": "TimePerCanoe",
+            "value": 40.0,
+            "shape": []
+        },
+        {
+            "definition": "Maximum number of boat trips",
+            "symbol": "MaxBoatTrips",
+            "value": 12,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of trips that should be by canoe",
+            "symbol": "MinCanoeTripsPercentage",
+            "value": 0.6,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of ducks to be taken to shore",
+            "symbol": "MinDucks",
+            "value": 300,
+            "shape": []
+        }
+    ],
+    "description": "There has been an oil spill in the ocean and ducks need to be taken to shore to be cleaned either by boat or by canoe. A boat can take \\param{DucksPerBoat} ducks per trip while a canoe can take \\param{DucksPerCanoe} ducks per trip. Since the boats are motor powered, they take \\param{TimePerBoat} minutes per trip while the canoes take \\param{TimePerCanoe} minutes per trip. In order to avoid further environmental damage, there can be at most \\param{MaxBoatTrips} boat trips and at least \\param{MinCanoeTripsPercentage} of the trips should be by canoe. If at least \\param{MinDucks} ducks need to be taken to shore, how many of each transportation method should be used to minimize the total amount of time needed to transport the ducks?"
+}

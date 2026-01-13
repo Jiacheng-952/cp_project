@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of running factory 1 for 1 hour",
+            "symbol": "CostF1",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Number of black teddy bears produced in factory 1 per hour",
+            "symbol": "BlackF1",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Number of white teddy bears produced in factory 1 per hour",
+            "symbol": "WhiteF1",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of brown teddy bears produced in factory 1 per hour",
+            "symbol": "BrownF1",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Cost of running factory 2 for 1 hour",
+            "symbol": "CostF2",
+            "value": 600,
+            "shape": []
+        },
+        {
+            "definition": "Number of black teddy bears produced in factory 2 per hour",
+            "symbol": "BlackF2",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Number of white teddy bears produced in factory 2 per hour",
+            "symbol": "WhiteF2",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Daily minimum required number of black teddy bears",
+            "symbol": "MinBlack",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Daily minimum required number of white teddy bears",
+            "symbol": "MinWhite",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Daily minimum required number of brown teddy bears",
+            "symbol": "MinBrown",
+            "value": 15,
+            "shape": []
+        }
+    ],
+    "description": "A teddy bear company produces three different colored bears: black, white, and brown. These bears are made in two different factories. Running factory 1 for 1 hour costs \\param{CostF1} and produces \\param{BlackF1} black teddy bears, \\param{WhiteF1} white teddy bears, and \\param{BrownF1} brown ones. Running factory 2 for 1 hour costs \\param{CostF2} and produces \\param{BlackF2} black teddy bears and \\param{WhiteF2} white teddy bears (but no brown ones). To meet children's demand, at least \\param{MinBlack} black teddy bears, \\param{MinWhite} white teddy bears, and \\param{MinBrown} brown teddy bears must be made daily. Given this information, develop a linear programming problem assuming the teddy bear company wants to minimize the cost of production."
+}

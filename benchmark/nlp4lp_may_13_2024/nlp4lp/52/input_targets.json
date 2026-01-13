@@ -1,0 +1,66 @@
+{
+    "background": "A manufacturer is producing multiple parts using several machines, where each machine has associated costs, time requirements, and monthly availability. Each part has a selling price and a minimum production requirement.",
+    "constraints": [
+        "Number of batches for each part p is non-negative",
+        "Each machine m can be used for up to Availability[m] hours per month",
+        "Each part p must be produced in at least MinBatches[p] batches",
+        "The total time used on each machine m by all parts p does not exceed TimeRequired[m][p] multiplied by the number of batches for part p, summed across all parts"
+    ],
+    "objective": "Maximize the manufacturer's profit from producing parts, which is calculated from the selling prices of parts minus the costs of using machines",
+    "description": "How many batches of each part should the manufacturer produce each month to maximize profit? The manufacturer has \\param{M} machines and \\param{P} parts to be produced. Each machine m has an associated cost of \\param{MachineCosts}, time requirement \\param{TimeRequired}, and availability \\param{Availability} per month. Each part p has a selling price \\param{Prices} and a production minimum requirement \\param{MinBatches}.",
+    "parameters": [
+        {
+            "definition": "Number of machines",
+            "symbol": "M",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Number of parts to be produced",
+            "symbol": "P",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Time required to produce a batch of part p on machine m",
+            "symbol": "TimeRequired",
+            "value": "",
+            "shape": [
+                "M",
+                "P"
+            ]
+        },
+        {
+            "definition": "Cost associated with running machine m",
+            "symbol": "MachineCosts",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Availability of machine m per month",
+            "symbol": "Availability",
+            "value": "",
+            "shape": [
+                "M"
+            ]
+        },
+        {
+            "definition": "Selling price of a batch of part p",
+            "symbol": "Prices",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        },
+        {
+            "definition": "Minimum number of batches of part p that should be produced",
+            "symbol": "MinBatches",
+            "value": "",
+            "shape": [
+                "P"
+            ]
+        }
+    ]
+}

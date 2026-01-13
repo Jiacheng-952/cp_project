@@ -1,0 +1,50 @@
+{
+    "background": "A company in the middle east uses camels and horses for package delivery. Each animal has a specific carrying capacity and requires a certain amount of food. There are limitations on the total number of packages to be delivered and the available food. Furthermore, the company prefers to use fewer horses than camels due to climate considerations.",
+    "constraints": [
+        "Number of camels is non-negative",
+        "Number of horses is non-negative",
+        "At least MinPackages packages need to be delivered",
+        "Food consumed by all camels and horses cannot exceed TotalFood units",
+        "Number of horses cannot exceed number of camels"
+    ],
+    "objective": "Minimize the total number of camels and horses used for package delivery",
+    "description": "A company in the middle east delivers their packages to customers on camels and horses. A camel can carry \\param{CamelCapacity} packages while a horse can carry \\param{HorseCapacity} packages. A camel requires \\param{CamelFood} units of food while a horse requires \\param{HorseFood} units of food. The company needs to deliver at least \\param{MinPackages} packages and they have \\param{TotalFood} units of food available. Since horses are not as suited for the hot climate, the number of horses cannot exceed the number of camels. How many of each animal should be used to minimize the total number of animals?",
+    "parameters": [
+        {
+            "definition": "Number of packages a camel can carry",
+            "symbol": "CamelCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of packages a horse can carry",
+            "symbol": "HorseCapacity",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Units of food required by a camel",
+            "symbol": "CamelFood",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of food required by a horse",
+            "symbol": "HorseFood",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of packages to be delivered",
+            "symbol": "MinPackages",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total units of food available",
+            "symbol": "TotalFood",
+            "value": 450,
+            "shape": []
+        }
+    ]
+}

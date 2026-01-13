@@ -1,0 +1,10 @@
+{
+    "MedicineHeartMachine1": 0.5,
+    "MedicineHeartMachine2": 0.3,
+    "MedicineBrainMachine1": 0.8,
+    "MedicineBrainMachine2": 1.0,
+    "WasteMachine1": 0.3,
+    "WasteMachine2": 0.5,
+    "MaxMedicineHeart": 8,
+    "MinMedicineBrain": 4
+}

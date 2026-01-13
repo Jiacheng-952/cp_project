@@ -1,0 +1,11 @@
+{
+    "CaloriesRamen": 400,
+    "ProteinRamen": 20,
+    "SodiumRamen": 100,
+    "CaloriesFries": 300,
+    "ProteinFries": 10,
+    "SodiumFries": 75,
+    "MaxRamenFraction": 0.3,
+    "MinCalories": 3000,
+    "MinProtein": 80
+}

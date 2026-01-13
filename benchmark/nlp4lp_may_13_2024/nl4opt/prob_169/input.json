@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of packages a camel can carry",
+            "symbol": "CamelCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of packages a horse can carry",
+            "symbol": "HorseCapacity",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Units of food required by a camel",
+            "symbol": "CamelFood",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Units of food required by a horse",
+            "symbol": "HorseFood",
+            "value": 30,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of packages to be delivered",
+            "symbol": "MinPackages",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Total units of food available",
+            "symbol": "TotalFood",
+            "value": 450,
+            "shape": []
+        }
+    ],
+    "description": "A company in the middle east delivers their packages to customers on camels and horses. A camel can carry \\param{CamelCapacity} packages while a horse can carry \\param{HorseCapacity} packages. A camel requires \\param{CamelFood} units of food while a horse requires \\param{HorseFood} units of food. The company needs to deliver at least \\param{MinPackages} packages and they have \\param{TotalFood} units of food available. Since horses are not as suited for the hot climate, the number of horses cannot exceed the number of camels. How many of each animal should be used to minimize the total number of animals?"
+}

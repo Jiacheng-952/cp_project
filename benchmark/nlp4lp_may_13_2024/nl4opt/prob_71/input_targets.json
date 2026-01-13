@@ -1,0 +1,69 @@
+{
+    "background": "A laundromat is considering purchasing two types of washing machines: a top-loading model and a front-loading model, with specific capacities and energy consumptions.",
+    "constraints": [
+        "Number of top-loading machines is an integer",
+        "Number of front-loading machines is an integer",
+        "Number of top-loading machines is non-negative",
+        "Number of front-loading machines is non-negative",
+        "The laundromat must have the capacity to wash at least MinCapacity items per day",
+        "The laundromat has an energy limit of TotalEnergy kWh per day",
+        "At most MaxTopProp proportion of the machines can be top-loading",
+        "At least MinFront machines must be front-loading",
+        "Total capacity of top-loading machines is CapacityTop times the number of top-loading machines",
+        "Total capacity of front-loading machines is CapacityFront times the number of front-loading machines",
+        "Total energy consumption for top-loading machines is EnergyTop times the number of top-loading machines",
+        "Total energy consumption for front-loading machines is EnergyFront times the number of front-loading machines"
+    ],
+    "objective": "The laundromat wants to minimize the total number of washing machines",
+    "description": "A laundromat can buy two types of washing machines, a top-loading model and a front-loading model. The top-loading model can wash \\param{CapacityTop} items per day while the front-loading model can wash \\param{CapacityFront} items per day. The top-loading model consumes \\param{EnergyTop} kWh per day while the front-loading model consumes \\param{EnergyFront} kWh per day. The laundromat must be able to wash at least \\param{MinCapacity} items per day and has available \\param{TotalEnergy} kWh per day. Since the top-loading machines are harder to use, at most \\param{MaxTopProp} of the machines can be top-loading. Further, at least \\param{MinFront} machines should be front-loading. How many of each machine should the laundromat buy to minimize the total number of washing machines?",
+    "parameters": [
+        {
+            "definition": "Washing capacity per day of a top-loading model",
+            "symbol": "CapacityTop",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Washing capacity per day of a front-loading model",
+            "symbol": "CapacityFront",
+            "value": 75,
+            "shape": []
+        },
+        {
+            "definition": "Energy consumption per day of a top-loading model",
+            "symbol": "EnergyTop",
+            "value": 85,
+            "shape": []
+        },
+        {
+            "definition": "Energy consumption per day of a front-loading model",
+            "symbol": "EnergyFront",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total washing capacity required per day",
+            "symbol": "MinCapacity",
+            "value": 5000,
+            "shape": []
+        },
+        {
+            "definition": "Total energy availability per day",
+            "symbol": "TotalEnergy",
+            "value": 7000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of top-loading machines",
+            "symbol": "MaxTopProp",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of front-loading machines",
+            "symbol": "MinFront",
+            "value": 10,
+            "shape": []
+        }
+    ]
+}

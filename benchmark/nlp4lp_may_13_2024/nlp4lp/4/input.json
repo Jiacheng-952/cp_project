@@ -1,0 +1,19 @@
+{
+    "parameters": [
+        {
+            "definition": "The planning period for nurse staffing",
+            "symbol": "Period",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Array of demands for nurses for 7 days",
+            "symbol": "Demand",
+            "value": "",
+            "shape": [
+                "7"
+            ]
+        }
+    ],
+    "description": "The goal is to find the minimal number of nurses the hospital needs to hire for a planning period of \\param{Period}. The hospital has a known demand for nurses across a week, specified by the array \\param{Demand}, where each element corresponds to the demand for a particular day in the period."
+}

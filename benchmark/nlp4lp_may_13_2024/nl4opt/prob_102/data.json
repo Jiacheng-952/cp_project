@@ -1,0 +1,13 @@
+{
+    "FlourBeaker1": 4,
+    "LiquidBeaker1": 6,
+    "SlimeBeaker1": 5,
+    "WasteBeaker1": 4,
+    "FlourBeaker2": 6,
+    "LiquidBeaker2": 3,
+    "SlimeBeaker2": 3,
+    "WasteBeaker2": 2,
+    "TotalFlour": 150,
+    "TotalLiquid": 100,
+    "MaxWaste": 30
+}

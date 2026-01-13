@@ -1,0 +1,7 @@
+{
+    "MaxWired": 100,
+    "MaxWireless": 170,
+    "MaxTesting": 150,
+    "ProfitWired": 50,
+    "ProfitWireless": 20
+}

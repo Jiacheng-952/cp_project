@@ -1,0 +1,37 @@
+{
+    "background": "A fishing boat requires transportation of fish to shore while adhering to environmental rules, using a mix of canoes and diesel boats.",
+    "constraints": [
+        "Number of canoes is non-negative",
+        "Number of diesel boats is non-negative",
+        "The number of canoes must be at least CanoesPerDieselBoat times the number of diesel boats",
+        "At least MinimumFishToTransport fish must be transported"
+    ],
+    "objective": "Minimize the total number of canoes and diesel boats needed for transportation",
+    "description": "A large fishing boat sends fish back to shore either by small canoes or smaller diesel boats. A canoe can carry back \\param{CanoeCapacity} fish while a small diesel boat can carry back \\param{DieselBoatCapacity} fish. In order to follow environmental rules, the number of small canoes used has to be at least \\param{CanoesPerDieselBoat} times as many as the number of diesel boats used. If at least \\param{MinimumFishToTransport} fish need to be transported to shore, minimize the total number of canoes and diesel boats needed.",
+    "parameters": [
+        {
+            "definition": "Capacity of a canoe to carry fish",
+            "symbol": "CanoeCapacity",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a diesel boat to carry fish",
+            "symbol": "DieselBoatCapacity",
+            "value": 15,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of canoes for each diesel boat",
+            "symbol": "CanoesPerDieselBoat",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of fish to transport to shore",
+            "symbol": "MinimumFishToTransport",
+            "value": 1000,
+            "shape": []
+        }
+    ]
+}

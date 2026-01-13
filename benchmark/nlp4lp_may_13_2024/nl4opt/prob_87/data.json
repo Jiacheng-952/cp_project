@@ -1,0 +1,8 @@
+{
+    "SlicesPerMinuteManual": 5,
+    "SlicesPerMinuteAutomatic": 8,
+    "GreasePerMinuteManual": 3,
+    "GreasePerMinuteAutomatic": 6,
+    "MinTotalSlices": 50,
+    "MaxTotalGrease": 35
+}

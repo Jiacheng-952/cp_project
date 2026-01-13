@@ -1,0 +1,71 @@
+{
+    "parameters": [
+        {
+            "definition": "Units of metal required for a cheap box",
+            "symbol": "MetalCheap",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Units of acid required for a cheap box",
+            "symbol": "AcidCheap",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of foam produced by a cheap box",
+            "symbol": "FoamCheap",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of metal required for an expensive box",
+            "symbol": "MetalExpensive",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of acid required for an expensive box",
+            "symbol": "AcidExpensive",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of foam produced by an expensive box",
+            "symbol": "FoamExpensive",
+            "value": 10,
+            "shape": []
+        },
+        {
+            "definition": "Heat given off by a cheap box",
+            "symbol": "HeatCheap",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Heat given off by an expensive box",
+            "symbol": "HeatExpensive",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Total units of metal available",
+            "symbol": "MetalTotal",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Total units of acid available",
+            "symbol": "AcidTotal",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Maximum heat units allowed",
+            "symbol": "HeatMax",
+            "value": 50,
+            "shape": []
+        }
+    ],
+    "description": "A science store makes two boxes, a cheap and expensive box. The cheap box contains \\param{MetalCheap} units of metal and \\param{AcidCheap} units of acid which can be mixed to create \\param{FoamCheap} units of foam. The expensive box contains \\param{MetalExpensive} units of metal and \\param{AcidExpensive} units of acid which can be mixed to create \\param{FoamExpensive} units of foam. The cheap box however gives off \\param{HeatCheap} units of heat while the expensive box gives off \\param{HeatExpensive} units of heat. The science store has available \\param{MetalTotal} units of metal and \\param{AcidTotal} units of acid. If at most \\param{HeatMax} units of heat can be given off, how many of each box should the store make to maximize the amount of foam produced?"
+}

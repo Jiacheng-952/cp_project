@@ -1,0 +1,8 @@
+{
+    "ToysMedium": 50,
+    "OperatorsMedium": 3,
+    "ToysSmall": 35,
+    "OperatorsSmall": 2,
+    "ToysMin": 250,
+    "OperatorsTotal": 16
+}

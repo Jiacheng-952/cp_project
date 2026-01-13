@@ -1,0 +1,59 @@
+{
+    "parameters": [
+        {
+            "definition": "Total acreage available for planting berries",
+            "symbol": "TotalAcres",
+            "value": 300,
+            "shape": []
+        },
+        {
+            "definition": "Total budget for watering",
+            "symbol": "BudgetWatering",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Total days worth of labor available",
+            "symbol": "TotalLaborDays",
+            "value": 575,
+            "shape": []
+        },
+        {
+            "definition": "Days of labor required per acre of blueberries",
+            "symbol": "LaborBlueberry",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Watering cost per acre of blueberries",
+            "symbol": "CostWaterBlueberry",
+            "value": 22,
+            "shape": []
+        },
+        {
+            "definition": "Days of labor required per acre of raspberries",
+            "symbol": "LaborRaspberry",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Watering cost per acre of raspberries",
+            "symbol": "CostWaterRaspberry",
+            "value": 25,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of blueberries",
+            "symbol": "ProfitBlueberry",
+            "value": 56,
+            "shape": []
+        },
+        {
+            "definition": "Profit per acre of raspberries",
+            "symbol": "ProfitRaspberry",
+            "value": 75,
+            "shape": []
+        }
+    ],
+    "description": "John has a \\param{TotalAcres} acre berry farm on which to plant blueberries and raspberries. John has $\\param{BudgetWatering} to spend on watering and \\param{TotalLaborDays} days worth of labor available. For each acre of blueberries, \\param{LaborBlueberry} days worth of labor and $\\param{CostWaterBlueberry} in watering costs is required. For each acre of raspberries, \\param{LaborRaspberry} days worth of labor and $\\param{CostWaterRaspberry} in watering costs is required. The profit per acre of blueberries is $\\param{ProfitBlueberry} and the profit per acre of raspberries is $\\param{ProfitRaspberry}. Formulate an LP problem in order to maximize profit."
+}

@@ -1,0 +1,53 @@
+{
+    "parameters": [
+        {
+            "definition": "Cost of fertilizer C per kg",
+            "symbol": "CostC",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Cost of fertilizer Y per kg",
+            "symbol": "CostY",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of nitrous oxide per kg in fertilizer C",
+            "symbol": "NitrousC",
+            "value": 1.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of vitamin mix per kg in fertilizer C",
+            "symbol": "VitaminC",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of nitrous oxide per kg in fertilizer Y",
+            "symbol": "NitrousY",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of vitamin mix per kg in fertilizer Y",
+            "symbol": "VitaminY",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of nitrous oxide in the growth compound",
+            "symbol": "MinNitrous",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of vitamin mix in the growth compound",
+            "symbol": "MinVitamin",
+            "value": 8,
+            "shape": []
+        }
+    ],
+    "description": "Ayse produces a plant growth compound by mixing two types of fertilizer: C and Y. This growth compound must contain at least \\param{MinNitrous} units of nitrous oxide and \\param{MinVitamin} units of vitamin mix. Fertilizer C and Y cost \\param{CostC} and \\param{CostY} per kg respectively. Fertilizer C contains \\param{NitrousC} units of nitrous oxide per kg and \\param{VitaminC} units of vitamin mix per kg. Fertilizer Y contains \\param{NitrousY} units of nitrous oxide per kg and \\param{VitaminY} unit of vitamin mix per kg. Determine the minimum cost of Ayse's compound."
+}

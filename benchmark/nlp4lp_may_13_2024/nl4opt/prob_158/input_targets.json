@@ -1,0 +1,37 @@
+{
+    "background": "A school is organizing a field trip and requires buses of two sizes to transport students, with constraints on minimum students transported and parking limitations for the larger buses.",
+    "constraints": [
+        "The number of small buses is non-negative",
+        "The number of large buses is non-negative",
+        "The total number of students transported must be at least MinStudents",
+        "The number of large buses cannot exceed MaxLargeBusProportion times the total number of buses"
+    ],
+    "objective": "Minimize the total number of buses needed",
+    "description": "A school is organizing a field trip to a science center and wants to hire small buses (each with a capacity of \\param{SmallBusCapacity} students) and large buses (each with a capacity of \\param{LargeBusCapacity} students). The school needs to provide transportation for at least \\param{MinStudents} students. In addition, since the parking lot is rather small, a maximum of \\param{MaxLargeBusProportion} of the buses can be large buses. How many of each type of bus should be hired to minimize the total number of buses?",
+    "parameters": [
+        {
+            "definition": "Capacity of a small bus",
+            "symbol": "SmallBusCapacity",
+            "value": 20,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a large bus",
+            "symbol": "LargeBusCapacity",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of students to be transported",
+            "symbol": "MinStudents",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum proportion of large buses",
+            "symbol": "MaxLargeBusProportion",
+            "value": 0.2,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a large ship",
+            "symbol": "LargeShipCapacity",
+            "value": 500,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a small ship",
+            "symbol": "SmallShipCapacity",
+            "value": 200,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of containers required to be transported",
+            "symbol": "MinContainers",
+            "value": 3000,
+            "shape": []
+        }
+    ],
+    "description": "An international shipping company uses large and small ships to transport containers around the world. A large ship can carry \\param{LargeShipCapacity} containers while a small ship can carry \\param{SmallShipCapacity} containers. Because most ports are small, the number of large ships cannot exceed the number of small ships. If the company is under contract needs to transport at least \\param{MinContainers} containers, find the minimum number of ships that can be used."
+}

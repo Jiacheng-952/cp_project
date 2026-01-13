@@ -1,0 +1,8 @@
+{
+    "CapacityFourWheeler": 60,
+    "PollutionFourWheeler": 30,
+    "CapacityThreeWheeler": 40,
+    "PollutionThreeWheeler": 15,
+    "MinLuggageCapacity": 1000,
+    "MaxPollution": 430
+}

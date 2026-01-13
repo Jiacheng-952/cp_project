@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Minimum demand of hardwood per week",
+            "symbol": "MinHardwood",
+            "value": 20000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum demand of vinyl planks per week",
+            "symbol": "MinVinyl",
+            "value": 10000,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total square feet of flooring required to be shipped per week",
+            "symbol": "MinTotalShip",
+            "value": 60000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum hardwood production capacity per week",
+            "symbol": "MaxHardwoodProd",
+            "value": 50000,
+            "shape": []
+        },
+        {
+            "definition": "Maximum vinyl production capacity per week",
+            "symbol": "MaxVinylProd",
+            "value": 30000,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot of hardwood",
+            "symbol": "ProfitHardwood",
+            "value": 2.5,
+            "shape": []
+        },
+        {
+            "definition": "Profit per square foot of vinyl",
+            "symbol": "ProfitVinyl",
+            "value": 3,
+            "shape": []
+        }
+    ],
+    "description": "A flooring company produces engineered hardwood and vinyl planks. Their sales forecasts show an expected demand of at least \\param{MinHardwood} square feet of hardwood and \\param{MinVinyl} square feet of vinyl planks each week. To satisfy a shipping contract, a total of at least \\param{MinTotalShip} square feet of flooring must be shipped each week. Due to a labor shortage issue, no more than \\param{MaxHardwoodProd} square feet of hardwood and \\param{MaxVinylProd} square feet of vinyl can be produced weekly. If a square foot of hardwood flooring yields a profit of \\param{ProfitHardwood} and a square foot of vinyl planks produces a \\param{ProfitVinyl} profit, how many of each type of flooring should be made weekly to maximize the company's profit?"
+}

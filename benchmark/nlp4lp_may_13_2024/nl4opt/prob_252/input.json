@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of people each large mobile production unit can hold",
+            "symbol": "LargeUnitCapacity",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Number of parking spots taken by each large mobile production unit",
+            "symbol": "LargeUnitSpots",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of people each small mobile production unit can hold",
+            "symbol": "SmallUnitCapacity",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of parking spots taken by each small mobile production unit",
+            "symbol": "SmallUnitSpots",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of small mobile production units required",
+            "symbol": "MinSmallUnits",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum proportion of all vehicles that must be large mobile production units",
+            "symbol": "MinLargeUnitProportion",
+            "value": 0.75,
+            "shape": []
+        },
+        {
+            "definition": "Total number of people to transport",
+            "symbol": "TotalPeople",
+            "value": 80,
+            "shape": []
+        }
+    ],
+    "description": "A production company needs to transport their equipment and staff for a movie they are shooting using large mobile production units or small mobile production units. Large mobile production units can hold \\param{LargeUnitCapacity} people and takes up \\param{LargeUnitSpots} parking spots whereas small mobile production units can hold only \\param{SmallUnitCapacity} people and takes up \\param{SmallUnitSpots} parking spot. Movie stars prefer to have their small mobile production unit to share with a close staff, therefore at least \\param{MinSmallUnits} units must be small mobile units. However, due to logistic limitations, since large mobile production units are more space efficient per spot, they must make up at least \\param{MinLargeUnitProportion} of all vehicles. If the movie needs to transport \\param{TotalPeople} people, minimize the total number of parking spots required by this production."
+}

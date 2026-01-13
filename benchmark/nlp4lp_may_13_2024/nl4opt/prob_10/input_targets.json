@@ -1,0 +1,80 @@
+{
+    "background": "A farmer wants to manufacture a special plant nutrition using fertilizers A and B.",
+    "constraints": [
+        "Amount of fertilizer A is non-negative",
+        "Amount of fertilizer B is non-negative",
+        "The nutrition requires at least MinNitrogen units of nitrogen",
+        "The nutrition requires at least MinPhosphoric units of phosphoric acid",
+        "The nutrition contains no more than MaxVitaminA units of vitamin A"
+    ],
+    "objective": "Minimize the amount of vitamin D in the nutrition",
+    "description": "A farmer wants to manufacture a special plant nutrition using fertilizers A and B. Each kg of fertilizer A contains \\var{NitrogenA} units of nitrogen, \\var{PhosphoricA} units of phosphoric acid, \\var{VitaminAA} units of vitamin A and \\var{VitaminDA} units of vitamin D. Each kg of fertilizer B contains \\var{NitrogenB} units of nitrogen, \\var{PhosphoricB} units of phosphoric acid, \\var{VitaminAB} units of vitamin A and \\var{VitaminDB} units of vitamin D. To be effective, the plant nutrition requires a minimum \\var{MinNitrogen} units of nitrogen, a minimum of \\var{MinPhosphoric} units of phosphoric acid, and no more than \\var{MaxVitaminA} units of vitamin A. How many kg of each fertilizer should be used to minimize the amount of vitamin D in the nutrition? What is the minimum amount of vitamin D?",
+    "parameters": [
+        {
+            "definition": "Units of nitrogen per kg of fertilizer A",
+            "symbol": "NitrogenA",
+            "value": 13,
+            "shape": []
+        },
+        {
+            "definition": "Units of phosphoric acid per kg of fertilizer A",
+            "symbol": "PhosphoricA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A per kg of fertilizer A",
+            "symbol": "VitaminAA",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin D per kg of fertilizer A",
+            "symbol": "VitaminDA",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Units of nitrogen per kg of fertilizer B",
+            "symbol": "NitrogenB",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Units of phosphoric acid per kg of fertilizer B",
+            "symbol": "PhosphoricB",
+            "value": 14,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin A per kg of fertilizer B",
+            "symbol": "VitaminAB",
+            "value": 6,
+            "shape": []
+        },
+        {
+            "definition": "Units of vitamin D per kg of fertilizer B",
+            "symbol": "VitaminDB",
+            "value": 9,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of nitrogen for the plant nutrition",
+            "symbol": "MinNitrogen",
+            "value": 220,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required units of phosphoric acid for the plant nutrition",
+            "symbol": "MinPhosphoric",
+            "value": 160,
+            "shape": []
+        },
+        {
+            "definition": "Maximum allowed units of vitamin A for the plant nutrition",
+            "symbol": "MaxVitaminA",
+            "value": 350,
+            "shape": []
+        }
+    ]
+}

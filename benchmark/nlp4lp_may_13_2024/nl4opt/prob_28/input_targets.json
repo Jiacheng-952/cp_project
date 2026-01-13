@@ -1,0 +1,68 @@
+{
+    "background": "An electronics store is optimizing inventory for phones and laptops with constraints on floor space, spending cap, and a ratio of laptops to the total appliances.",
+    "constraints": [
+        "Number of phones is non-negative",
+        "Number of laptops is non-negative",
+        "Floor space for phones and laptops does not exceed TotalSpace",
+        "At least MinLaptopRatio of all appliances in stock must be laptops",
+        "The store spends at most MaxSpend on purchasing phones and laptops"
+    ],
+    "objective": "Maximize the store's profit from the sale of phones and laptops",
+    "description": "An electronics store wants to optimize how many phones and laptops are enough to keep in inventory. A phone will earn the store \\var{ProfitPhone} in profits, and a laptop will earn \\var{ProfitLaptop}. A phone requires \\var{SpacePhone} sq ft of floor space, whereas a laptop requires \\var{SpaceLaptop} sq ft. In total, \\var{TotalSpace} sq ft of floor space is available. The store stocks only phones and laptops. Corporate has required that at least \\var{MinLaptopRatio} of all appliances in stock be laptops. Finally, a phone costs \\var{CostPhone} for the store, and a laptop, \\var{CostLaptop}. The store wants to spend at most \\var{MaxSpend}. Formulate an LP that can be used to maximize the store's profit.",
+    "parameters": [
+        {
+            "definition": "Profit earned from one phone",
+            "symbol": "ProfitPhone",
+            "value": 120,
+            "shape": []
+        },
+        {
+            "definition": "Profit earned from one laptop",
+            "symbol": "ProfitLaptop",
+            "value": 40,
+            "shape": []
+        },
+        {
+            "definition": "Floor space required by one phone",
+            "symbol": "SpacePhone",
+            "value": 1,
+            "shape": []
+        },
+        {
+            "definition": "Floor space required by one laptop",
+            "symbol": "SpaceLaptop",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Total available floor space",
+            "symbol": "TotalSpace",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Minimum percentage of total appliances that must be laptops",
+            "symbol": "MinLaptopRatio",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one phone for the store",
+            "symbol": "CostPhone",
+            "value": 400,
+            "shape": []
+        },
+        {
+            "definition": "Cost of one laptop for the store",
+            "symbol": "CostLaptop",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount store wants to spend on inventory",
+            "symbol": "MaxSpend",
+            "value": 6000,
+            "shape": []
+        }
+    ]
+}

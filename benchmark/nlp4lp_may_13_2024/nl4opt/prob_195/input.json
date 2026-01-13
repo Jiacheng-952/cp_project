@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of letters a carrier pigeon can carry at a time",
+            "symbol": "CarrierCapacity",
+            "value": 2,
+            "shape": []
+        },
+        {
+            "definition": "Number of letters an owl can carry at a time",
+            "symbol": "OwlCapacity",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum percentage of birds that can be owls",
+            "symbol": "MaxOwlPercentage",
+            "value": 0.4,
+            "shape": []
+        },
+        {
+            "definition": "Total treats available for the birds",
+            "symbol": "TotalTreats",
+            "value": 1000,
+            "shape": []
+        },
+        {
+            "definition": "Treats required for one service by a carrier pigeon",
+            "symbol": "TreatsPerCarrier",
+            "value": 3,
+            "shape": []
+        },
+        {
+            "definition": "Treats required for one service by an owl",
+            "symbol": "TreatsPerOwl",
+            "value": 5,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of carrier pigeons that must be used",
+            "symbol": "MinCarrierPigeons",
+            "value": 20,
+            "shape": []
+        }
+    ],
+    "description": "A magic school sends letters to student either by carrier pigeons or owls. A carrier pigeon can carry \\param{CarrierCapacity} letters at a time and requires \\param{TreatsPerCarrier} treats for service. An owl can carry \\param{OwlCapacity} letters at a time and requires \\param{TreatsPerOwl} treats for service. At most \\param{MaxOwlPercentage} of the birds can be owls. In addition, the school only has \\param{TotalTreats} treats available and at least \\param{MinCarrierPigeons} carrier pigeons must be uses. How many of each bird can be used to maximize the total number of letters that can be sent?"
+}

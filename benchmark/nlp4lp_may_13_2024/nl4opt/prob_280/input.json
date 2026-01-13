@@ -1,0 +1,29 @@
+{
+    "parameters": [
+        {
+            "definition": "Capacity of a bus",
+            "symbol": "BusCapacity",
+            "value": 9,
+            "shape": []
+        },
+        {
+            "definition": "Capacity of a personal car",
+            "symbol": "CarCapacity",
+            "value": 4,
+            "shape": []
+        },
+        {
+            "definition": "Minimum total number of children to pick up",
+            "symbol": "MinChildren",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum number of personal cars due to children needing extra attention",
+            "symbol": "MinCars",
+            "value": 5,
+            "shape": []
+        }
+    ],
+    "description": "A daycare center has children they must pick up and can use two types of vehicles: a bus with a capacity of \\param{BusCapacity} children or a personal car with a capacity of \\param{CarCapacity} children. The daycare has to pick up at least \\param{MinChildren} children. Additionally, due to limitations of pollution, there must be more buses than personal cars. But some children require extra attention. Therefore, there must be at least \\param{MinCars} personal cars. How many of each form of transportation should the daycare center schedule for to minimize the total number of vehicles?"
+}

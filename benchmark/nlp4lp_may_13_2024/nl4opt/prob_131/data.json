@@ -1,0 +1,11 @@
+{
+    "BananaCalories": 80,
+    "BananaPotassium": 20,
+    "BananaSugar": 10,
+    "MangoCalories": 100,
+    "MangoPotassium": 15,
+    "MangoSugar": 8,
+    "MinCalories": 4000,
+    "MinPotassium": 150,
+    "MaxMangoPercentage": 0.33
+}

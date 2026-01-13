@@ -1,0 +1,61 @@
+{
+    "background": "There are two machines available to deliver medicine to a patient's heart and brain, with each machine delivering different quantities of medicine and producing different amounts of waste.",
+    "constraints": [
+        "Minutes on machine 1 is non-negative",
+        "Minutes on machine 2 is non-negative",
+        "Heart receives at most MaxMedicineHeart units of medicine",
+        "Brain receives at least MinMedicineBrain units of medicine"
+    ],
+    "objective": "Minimize the total amount of waste produced while delivering medicine",
+    "description": "A patient can be hooked up to two machines to have medicine delivered, machine 1 and machine 2. Machine 1 delivers \\param{MedicineHeartMachine1} units of medicine to the heart per minute and \\param{MedicineBrainMachine1} units of medicine per minute to the brain. Machine 2 delivers \\param{MedicineHeartMachine2} units of medicine per minute to the heart and \\param{MedicineBrainMachine2} units of medicine per minute to the brain. In addition, machine 1 creates \\param{WasteMachine1} units of waste per minute while machine 2 creates \\param{WasteMachine2} units of waste per minute. If at most \\param{MaxMedicineHeart} units of medicine can be received by the heart and at least \\param{MinMedicineBrain} units of medicine should be received by the brain, how many minutes should each machine be used to minimize the total amount of waste produced?",
+    "parameters": [
+        {
+            "definition": "Amount of medicine delivered to the heart per minute by machine 1",
+            "symbol": "MedicineHeartMachine1",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Amount of medicine delivered to the heart per minute by machine 2",
+            "symbol": "MedicineHeartMachine2",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of medicine delivered to the brain per minute by machine 1",
+            "symbol": "MedicineBrainMachine1",
+            "value": 0.8,
+            "shape": []
+        },
+        {
+            "definition": "Amount of medicine delivered to the brain per minute by machine 2",
+            "symbol": "MedicineBrainMachine2",
+            "value": 1.0,
+            "shape": []
+        },
+        {
+            "definition": "Amount of waste produced per minute by machine 1",
+            "symbol": "WasteMachine1",
+            "value": 0.3,
+            "shape": []
+        },
+        {
+            "definition": "Amount of waste produced per minute by machine 2",
+            "symbol": "WasteMachine2",
+            "value": 0.5,
+            "shape": []
+        },
+        {
+            "definition": "Maximum units of medicine that can be received by the heart",
+            "symbol": "MaxMedicineHeart",
+            "value": 8,
+            "shape": []
+        },
+        {
+            "definition": "Minimum units of medicine that should be received by the brain",
+            "symbol": "MinMedicineBrain",
+            "value": 4,
+            "shape": []
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of planks of wood a miter saw can cut per day",
+            "symbol": "MiterPlanks",
+            "value": 50,
+            "shape": []
+        },
+        {
+            "definition": "Number of units of sawdust produced by a miter saw per day",
+            "symbol": "MiterSawdust",
+            "value": 60,
+            "shape": []
+        },
+        {
+            "definition": "Number of planks of wood a circular saw can cut per day",
+            "symbol": "CircularPlanks",
+            "value": 70,
+            "shape": []
+        },
+        {
+            "definition": "Number of units of sawdust produced by a circular saw per day",
+            "symbol": "CircularSawdust",
+            "value": 100,
+            "shape": []
+        },
+        {
+            "definition": "Minimum required number of planks of wood to cut per day",
+            "symbol": "MinPlanks",
+            "value": 1500,
+            "shape": []
+        },
+        {
+            "definition": "Maximum amount of sawdust that can be produced per day",
+            "symbol": "MaxSawdust",
+            "value": 2000,
+            "shape": []
+        }
+    ],
+    "description": "A woodshop can purchase two types of saws, a miter saw and a circular saw. A miter saw can cut \\param{MiterPlanks} planks of wood and produces \\param{MiterSawdust} units of sawdust per day. A circular saw can cut \\param{CircularPlanks} planks of wood and produces \\param{CircularSawdust} units of sawdust per day. The woodshop must cut at least \\param{MinPlanks} planks of wood per day. However, to avoid too much pollution in the woodshop, they can produce at most \\param{MaxSawdust} units of sawdust per day. How many of each type of saw should be purchased to minimize the total number of saws needed?"
+}

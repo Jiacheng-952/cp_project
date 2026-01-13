@@ -1,0 +1,73 @@
+{
+    "parameters": [
+        {
+            "definition": "Total number of different alloys",
+            "symbol": "A",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Total number of different steel types",
+            "symbol": "S",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Available amount of alloy a",
+            "symbol": "AvailableAlloy",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Carbon content of alloy a",
+            "symbol": "CarbonContent",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Nickel content of alloy a",
+            "symbol": "NickelContent",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Price of alloy a",
+            "symbol": "AlloyPrice",
+            "value": "",
+            "shape": [
+                "A"
+            ]
+        },
+        {
+            "definition": "Price of steel type s",
+            "symbol": "SteelPrice",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        },
+        {
+            "definition": "Minimum required carbon content for steel type s",
+            "symbol": "CarbonMin",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        },
+        {
+            "definition": "Maximum allowed nickel content for steel type s",
+            "symbol": "NickelMax",
+            "value": "",
+            "shape": [
+                "S"
+            ]
+        }
+    ],
+    "description": "How much of each alloy should the company use in each type of steel, and how much of each steel type should be produced to maximize profit? The company has \\param{A} different alloys and \\param{S} different steel types. For each alloy \\param{a} in 1, ..., \\param{A}, there is an available amount of \\param{AvailableAlloy}, a carbon content of \\param{CarbonContent}, a nickel content of \\param{NickelContent}, and an alloy price of \\param{AlloyPrice}. For each steel type \\param{s} in 1, ..., \\param{S}, there is a steel price of \\param{SteelPrice}, a minimum required carbon content of \\param{CarbonMin}, and a maximum allowed nickel content of \\param{NickelMax}."
+}

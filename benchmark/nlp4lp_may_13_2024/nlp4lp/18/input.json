@@ -1,0 +1,61 @@
+{
+    "parameters": [
+        {
+            "definition": "Number of different shares",
+            "symbol": "N",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of each share initially bought",
+            "symbol": "Bought",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Purchase price of each share",
+            "symbol": "BuyPrice",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Current market price of each share",
+            "symbol": "CurrentPrice",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Expected future market price of each share",
+            "symbol": "FuturePrice",
+            "value": "",
+            "shape": [
+                "N"
+            ]
+        },
+        {
+            "definition": "Transaction cost rate per share sold",
+            "symbol": "TransactionRate",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Capital gains tax rate on the profit from selling shares",
+            "symbol": "TaxRate",
+            "value": "",
+            "shape": []
+        },
+        {
+            "definition": "Amount of money the investor needs to raise",
+            "symbol": "K",
+            "value": "",
+            "shape": []
+        }
+    ],
+    "description": "We want to know how many shares the investor needs to sell in order to raise the needed money, net of capital gains and transaction costs, \\param{K}, while maximizing the expected value of his portfolio next year. The investor initially bought \\param{Bought} shares at a purchase price of \\param{BuyPrice} per share. The current market price and expected future market price of the shares are \\param{CurrentPrice} and \\param{FuturePrice}, respectively. The transaction cost rate per share sold is \\param{TransactionRate}, and the capital gains tax rate is \\param{TaxRate}."
+}
