@@ -1,0 +1,62 @@
+// Multi-Agent System Architecture
+digraph MAS_Workflow {
+	compound=true fontname="Microsoft YaHei" rankdir=TB
+	node [fontname="Microsoft YaHei" shape=box style=filled]
+	edge [fontname="Microsoft YaHei"]
+	Start [label="用户/触发器 Initiator" fillcolor="#e0e0e0" shape=ellipse style=filled]
+	MainFlow [label="workflow.py
+(主流程编排器 Orchestrator)" fillcolor="#ffccff" penwidth=2]
+	End [label="结束 / 展示结果 End" fillcolor="#e0e0e0" shape=ellipse style=filled]
+	subgraph cluster_PG1 {
+		fillcolor="#fcfcfc" label="阶段一：数据准备 (Data Preparation)" style=filled
+		DataAgent [label="数据预处理智能体
+(Data Agent)" fillcolor="#cce5ff"]
+		RawData [label="原始业务数据源
+(订单, BOM, 机台, 日历)" fillcolor="#fff2cc" shape=cylinder style="dashed,filled"]
+		StructuredData [label="结构化调度问题对象
+(Structured Problem Data)" fillcolor="#fff2cc" shape=note style="dashed,filled"]
+		RawData -> DataAgent [label="读取" style=dashed]
+		DataAgent -> StructuredData [label="2. 清洗、转换、验证"]
+	}
+	subgraph cluster_PG2 {
+		fillcolor="#fcfcfc" label="阶段二：CP建模核心 (CP Modeling Core)" style=filled
+		ModelAgent [label="CP建模智能体
+(Modeling Agent)" fillcolor="#cce5ff"]
+		CPModel [label="实例化 CP 模型对象
+(Instantiated CP Model)" fillcolor="#fff2cc" shape=note style="dashed,filled"]
+		ModelNote [label="包含：\n- 决策变量 (start_vars)\n- 硬约束 (时序, 能力)\n- 目标函数 (最小化 Makespan)" fontsize=10 shape=plain]
+		CPModel -> ModelNote [arrowhead=none style=dotted]
+		StructuredData -> ModelAgent [label="作为输入" lhead=cluster_PG2 ltail=cluster_PG1 style=dashed]
+		ModelAgent -> CPModel [label="业务约束 -> 数学模型映射"]
+	}
+	subgraph cluster_PG3 {
+		fillcolor="#fcfcfc" label="阶段三：求解优化 (Optimization Solving)" style=filled
+		SolverAgent [label="求解器接口智能体
+(Solver Interface Agent)" fillcolor="#cce5ff"]
+		ExternalSolver [label="外部 CP 求解器引擎
+e.g., OR-Tools CP-SAT / CPLEX" fillcolor="#d5e8d4" shape=component]
+		RawSolution [label="原始求解结果与状态
+(Raw Solution Values & Status)" fillcolor="#fff2cc" shape=note style="dashed,filled"]
+		CPModel -> SolverAgent [label="加载模型" style=dashed]
+		SolverAgent -> ExternalSolver [label="调用底层API, 配置参数"]
+		ExternalSolver -> SolverAgent [label="返回状态和解值"]
+		SolverAgent -> RawSolution [label="5. 提取原始数学解"]
+	}
+	subgraph cluster_PG4 {
+		fillcolor="#fcfcfc" label="阶段四：结果后处理与交付 (Post-processing & Delivery)" style=filled
+		ResultAgent [label="结果后处理智能体
+(Result Processing Agent)" fillcolor="#cce5ff"]
+		FinalOutput [label="最终排程方案 / Gantt视图数据
+(Final Schedule)" fillcolor="#fff2cc" shape=note style="dashed,filled"]
+		RawSolution -> ResultAgent [label="输入原始解" style=dashed]
+		StructuredData -> ResultAgent [label="结合业务上下文" constraint=false style=dashed]
+		ResultAgent -> FinalOutput [label="业务逻辑验证、格式化"]
+	}
+	Start -> MainFlow
+	MainFlow -> DataAgent [label="1. 调度任务启动" lhead=cluster_PG1]
+	MainFlow -> ModelAgent [label="3. 请求建模" lhead=cluster_PG2]
+	MainFlow -> SolverAgent [label="4. 启动求解" lhead=cluster_PG3]
+	MainFlow -> ResultAgent [label="6. 请求结果校验" lhead=cluster_PG4]
+	MainFlow -> End [label="7. 流程结束，返回结果"]
+	FinalOutput -> End [style=dashed]
+}
