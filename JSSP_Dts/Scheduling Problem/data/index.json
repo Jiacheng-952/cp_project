@@ -1,0 +1,606 @@
+{
+  "generated_time": "2026-01-27 11:15:32",
+  "total_instances": 100,
+  "instances": [
+    {
+      "id": 1,
+      "filename": "employee_assignment_instance_001.json",
+      "size_kb": 14.57,
+      "path": "data\\employee_assignment_instance_001.json"
+    },
+    {
+      "id": 2,
+      "filename": "employee_assignment_instance_002.json",
+      "size_kb": 14.29,
+      "path": "data\\employee_assignment_instance_002.json"
+    },
+    {
+      "id": 3,
+      "filename": "employee_assignment_instance_003.json",
+      "size_kb": 17.96,
+      "path": "data\\employee_assignment_instance_003.json"
+    },
+    {
+      "id": 4,
+      "filename": "employee_assignment_instance_004.json",
+      "size_kb": 18.23,
+      "path": "data\\employee_assignment_instance_004.json"
+    },
+    {
+      "id": 5,
+      "filename": "employee_assignment_instance_005.json",
+      "size_kb": 12.6,
+      "path": "data\\employee_assignment_instance_005.json"
+    },
+    {
+      "id": 6,
+      "filename": "employee_assignment_instance_006.json",
+      "size_kb": 17.22,
+      "path": "data\\employee_assignment_instance_006.json"
+    },
+    {
+      "id": 7,
+      "filename": "employee_assignment_instance_007.json",
+      "size_kb": 16.03,
+      "path": "data\\employee_assignment_instance_007.json"
+    },
+    {
+      "id": 8,
+      "filename": "employee_assignment_instance_008.json",
+      "size_kb": 12.61,
+      "path": "data\\employee_assignment_instance_008.json"
+    },
+    {
+      "id": 9,
+      "filename": "employee_assignment_instance_009.json",
+      "size_kb": 12.49,
+      "path": "data\\employee_assignment_instance_009.json"
+    },
+    {
+      "id": 10,
+      "filename": "employee_assignment_instance_010.json",
+      "size_kb": 10.9,
+      "path": "data\\employee_assignment_instance_010.json"
+    },
+    {
+      "id": 11,
+      "filename": "employee_assignment_instance_011.json",
+      "size_kb": 14.57,
+      "path": "data\\employee_assignment_instance_011.json"
+    },
+    {
+      "id": 12,
+      "filename": "employee_assignment_instance_012.json",
+      "size_kb": 13.72,
+      "path": "data\\employee_assignment_instance_012.json"
+    },
+    {
+      "id": 13,
+      "filename": "employee_assignment_instance_013.json",
+      "size_kb": 13.13,
+      "path": "data\\employee_assignment_instance_013.json"
+    },
+    {
+      "id": 14,
+      "filename": "employee_assignment_instance_014.json",
+      "size_kb": 16.04,
+      "path": "data\\employee_assignment_instance_014.json"
+    },
+    {
+      "id": 15,
+      "filename": "employee_assignment_instance_015.json",
+      "size_kb": 10.35,
+      "path": "data\\employee_assignment_instance_015.json"
+    },
+    {
+      "id": 16,
+      "filename": "employee_assignment_instance_016.json",
+      "size_kb": 16.77,
+      "path": "data\\employee_assignment_instance_016.json"
+    },
+    {
+      "id": 17,
+      "filename": "employee_assignment_instance_017.json",
+      "size_kb": 15.78,
+      "path": "data\\employee_assignment_instance_017.json"
+    },
+    {
+      "id": 18,
+      "filename": "employee_assignment_instance_018.json",
+      "size_kb": 15.99,
+      "path": "data\\employee_assignment_instance_018.json"
+    },
+    {
+      "id": 19,
+      "filename": "employee_assignment_instance_019.json",
+      "size_kb": 8.82,
+      "path": "data\\employee_assignment_instance_019.json"
+    },
+    {
+      "id": 20,
+      "filename": "employee_assignment_instance_020.json",
+      "size_kb": 13.94,
+      "path": "data\\employee_assignment_instance_020.json"
+    },
+    {
+      "id": 21,
+      "filename": "employee_assignment_instance_021.json",
+      "size_kb": 10.47,
+      "path": "data\\employee_assignment_instance_021.json"
+    },
+    {
+      "id": 22,
+      "filename": "employee_assignment_instance_022.json",
+      "size_kb": 18.19,
+      "path": "data\\employee_assignment_instance_022.json"
+    },
+    {
+      "id": 23,
+      "filename": "employee_assignment_instance_023.json",
+      "size_kb": 20.12,
+      "path": "data\\employee_assignment_instance_023.json"
+    },
+    {
+      "id": 24,
+      "filename": "employee_assignment_instance_024.json",
+      "size_kb": 12.55,
+      "path": "data\\employee_assignment_instance_024.json"
+    },
+    {
+      "id": 25,
+      "filename": "employee_assignment_instance_025.json",
+      "size_kb": 9.92,
+      "path": "data\\employee_assignment_instance_025.json"
+    },
+    {
+      "id": 26,
+      "filename": "employee_assignment_instance_026.json",
+      "size_kb": 15.53,
+      "path": "data\\employee_assignment_instance_026.json"
+    },
+    {
+      "id": 27,
+      "filename": "employee_assignment_instance_027.json",
+      "size_kb": 12.83,
+      "path": "data\\employee_assignment_instance_027.json"
+    },
+    {
+      "id": 28,
+      "filename": "employee_assignment_instance_028.json",
+      "size_kb": 13.17,
+      "path": "data\\employee_assignment_instance_028.json"
+    },
+    {
+      "id": 29,
+      "filename": "employee_assignment_instance_029.json",
+      "size_kb": 11.85,
+      "path": "data\\employee_assignment_instance_029.json"
+    },
+    {
+      "id": 30,
+      "filename": "employee_assignment_instance_030.json",
+      "size_kb": 13.77,
+      "path": "data\\employee_assignment_instance_030.json"
+    },
+    {
+      "id": 31,
+      "filename": "employee_assignment_instance_031.json",
+      "size_kb": 14.98,
+      "path": "data\\employee_assignment_instance_031.json"
+    },
+    {
+      "id": 32,
+      "filename": "employee_assignment_instance_032.json",
+      "size_kb": 13.17,
+      "path": "data\\employee_assignment_instance_032.json"
+    },
+    {
+      "id": 33,
+      "filename": "employee_assignment_instance_033.json",
+      "size_kb": 17.96,
+      "path": "data\\employee_assignment_instance_033.json"
+    },
+    {
+      "id": 34,
+      "filename": "employee_assignment_instance_034.json",
+      "size_kb": 20.16,
+      "path": "data\\employee_assignment_instance_034.json"
+    },
+    {
+      "id": 35,
+      "filename": "employee_assignment_instance_035.json",
+      "size_kb": 13.17,
+      "path": "data\\employee_assignment_instance_035.json"
+    },
+    {
+      "id": 36,
+      "filename": "employee_assignment_instance_036.json",
+      "size_kb": 15.3,
+      "path": "data\\employee_assignment_instance_036.json"
+    },
+    {
+      "id": 37,
+      "filename": "employee_assignment_instance_037.json",
+      "size_kb": 12.87,
+      "path": "data\\employee_assignment_instance_037.json"
+    },
+    {
+      "id": 38,
+      "filename": "employee_assignment_instance_038.json",
+      "size_kb": 11.51,
+      "path": "data\\employee_assignment_instance_038.json"
+    },
+    {
+      "id": 39,
+      "filename": "employee_assignment_instance_039.json",
+      "size_kb": 13.66,
+      "path": "data\\employee_assignment_instance_039.json"
+    },
+    {
+      "id": 40,
+      "filename": "employee_assignment_instance_040.json",
+      "size_kb": 15.37,
+      "path": "data\\employee_assignment_instance_040.json"
+    },
+    {
+      "id": 41,
+      "filename": "employee_assignment_instance_041.json",
+      "size_kb": 13.77,
+      "path": "data\\employee_assignment_instance_041.json"
+    },
+    {
+      "id": 42,
+      "filename": "employee_assignment_instance_042.json",
+      "size_kb": 15.22,
+      "path": "data\\employee_assignment_instance_042.json"
+    },
+    {
+      "id": 43,
+      "filename": "employee_assignment_instance_043.json",
+      "size_kb": 13.1,
+      "path": "data\\employee_assignment_instance_043.json"
+    },
+    {
+      "id": 44,
+      "filename": "employee_assignment_instance_044.json",
+      "size_kb": 12.49,
+      "path": "data\\employee_assignment_instance_044.json"
+    },
+    {
+      "id": 45,
+      "filename": "employee_assignment_instance_045.json",
+      "size_kb": 22.13,
+      "path": "data\\employee_assignment_instance_045.json"
+    },
+    {
+      "id": 46,
+      "filename": "employee_assignment_instance_046.json",
+      "size_kb": 13.59,
+      "path": "data\\employee_assignment_instance_046.json"
+    },
+    {
+      "id": 47,
+      "filename": "employee_assignment_instance_047.json",
+      "size_kb": 10.9,
+      "path": "data\\employee_assignment_instance_047.json"
+    },
+    {
+      "id": 48,
+      "filename": "employee_assignment_instance_048.json",
+      "size_kb": 10.96,
+      "path": "data\\employee_assignment_instance_048.json"
+    },
+    {
+      "id": 49,
+      "filename": "employee_assignment_instance_049.json",
+      "size_kb": 14.5,
+      "path": "data\\employee_assignment_instance_049.json"
+    },
+    {
+      "id": 50,
+      "filename": "employee_assignment_instance_050.json",
+      "size_kb": 17.73,
+      "path": "data\\employee_assignment_instance_050.json"
+    },
+    {
+      "id": 51,
+      "filename": "employee_assignment_instance_051.json",
+      "size_kb": 12.68,
+      "path": "data\\employee_assignment_instance_051.json"
+    },
+    {
+      "id": 52,
+      "filename": "employee_assignment_instance_052.json",
+      "size_kb": 17.15,
+      "path": "data\\employee_assignment_instance_052.json"
+    },
+    {
+      "id": 53,
+      "filename": "employee_assignment_instance_053.json",
+      "size_kb": 14.33,
+      "path": "data\\employee_assignment_instance_053.json"
+    },
+    {
+      "id": 54,
+      "filename": "employee_assignment_instance_054.json",
+      "size_kb": 14.15,
+      "path": "data\\employee_assignment_instance_054.json"
+    },
+    {
+      "id": 55,
+      "filename": "employee_assignment_instance_055.json",
+      "size_kb": 15.78,
+      "path": "data\\employee_assignment_instance_055.json"
+    },
+    {
+      "id": 56,
+      "filename": "employee_assignment_instance_056.json",
+      "size_kb": 10.28,
+      "path": "data\\employee_assignment_instance_056.json"
+    },
+    {
+      "id": 57,
+      "filename": "employee_assignment_instance_057.json",
+      "size_kb": 17.23,
+      "path": "data\\employee_assignment_instance_057.json"
+    },
+    {
+      "id": 58,
+      "filename": "employee_assignment_instance_058.json",
+      "size_kb": 13.21,
+      "path": "data\\employee_assignment_instance_058.json"
+    },
+    {
+      "id": 59,
+      "filename": "employee_assignment_instance_059.json",
+      "size_kb": 18.44,
+      "path": "data\\employee_assignment_instance_059.json"
+    },
+    {
+      "id": 60,
+      "filename": "employee_assignment_instance_060.json",
+      "size_kb": 9.37,
+      "path": "data\\employee_assignment_instance_060.json"
+    },
+    {
+      "id": 61,
+      "filename": "employee_assignment_instance_061.json",
+      "size_kb": 7.91,
+      "path": "data\\employee_assignment_instance_061.json"
+    },
+    {
+      "id": 62,
+      "filename": "employee_assignment_instance_062.json",
+      "size_kb": 11.93,
+      "path": "data\\employee_assignment_instance_062.json"
+    },
+    {
+      "id": 63,
+      "filename": "employee_assignment_instance_063.json",
+      "size_kb": 18.69,
+      "path": "data\\employee_assignment_instance_063.json"
+    },
+    {
+      "id": 64,
+      "filename": "employee_assignment_instance_064.json",
+      "size_kb": 13.72,
+      "path": "data\\employee_assignment_instance_064.json"
+    },
+    {
+      "id": 65,
+      "filename": "employee_assignment_instance_065.json",
+      "size_kb": 19.43,
+      "path": "data\\employee_assignment_instance_065.json"
+    },
+    {
+      "id": 66,
+      "filename": "employee_assignment_instance_066.json",
+      "size_kb": 13.59,
+      "path": "data\\employee_assignment_instance_066.json"
+    },
+    {
+      "id": 67,
+      "filename": "employee_assignment_instance_067.json",
+      "size_kb": 12.37,
+      "path": "data\\employee_assignment_instance_067.json"
+    },
+    {
+      "id": 68,
+      "filename": "employee_assignment_instance_068.json",
+      "size_kb": 16.99,
+      "path": "data\\employee_assignment_instance_068.json"
+    },
+    {
+      "id": 69,
+      "filename": "employee_assignment_instance_069.json",
+      "size_kb": 17.5,
+      "path": "data\\employee_assignment_instance_069.json"
+    },
+    {
+      "id": 70,
+      "filename": "employee_assignment_instance_070.json",
+      "size_kb": 19.7,
+      "path": "data\\employee_assignment_instance_070.json"
+    },
+    {
+      "id": 71,
+      "filename": "employee_assignment_instance_071.json",
+      "size_kb": 9.92,
+      "path": "data\\employee_assignment_instance_071.json"
+    },
+    {
+      "id": 72,
+      "filename": "employee_assignment_instance_072.json",
+      "size_kb": 11.85,
+      "path": "data\\employee_assignment_instance_072.json"
+    },
+    {
+      "id": 73,
+      "filename": "employee_assignment_instance_073.json",
+      "size_kb": 10.47,
+      "path": "data\\employee_assignment_instance_073.json"
+    },
+    {
+      "id": 74,
+      "filename": "employee_assignment_instance_074.json",
+      "size_kb": 14.33,
+      "path": "data\\employee_assignment_instance_074.json"
+    },
+    {
+      "id": 75,
+      "filename": "employee_assignment_instance_075.json",
+      "size_kb": 11.02,
+      "path": "data\\employee_assignment_instance_075.json"
+    },
+    {
+      "id": 76,
+      "filename": "employee_assignment_instance_076.json",
+      "size_kb": 13.05,
+      "path": "data\\employee_assignment_instance_076.json"
+    },
+    {
+      "id": 77,
+      "filename": "employee_assignment_instance_077.json",
+      "size_kb": 13.05,
+      "path": "data\\employee_assignment_instance_077.json"
+    },
+    {
+      "id": 78,
+      "filename": "employee_assignment_instance_078.json",
+      "size_kb": 14.06,
+      "path": "data\\employee_assignment_instance_078.json"
+    },
+    {
+      "id": 79,
+      "filename": "employee_assignment_instance_079.json",
+      "size_kb": 20.89,
+      "path": "data\\employee_assignment_instance_079.json"
+    },
+    {
+      "id": 80,
+      "filename": "employee_assignment_instance_080.json",
+      "size_kb": 12.49,
+      "path": "data\\employee_assignment_instance_080.json"
+    },
+    {
+      "id": 81,
+      "filename": "employee_assignment_instance_081.json",
+      "size_kb": 13.1,
+      "path": "data\\employee_assignment_instance_081.json"
+    },
+    {
+      "id": 82,
+      "filename": "employee_assignment_instance_082.json",
+      "size_kb": 9.92,
+      "path": "data\\employee_assignment_instance_082.json"
+    },
+    {
+      "id": 83,
+      "filename": "employee_assignment_instance_083.json",
+      "size_kb": 12.62,
+      "path": "data\\employee_assignment_instance_083.json"
+    },
+    {
+      "id": 84,
+      "filename": "employee_assignment_instance_084.json",
+      "size_kb": 12.13,
+      "path": "data\\employee_assignment_instance_084.json"
+    },
+    {
+      "id": 85,
+      "filename": "employee_assignment_instance_085.json",
+      "size_kb": 13.1,
+      "path": "data\\employee_assignment_instance_085.json"
+    },
+    {
+      "id": 86,
+      "filename": "employee_assignment_instance_086.json",
+      "size_kb": 16.35,
+      "path": "data\\employee_assignment_instance_086.json"
+    },
+    {
+      "id": 87,
+      "filename": "employee_assignment_instance_087.json",
+      "size_kb": 11.02,
+      "path": "data\\employee_assignment_instance_087.json"
+    },
+    {
+      "id": 88,
+      "filename": "employee_assignment_instance_088.json",
+      "size_kb": 13.04,
+      "path": "data\\employee_assignment_instance_088.json"
+    },
+    {
+      "id": 89,
+      "filename": "employee_assignment_instance_089.json",
+      "size_kb": 14.58,
+      "path": "data\\employee_assignment_instance_089.json"
+    },
+    {
+      "id": 90,
+      "filename": "employee_assignment_instance_090.json",
+      "size_kb": 15.86,
+      "path": "data\\employee_assignment_instance_090.json"
+    },
+    {
+      "id": 91,
+      "filename": "employee_assignment_instance_091.json",
+      "size_kb": 20.44,
+      "path": "data\\employee_assignment_instance_091.json"
+    },
+    {
+      "id": 92,
+      "filename": "employee_assignment_instance_092.json",
+      "size_kb": 11.45,
+      "path": "data\\employee_assignment_instance_092.json"
+    },
+    {
+      "id": 93,
+      "filename": "employee_assignment_instance_093.json",
+      "size_kb": 14.58,
+      "path": "data\\employee_assignment_instance_093.json"
+    },
+    {
+      "id": 94,
+      "filename": "employee_assignment_instance_094.json",
+      "size_kb": 15.3,
+      "path": "data\\employee_assignment_instance_094.json"
+    },
+    {
+      "id": 95,
+      "filename": "employee_assignment_instance_095.json",
+      "size_kb": 18.46,
+      "path": "data\\employee_assignment_instance_095.json"
+    },
+    {
+      "id": 96,
+      "filename": "employee_assignment_instance_096.json",
+      "size_kb": 17.27,
+      "path": "data\\employee_assignment_instance_096.json"
+    },
+    {
+      "id": 97,
+      "filename": "employee_assignment_instance_097.json",
+      "size_kb": 15.14,
+      "path": "data\\employee_assignment_instance_097.json"
+    },
+    {
+      "id": 98,
+      "filename": "employee_assignment_instance_098.json",
+      "size_kb": 15.07,
+      "path": "data\\employee_assignment_instance_098.json"
+    },
+    {
+      "id": 99,
+      "filename": "employee_assignment_instance_099.json",
+      "size_kb": 16.04,
+      "path": "data\\employee_assignment_instance_099.json"
+    },
+    {
+      "id": 100,
+      "filename": "employee_assignment_instance_100.json",
+      "size_kb": 9.86,
+      "path": "data\\employee_assignment_instance_100.json"
+    }
+  ]
+}
